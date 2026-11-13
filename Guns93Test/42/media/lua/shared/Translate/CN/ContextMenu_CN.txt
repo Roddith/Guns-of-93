@@ -1,7 +1,0 @@
-ContextMenu_CN = {
-
-
-ContextMenu_FireMode_modBurst = "连发",
-
-
-}
