@@ -19,6 +19,10 @@
  - TL;DR, ask first and say when you borrow my work. Don't just steal without attribution
 
 ## External Links
+### Steam Workshop Page
+[Build 42+](https://steamcommunity.com/workshop/filedetails/?id=3183820077)
+[Build 41 - no longer maintained](https://steamcommunity.com/sharedfiles/filedetails/?id=3077078907)
+
 ### Discord
 Join the [Discord](https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2FabBzrFHSRa) for this mod if you want to provide feedback, suggest new development features, or just talk with the developer.
 
