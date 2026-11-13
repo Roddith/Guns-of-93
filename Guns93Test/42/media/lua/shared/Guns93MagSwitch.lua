@@ -1,27 +1,12 @@
 require "ISUI/ISInventoryPaneContextMenu"
 
 MagTypeSet = {
-    "Base.L395KMag","Base.L395KMagSlugs",
 	"Base.1911Mag","Base.DeltaEliteMagBlue",
 	"Base.1911MagExtend","Base.DeltaEliteMagExtendBlue",
 	"Base.1911MagSS","Base.DeltaEliteMag",
 	"Base.1911MagExtendSS","Base.DeltaEliteMagExtend",
 	"Base.MP5Mag10mm","Base.MP5Mag40SW",
-	"Base.SpeedStrip357","Base.SpeedStrip38",
-	"Base.HKS36A357","Base.HKS36A38",
-	"Base.HKS10A357","Base.HKS10A38",
-	"Base.HKS586A357","Base.HKS586A38",
-	"Base.HKSPYA357","Base.HKSPYA38",
-	"Base.HKSMK3A357","Base.HKSMK3A38",
-	"Base.3006clip","Base.Mauserclip",
-	"Base.Size3CompII357","Base.Size3CompII38",
-	"Base.Size4CompII357","Base.Size4CompII38",
-	"Base.Size5CompII357","Base.Size5CompII38",
-	"Base.Size6CompII357","Base.Size6CompII38",
-	"Base.Size3CompIII357","Base.Size3CompIII38",
-	"Base.Size4CompIII357","Base.Size4CompIII38",
-	"Base.Size5CompIII357","Base.Size5CompIII38",
-	"Base.Size6CompIII357","Base.Size6CompIII38"
+	"Base.3006clip","Base.Mauserclip"
 }
 
 if isServer() then

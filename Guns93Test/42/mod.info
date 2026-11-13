@@ -1,8 +1,5 @@
-name=Guns of 93: B42 Test Build
+name=Guns of 93 MP Test (B42)
 poster=Guns93.png
-icon=GunIcon.png
-id=guns93
-author=Marrok
-description= B42 Test build for Guns of 93. Last Update: 10/25/2026
+id=guns93MPTest
+description= MP B42 Test build for Guns of 93. Extremely WIP.
 url=None
-modversion=0.8.2.8f

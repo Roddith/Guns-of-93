@@ -204,6 +204,32 @@ module Base
 		}
 	}
 
+	craftRecipe CraftM3Silencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+			item 1 [Base.M3GreaseGun] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.M3Silencer,
+		}
+	}
 	craftRecipe Craft30Silencer
 	{
 		timedAction = Welding,

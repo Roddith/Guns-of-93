@@ -1,0 +1,251 @@
+module Base
+{
+	item BirdshotShells
+	{
+	    DisplayCategory = Ammo,
+        isCaliber = Base.ShotgunShells,
+		Count	=	5,
+		Weight	=	0.056,
+		AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:normal,
+		DisplayName	=	12ga Birdshot,
+		Icon	=	ShotgunShells,
+		MetalValue = 1,
+		WorldStaticModel = ShotgunShellsWorld,
+        Tooltip = Tooltip_Ammo_Bird,
+		Tags = base:ammo; guns93:ammo; ShotgunShell,
+	}
+	item TurkeyLoadShells
+	{
+	    DisplayCategory = Ammo,
+        isCaliber = Base.ShotgunShells,
+		Count	=	5,
+		Weight	=	0.056,
+		AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:normal,
+		DisplayName	=	12ga Turkey Load,
+		Icon	=	ShotgunShells,
+		MetalValue = 1,
+		WorldStaticModel = ShotgunShellsWorld,
+        Tooltip = Tooltip_Ammo_Turk,
+		Tags = base:ammo; guns93:ammo; ShotgunShell,
+	}
+
+	item ShotgunShells
+	{
+	    DisplayCategory = Ammo,
+        isCaliber = Base.ShotgunShells,
+		Count	=	5,
+		Weight	=	0.056,
+		AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:normal,
+		DisplayName	=	12ga Buckshot,
+		Icon	=	ShotgunShells,
+		MetalValue = 1,
+		WorldStaticModel = ShotgunShellsWorld,
+        Tooltip = Tooltip_Ammo_Buck,
+		Tags = base:ammo; guns93:ammo; ShotgunShell,
+	}
+
+	item SlugBullets
+	{
+	    DisplayCategory = Ammo,
+        isCaliber = Base.ShotgunShells,
+		Count	=	5,
+		Weight	=	0.056,
+		AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:normal,
+		DisplayName	=	12ga Slug,
+		Icon	=	ShotgunSlugs,
+		MetalValue = 1,
+		WorldStaticModel = SlugShellsWorld,
+        Tooltip = Tooltip_Ammo_Slug,
+		Tags = base:ammo; guns93:ammo; ShotgunShell,
+	}
+
+	item SlugBulletsRifle
+	{
+	    DisplayCategory = Ammo,
+        isCaliber = Base.ShotgunShells,
+		Count	=	5,
+		Weight	=	0.056,
+		AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:normal,
+		DisplayName	=	12ga Rifled Slug,
+		Icon	=	ShotgunSlugs,
+		MetalValue = 1,
+		WorldStaticModel = SlugShellsWorld,
+        Tooltip = Tooltip_Ammo_SlugRifle,
+		Tags = base:ammo; guns93:ammo; ShotgunShell,
+	}
+
+    item ShotgunShellsBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.16,
+        ItemType = base:normal,
+        DisplayName	=	Box of 12ga Buckshot,
+        Icon	=	BuckshotBox,
+        MetalValue = 24,
+        WorldStaticModel = BuckshotBox,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Buck,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfShotgunShells,
+    }
+
+    item BirdshotShellsBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.16,
+        ItemType = base:normal,
+        DisplayName	=	Box of 12ga Birdshot,
+        Icon	=	BirdshotBox,
+        MetalValue = 24,
+        WorldStaticModel = BirdshotBox,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Bird,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
+    }
+
+    item TurkeyLoadShellsBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.16,
+        ItemType = base:normal,
+        DisplayName	=	Box of 12ga Turkey Loads,
+        Icon	=	BirdshotBox,
+        MetalValue = 24,
+        WorldStaticModel = BirdshotBox,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Turk
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
+    }
+
+    item SlugBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.16,
+        ItemType = base:normal,
+        DisplayName	=	Box of 12ga Slugs,
+        Icon	=	SlugBox,
+        MetalValue = 24,
+        WorldStaticModel = SlugBox,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = OpenBoxOfSlugBullets,
+        Tooltip = Tooltip_Ammo_Slug,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
+    }
+
+    item SlugRifleBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.16,
+        ItemType = base:normal,
+        DisplayName	=	Box of 12ga Rifled Slugs,
+        Icon	=	SlugBox2,
+        MetalValue = 24,
+        WorldStaticModel = SlugBox2,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = OpenBoxOfSlugBullets,
+        Tooltip = Tooltip_Ammo_SlugRifle,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
+    }
+
+	item ShotgunShellsCarton
+	{
+		DisplayName = Carton of 12ga Buckshot,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Buck,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+
+	item BirdshotShellsCarton
+	{
+		DisplayName = Carton of 12ga Birdshot,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Bird,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item TurkeyLoadShellsCarton
+	{
+		DisplayName = Carton of 12ga Turkey Load,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Turk,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item SlugCarton
+	{
+		DisplayName = Carton of 12ga Slugs,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Slug,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item SlugRifleCarton
+	{
+		DisplayName = Carton of 12ga Rifled Slugs,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_SlugRifle,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

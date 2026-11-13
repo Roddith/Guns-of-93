@@ -3,37 +3,170 @@ function GunStatAdjust(player, weapon)
     if not weapon or not instanceof(weapon, "HandWeapon") or not weapon:isRanged() then return end
     if not weapon:hasTag(Gun93Registries.guns93.Guns93) then return end
     local weaponMod = weapon:getModData()
-    local baseRecoil = weaponMod.g93_baseRecoil
-    local baseHitChance = weaponMod.g93_baseHitChance
     local baseJamChance = weaponMod.g93_baseJamChance
     local baseConChance = weaponMod.g93_baseConChance
-    local baseMaxDMG = weaponMod.g93_baseMaxDMG
+    local baseHitcount = weaponMod.g93_baseHitcount
+    local baseAimingPerkCrit = weaponMod.g93_baseAimingPerkCrit
+    local baseHitChance = weaponMod.g93_baseHitChance
+    local baseRecoil = weaponMod.g93_baseRecoil
+    local baseDoorDamage = weaponMod.g93_baseDoorDamage
     local baseMinDMG = weaponMod.g93_baseMinDMG
-    local baseRange = weaponMod.g93_baseRange
+    local baseMaxDMG = weaponMod.g93_baseMaxDMG
     local baseCritChance = weaponMod.g93_baseCritChance
-    if not baseRecoil or not baseHitChance or not baseJamChance or not baseConChance or not baseMaxDMG or not baseMinDMG or not baseRange or not baseCritChance then
+    local baseCritDmgMultiplier = weaponMod.g93_baseCritDmgMultiplier
+    local baseStopPower = weaponMod.g93_baseStopPower
+    local basePushBackMod = weaponMod.g93_basePushBackMod
+    local baseRange = weaponMod.g93_baseRange
+    local baseKnockdownMod = weaponMod.g93_baseKnockdownMod
+    local baseProjectileCount = weaponMod.g93_baseProjectileCount
+    local baseProjectileSpread = weaponMod.g93_baseProjectileSpread
+    local baseProjectileWeightCenter = weaponMod.g93_baseProjectileWeightCenter
+    if not baseHitcount or not baseAimingPerkCrit or not baseRecoil or not baseHitChance or not baseDoorDamage or not baseJamChance or not baseConChance or not baseMaxDMG or not baseMinDMG or not baseRange or not baseCritChance or not baseCritDmgMultiplier then
         local baseGunRef = instanceItem(weapon:getFullType())
         local remparts = baseGunRef:getAllWeaponParts()
         for i = remparts:size() - 1, 0, -1 do
             local part = remparts:get(i)
             if part then baseGunRef:detachWeaponPart(part) end
         end
-        baseRecoil = baseGunRef:getRecoilDelay()
-        baseHitChance = baseGunRef:getHitChance()
         baseJamChance = baseGunRef:getJamGunChance()
         baseConChance = baseGunRef:getConditionLowerChance()
-        baseMaxDMG = baseGunRef:getMaxDamage()
+        baseHitcount = baseGunRef:getMaxHitCount()
+        baseAimingPerkCrit = baseGunRef:getAimingPerkCritModifier()
+        baseHitChance = baseGunRef:getHitChance()
+        baseRecoil = baseGunRef:getRecoilDelay()
+        baseDoorDamage = baseGunRef:getDoorDamage()
         baseMinDMG = baseGunRef:getMinDamage()
-        baseRange = baseGunRef:getMaxRange()
+        baseMaxDMG = baseGunRef:getMaxDamage()
         baseCritChance = baseGunRef:getCriticalChance()
-        weaponMod.g93_baseRecoil = baseRecoil
-        weaponMod.g93_baseHitChance = baseHitChance
-        weaponMod.g93_baseJamChance = baseJamChance
-        weaponMod.g93_baseConChance = baseConChance
-        weaponMod.g93_baseMaxDMG = baseMaxDMG
-        weaponMod.g93_baseMinDMG = baseMinDMG
-        weaponMod.g93_baseRange = baseRange
-        weaponMod.g93_baseCritChance = baseCritChance
+        baseCritDmgMultiplier = baseGunRef:getCriticalDamageMultiplier()
+        baseStopPower = baseGunRef:getStopPower()
+        basePushBackMod = baseGunRef:getPushBackMod()
+        baseRange = baseGunRef:getMaxRange()
+        baseKnockdownMod = baseGunRef:getKnockdownMod()
+        baseProjectileCount = baseGunRef:getProjectileCount()
+        baseProjectileSpread = baseGunRef:getProjectileSpread()
+        baseProjectileWeightCenter = baseGunRef:getProjectileWeightCenter()
+    end
+    local currentRound = nil
+    if weapon:haveChamber() then
+        currentRound = weaponMod.Guns93Chambered
+    elseif weaponMod.Guns93AmmoList then
+        local list = weaponMod.Guns93AmmoList
+        local top = list[1]
+        if top and top.type then
+            currentRound = top.type
+        end
+    end
+    if currentRound == nil then
+        currentRound = weapon:getAmmoType():getItemKey()
+    end
+    local roundData = AmmoStatList[currentRound]
+    if roundData and tostring(roundData.caliber) == tostring(weaponMod.modAlt_Ammo) then
+        if weaponMod.modAlt_Hitcount ~= nil and weaponMod.modAlt_Hitcount ~= baseHitcount then
+            baseHitcount = weaponMod.modAlt_Hitcount
+        end
+        if weaponMod.modAlt_AimingPerkCrit ~= nil and weaponMod.modAlt_AimingPerkCrit ~= baseAimingPerkCrit then
+            baseAimingPerkCrit = weaponMod.modAlt_AimingPerkCrit
+        end
+        if weaponMod.modAlt_HitChance ~= nil and weaponMod.modAlt_HitChance ~= baseHitChance then
+            baseHitChance = weaponMod.modAlt_HitChance
+        end
+        if weaponMod.modAlt_RecoilDelay ~= nil and weaponMod.modAlt_RecoilDelay ~= baseRecoil then
+            baseRecoil = weaponMod.modAlt_RecoilDelay
+        end
+        if weaponMod.modAlt_DoorDamage ~= nil and weaponMod.modAlt_DoorDamage ~= baseDoorDamage then
+            baseDoorDamage = weaponMod.modAlt_DoorDamage
+        end
+        if weaponMod.modAlt_MinDamage ~= nil and weaponMod.modAlt_MinDamage ~= baseMinDMG then
+            baseMinDMG = weaponMod.modAlt_MinDamage
+        end
+        if weaponMod.modAlt_MaxDamage ~= nil and weaponMod.modAlt_MaxDamage ~= baseMaxDMG then
+            baseMaxDMG = weaponMod.modAlt_MaxDamage
+        end
+        if weaponMod.modAlt_CriticalChance ~= nil and weaponMod.modAlt_CriticalChance ~= baseCritChance then
+            baseCritChance = weaponMod.modAlt_CriticalChance
+        end
+        if weaponMod.modAlt_CritDmgMultiplier ~= nil and weaponMod.modAlt_CritDmgMultiplier ~= baseCritDmgMultiplier then
+            baseCritDmgMultiplier = weaponMod.modAlt_CritDmgMultiplier
+        end
+        if weaponMod.modAlt_StopPower ~= nil and weaponMod.modAlt_StopPower ~= baseStopPower then
+            baseStopPower = weaponMod.modAlt_StopPower
+        end
+        if weaponMod.modAlt_PushBackMod ~= nil and weaponMod.modAlt_PushBackMod ~= basePushBackMod then
+            basePushBackMod = weaponMod.modAlt_PushBackMod
+        end
+        if weaponMod.modAlt_MaxRange ~= nil and weaponMod.modAlt_MaxRange ~= baseRange then
+            baseRange = weaponMod.modAlt_MaxRange
+        end
+        if weaponMod.modAlt_KnockdownMod ~= nil and weaponMod.modAlt_KnockdownMod ~= baseKnockdownMod then
+            baseKnockdownMod = weaponMod.modAlt_KnockdownMod
+        end
+        if weaponMod.modAlt_ProjectileCount ~= baseProjectileCount then
+            baseProjectileCount = weaponMod.modAlt_ProjectileCount
+        end
+        if weaponMod.modAlt_ProjectileSpread ~= baseProjectileSpread then
+            baseProjectileSpread = weaponMod.modAlt_ProjectileSpread
+        end
+        if weaponMod.modAlt_ProjectileWeightCenter ~= baseProjectileWeightCenter then
+            baseProjectileWeightCenter = weaponMod.modAlt_ProjectileWeightCenter
+        end
+    end
+    if roundData ~= nil then
+        if roundData.jamchance ~= nil and baseJamChance ~= 0 then
+            baseJamChance = baseJamChance + roundData.jamchance
+        end
+        if roundData.conchange ~= nil then
+            baseConChance = baseConChance + roundData.conchange
+        end
+        if roundData.hitchance ~= nil then
+            baseHitChance = baseHitChance + roundData.hitchance
+        end
+        if roundData.hitcount ~= nil then
+            baseHitcount = baseHitcount + roundData.hitcount
+            if baseHitcount < 1 then
+                baseHitcount = 1
+            end
+        end
+        if roundData.recoil ~= nil then
+            baseRecoil = baseRecoil + roundData.recoil
+        end
+        if roundData.doordmg ~= nil then
+            baseDoorDamage = baseDoorDamage + roundData.doordmg
+        end
+        if roundData.dmgmod ~= nil then
+            baseMinDMG = baseMinDMG + roundData.dmgmod
+            baseMaxDMG = baseMaxDMG + roundData.dmgmod
+            if baseMinDMG < 0.1 then
+                baseMinDMG = 0.1
+            end
+            if baseMaxDMG < 0.1 then
+                baseMaxDMG = 0.1
+            end
+        end
+        if roundData.critchance ~= nil then
+            baseCritChance = baseCritChance + roundData.critchance
+        end
+        if roundData.critmultipler ~= nil then
+            baseCritDmgMultiplier = baseCritDmgMultiplier + roundData.critmultipler
+        end
+        if roundData.pushback ~= nil then
+            basePushBackMod = basePushBackMod + roundData.pushback
+        end
+        if roundData.range ~= nil then
+            baseRange = baseRange + roundData.range
+        end
+        if roundData.knockdown ~= nil then
+            baseKnockdownMod = baseKnockdownMod + roundData.knockdown
+        end
+        if roundData.projectileCount ~= nil then
+            baseProjectileCount = baseProjectileCount + roundData.projectileCount
+        end
+        if roundData.spread ~= nil then
+            baseProjectileSpread = baseProjectileSpread + roundData.spread
+        end
+        if roundData.projectilecenter ~= nil then
+            baseProjectileWeightCenter = baseProjectileWeightCenter + roundData.projectilecenter
+        end
     end
     baseMaxDMG = baseMaxDMG * (SandboxVars.Guns93.Guns93DMGAdjust or 1)
     baseMinDMG = baseMinDMG * (SandboxVars.Guns93.Guns93DMGAdjust or 1)
@@ -70,6 +203,9 @@ function GunStatAdjust(player, weapon)
                     end
                     if partMod["mod_JamMod"] then
                         baseJamChance = baseJamChance + partMod["mod_JamMod"]
+                    end
+                    if partMod["ProjectileSpreadModifier"] then
+                        baseProjectileSpread = baseProjectileSpread + partMod["ProjectileSpreadModifier"]
                     end
                 end
             end
@@ -159,19 +295,31 @@ function GunStatAdjust(player, weapon)
             weaponMod["modBurst_Num"] = burstCount + 1
         end
     end
-    weapon:setMaxDamage(baseMaxDMG)
-    weapon:setMinDamage(baseMinDMG)
-    weapon:setRecoilDelay(recoilDelay)
-    weapon:setMaxRange(baseRange)
-    weapon:setCriticalChance(baseCritChance)
     weapon:setJamGunChance(baseJamChance)
+    weapon:setConditionLowerChance(baseConChance)
+    weapon:setMaxHitCount(baseHitcount)
+    weapon:setAimingPerkCritModifier(baseAimingPerkCrit)
+    weapon:setRecoilDelay(recoilDelay)
+    weapon:setDoorDamage(baseDoorDamage)
+    weapon:setMinDamage(baseMinDMG)
+    weapon:setMaxDamage(baseMaxDMG)
+    weapon:setCriticalChance(baseCritChance)
+    weapon:setCriticalDamageMultiplier(baseCritDmgMultiplier)
+    weaponMod.StopPower = baseStopPower
+    weapon:setPushBackMod(basePushBackMod)
+    weapon:setMaxRange(baseRange)
+    weapon:setKnockdownMod(baseKnockdownMod)
+    weapon:setProjectileCount(baseProjectileCount)
+    weaponMod.ProjectileSpread = baseProjectileSpread
+    weaponMod.ProjectileWeightCenter = baseProjectileWeightCenter
     if not isClient() and not instanceof(player, "IsoZombie") then
         syncItemModData(player, weapon)
         syncHandWeaponFields(player, weapon)
     end
+    SilencerEff(player, weapon)
 end
 
-Events.OnWeaponSwing.Add(GunStatAdjust)
+---Events.OnWeaponSwing.Add(GunStatAdjust)
 Events.OnEquipPrimary.Add(GunStatAdjust)
 Events.OnGameStart.Add(function()
     local player = getPlayer()

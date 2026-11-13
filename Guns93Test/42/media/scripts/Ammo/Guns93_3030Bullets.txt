@@ -1,0 +1,98 @@
+module Base
+{
+    item 3030Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3030Bullets,
+        Weight	=	0.029,
+        ItemType = base:normal,
+        DisplayName	=	.30-30 Winchester,
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 3030BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3030Bullets,
+        Weight	=	0.029,
+        ItemType = base:normal,
+        DisplayName	=	.30-30 Winchester (Soft-Point),
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 3030Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        ItemType = base:normal,
+        DisplayName	=	Box .30-30 Winchester,
+        Icon	=	BoxRifleAmmo4,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo4,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfBullets20,
+    }
+    item 3030SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        ItemType = base:normal,
+        DisplayName	=	Box .30-30 Winchester (Soft-Point),
+        Icon	=	BoxRifleAmmo,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    
+	item 3030Carton
+	{
+		DisplayName = Carton of .30-30 Winchester,
+		DisplayCategory = Ammo,
+        ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}    
+	item 3030SPCarton
+	{
+		DisplayName = Carton of .30-30 Winchester (Soft-Point),
+		DisplayCategory = Ammo,
+        ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

@@ -1,0 +1,191 @@
+module Base
+{
+    item Bullets9mm
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets9mm,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	9mm Parabellum,
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item Bullets9mmJHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets9mm,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	9mm Parabellum (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item Bullets9mmPlus
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets9mm,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	9mm Parabellum +P (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item Bullets9mmM882
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets9mm,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	9x19 M882,
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_Ball,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets9mmBox
+    {
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of 9mm Parabellum,
+        DisplayCategory = Ammo,
+        Icon	=	HandgunBox,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = OpenBoxOfBullets50,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+    }
+
+    item Bullets9mmJHPBox
+    {
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of 9mm Parabellum (Hollow-Point),
+        DisplayCategory = Ammo,
+        Icon	=	HandgunBox4Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox4Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+    }
+
+    item Bullets9mmPlusBox
+    {
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of 9mm Parabellum +P (Hollow-Point),
+        DisplayCategory = Ammo,
+        Icon	=	HandgunBox3Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox3Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_Plus,
+		Count = 5,
+    }
+
+    item Bullets9mmM882Box
+    {
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of 9x19 M882,
+        DisplayCategory = Ammo,
+        Icon	=	RifleSurplus2Box,
+        MetalValue = 30,
+        WorldStaticModel = RifleSurplus2Box,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_Ball,
+		Count = 5,
+    }
+
+	item Bullets9mmCarton
+	{
+		DisplayName = Carton of 9mm Parabellum,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+
+	item Bullets9mmJHPCarton
+	{
+		DisplayName = Carton of 9mm Parabellum (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item Bullets9mmPlusCarton
+	{
+		DisplayName = Carton of 9mm Parabellum +P (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item Bullets9mmM882Carton
+	{
+		DisplayName = Carton of 9x19 M882,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Ball,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

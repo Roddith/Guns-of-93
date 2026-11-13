@@ -1,0 +1,144 @@
+module Base
+{
+    item Bullets357
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets357,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.357 Magnum,
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets357JHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets357,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.357 Magnum (Hollow-Point),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets357Hard
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets357,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.357 Magnum (Hard-Cast),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_Hard,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets357Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.98,
+        ItemType = base:normal,
+        DisplayName	=	Box of .357 Magnum,
+        Icon	=	MagnumBox2,
+        MetalValue = 30,
+        WorldStaticModel = MagnumBox2,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfBullets50,
+    }
+
+    item Bullets357JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.98,
+        ItemType = base:normal,
+        DisplayName	=	Box of .357 Magnum (Hollow-Point),
+        Icon	=	MagnumBox2Def,
+        MetalValue = 30,
+        WorldStaticModel = MagnumBox2Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+
+    item Bullets357HardBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.98,
+        ItemType = base:normal,
+        DisplayName	=	Box of .357 Magnum (Hard-Cast),
+        Icon	=	MagnumBox,
+        MetalValue = 30,
+        WorldStaticModel = MagnumBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Hard,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+
+	item Bullets357Carton
+	{
+		DisplayName = Carton of .357 Magnum,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 9.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+	item Bullets357JHPCarton
+	{
+		DisplayName = Carton of .357 Magnum (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 9.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item Bullets357HardCarton
+	{
+		DisplayName = Carton of .357 Magnum (Hard-Cast),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 9.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Hard,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

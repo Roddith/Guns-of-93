@@ -1,0 +1,202 @@
+module Base
+{
+    /****************************** ITEM_AMMOS ******************************/
+
+    item 3006Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3006Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.30-06 Springfield,
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 3006BulletsM2Ball
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3006Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.30-06 M2 Ball,
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 3006BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3006Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.30-06 Springfield (Solf-Point),
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 3006BulletsMatch
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.3006Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.30-06 Springfield (Match Grade),
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_Match,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 3006Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .30-06 Springfield,
+        Icon	=	BoxRifleAmmo3,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo3,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 3006M2BallBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .30-06 M2 Ball,
+        Icon	=	RifleSurplusBox,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplusBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 3006SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .30-06 Springfield (Solf-Point),
+        Icon	=	BoxRifleAmmo3Def,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo3Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 3006MatchBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .30-06 Springfield (Match Grade),
+        Icon	=	BoxRifleAmmo5Def,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo5Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Match,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+
+	item 3006Carton
+	{
+		DisplayName = Carton of .30-06 Springfield,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 3006M2BallCarton
+	{
+		DisplayName = Carton of .30-06 M2 Ball,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 3006SPCarton
+	{
+		DisplayName = Carton of .30-06 Springfield (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 3006MatchCarton
+	{
+		DisplayName = Carton of .30-06 Springfield (Match Grade),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Match,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

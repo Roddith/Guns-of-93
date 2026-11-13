@@ -1,0 +1,194 @@
+module Base
+{
+    item Bullets38
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets38,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.38 Special,
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets38JHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets38,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.38 Special (Hollow-Point),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets38Plus
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets38,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.38 Special +P (Hollow-Point),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets38Wad
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets38,
+        Weight	=	0.014,
+        ItemType = base:normal,
+        DisplayName	=	.38 Special (Semi-Wadcutter),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_SWC,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets38Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of .38 Special,
+        Icon	=	HandgunBox5,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox5,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = OpenBoxOfBullets50,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+    }
+
+    item Bullets38JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of .38 Special (Hollow-Point),
+        Icon	=	HandgunBox5Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox5Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+    }
+
+    item Bullets38PlusBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of .38 Special +P (Hollow-Point),
+        Icon	=	HandgunBoxDef,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_Plus,
+		Count = 5,
+    }
+
+    item Bullets38WadBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        ItemType = base:normal,
+        DisplayName	=	Box of .38 Special (Semi-Wadcutter),
+        Icon	=	HandgunBox4,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox4,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_SWC,
+		Count = 5,
+    }
+
+	item Bullets38Carton
+	{
+		DisplayName = Carton of .38 Special,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+
+	item Bullets38JHPCarton
+	{
+		DisplayName = Carton of .38 Special (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item Bullets38PlusCarton
+	{
+		DisplayName = Carton of .38 Special +P (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item Bullets38WadCarton
+	{
+		DisplayName = Carton of .38 Special (Semi-Wadcutter),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_SWC,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

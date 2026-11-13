@@ -1,26 +1,3 @@
-CaliberValue = CaliberValue or {}
-
-    CaliberValue["Base.Bullets9mm"]     = {shock = 15,  subsonic = 1,   bore = 0.125,  action = "PistolSilencedAction",   rack = "PistolSilenced"}
-    CaliberValue["Base.40Bullets"]      = {shock = 15,  subsonic = 1,   bore = 0.1875, action = "PistolSilencedAction",   rack = "PistolSilenced"}
-    CaliberValue["Base.Bullets45"]      = {shock = 15,  subsonic = 0.8, bore = 0.25,   action = "SubPistolSilencedAction", rack = "SubPistolSilenced"}
-    CaliberValue["Base.45LCBullets"]    = {shock = 15,  subsonic = 0.8, bore = 0.25,   action = "SubPistolSilencedAction", rack = "SubPistolSilenced"}
-    CaliberValue["Base.10mmBullets"]    = {shock = 20,  subsonic = 1,   bore = 0.1875, action = "MagnumSilencedAction",   rack = "MagnumSilenced"}
-    CaliberValue["Base.Bullets357"]     = {shock = 20,  subsonic = 1,   bore = 0.125,  action = "MagnumSilencedAction",   rack = "MagnumSilenced"}
-    CaliberValue["Base.Bullets44"]      = {shock = 20,  subsonic = 1,   bore = 0.25,   action = "MagnumSilencedAction",   rack = "MagnumSilenced"}
-    CaliberValue["Base.30CarBullets"]   = {shock = 20,  subsonic = 1,   bore = 0.0625, action = "MagnumSilencedAction",   rack = "MagnumSilenced"}
-    CaliberValue["Base.76239Bullets"]   = {shock = 35,  subsonic = 1,   bore = 0.0625, action = "CarbineSilencedAction",  rack = "CarbineSilenced"}
-    CaliberValue["Base.3030Bullets"]    = {shock = 35,  subsonic = 1,   bore = 0.0625, action = "CarbineSilencedAction",  rack = "CarbineSilenced"}
-    CaliberValue["Base.556Bullets"]     = {shock = 35,  subsonic = 1,   bore = 0,      action = "CarbineSilencedAction",  rack = "CarbineSilenced"}
-    CaliberValue["Base.308Bullets"]     = {shock = 40,  subsonic = 1,   bore = 0.0625, action = "RifleSilencedAction",    rack = "RifleSilenced"}
-    CaliberValue["Base.3006Bullets"]    = {shock = 40,  subsonic = 1,   bore = 0.0625, action = "RifleSilencedAction",    rack = "RifleSilenced"}
-    CaliberValue["Base.792Bullets"]     = {shock = 40,  subsonic = 1,   bore = 0.09375,action = "RifleSilencedAction",    rack = "RifleSilenced"}
-    CaliberValue["Base.Bullets38"]      = {shock = 5,   subsonic = 0.8, bore = 0.125,  action = "SubPistolSilencedAction", rack = "SubPistolSilenced"}
-    CaliberValue["Base.380Bullets"]     = {shock = 5,   subsonic = 0.8, bore = 0.125,  action = "SubPistolSilencedAction", rack = "SubPistolSilenced"}
-    CaliberValue["Base.25Bullets"]      = {shock = -5,  subsonic = 1,   bore = 0.15,   action = "22SilencedAction",       rack = "22Silenced"}
-    CaliberValue["Base.22Bullets"]      = {shock = -5,  subsonic = 1,   bore = 0.15,   action = "22SilencedAction",       rack = "22Silenced"}
-    CaliberValue["Base.SlugBullets"]    = {shock = 35,  subsonic = 1,   bore = 0.33,   action = "ShotgunSilencedAction",  rack = "ShotgunSilenced"}
-    CaliberValue["Base.ShotgunShells"]  = {shock = 35,  subsonic = 1,   bore = 0.25,   action = "ShotgunSilencedAction",  rack = "ShotgunSilenced"}
-
 local function SilencerCondition(player, weapon)
     if not instanceof(player, "IsoPlayer") then return end
     if not weapon or not instanceof(weapon, "HandWeapon") or not weapon:isRanged() then return end
@@ -29,7 +6,19 @@ local function SilencerCondition(player, weapon)
     if isClient() then return end
     local moditem = canon:getModData()
     local candur = moditem.modCan_Dur or 0
-    local caliberData = CaliberValue[weapon:getAmmoType():getItemKey()]
+    local modData = weapon:getModData()
+    local bullet = nil
+    if modData.Guns93AmmoList then
+        local list = modData.Guns93AmmoList
+        local top = list[1]
+        if not top or not top.type then
+            return nil
+        end
+        bullet = top.type
+    else
+        bullet = weapon:getAmmoType():getItemKey()
+    end
+    local caliberData = AmmoStatList[bullet]
     local shock = caliberData and caliberData.shock or 0
     local fouling = moditem.mod_fouling or 0
     local durability = 100 - (shock - candur) + (5 - (fouling / 10))
@@ -70,30 +59,67 @@ end
 
 Events.OnPlayerAttackFinished.Add(CanBooster)
 
-local function SilencerEff(player, weapon)
+function SilencerEff(player, weapon)
     if not instanceof(player, "IsoPlayer") then return end
-    if not weapon or not weapon:hasTag(Gun93Registries.guns93.Guns93) or weapon:hasTag(Gun93Registries.guns93.NoSilence) or not weapon:isRanged() then return end
+    if not weapon or not weapon:hasTag(Gun93Registries.guns93.Guns93) or not weapon:isRanged() then return end
     local canon = weapon:getWeaponPart("Canon")
-    local scriptItem = weapon:getScriptItem()
-    local baseSoundRadius = scriptItem:getSoundRadius()
-    local baseSwingSound = scriptItem:getSwingSound()
-    local muzzleFlash = scriptItem:getMuzzleFlashModelKey()
+    local weaponMod = weapon:getModData()
+    local baseSoundRadius = weaponMod.g93_soundRadius
+    local baseSwingSound = weaponMod.g93_shootSound
+    local muzzleFlash = weaponMod.g93_muzzleFlash
+    if not baseSoundRadius or not baseSwingSound or not muzzleFlash then
+        local baseGunRef = instanceItem(weapon:getFullType())
+        local remparts = baseGunRef:getAllWeaponParts()
+        for i = remparts:size() - 1, 0, -1 do
+            local part = remparts:get(i)
+            if part then baseGunRef:detachWeaponPart(part) end
+        end
+        baseSoundRadius = baseGunRef:getSoundRadius()
+        baseSwingSound = baseGunRef:getSwingSound()
+        muzzleFlash = baseGunRef:getMuzzleFlashModelKey()
+        weaponMod.g93_soundRadius = baseSoundRadius
+        weaponMod.g93_shootSound = baseSwingSound
+        weaponMod.g93_muzzleFlash = muzzleFlash
+    end
+    local currentRound = nil
+    if weapon:haveChamber() then
+        currentRound = weaponMod.Guns93Chambered
+    elseif weaponMod.Guns93AmmoList then
+        local list = weaponMod.Guns93AmmoList
+        local top = list[1]
+        if top and top.type then
+            currentRound = top.type
+        end
+    end
+    if currentRound == nil then
+        currentRound = weapon:getAmmoType():getItemKey()
+    end
+    local roundData = AmmoStatList[currentRound]
+    if roundData.caliber == weaponMod.modAlt_Ammo then
+        baseSoundRadius = weaponMod.modAlt_SoundRadius
+        baseSwingSound = weaponMod.modAlt_SwingSound
+---        muzzleFlash = weaponMod.modAlt_MuzzleFlash
+    end
+    if roundData ~= nil then
+        if roundData.soundmod then
+            baseSoundRadius = baseSoundRadius + roundData.soundmod
+        end
+    end
     local manualop = (weapon:getModData()['isMustRack'] or weapon:isRackAfterShoot()) and 0.8 or 1.0
     local swingSound = baseSwingSound
     local soundRadius = baseSoundRadius
-    if canon and canon:hasTag(Gun93Registries.guns93.Guns93Can) and canon:getCondition() > 0 then
+    if canon and canon:hasTag(Gun93Registries.guns93.Guns93Can) and canon:getCondition() > 0 and not weapon:hasTag(Gun93Registries.guns93.NoSilence) then
         local moditem = canon:getModData()
         local cansize = moditem.modBore_Eff
         local caneff = moditem.modSound_Eff
         local fouling = moditem.mod_fouling
-        local caliberData = CaliberValue[weapon:getAmmoType():getItemKey()]
-        if caliberData then
-            local subsonic = caliberData.subsonic
-            local boresize = caliberData.bore
+        if roundData then
+            local subsonic = roundData.subsonic
+            local boresize = roundData.bore
             if weapon:getModData()['isMustRack'] or weapon:isRackAfterShoot() then
-                swingSound = caliberData.rack
+                swingSound = roundData.rack
             else
-                swingSound = caliberData.action
+                swingSound = roundData.action
             end
             local bore = moditem['isOilFilter'] and 1 or (cansize - boresize)
             if bore < 0.1 then bore = 0.1 end
@@ -113,8 +139,8 @@ local function SilencerEff(player, weapon)
     end
 end
 
-Events.OnPlayerAttackFinished.Add(SilencerEff)
-Events.OnEquipPrimary.Add(SilencerEff)
+--Events.OnWeaponSwing.Add(SilencerEff)
+--Events.OnEquipPrimary.Add(SilencerEff)
 
 Events.OnGameStart.Add(function()
     local player = getPlayer()

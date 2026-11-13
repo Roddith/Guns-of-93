@@ -1,0 +1,140 @@
+module Base
+{
+    item 22Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.22Bullets,
+        Weight	=	0.004,
+        ItemType = base:normal,
+        DisplayName	=	.22 LR,
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 22RoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 22BulletsVelocity
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.22Bullets,
+        Weight	=	0.004,
+        ItemType = base:normal,
+        DisplayName	=	.22 LR (High-Velocity),
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 22RoundsWorld,
+        Tooltip = Tooltip_Ammo_Ball,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 22BulletsTarget
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.22Bullets,
+        Weight	=	0.004,
+        ItemType = base:normal,
+        DisplayName	=	.22 LR (Target-Grade),
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 22RoundsWorld,
+        Tooltip = Tooltip_Ammo_Target,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 22Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.34,
+        ItemType = base:normal,
+        DisplayName	=	Box of .22 LR,
+        Icon	=	RifleBulkBox,
+        MetalValue = 30,
+        WorldStaticModel = RifleBulkBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfBullets100,
+    }
+    item 22VelocityBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.14,
+        ItemType = base:normal,
+        DisplayName	=	Box of .22 LR (High-Velocity),
+        Icon	=	SmallRifleBox2,
+        MetalValue = 30,
+        WorldStaticModel = SmallRifleBox2,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Ball,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf40Bullets,
+    }
+    item 22TargetBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.14,
+        ItemType = base:normal,
+        DisplayName	=	Box of .22 LR (Target-Grade),
+        Icon	=	SmallRifleBox,
+        MetalValue = 30,
+        WorldStaticModel = SmallRifleBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Target,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf40Bullets,
+    }
+
+	item 22Carton
+	{
+		DisplayName = Carton of .22 LR,
+		DisplayCategory = Ammo,
+        ItemType = base:normal,
+		Weight = 3.2,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 22VelocityCarton
+	{
+		DisplayName = Carton of .22 LR (High-Velocity),
+		DisplayCategory = Ammo,
+        ItemType = base:normal,
+		Weight = 1.3,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Ball,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 22TargetCarton
+	{
+		DisplayName = Carton of .22 LR (Target-Grade),
+		DisplayCategory = Ammo,
+        ItemType = base:normal,
+		Weight = 1.3,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Target,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

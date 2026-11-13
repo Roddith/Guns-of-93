@@ -1,143 +1,107 @@
-local function RemoveAttachedWeapons()
-    if not SandboxVars.Guns93.Guns93VanillaGuns then return end
-    if not AttachedWeaponDefinitions then return end
+local Guns93RemoveZedItems = {
+    "FiberglassStock",
+    "Pistol",
+    "Pistol2",
+    "Pistol3",
+    "Revolver",
+    "Revolver_Short",
+    "Revolver_Long",
+    "TrapperCarbine",
+    "L94_Rifle",
+    "L92_Carbine",
+    "VarmintRifle",
+    "HuntingRifle",
+    "MSR7T_Rifle",
+    "JS14_Rifle",
+    "AssaultRifle",
+    "AssaultRifle2",
+    "Shotgun",
+    "ShotgunSawnoff",
+    "DoubleBarrelShotgun",
+    "DoubleBarrelShotgunSawnoff",
+    "JS3T_Shotgun",
+    "9mmClip",
+    "45Clip",
+    "44Clip",
+    "JS14_Clip",
+    "556Clip",
+    "308Clip",
+    "M14Clip",
+    "556Bullets",
+    "556Box",
+    "308Bullets",
+    "308Box",
+    "3030Bullets",
+    "3030Box",
+    "Bullets9mm",
+    "Bullets9mmBox",
+    "Bullets38",
+    "Bullets38Box",
+    "Bullets44",
+    "Bullets44Box",
+    "Bullets45",
+    "Bullets45Box",
+    "Bullets357",
+    "Bullets357Box",
+    "ShotgunShells",
+    "ShotgunShellsBox"
+}
 
-    local vanillaGuns = {
-        "Base.FiberglassStock",
-        "Base.Pistol",
-        "Base.Pistol2",
-        "Base.Pistol3",
-        "Base.Revolver",
-        "Base.Revolver_Short",
-        "Base.Revolver_Long",
-        "Base.TrapperCarbine",
-        "Base.L94_Rifle",
-        "Base.L92_Carbine",
-        "Base.VarmintRifle",
-        "Base.HuntingRifle",
-        "Base.MSR7T_Rifle",
-        "Base.JS14_Rifle",
-        "Base.AssaultRifle",
-        "Base.AssaultRifle2",
-        "Base.Shotgun",
-        "Base.ShotgunSawnoff",
-        "Base.DoubleBarrelShotgun",
-        "Base.DoubleBarrelShotgunSawnoff",
-        "Base.JS3T_Shotgun",
-        "Base.9mmClip",
-        "Base.45Clip",
-        "Base.44Clip",
-        "Base.JS14_Clip",
-        "Base.556Clip",
-        "Base.308Clip",
-        "Base.M14Clip"
-    }
+local function guns93FullTypeKey(name)
+    if not name then return nil end
+    name = tostring(name)
+    local short = name:gsub("^Base%.", "")
+    return name, short, "Base." .. short
+end
 
-    local function ClearGunsFrom(def)
-        if not def or not def.weapons then return end
-        for i = #def.weapons, 1, -1 do
-            local weapon = def.weapons[i]
-            for _, gun in ipairs(vanillaGuns) do
-                if weapon == gun then
-                    table.remove(def.weapons, i)
-                    break
+local function guns93BuildAttachedRemoveZedItems(removeList)
+    local set = {}
+    if not removeList then return set end
+    for _, name in ipairs(removeList) do
+        local full, short, base = guns93FullTypeKey(name)
+        if short and short ~= "" then
+            set[short] = true
+            set[base] = true
+            set[full] = true
+        end
+    end
+    return set
+end
+
+local function RemoveFromWeaponsList(weapons, Guns93RemoveZedItems)
+    if type(weapons) ~= "table" or not Guns93RemoveZedItems then
+        return 0
+    end
+    local removed = 0
+    local i = 1
+    while i <= #weapons do
+        local w = weapons[i]
+        local key = tostring(w or "")
+        local short = key:gsub("^Base%.", "")
+        if Guns93RemoveZedItems[key] or Guns93RemoveZedItems[short] or Guns93RemoveZedItems["Base." .. short] then
+            table.remove(weapons, i)
+            removed = removed + 1
+        else
+            i = i + 1
+        end
+    end
+    return removed
+end
+
+local function ModifyAttachedWeaponDefinitions()
+    local Guns93RemoveZedItems = guns93BuildAttachedRemoveZedItems(Guns93RemoveItems)
+    local total = 0
+    for defName, def in pairs(AttachedWeaponDefinitions) do
+        if type(def) == "table" and type(def.weapons) == "table" then
+            local n = RemoveFromWeaponsList(def.weapons, Guns93RemoveZedItems)
+            if n > 0 then
+                total = total + n
+                if #def.weapons == 0 then
+                    def.chance = 0
                 end
             end
         end
     end
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolster)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterShoulder)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterPolice)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterAnkle)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterDetective)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterArmy)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterRanger)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterSheriff)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterSWAT)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterGhillie)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterWildWest)
-    ClearGunsFrom(AttachedWeaponDefinitions.handgunHolsterLeftWildWest)
-    ClearGunsFrom(AttachedWeaponDefinitions.shotgunPolice)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackSWAT)
-    ClearGunsFrom(AttachedWeaponDefinitions.assaultRifleOnBack)
-    ClearGunsFrom(AttachedWeaponDefinitions.assaultRifleArmyOnBack)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackMisc)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackHunter)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackBagSurvivalist)
-    ClearGunsFrom(AttachedWeaponDefinitions.huntingRifleOnBack)
-    ClearGunsFrom(AttachedWeaponDefinitions.rifleOnBackGhillie)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackCrime)
-    ClearGunsFrom(AttachedWeaponDefinitions.gunOnBackBountyHunter)
-    ClearGunsFrom(AttachedWeaponDefinitions.rifleWildWest)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBack_Bandit)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBack_Early)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBack_Mid)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBack_Late)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBackBag)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBackBag_Mid)
-    ClearGunsFrom(AttachedWeaponDefinitions.meleeInBackBag_Late)
 end
 
-Events.OnGameStart.Add(RemoveAttachedWeapons)
-
-if AttachedWeaponDefinitions.handgunHolster then 
-    AttachedWeaponDefinitions.handgunHolster.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterShoulder then 
-    AttachedWeaponDefinitions.handgunHolsterShoulder.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterPolice then 
-    AttachedWeaponDefinitions.handgunHolsterPolice.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterAnkle then 
-    AttachedWeaponDefinitions.handgunHolsterAnkle.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterDetective then 
-    AttachedWeaponDefinitions.handgunHolsterDetective.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterArmy then 
-    AttachedWeaponDefinitions.handgunHolsterArmy.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterRanger then 
-    AttachedWeaponDefinitions.handgunHolsterRanger.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterSheriff then 
-    AttachedWeaponDefinitions.handgunHolsterSheriff.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterSWAT then 
-    AttachedWeaponDefinitions.handgunHolsterSWAT.weapons = {} 
-end
-if AttachedWeaponDefinitions.handgunHolsterGhillie then 
-    AttachedWeaponDefinitions.handgunHolsterGhillie.weapons = {}
-    AttachedWeaponDefinitions.handgunHolsterGhillie.chance = 70
-end
-if AttachedWeaponDefinitions.shotgunPolice then 
-    AttachedWeaponDefinitions.shotgunPolice.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackSWAT then 
-    AttachedWeaponDefinitions.gunOnBackSWAT.weapons = {} 
-end
-if AttachedWeaponDefinitions.assaultRifleOnBack then 
-    AttachedWeaponDefinitions.assaultRifleOnBack.weapons = {} 
-end
-if AttachedWeaponDefinitions.assaultRifleArmyOnBack then 
-    AttachedWeaponDefinitions.assaultRifleArmyOnBack.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackMisc then 
-    AttachedWeaponDefinitions.gunOnBackMisc.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackHunter then 
-    AttachedWeaponDefinitions.gunOnBackHunter.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackBagSurvivalist then 
-    AttachedWeaponDefinitions.gunOnBackBagSurvivalist.weapons = {} 
-end
-if AttachedWeaponDefinitions.huntingRifleOnBack then 
-    AttachedWeaponDefinitions.huntingRifleOnBack.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackCrime then 
-    AttachedWeaponDefinitions.gunOnBackCrime.weapons = {} 
-end
-if AttachedWeaponDefinitions.gunOnBackBountyHunter then 
-    AttachedWeaponDefinitions.gunOnBackBountyHunter.weapons = {} 
-end
+Events.OnPreDistributionMerge.Add(ModifyAttachedWeaponDefinitions)

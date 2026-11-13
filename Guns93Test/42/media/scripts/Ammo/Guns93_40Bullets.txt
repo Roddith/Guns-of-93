@@ -1,0 +1,96 @@
+module Base
+{
+    item 40Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.40Bullets,
+        Weight	=	0.019,
+        ItemType = base:normal,
+        DisplayName	=	.40 S&W,
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 40BulletsJHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.40Bullets,
+        Weight	=	0.019,
+        ItemType = base:normal,
+        DisplayName	=	.40 S&W (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 40Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.81,
+        ItemType = base:normal,
+        DisplayName	=	Box of .40 S&W,
+        Icon	=	HandgunBox2,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox2,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+    }
+    item 40JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.81,
+        ItemType = base:normal,
+        DisplayName	=	Box of .40 S&W (Hollow-Point),
+        Icon	=	HandgunBox2Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox2Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+    }
+
+	item 40Carton
+	{
+		DisplayName = Carton of .40 S&W,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 7.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 40JHPCarton
+	{
+		DisplayName = Carton of .40 S&W (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 7.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

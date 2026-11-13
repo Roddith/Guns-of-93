@@ -1,0 +1,102 @@
+module Base
+{
+    item 792Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.792Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	8mm Mauser,
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 792BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.792Bullets,
+        Weight	=	0.030,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	8mm Mauser (Solf-Point),
+        Icon	=	RifleRoundLong,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundLongWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 792Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 7.92x57 Mauser,
+        Icon	=	RifleSurplusBox,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplusBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 792SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 8mm Mauser (Solf-Point),
+        Icon	=	RifleSurplusBoxDef,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplusBoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+
+	item 792Carton
+	{
+		DisplayName = Carton of 8mm Mauser,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 792SPCarton
+	{
+		DisplayName = Carton of 8mm Mauser (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

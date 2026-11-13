@@ -3,6 +3,7 @@ function ISInventoryPaneContextMenu.doReloadMenuForWeapon(playerObj, weapon, con
     if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
         return old_doReloadMenuForWeapon(playerObj, weapon, context)
     end
+    local gunData = weapon:getModData()
     local playerInv = playerObj:getInventory()
     if weapon:getMagazineType() or weapon:hasTag(Gun93Registries.guns93.MoonClip) or weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip) then
         if weapon:isContainsClip() or weapon:getWeaponPart("Moonclip") then
@@ -13,6 +14,8 @@ function ISInventoryPaneContextMenu.doReloadMenuForWeapon(playerObj, weapon, con
             local subMenu = context:getNew(context)
             local noLoad = false
             local weaponType = weapon:getFullType()
+            local round1 = weapon:getAmmoType():getItemKey()
+            local round2 = weapon:getModData().modAlt_Ammo
             local magList = MagazineGunSet[weaponType]
             if magList then
                 for _, magType in ipairs(magList) do
@@ -24,13 +27,38 @@ function ISInventoryPaneContextMenu.doReloadMenuForWeapon(playerObj, weapon, con
                                 if mag:getCurrentAmmoCount() < 1 then
                                     noLoad = true
                                 end
+                                if Guns93HasMultipleCalibers(mag) then
+                                    if not round2 then
+                                        noLoad = true
+                                    end
+                                end
                             end
                             if mag:hasTag(Gun93Registries.guns93.SpeedLoader) and weapon:getCurrentAmmoCount() > 0 then
                                 noLoad = true
                             end
                             if not noLoad then
-                                subMenu:addOption(mag:getDisplayName() .. " (" .. mag:getCurrentAmmoCount() .. "/" .. mag:getMaxAmmo() .. ")", playerObj, ISInventoryPaneContextMenu.onInsertMagazine, weapon, mag)
-                                foundAny = true
+                                local magData = mag:getModData()
+                                local topRound = nil
+                                if magData.Guns93AmmoList then
+                                    local list = magData.Guns93AmmoList
+                                    if #list ~= 0 then
+                                        topRound = list[1].type
+                                    end
+                                end
+                                local ammoCheck = nil
+                                if topRound == nil then
+                                    ammoCheck = mag:getAmmoType():getItemKey()
+                                else
+                                    ammoCheck = AmmoStatList[topRound].caliber
+                                end
+                                if ammoCheck == round1 or ammoCheck == round2 then
+                                    local AmmoType = ""
+                                    if topRound ~= nil then
+                                        AmmoType = " - " .. getItemNameFromFullType(topRound)
+                                    end
+                                    subMenu:addOption(mag:getDisplayName() .. " (" .. mag:getCurrentAmmoCount() .. "/" .. mag:getMaxAmmo() .. ")" .. AmmoType, playerObj, ISInventoryPaneContextMenu.onInsertMagazine, weapon, mag)
+                                    foundAny = true
+                                end
                             end
                             noLoad = false
                         end
@@ -51,7 +79,19 @@ function ISInventoryPaneContextMenu.doReloadMenuForWeapon(playerObj, weapon, con
                             noLoad = true
                         end
                         if not noLoad then
-                            subMenu:addOption(mag:getDisplayName() .. " (" .. mag:getCurrentAmmoCount() .. "/" .. mag:getMaxAmmo() .. ")", playerObj, ISInventoryPaneContextMenu.onInsertMagazine, weapon, mag)
+                            local magData = mag:getModData()
+                            local topRound = nil
+                            if magData.Guns93AmmoList then
+                                local list = magData.Guns93AmmoList
+                                if #list ~= 0 then
+                                    topRound = list[1].type
+                                end
+                            end
+                            local AmmoType = ""
+                            if topRound ~= nil then
+                                AmmoType = " - " .. getItemNameFromFullType(topRound)
+                            end
+                            subMenu:addOption(mag:getDisplayName() .. " (" .. mag:getCurrentAmmoCount() .. "/" .. mag:getMaxAmmo() .. ")" .. AmmoType, playerObj, ISInventoryPaneContextMenu.onInsertMagazine, weapon, mag)
                             foundAny = true
                         end
                         noLoad = false
@@ -153,4 +193,80 @@ ISInventoryPaneContextMenu.onInsertMagazine = function(playerObj, weapon, magazi
         ISTimedActionQueue.add(ISUnloadRackFirearm:new(playerObj, weapon))
     end
     ISTimedActionQueue.add(ISInsertMagazine:new(playerObj, weapon, magazine));
+end
+
+local function guns93RoundName(fullType)
+    if not fullType then return nil end
+    local name = getItemNameFromFullType(fullType)
+    if name and name ~= "" then
+        return name
+    end
+    return tostring(fullType)
+end
+
+local function guns93TopAmmo(mag, maxRounds)
+    maxRounds = maxRounds or 2
+    if not mag or maxRounds < 1 then
+        return nil
+    end
+    local list = mag:getModData().Guns93AmmoList
+    if not list or #list < 1 then
+        return nil
+    end
+    local roundsDisplayed = "Top Two Rounds:"
+    if mag:hasTag(Gun93Registries.guns93.AmmoBox) then
+        roundsDisplayed = "Visible Belt:"
+    end
+    if mag:hasTag(Gun93Registries.guns93.SpeedLoader) or mag:hasTag(Gun93Registries.guns93.StripperClip) or mag:hasTag(Gun93Registries.guns93.SpeedStrip) or mag:hasTag(Gun93Registries.guns93.AmmoBelt) then
+        roundsDisplayed = "Rounds Loaded:"
+    end
+    local lines = {roundsDisplayed}
+    local remaining = maxRounds
+    for i = 1, #list do
+        if remaining <= 0 then
+            break
+        end
+        local entries = list[i]
+        if entries and entries.type and (entries.count or 0) > 0 then
+            local show = math.min(entries.count or 0, remaining)
+            table.insert(lines, string.format("%s x%d", guns93RoundName(entries.type), show))
+            remaining = remaining - show
+        end
+    end
+    if #lines == 1 then
+        return nil
+    end
+    return lines
+end
+
+local ISToolTipInv_render_Old = ISToolTipInv.render
+function ISToolTipInv:render()
+    ISToolTipInv_render_Old(self)
+    if not self.item or not self.item:hasTag(Gun93Registries.guns93.Guns93Mag) then
+        return
+    end
+    local number = 2
+    if self.item:hasTag(Gun93Registries.guns93.AmmoBox) then
+        number = 5
+    end
+    if self.item:hasTag(Gun93Registries.guns93.SpeedLoader) or self.item:hasTag(Gun93Registries.guns93.StripperClip) or self.item:hasTag(Gun93Registries.guns93.SpeedStrip) or self.item:hasTag(Gun93Registries.guns93.AmmoBelt) then
+        number = self.item:getMaxAmmo()
+    end
+    local lines = guns93TopAmmo(self.item, number)
+    if not lines or not self.tooltip then
+        return
+    end
+    local font = UIFont.Small
+    local fh = getTextManager():getFontHeight(font)
+    local pad = 4
+    local extra = (#lines * fh) + pad
+    local oldH = self.tooltip:getHeight()
+    local oldW = self.tooltip:getWidth()
+    self.tooltip:setHeight(oldH + extra)
+    if self.tooltip.DrawTextureScaledColor then
+        self.tooltip:DrawTextureScaledColor(nil, 0, oldH - 1, oldW, extra + 1, 0, 0, 0, 0.8)
+    end
+    for i, line in ipairs(lines) do
+        self.tooltip:DrawText(font, line, 5, oldH + (i - 1) * fh, 0.9, 0.9, 0.9, 1)
+    end
 end

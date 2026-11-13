@@ -1,0 +1,95 @@
+module Base
+{
+    item 380Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.380Bullets,
+        Weight	=	0.013,
+        ItemType = base:normal,
+        DisplayName	=	.380 Auto,
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 380BulletsJHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.380Bullets,
+        Weight	=	0.013,
+        ItemType = base:normal,
+        DisplayName	=	.380 Auto (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 380Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.55,
+        ItemType = base:normal,
+        DisplayName	=	Box of .380 Auto,
+        Icon	=	HandgunBox4,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox4,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+    item 380JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.55,
+        ItemType = base:normal,
+        DisplayName	=	Box of .380 Auto (Hollow-Point),
+        Icon	=	HandgunBox4Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox4Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+
+	item 380Carton
+	{
+		DisplayName = Carton of .380 Auto,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.2,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 380JHPCarton
+	{
+		DisplayName = Carton of .380 Auto (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 5.2,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

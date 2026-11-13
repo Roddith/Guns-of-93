@@ -26,6 +26,7 @@ table.insert(SpawnCrimeLongGunCommon, "Rug1022");
 table.insert(SpawnPistolCommon, "Buckmark"); 
 table.insert(SpawnPistolCommon, "J22"); 
 table.insert(SpawnPistolCommon, "Rugmark"); 
+table.insert(SpawnPistolRare, "J22"); 
 table.insert(SpawnPistolUncommon, "Buckmark"); 
 table.insert(SpawnPistolUncommon, "J22"); 
 table.insert(SpawnPistolUncommon, "Rugmark"); 
@@ -42,6 +43,7 @@ table.insert(SpawnStoreHandgunCommon, "J22");
 table.insert(SpawnStoreHandgunCommon, "Rugmark"); 
 table.insert(SpawnStoreHandgunCommon, "SW17"); 
 table.insert(SpawnStoreHandgunRare, "Diamondback22"); 
+table.insert(SpawnStoreHandgunRare, "J22"); 
 table.insert(SpawnStoreHandgunUncommon, "Buckmark"); 
 table.insert(SpawnStoreHandgunUncommon, "Diamondback22"); 
 table.insert(SpawnStoreHandgunUncommon, "J22"); 
@@ -57,8 +59,11 @@ end
 
 if not SandboxVars.Guns93.Guns9325ACPAmmoDistro then 
 table.insert(SpawnBUGRare, "Bobcat"); 
+table.insert(SpawnBUGRare, "Raven25"); 
 table.insert(SpawnBUGUncommon, "Bobcat"); 
+table.insert(SpawnBUGUncommon, "Raven25"); 
 table.insert(SpawnBUGVaryRare, "Bobcat"); 
+table.insert(SpawnBUGVaryRare, "Raven25"); 
 table.insert(SpawnCrimeHandgunCommon, "Raven25"); 
 table.insert(SpawnCrimeHandgunRare, "Bobcat"); 
 table.insert(SpawnCrimeHandgunRare, "Raven25"); 
@@ -67,10 +72,12 @@ table.insert(SpawnCrimeHandgunUncommon, "Raven25");
 table.insert(SpawnCrimeHandgunVaryRare, "Bobcat"); 
 table.insert(SpawnCrimeHandgunVaryRare, "Raven25"); 
 table.insert(SpawnPistolCommon, "Bobcat"); 
+table.insert(SpawnPistolCommon, "Raven25"); 
 table.insert(SpawnPistolRare, "Raven25"); 
 table.insert(SpawnPistolUncommon, "Raven25"); 
 table.insert(SpawnStoreHandgunCommon, "Bobcat"); 
 table.insert(SpawnStoreHandgunCommon, "Raven25"); 
+table.insert(SpawnStoreHandgunRare, "Raven25"); 
 table.insert(SpawnStoreHandgunUncommon, "Raven25"); 
 end
 
@@ -95,16 +102,22 @@ table.insert(SpawnCrimeHandgunUncommon, "P380");
 table.insert(SpawnCrimeHandgunVaryRare, "83Cheetah"); 
 table.insert(SpawnCrimeHandgunVaryRare, "Hammerless"); 
 table.insert(SpawnCrimeHandgunVaryRare, "P380"); 
+table.insert(SpawnCrimeLongGunRare, "MAC11A1"); 
+table.insert(SpawnNFAGunRare, "MAC11A1"); 
+table.insert(SpawnNFAGunUncommon, "MAC11A1"); 
+table.insert(SpawnNFAGunVaryRare, "MAC11A1"); 
 table.insert(SpawnPistolCommon, "Hammerless"); 
 table.insert(SpawnPistolCommon, "P380"); 
 table.insert(SpawnPistolRare, "83Cheetah"); 
 table.insert(SpawnPistolRare, "Hammerless"); 
+table.insert(SpawnPistolRare, "P380"); 
 table.insert(SpawnPistolRare, "PPK"); 
 table.insert(SpawnPistolUncommon, "83Cheetah"); 
 table.insert(SpawnPistolUncommon, "P380"); 
 table.insert(SpawnStoreHandgunCommon, "P380"); 
 table.insert(SpawnStoreHandgunRare, "83Cheetah"); 
 table.insert(SpawnStoreHandgunRare, "Hammerless"); 
+table.insert(SpawnStoreHandgunRare, "P380"); 
 table.insert(SpawnStoreHandgunRare, "PPK"); 
 table.insert(SpawnStoreHandgunUncommon, "Hammerless"); 
 table.insert(SpawnStoreHandgunUncommon, "P380"); 
@@ -162,6 +175,7 @@ table.insert(SpawnCrimeHandgunUncommon, "RugP89");
 table.insert(SpawnCrimeHandgunVaryRare, "Glock17L"); 
 table.insert(SpawnCrimeLongGunCommon, "TEC9"); 
 table.insert(SpawnCrimeLongGunCommon, "TEC9"); 
+table.insert(SpawnCrimeLongGunRare, "MAC11"); 
 table.insert(SpawnCrimeLongGunRare, "TEC9"); 
 table.insert(SpawnCrimeLongGunVaryRare, "CalicoRifle"); 
 table.insert(SpawnCrimeLongGunVaryRare, "TEC9"); 
@@ -170,11 +184,14 @@ table.insert(SpawnMilitaryHandgunRare, "M9");
 table.insert(SpawnMilitaryHandgunUncommon, "M9"); 
 table.insert(SpawnMilitaryHandgunVaryRare, "M9"); 
 table.insert(SpawnMilitaryHandgunVaryRare, "M9"); 
+table.insert(SpawnNFAGunRare, "MAC11"); 
 table.insert(SpawnNFAGunRare, "MiniUzi"); 
 table.insert(SpawnNFAGunRare, "Uzi"); 
+table.insert(SpawnNFAGunUncommon, "MAC11"); 
 table.insert(SpawnNFAGunUncommon, "Uzi"); 
 table.insert(SpawnNFAGunVaryRare, "Colt9mm"); 
 table.insert(SpawnNFAGunVaryRare, "HK94"); 
+table.insert(SpawnNFAGunVaryRare, "MAC11"); 
 table.insert(SpawnNFAGunVaryRare, "MiniUzi"); 
 table.insert(SpawnNFAGunVaryRare, "Uzi"); 
 table.insert(SpawnPistolCommon, "Beretta92FS"); 
@@ -217,6 +234,7 @@ table.insert(SpawnStoreRifleRare, "TEC9");
 table.insert(SpawnStoreRifleRare, "UziCarbine"); 
 table.insert(SpawnStoreRifleVaryRare, "CalicoPistol"); 
 table.insert(SpawnStoreRifleVaryRare, "CalicoRifle"); 
+table.insert(SpawnStoreRifleVaryRare, "MAC11"); 
 table.insert(SpawnStoreRifleVaryRare, "MicroUzi"); 
 table.insert(SpawnStoreRifleVaryRare, "MiniUziCar"); 
 table.insert(SpawnStoreRifleVaryRare, "UziCarbine"); 
@@ -227,6 +245,7 @@ table.insert(SpawnTacRifleVaryRare, "CalicoPistol");
 table.insert(SpawnTacRifleVaryRare, "CalicoRifle"); 
 table.insert(SpawnTacRifleVaryRare, "Colt9mm"); 
 table.insert(SpawnTacRifleVaryRare, "HK94"); 
+table.insert(SpawnTacRifleVaryRare, "MAC11"); 
 table.insert(SpawnTacRifleVaryRare, "MicroUzi"); 
 table.insert(SpawnTacRifleVaryRare, "MiniUziCar"); 
 table.insert(SpawnTacRifleVaryRare, "TEC9"); 
@@ -235,7 +254,6 @@ end
 
 
 if not SandboxVars.Guns93.Guns939mmAmmoDistro or not SandboxVars.Guns93.GunsAutoDistro then 
-table.insert(SpawnPoliceLongGunRare, "MP5"); 
 table.insert(SpawnPoliceLongGunVaryRare, "M635"); 
 table.insert(SpawnPoliceLongGunVaryRare, "M635"); 
 table.insert(SpawnPoliceLongGunVaryRare, "MP5"); 
@@ -342,9 +360,7 @@ end
 if not SandboxVars.Guns93.Guns9345ColtAmmoDistro then
 table.insert(SpawnCnRGunRare, "ColtArmy"); 
 table.insert(SpawnCnRGunVaryRare, "ColtArmy"); 
-table.insert(SpawnCnRGunVaryRare, "ColtArmy357"); 
 table.insert(SpawnRevolverVaryRare, "ColtArmy"); 
-table.insert(SpawnRevolverVaryRare, "ColtArmy357"); 
 end
 
 
@@ -361,6 +377,7 @@ end
 
 
 if not SandboxVars.Guns93.Guns93357MAGAmmoDistro then
+table.insert(SpawnCnRGunVaryRare, "ColtArmy357"); 
 table.insert(SpawnCrimeHandgunCommon, "SP101"); 
 table.insert(SpawnCrimeHandgunRare, "GP100"); 
 table.insert(SpawnCrimeHandgunUncommon, "GP100"); 
@@ -393,6 +410,7 @@ table.insert(SpawnRevolverUncommon, "SP101");
 table.insert(SpawnRevolverUncommon, "SP101"); 
 table.insert(SpawnRevolverUncommon, "SW586"); 
 table.insert(SpawnRevolverUncommon, "SW586"); 
+table.insert(SpawnRevolverVaryRare, "ColtArmy357"); 
 table.insert(SpawnSportRifleCommon, "Win94357"); 
 table.insert(SpawnStoreHandgunCommon, "SW586"); 
 table.insert(SpawnStoreHandgunCommon, "SW65"); 
@@ -882,4 +900,8 @@ table.insert(SpawnTacShotgunUncommon, "Ithaca37MP");
 table.insert(SpawnTacShotgunUncommon, "Ithaca37Riot"); 
 table.insert(SpawnTacShotgunUncommon, "Moss590"); 
 table.insert(SpawnTacShotgunUncommon, "Rem1187P"); 
+end
+
+
+if not SandboxVars.Guns93.Guns93SlugsAmmoDistro then
 end

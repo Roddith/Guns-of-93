@@ -1,0 +1,143 @@
+module Base
+{
+    item 76239Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.76239Bullets,
+        Weight	=	0.022,
+        ItemType = base:normal,
+        DisplayName	=	7.62x39 Soviet,
+        Icon	=	76239Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 76239RoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 76239BulletsBC
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.76239Bullets,
+        Weight	=	0.022,
+        ItemType = base:normal,
+        DisplayName	=	7.62x39 Soviet (Brass-Cased),
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 76239BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.76239Bullets,
+        Weight	=	0.022,
+        ItemType = base:normal,
+        DisplayName	=	7.62x39 Soviet (Soft-Point),
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 76239Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.36,
+        ItemType = base:normal,
+        DisplayName	=	Box 7.62x39 Soviet,
+        Icon	=	BoxRifleAmmo5,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo5,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 76239BCBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.36,
+        ItemType = base:normal,
+        DisplayName	=	Box 7.62x39 Soviet (Brass-Cased),
+        Icon	=	BoxRifleAmmo3Def,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo3Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 76239SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.36,
+        ItemType = base:normal,
+        DisplayName	=	Box 7.62x39 Soviet (Soft-Point),
+        Icon	=	RifleSurplus2BoxDef,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplus2BoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    
+	item 76239Carton
+	{
+		DisplayName = Carton of 7.62x39 Soviet,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}    
+	item 76239BCCarton
+	{
+		DisplayName = Carton of 7.62x39 Soviet (Brass-Cased),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}    
+	item 76239SPCarton
+	{
+		DisplayName = Carton of 7.62x39 Soviet (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

@@ -107,16 +107,32 @@ function UseBayonet(weapon, player)
                 newItem:setContainsClip(false)
             end
         end
+        if md.Guns93Chambered then
+            newItem:getModData().Guns93Chambered = md.Guns93Chambered
+        end
+        if md.Guns93AmmoList then
+            newItem:getModData().Guns93AmmoList = md.Guns93AmmoList
+        end
+        if md.Guns93SpentList then
+            newItem:getModData().Guns93SpentList = md.Guns93SpentList
+        end
         newItem:setMaxAmmo(weapon:getMaxAmmo())
         newItem:setWeaponSprite(weapon:getWeaponSprite())
         newItem:setTexture(weapon:getTexture())
+        if md.Guns93Icon ~= nil then
+            if not isClient() then
+                newItem:getModData().Guns93Icon = md.Guns93Icon
+            end
+            if isClient() then
+                newItem:setTexture(getTexture("media/textures/item_" .. md.Guns93Icon .. ".png"))
+            end
+        end
         newItem:setCondition(weapon:getCondition())
         newItem:setHaveBeenRepaired(weapon:getHaveBeenRepaired())
         newItem:setBloodLevel(weapon:getBloodLevel())
         newItem:getModData().mod_fouling = md.mod_fouling
         newItem:setFavorite(weapon:isFavorite())
         newItem:setActivated(weapon:isActivated())
---        newItem:setAttachedSlot(weapon:getAttachedSlot())
         newItem:setCurrentAmmoCount(weapon:getCurrentAmmoCount())
         if newItem:haveChamber() and weapon:isRoundChambered() then
             newItem:setRoundChambered(true)
@@ -136,14 +152,21 @@ function UseBayonet(weapon, player)
             player:setPrimaryHandItem(newItem)
             player:setSecondaryHandItem(newItem)
         end
-	    local hotBar = getPlayerHotbar(player:getPlayerNum())
-        if hotBar:isInHotbar(weapon) then -- hotbar
-            local itemSlot = weapon:getAttachedSlot()
-            hotBar:removeItem(weapon, false)
-            local slotDef = hotBar.availableSlot[itemSlot].def
-            hotBar:attachItem(newItem, slotDef.attachments[newItem:getAttachmentType()], itemSlot, slotDef, false)
-            hotBar.needsRefresh = true
-            hotBar:update()
+        if weapon:getAttachedSlot() > 0 then
+            if not isServer() then
+                local hotBar = getPlayerHotbar(player:getPlayerNum())
+                if hotBar:isInHotbar(weapon) then
+                    local itemSlot = weapon:getAttachedSlot()
+                    hotBar:removeItem(weapon, false)
+                    local slotDef = hotBar.availableSlot[itemSlot].def
+                    hotBar:attachItem(newItem, slotDef.attachments[newItem:getAttachmentType()], itemSlot, slotDef, false)
+                    hotBar.needsRefresh = true
+                    hotBar:update()
+                end
+            elseif isServer() then
+                newItem:setAttachedSlot(weapon:getAttachedSlot())
+                sendServerCommand(player, "bayonet", "hotbar", {itemID = newItem:getID(), slotIndex = newItem:getAttachedSlot()})
+            end
         end
         return newItem
     end
@@ -200,6 +223,7 @@ function Guns93UseBayonetAction:perform()
 end
 
 function Guns93UseBayonetAction:complete()
+    local getIcon = self.item:getIcon()
     local newItem = UseBayonet(self.item, self.character)
     if newItem then
         self.character:setPrimaryHandItem(newItem)
@@ -207,12 +231,8 @@ function Guns93UseBayonetAction:complete()
         syncItemModData(self.character, newItem)
         syncHandWeaponFields(self.character, newItem)
     end
-    if not isClient() then
-        sendServerCommand("bayonet", "toggle", {
-            playerOnlineID = self.character:getOnlineID(),
-            storeGun = newItem:getModData().isStoreGun,
-            itemID = newItem:getID(),
-        })
+    if isServer() then
+        sendServerCommand("bayonet", "toggle", {playerOnlineID = self.character:getOnlineID(), storeGun = newItem:getModData().isStoreGun, itemID = newItem:getID(), itemTex = newItem:getModData().Guns93Icon or getIcon})
     end
     return true
 end

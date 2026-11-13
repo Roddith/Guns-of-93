@@ -117,6 +117,7 @@ function Guns93UseCleaningKitAction:complete()
         end
     end
     self.item:setJobDelta(0.0)
+    self.item:setJobType(nil)
     return true
 end
 
@@ -128,6 +129,7 @@ end
 function Guns93UseCleaningKitAction:stop()
     ISBaseTimedAction.stop(self)
     self.item:setJobDelta(0.0)
+    self.item:setJobType(nil)
 end
 
 -- Repair Firearm
@@ -420,19 +422,34 @@ function Guns93StripFirearm(item, player)
         sendAddItemToContainer(player:getInventory(), removebayo)
     end
     if item:haveChamber() and item:isRoundChambered() then
-        local chambered = instanceItem(item:getAmmoType():getItemKey())
-        player:getInventory():AddItem(chambered)
-        sendAddItemToContainer(player:getInventory(), chambered)
+        local chambered = Guns93RemoveChambered(item)
+        if chambered == nil then
+            chambered = item:getAmmoType():getItemKey()
+        end
+        local bullet = instanceItem(chambered)
+        player:getInventory():AddItem(bullet)
+        sendAddItemToContainer(player:getInventory(), bullet)
     end
     if item:isContainsClip() then
         local remMag = instanceItem(item:getMagazineType())
         remMag:setCurrentAmmoCount(item:getCurrentAmmoCount())
+        Guns93TransferAmmoList(item, remMag, item:getCurrentAmmoCount())
         player:getInventory():AddItem(remMag)
         sendAddItemToContainer(player:getInventory(), remMag)
         item:setContainsClip(false)
         item:setCurrentAmmoCount(0)
     elseif item:getCurrentAmmoCount() > 0 then
-        player:getInventory():AddItems(item:getAmmoType():getItemKey(), item:getCurrentAmmoCount())
+        local itemKey = Guns93RemoveAmmoType(item)
+        if itemKey == nil then
+		    itemKey = item:getAmmoType():getItemKey();
+        end
+        local ammoCount = item:getCurrentAmmoCount()
+        while ammoCount > 0 do
+		    local newBullet = instanceItem(itemKey);
+		    player:getInventory():AddItem(newBullet)
+            sendAddItemToContainer(player:getInventory(), newBullet)
+            ammoCount = ammoCount - 1
+        end
         item:setCurrentAmmoCount(0)
     end
     local remparts = item:getAllWeaponParts()

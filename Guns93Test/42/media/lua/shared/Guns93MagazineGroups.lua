@@ -50,6 +50,7 @@ MagazineGunSet = MagazineGunSet or {}
 	MagazineGunSet["Base.MP5SD"] = MagazineGunSet["Base.MP5"]
 
 	MagazineGunSet["Base.MAC10"] = {"Base.MAC10Mag","Base.MACGreaseMag"}
+	MagazineGunSet["Base.MAC11A1"] = {"Base.MAC11A1Mag","Base.16MAC11A1Mag"}
 	MagazineGunSet["Base.M3GreaseGun"] = {"Base.M3GreaseMag","Base.MACGreaseMag"}
 	MagazineGunSet["Base.M1Carbine"] = {"Base.M1CarMag","Base.30M1CarMag"}
 
@@ -105,36 +106,27 @@ MagazineGunSet = MagazineGunSet or {}
         table.insert(MagazineGunSet["Base.TommyM1928"], magName)
     end
 
-	MagazineGunSet["Base.ColtDet"] = {"Base.HKSDSA38","Base.SpeedStrip38"}
+	MagazineGunSet["Base.ColtDet"] = {"Base.HKSDSA38","Base.SpeedStrip357"}
 	MagazineGunSet["Base.Diamondback"] = MagazineGunSet["Base.ColtDet"]
 
-	MagazineGunSet["Base.SW36"] = {"Base.HKS36A38","Base.SpeedStrip38"}
-	MagazineGunSet["Base.SW10"] = {"Base.HKS10A38","Base.Size4CompII38","Base.Size4CompIII38","Base.SpeedStrip38"}
-	MagazineGunSet["Base.SW65"] = {"Base.HKS10A357","Base.Size4CompII357","Base.Size4CompIII357","Base.SpeedStrip357"}
-	MagazineGunSet["Base.SW65_Alt"] = MagazineGunSet["Base.SW10"]
+	MagazineGunSet["Base.SW36"] = {"Base.HKS36A357","Base.SpeedStrip357"}
+	MagazineGunSet["Base.SW10"] = {"Base.HKS10A357","Base.Size4CompII357","Base.Size4CompIII357","Base.SpeedStrip357"}
+	MagazineGunSet["Base.SW65"] = MagazineGunSet["Base.SW10"]
 
 	MagazineGunSet["Base.SW17"] = {"Base.HKS22K"}
 	MagazineGunSet["Base.Diamondback22"] = MagazineGunSet["Base.SW17"]
 
 	MagazineGunSet["Base.SW586"] = {"Base.HKS586A357","Base.Size5CompII357","Base.Size5CompIII357","Base.SpeedStrip357"}
-	MagazineGunSet["Base.SW586_Alt"] = {"Base.HKS586A38","Base.Size5CompII38","Base.Size5CompIII38","Base.SpeedStrip38"}
 	MagazineGunSet["Base.GP100"] = MagazineGunSet["Base.SW586"]
-	MagazineGunSet["Base.GP100_Alt"] = MagazineGunSet["Base.SW586_Alt"]
 
 	MagazineGunSet["Base.Python"] = {"Base.HKSPYA357","Base.Size3CompII357","Base.Size3CompIII357","Base.SpeedStrip357"}
-	MagazineGunSet["Base.Python_Alt"] = {"Base.HKSPYA38","Base.Size3CompII38","Base.Size3CompIII38","Base.SpeedStrip38"}
 
 	MagazineGunSet["Base.SecuritySix"] = {"Base.HKSMK3A357","Base.Size6CompII357","Base.Size6CompIII357","Base.SpeedStrip357"}
-	MagazineGunSet["Base.SecuritySix_Alt"] = MagazineGunSet["Base.SecuritySix_Alt"]
 	MagazineGunSet["Base.ColtTrooper"] = MagazineGunSet["Base.SecuritySix"]
-	MagazineGunSet["Base.ColtTrooper_Alt"] = MagazineGunSet["Base.SecuritySix_Alt"]
 	MagazineGunSet["Base.ColtLawman"] = MagazineGunSet["Base.SecuritySix"]
-	MagazineGunSet["Base.ColtLawman_Alt"] = MagazineGunSet["Base.SecuritySix_Alt"]
 	MagazineGunSet["Base.KingCobra"] = MagazineGunSet["Base.SecuritySix"]
-	MagazineGunSet["Base.KingCobra_Alt"] = MagazineGunSet["Base.SecuritySix_Alt"]
 
 	MagazineGunSet["Base.GP101"] = {"Base.HKS36A357","Base.SpeedStrip357"}
-	MagazineGunSet["Base.GP101_Alt"] = {"Base.HKS36A38","Base.SpeedStrip38"}
 	MagazineGunSet["Base.SW625"] = {"Base.45Moonclip"}
 
 	MagazineGunSet["Base.SW29"] = {"Base.HKS29M44","Base.SpeedStrip44"}

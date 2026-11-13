@@ -1,0 +1,104 @@
+module Base
+{
+    item 556BeltLink
+    {
+        DisplayCategory = Ammo,
+        Count	=	1,
+        Weight	=	0.001,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	5.56 Belt Link,
+        Icon	=	BeltLink,
+        MetalValue = 1,
+        WorldStaticModel = BeltLink,
+		Tags = base:HasMetal,
+    }
+
+    item 556LinkBox
+    {
+        DisplayCategory = Ammo,
+        CanStack         = TRUE,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 5.56 Belt Links,
+        Icon	=	LinkBox,
+        MetalValue = 50,
+        WorldStaticModel = LinkBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		Tags = base:HasMetal,
+    }
+
+    item 308BeltLink
+    {
+        DisplayCategory = Ammo,
+        Count	=	1,
+        Weight	=	0.001,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.308 Belt Link,
+        Icon	=	BeltLink,
+        MetalValue = 1,
+        WorldStaticModel = BeltLink,
+		Tags = base:HasMetal,
+    }
+
+    item 308LinkBox
+    {
+        DisplayCategory = Ammo,
+        CanStack         = TRUE,
+        Weight	=	0.5,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .308 Belt Links,
+        Icon	=	LinkBox,
+        MetalValue = 50,
+        WorldStaticModel = LinkBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		Tags = base:HasMetal,
+    }
+
+    item 556AmmoBeltBox
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        DisplayName	=	Ammo Box,
+        Weight = 1.0,
+        Icon = AmmoCase,
+        OnCreate = Guns93GunConfig.AmmoBeltBox,
+        CanHaveHoles = false,
+        Capacity = 6,
+        CloseSound = CloseAmmunitionBox,
+        ClothingItem = Bag_AmmoBox_RHand,
+        OpenSound = OpenAmmunitionBox,
+        PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+        RunSpeedModifier = 0.99,
+        WeightReduction = 50,
+        WorldStaticModel = AmmoBox_Ground,
+    }
+
+    item 308AmmoBeltBox
+    {
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        DisplayName	=	Ammo Box,
+        Weight = 1.0,
+        Icon = AmmoCase,
+        OnCreate = Guns93GunConfig.AmmoBeltBox,
+        CanHaveHoles = false,
+        Capacity = 6,
+        CloseSound = CloseAmmunitionBox,
+        ClothingItem = Bag_AmmoBox_RHand,
+        OpenSound = OpenAmmunitionBox,
+        PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+        RunSpeedModifier = 0.99,
+        WeightReduction = 50,
+        WorldStaticModel = AmmoBox_Ground,
+    }
+}

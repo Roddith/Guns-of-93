@@ -1,0 +1,140 @@
+module Base
+{
+    item Bullets45
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets45,
+        Weight	=	0.028,
+        ItemType = base:normal,
+        DisplayName	=	.45 Auto,
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item Bullets45JHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets45,
+        Weight	=	0.028,
+        ItemType = base:normal,
+        DisplayName	=	.45 Auto (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item Bullets45Plus
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.Bullets45,
+        Weight	=	0.028,
+        ItemType = base:normal,
+        DisplayName	=	.45 Auto +P (Hollow-Point),
+        Icon	=	PistolRounds,
+        MetalValue = 1,
+        WorldStaticModel = PistolRoundsWorld,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item Bullets45Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.15,
+        ItemType = base:normal,
+        DisplayName	=	Box of .45 Auto,
+        Icon	=	HandgunBox3,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox3,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfBullets50,
+    }
+    item Bullets45JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.15,
+        ItemType = base:normal,
+        DisplayName	=	Box of .45 Auto (Hollow-Point),
+        Icon	=	HandgunBox3Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox3Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+    item Bullets45PlusBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.15,
+        ItemType = base:normal,
+        DisplayName	=	Box of .45 Auto +P (Hollow-Point),
+        Icon	=	HandgunBox2Def,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox2Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Plus,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+
+	item Bullets45Carton
+	{
+		DisplayName = Carton of .45 Auto,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+	item Bullets45JHPCarton
+	{
+		DisplayName = Carton of .45 Auto (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item Bullets45PlusCarton
+	{
+		DisplayName = Carton of .45 Auto +P (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Plus,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

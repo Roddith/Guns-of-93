@@ -42,25 +42,10 @@ module Base
 	DisplayName	= Safariland Size 3 Comp III Speedloaders (.357 Magnum),
 	Icon	=	CompIIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIIILoader,
 	GunType	=	Base.Python,
-	WorldStaticModel	=	CompIIILoader,
-    Tooltip = Tooltip_Size3Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size3CompIII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.15,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 3 Comp III Speedloaders (.38 Special),
-	Icon	=	CompIIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIIILoader,
-	GunType	=	Base.Python_Alt,
 	WorldStaticModel	=	CompIIILoader,
     Tooltip = Tooltip_Size3Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -74,25 +59,10 @@ module Base
 	DisplayName	= Safariland Size 4 Comp III Speedloaders (.357 Magnum),
 	Icon	=	CompIIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIIILoader,
 	GunType	=	Base.SW65,
-	WorldStaticModel	=	CompIIILoader,
-    Tooltip = Tooltip_Size4Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size4CompIII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.15,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 4 Comp III Speedloaders (.38 Special),
-	Icon	=	CompIIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIIILoader,
-	GunType	=	Base.SW65_Alt,
 	WorldStaticModel	=	CompIIILoader,
     Tooltip = Tooltip_Size4Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -106,25 +76,10 @@ module Base
 	DisplayName	= Safariland Size 5 Comp III Speedloaders (.357 Magnum),
 	Icon	=	CompIIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIIILoader,
 	GunType	=	Base.GP100,
-	WorldStaticModel	=	CompIIILoader,
-    Tooltip = Tooltip_Size5Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size5CompIII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.15,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 5 Comp III Speedloaders (.38 Special),
-	Icon	=	CompIIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIIILoader,
-	GunType	=	Base.GP100_Alt,
 	WorldStaticModel	=	CompIIILoader,
     Tooltip = Tooltip_Size5Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -138,25 +93,10 @@ module Base
 	DisplayName	= Safariland Size 6 Comp III Speedloaders (.357 Magnum),
 	Icon	=	CompIIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIIILoader,
 	GunType	=	Base.SecuritySix,
-	WorldStaticModel	=	CompIIILoader,
-    Tooltip = Tooltip_Size6Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size6CompIII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.15,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 6 Comp III Speedloaders (.38 Special),
-	Icon	=	CompIIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIIILoader,
-	GunType	=	Base.SecuritySix_Alt,
 	WorldStaticModel	=	CompIIILoader,
     Tooltip = Tooltip_Size6Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag2; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -170,25 +110,10 @@ module Base
 	DisplayName	= Safariland Size 3 Comp II Speedloaders (.357 Magnum),
 	Icon	=	CompIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIILoader,
 	GunType	=	Base.Python,
-	WorldStaticModel	=	CompIILoader,
-    Tooltip = Tooltip_Size3Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size3CompII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 3 Comp II Speedloaders (.38 Special),
-	Icon	=	CompIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIILoader,
-	GunType	=	Base.Python_Alt,
 	WorldStaticModel	=	CompIILoader,
     Tooltip = Tooltip_Size3Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -202,25 +127,10 @@ module Base
 	DisplayName	= Safariland Size 4 Comp II Speedloaders (.357 Magnum),
 	Icon	=	CompIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIILoader,
 	GunType	=	Base.SW65,
-	WorldStaticModel	=	CompIILoader,
-    Tooltip = Tooltip_Size4Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size4CompII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 4 Comp II Speedloaders (.38 Special),
-	Icon	=	CompIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIILoader,
-	GunType	=	Base.SW65_Alt,
 	WorldStaticModel	=	CompIILoader,
     Tooltip = Tooltip_Size4Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -234,25 +144,10 @@ module Base
 	DisplayName	= Safariland Size 5 Comp II Speedloaders (.357 Magnum),
 	Icon	=	CompIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIILoader,
 	GunType	=	Base.GP101,
-	WorldStaticModel	=	CompIILoader,
-    Tooltip = Tooltip_Size5Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size5CompII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 5 Comp II Speedloaders (.38 Special),
-	Icon	=	CompIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIILoader,
-	GunType	=	Base.GP101_Alt,
 	WorldStaticModel	=	CompIILoader,
     Tooltip = Tooltip_Size5Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -266,25 +161,10 @@ module Base
 	DisplayName	= Safariland Size 6 Comp II Speedloaders (.357 Magnum),
 	Icon	=	CompIILoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	CompIILoader,
 	GunType	=	Base.SecuritySix,
-	WorldStaticModel	=	CompIILoader,
-    Tooltip = Tooltip_Size6Comp,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item Size6CompII38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= Safariland Size 6 Comp II Speedloaders (.38 Special),
-	Icon	=	CompIILoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	CompIILoader,
-	GunType	=	Base.SecuritySix_Alt,
 	WorldStaticModel	=	CompIILoader,
     Tooltip = Tooltip_Size6Comp,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:FastMag1; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -299,26 +179,10 @@ module Base
 	DisplayName	= Speed Strip (.357 Magnum),
 	Icon	=	SpeedStrip,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	SpeedStrips,
 	GunType	=	Base.SW586,
-	WorldStaticModel	=	SpeedStrips,
-    Tooltip = Tooltip_SpeedStrip357,
-    Tags = guns93:Guns93Mag; guns93:SpeedStrip; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item SpeedStrip38
-	{						
-	DisplayCategory	=	Ammo,
-	Count	=	3,
-	CanStack	=	TRUE,
-	Weight	=	0.04,
-	ItemType = base:Normal,
-	DisplayName	= Speed Strip (.38 Special),
-	Icon	=	SpeedStrip,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	SpeedStrips,
-	GunType	=	Base.SW586_Alt,
 	WorldStaticModel	=	SpeedStrips,
     Tooltip = Tooltip_SpeedStrip357,
     Tags = guns93:Guns93Mag; guns93:SpeedStrip; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -332,7 +196,7 @@ module Base
 	DisplayName	= HKS DS-A Speedloaders (.38 Special),
 	Icon	=	HKSLoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
+	AmmoType =	base:bullets_38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.ColtDet,
 	WorldStaticModel	=	HKSLoader,
@@ -348,25 +212,10 @@ module Base
 	DisplayName	= HKS 36-A Speedloaders (.357 Magnum),
 	Icon	=	HKSLoader,
 	MaxAmmo =	5,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.GP101,
-	WorldStaticModel	=	HKSLoader,
-    Tooltip = Tooltip_HKS36A,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item HKS36A38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= HKS 36-A Speedloaders (.38 Special),
-	Icon	=	HKSLoader,
-	MaxAmmo =	5,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	HKSLoader,
-	GunType	=	Base.GP101_Alt,
 	WorldStaticModel	=	HKSLoader,
     Tooltip = Tooltip_HKS36A,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -380,25 +229,10 @@ module Base
 	DisplayName	= HKS 10-A Speedloaders (.357 Magnum),
 	Icon	=	HKSLoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.SW65,
-	WorldStaticModel	=	HKSLoader,
-    Tooltip = Tooltip_HKS10A,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item HKS10A38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= HKS 10-A Speedloaders (.38 Special),
-	Icon	=	HKSLoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	HKSLoader,
-	GunType	=	Base.SW65_Alt,
 	WorldStaticModel	=	HKSLoader,
     Tooltip = Tooltip_HKS10A,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -428,25 +262,10 @@ module Base
 	DisplayName	= HKS 586-A Speedloaders (.357 Magnum),
 	Icon	=	HKSLoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.SW586,
-	WorldStaticModel	=	HKSLoader,
-    Tooltip = Tooltip_HKS586A,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item HKS586A38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= HKS 586-A Speedloaders (.38 Special),
-	Icon	=	HKSLoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	HKSLoader,
-	GunType	=	Base.SW586_Alt,
 	WorldStaticModel	=	HKSLoader,
     Tooltip = Tooltip_HKS586A,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -460,25 +279,10 @@ module Base
 	DisplayName	= HKS PYA Speedloaders (.357 Magnum),
 	Icon	=	HKSLoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.Python,
-	WorldStaticModel	=	HKSLoader,
-    Tooltip = Tooltip_HKSPYA,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item HKSPYA38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= HKS PYA Speedloaders (.38 Special),
-	Icon	=	HKSLoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	HKSLoader,
-	GunType	=	Base.Python_Alt,
 	WorldStaticModel	=	HKSLoader,
     Tooltip = Tooltip_HKSPYA,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -492,25 +296,10 @@ module Base
 	DisplayName	= HKS MK3-A Speedloaders (.357 Magnum),
 	Icon	=	HKSLoader,
 	MaxAmmo =	6,	
-	AmmoType =	base:bullets_357,	
+	AmmoType =	base:bullets_357,
+	modAlt_Ammo = Base.Bullets38,
 	StaticModel	=	HKSLoader,
 	GunType	=	Base.SecuritySix,
-	WorldStaticModel	=	HKSLoader,
-    Tooltip = Tooltip_HKSMK3A,
-    Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
-	}
-	item HKSMK3A38
-	{						
-	DisplayCategory	=	Ammo,
-	CanStack	=	TRUE,
-	Weight	=	0.09,
-	ItemType = base:Normal,
-	DisplayName	= HKS MK3-A Speedloaders (.38 Special),
-	Icon	=	HKSLoader,
-	MaxAmmo =	6,	
-	AmmoType =	base:bullets_38,	
-	StaticModel	=	HKSLoader,
-	GunType	=	Base.SecuritySix_Alt,
 	WorldStaticModel	=	HKSLoader,
     Tooltip = Tooltip_HKSMK3A,
     Tags = guns93:Guns93Mag; guns93:SpeedLoader; guns93:NoMount; guns93:DynamicMagclip; base:PistolMagazine,
@@ -780,10 +569,30 @@ module Base
     PartType = Clip,
 	StaticModel = M249Box,
 	WorldStaticModel = M249Box,
-    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:SlowMag3,
+    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:AmmoBox; guns93:SlowMag3,
     CanAttach = Guns93WeaponPartsNoRemove,
     CanDetach = Guns93WeaponPartsNoRemove,
 	}
+    item 556Belt
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.556Belt,
+		needLink = Base.556BeltLink,
+        Count	=	20,
+        Weight	=	0.016,
+        AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:WeaponPart,
+        DisplayName	=	Belted 5.56x45mm Rounds,
+        Icon	=	AmmoBelt,
+		MaxAmmo = 50,
+		AmmoType = base:bullets_556,
+		GunType = Base.M249,
+		MountOn = Base.M249,
+		PartType = Clip,
+        MetalValue = 1,
+        WorldStaticModel = AmmoBelt,
+		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag1,
+    }
 	item AK5Mag
 	{
 	DisplayCategory = Ammo,
@@ -1172,7 +981,7 @@ module Base
 	Weight=	0.1,
 	ItemType = base:weaponpart,
 	DisplayName	=	HK 15rd MP5 Magazine,
-	Icon=	MP5Mag,
+	Icon=	15MP5Mag,
 	MaxAmmo   =	15,
 	AmmoType	=	base:bullets_9mm,
 	GunType	=	Base.MP5,
@@ -1257,6 +1066,63 @@ module Base
     PartType = Clip,
 	StaticModel=	M3GreaseMag,
 	WorldStaticModel	=	M3GreaseMag,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:RifleMagazine,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
+	}
+	item MAC11Mag
+	{
+	DisplayCategory=	Ammo,
+	CanStack	=	FALSE,
+	Weight=	0.15,
+	ItemType = base:weaponpart,
+	DisplayName	=	Cobra MAC-11 Magazine,
+	Icon=	32UziMag,
+	MaxAmmo   =	32,
+	AmmoType	=	base:bullets_9mm,
+	GunType	=	Base.MAC11,
+    MountOn = Base.MAC11,
+    PartType = Clip,
+	StaticModel=	M3GreaseMag,
+	WorldStaticModel	=	M3GreaseMag,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:RifleMagazine,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
+	}
+	item MAC11A1Mag
+	{
+	DisplayCategory=	Ammo,
+	CanStack	=	FALSE,
+	Weight=	0.15,
+	ItemType = base:weaponpart,
+	DisplayName	=	Cobra MAC-11 Magazine,
+	Icon=	32UziMag,
+	MaxAmmo   =	32,
+	AmmoType	=	guns93:bullets_380,
+	GunType	=	Base.MAC11A1,
+    MountOn = Base.MAC11A1,
+    PartType = Clip,
+	StaticModel=	M3GreaseMag,
+	WorldStaticModel	=	M3GreaseMag,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:RifleMagazine,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
+	}
+	item 16MAC11A1Mag
+	{
+	DisplayCategory=	Ammo,
+	CanStack	=	FALSE,
+	Weight=	0.10,
+	ItemType = base:weaponpart,
+	DisplayName	=	16rd Cobra MAC-11 Magazine,
+	Icon=	10UziMag,
+	MaxAmmo   =	16,
+	AmmoType	=	guns93:bullets_380,
+	GunType	=	Base.MAC11A1,
+    MountOn = Base.MAC11A1,
+    PartType = Clip,
+	StaticModel=	16MAC11A1Mag,
+	WorldStaticModel	=	16MAC11A1Mag,
     Tags = guns93:Guns93Mag; guns93:NoMount; base:RifleMagazine,
     CanAttach = Guns93WeaponPartsNoRemove,
     CanDetach = Guns93WeaponPartsNoRemove,
@@ -1900,10 +1766,30 @@ module Base
     PartType = Clip,
 	StaticModel = M60Box,
 	WorldStaticModel = M60Box,
-    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:SlowMag3,
+    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:AmmoBox; guns93:SlowMag3,
     CanAttach = Guns93WeaponPartsNoRemove,
     CanDetach = Guns93WeaponPartsNoRemove,
 	}
+    item 308Belt
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.308Belt,
+		needLink = Base.308BeltLink,
+        Count	=	20,
+        Weight	=	0,
+        AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:WeaponPart,
+        DisplayName	=	Belted 7.62x51mm Rounds,
+        Icon	=	AmmoBelt,
+		MaxAmmo = 50,
+		AmmoType = base:bullets_308,
+		GunType = Base.M60,
+		MountOn = Base.M60,
+		PartType = Clip,
+        MetalValue = 1,
+        WorldStaticModel = AmmoBelt,
+		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag1,
+    }
 	item 1911Mag
 	{
 	DisplayCategory = Ammo,
@@ -2480,37 +2366,45 @@ module Base
     CanAttach = Guns93WeaponPartsNoRemove,
     CanDetach = Guns93WeaponPartsNoRemove,
 	}
-
 	item USP9Mag
 	{
 	DisplayCategory=	Ammo,
 	CanStack	=	FALSE,
 	Weight=	0.08,
-	ItemType = base:Normal,
+	ItemType = base:weaponpart,
 	DisplayName	=	HK USP9 Magazine,
 	Icon=	9mmMag,
 	MaxAmmo   =	15,
 	AmmoType	=	base:bullets_9mm,
-	GunType	=	USP9,
-	StaticModel = PistolMag,
-	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+	GunType	=	Base.USP9,
+    MountOn = Base.USP9,
+    PartType = Clip,
+	StaticModel = USPMag,
+	WorldStaticModel = USPMag,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
 	}
 	item USP40Mag
 	{
 	DisplayCategory=	Ammo,
 	CanStack	=	FALSE,
 	Weight=	0.08,
-	ItemType = base:Normal,
+	ItemType = base:weaponpart,
 	DisplayName	=	HK USP40 Magazine,
 	Icon=	9mmMag,
 	MaxAmmo   =	13,
 	AmmoType	=	guns93:bullets_40,
-	GunType	=	USP40,
-	StaticModel = PistolMag,
-	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+	GunType	=	Base.USP40,
+    MountOn = Base.USP40,
+    PartType = Clip,
+	StaticModel = USPMag,
+	WorldStaticModel = USPMag,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
 	}
+
 	item CZ75BMag
 	{
 	DisplayCategory=	Ammo,
@@ -2524,7 +2418,7 @@ module Base
 	GunType	=	CZ75B,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item 5906Mag
 	{
@@ -2539,7 +2433,7 @@ module Base
 	GunType	=	SW5906,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item 4006Mag
 	{
@@ -2554,7 +2448,7 @@ module Base
 	GunType	=	SW4006,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item 4506Mag
 	{
@@ -2569,7 +2463,7 @@ module Base
 	GunType	=	SW4506,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P89Mag
 	{
@@ -2584,7 +2478,7 @@ module Base
 	GunType	=	RugP89,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P90Mag
 	{
@@ -2599,7 +2493,7 @@ module Base
 	GunType	=	RugP90,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P226Mag
 	{
@@ -2614,7 +2508,7 @@ module Base
 	GunType	=	P226,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P228Mag
 	{
@@ -2629,7 +2523,7 @@ module Base
 	GunType	=	P228,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P7M8Mag
 	{
@@ -2644,7 +2538,7 @@ module Base
 	GunType	=	P7M8,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P7M13Mag
 	{
@@ -2659,7 +2553,7 @@ module Base
 	GunType	=	P7M13,
 	StaticModel = PistolMag,
 	WorldStaticModel = PistolMag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item R25Mag
 	{
@@ -2674,7 +2568,7 @@ module Base
 	GunType	=	Raven25,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item J22Mag
 	{
@@ -2689,7 +2583,7 @@ module Base
 	GunType	=	J22,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item Win69AMag
 	{
@@ -2704,7 +2598,7 @@ module Base
 	GunType	=	Win69,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item P380Mag
 	{
@@ -2719,7 +2613,7 @@ module Base
 	GunType	=	P380,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item 83Mag
 	{
@@ -2734,7 +2628,7 @@ module Base
 	GunType	=	83Cheetah,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item 1908Mag
 	{
@@ -2749,7 +2643,7 @@ module Base
 	GunType	=	Hammerless,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item PPKMag
 	{
@@ -2764,7 +2658,7 @@ module Base
 	GunType	=	PPK,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item BobcatMag
 	{
@@ -2779,7 +2673,7 @@ module Base
 	GunType	=	Bobcat,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item BuckMag
 	{
@@ -2794,7 +2688,7 @@ module Base
 	GunType	=	Buckmark,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item MarkMag
 	{
@@ -2809,7 +2703,7 @@ module Base
 	GunType	=	Rugmark,
 	StaticModel = 1911Mag,
 	WorldStaticModel = 1911Mag,
-    Tags = guns93:NoMount; base:PistolMagazine,
+    Tags = guns93:Guns93Mag; guns93:NoMount; base:PistolMagazine,
 	}
 	item EblocClip
 	{
@@ -2840,6 +2734,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Brown3006BAR,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 308BARMag
 	{
@@ -2854,6 +2749,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Brown308BAR,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 3006WinMag
 	{
@@ -2868,6 +2764,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Win30067400,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 308WinMag
 	{
@@ -2882,6 +2779,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Win3087400,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 3006Rem760Mag
 	{
@@ -2896,6 +2794,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Rem3006760,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 308Rem760Mag
 	{
@@ -2910,6 +2809,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Rem308760,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item 223Rem760Mag
 	{
@@ -2924,6 +2824,7 @@ module Base
 	StaticModel=	GunMagazine,
 	GunType	=	Rem223760,
 	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 	item L395KMag
 	{
@@ -2935,22 +2836,10 @@ module Base
 	Icon=	Rem788Mag,
 	MaxAmmo   =	3,
 	AmmoType  =   base:shotgun_shells,
+	modAlt_Ammo = Base.SlugBullets,
 	StaticModel=	GunMagazine,
 	GunType	=	L395K,
 	WorldStaticModel	=	Gun_Magazine_Ground,
-	}
-	item L395KMagSlugs
-	{
-	DisplayCategory=	Ammo,
-	CanStack	=	FALSE,
-	Weight=	0.08,
-	ItemType = base:Normal,
-	DisplayName	=	Lakefield Mossberg L395K Magazine (12ga Slugs),
-	Icon=	Rem788Mag,
-	MaxAmmo   =	3,
-	AmmoType  =   guns93:bullets_slug,
-	StaticModel=	GunMagazine,
-	GunType	=	L395K,
-	WorldStaticModel	=	Gun_Magazine_Ground,
+	Tags = guns93:Guns93Mag; base:PistolMagazine,
 	}
 }

@@ -1,0 +1,193 @@
+module Base
+{
+    item 308Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.308Bullets,
+        Weight	=	0.029,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.308 Winchester,
+        Icon	=	RifleRoundShort,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 76251M80
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.308Bullets,
+        Weight	=	0.029,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	7.62x51 M80 Ball,
+        Icon	=	RifleRoundShort,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 308BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.308Bullets,
+        Weight	=	0.029,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.308 Winchester (Soft-Point),
+        Icon	=	RifleRoundShort,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 308BulletsMatch
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.308Bullets,
+        Weight	=	0.029,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.308 Winchester (Match-Grade),
+        Icon	=	RifleRoundShort,
+        MetalValue = 1,
+        WorldStaticModel = RifleRoundShortWorld,
+        Tooltip = Tooltip_Ammo_Match,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 308Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .308 Winchester,
+        Icon	=	BoxRifleAmmo,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfBullets20,
+    }
+    item 76251M80Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 7.62x51 M80 Ball,
+        Icon	=	RifleSurplusBox,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplusBox,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 308SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .308 Winchester (Soft-Point),
+        Icon	=	BoxRifleAmmoDef,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmoDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 308MatchBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.48,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .308 Winchester (Match-Grade),
+        Icon	=	BoxRifleAmmo6Def,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo6Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_Match,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+
+	item 308Carton
+	{
+		DisplayName = Carton of .308 Winchester,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+	item 76251M80Carton
+	{
+		DisplayName = Carton of 7.62x51 M80 Ball
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_MilBall,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 308SPCarton
+	{
+		DisplayName = Carton of .308 Winchester (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 308MatchCarton
+	{
+		DisplayName = Carton of .308 Winchester (Match-Grade),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 4.6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_Match,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

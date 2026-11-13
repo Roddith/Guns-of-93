@@ -1,8 +1,8 @@
-module Base																											
+module Base
 {
-	/****************************** ITEM_PISTOLS ******************************/																										
-																											
-	item M9																										
+	/****************************** ITEM_PISTOLS ******************************/		
+
+	item M9		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -132,8 +132,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Beretta92FS																										
+
+	item Beretta92FS		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -263,8 +263,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item M1911																										
+
+	item M1911		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -421,8 +421,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Gov1911																										
+
+	item Gov1911		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -577,8 +577,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Longslide																										
+
+	item Longslide		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -734,8 +734,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Command1911																										
+
+	item Command1911		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -891,8 +891,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Officer1911																										
+
+	item Officer1911		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1023,8 +1023,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item DeltaElite																										
+
+	item DeltaElite		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1184,8 +1184,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Javelina																										
+
+	item Javelina		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1345,8 +1345,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item DE44																										
+
+	item DE44		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -1420,7 +1420,6 @@ module Base
 	modParts_Type = Base.GasOperatedPistolParts,
 	modParts_Group = ContextMenu_Guns93Parts_DE,
 	modParts_Level = 4,
-	AmmoBox = Bullets44Box,
 	MaxAmmo = 8,
 	EquipSound = DesertEagleEquip,
 	UnequipSound = DesertEagleUnequip,
@@ -1495,8 +1494,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item DE357																										
+
+	item DE357		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1570,7 +1569,6 @@ module Base
 	modParts_Type = Base.GasOperatedPistolParts,
 	modParts_Group = ContextMenu_Guns93Parts_DE,
 	modParts_Level = 4,
-	AmmoBox = Bullets44Box,
 	MaxAmmo = 8,
 	EquipSound = DesertEagleEquip,
 	UnequipSound = DesertEagleUnequip,
@@ -1643,8 +1641,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item BHP																										
+
+	item BHP		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1779,8 +1777,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock17																										
+
+	item Glock17		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1902,8 +1900,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock17L																										
+
+	item Glock17L		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2025,8 +2023,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock19																										
+
+	item Glock19		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2150,8 +2148,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock22																										
+
+	item Glock22		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2282,8 +2280,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock24																										
+
+	item Glock24		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2414,8 +2412,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock23																										
+
+	item Glock23		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2547,8 +2545,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock21																										
+
+	item Glock21		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2659,8 +2657,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Glock20																										
+
+	item Glock20		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2775,8 +2773,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item SW5906																										
+
+	item SW5906		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2882,8 +2880,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item SW4506																										
+
+	item SW4506		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2980,8 +2978,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item SW4006																										
+
+	item SW4006		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3082,8 +3080,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item RugP89																										
+
+	item RugP89		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3189,8 +3187,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item RugP90																										
+
+	item RugP90		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3296,8 +3294,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item P226																										
+
+	item P226		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3403,8 +3401,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item P228																										
+
+	item P228		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3510,8 +3508,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item P7M8																										
+
+	item P7M8		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3617,8 +3615,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item P7M13																										
+
+	item P7M13		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3724,8 +3722,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item USP9																										
+
+	item USP9		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3762,7 +3760,7 @@ module Base
 	KnockdownMod =	2,
 	DropSound =	M9Drop,
 	DisplayCategory                 =   Weapon,
-	OnCreate = Guns93GunConfig.Guns93PistolSights,
+	OnCreate = Guns93GunConfig.Guns93USP,
 	ImpactSound	=	null,
 	WeaponSprite	=	USP,
 	SoundVolume	=	30,
@@ -3809,12 +3807,19 @@ module Base
 	RackSound                       =   M9Rack,
 	WeaponReloadType                =   handgun,
 	AttachmentType                  =   Holster,
-	Tags =	base:HasMetal; base:Firearm; guns93:Guns93; guns93:ThreadExtension; guns93:9mm; guns93:ReqBooster; guns93:PistolSights,
-	ModelWeaponPart = 9mmFlashHider A1FlashHider canon canon,
-	ModelWeaponPart = 9mmSilencer LargePistolCan canon canon,
-	ModelWeaponPart = 9mmBoostedSilencer LargePistolCan canon canon,
-	ModelWeaponPart = DIY9mmBoostedSilencer DIYLargePistolCan canon canon,
-	ModelWeaponPart = DIY9mmSilencer DIYLargePistolCan canon canon,
+	Tags =	base:HasMetal; base:Firearm; guns93:Guns93; guns93:ThreadExtension; guns93:9mm; guns93:ReqTrigger; guns93:ReqBooster; guns93:PistolSights,
+	ModelWeaponPart = BarrelThreadExtension USPThread threading threading,
+	ModelWeaponPart = USP40Mag USPMag clip clip,
+	ModelWeaponPart = IronPistolBasic PistolSightRear irons irons,
+	ModelWeaponPart = IronPistolBasic PistolSightFront irons irons2,
+	ModelWeaponPart = TritiumSights PistolNightSightRear irons irons,
+	ModelWeaponPart = TritiumSights PistolNightSightFront irons irons2,
+	ModelWeaponPart = IronPistolCombat PistolDotSightRear irons irons,
+	ModelWeaponPart = IronPistolCombat PistolDotSightFront irons irons2,
+	ModelWeaponPart = IronPistolTarget PistolTargetSightRear irons irons,
+	ModelWeaponPart = IronPistolTarget PistolTargetSightFront irons irons2,
+	ModelWeaponPart = UTL UTL light light,
+	ModelWeaponPart = UTL_On UTL_On light light,
 	ModelWeaponPart = 40Silencer LargePistolCan canon canon,
 	ModelWeaponPart = 40BoostedSilencer LargePistolCan canon canon,
 	ModelWeaponPart = DIY40BoostedSilencer DIYLargePistolCan canon canon,
@@ -3831,8 +3836,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item USP40																										
+
+	item USP40		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -3869,7 +3874,7 @@ module Base
 	KnockdownMod =	3,
 	DropSound =	M9Drop,
 	DisplayCategory                 =   Weapon,
-	OnCreate = Guns93GunConfig.Guns93PistolSights,
+	OnCreate = Guns93GunConfig.Guns93USP,
 	ImpactSound	=	null,
 	WeaponSprite	=	USP,
 	SoundVolume	=	30,
@@ -3916,7 +3921,19 @@ module Base
 	RackSound                       =   M9Rack,
 	WeaponReloadType                =   handgun,
 	AttachmentType                  =   Holster,
-	Tags =	base:HasMetal; base:Firearm; guns93:Guns93; guns93:ThreadExtension; guns93:40cal; guns93:ReqBooster; guns93:PistolSights,
+	Tags =	base:HasMetal; base:Firearm; guns93:Guns93; guns93:ThreadExtension; guns93:40cal; guns93:ReqTrigger; guns93:ReqBooster; guns93:PistolSights,
+	ModelWeaponPart = BarrelThreadExtension USPThread threading threading,
+	ModelWeaponPart = USP40Mag USPMag clip clip,
+	ModelWeaponPart = IronPistolBasic PistolSightRear irons irons,
+	ModelWeaponPart = IronPistolBasic PistolSightFront irons irons2,
+	ModelWeaponPart = TritiumSights PistolNightSightRear irons irons,
+	ModelWeaponPart = TritiumSights PistolNightSightFront irons irons2,
+	ModelWeaponPart = IronPistolCombat PistolDotSightRear irons irons,
+	ModelWeaponPart = IronPistolCombat PistolDotSightFront irons irons2,
+	ModelWeaponPart = IronPistolTarget PistolTargetSightRear irons irons,
+	ModelWeaponPart = IronPistolTarget PistolTargetSightFront irons irons2,
+	ModelWeaponPart = UTL UTL light light,
+	ModelWeaponPart = UTL_On UTL_On light light,
 	ModelWeaponPart = 40Silencer LargePistolCan canon canon,
 	ModelWeaponPart = 40BoostedSilencer LargePistolCan canon canon,
 	ModelWeaponPart = DIY40BoostedSilencer DIYLargePistolCan canon canon,
@@ -3933,8 +3950,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item CZ75B																										
+
+	item CZ75B		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4040,8 +4057,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Raven25																										
+
+	item Raven25		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4151,6 +4168,7 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4158,8 +4176,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item J22																										
+
+	item J22		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4274,6 +4292,7 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4281,8 +4300,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item P380																										
+
+	item P380		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4388,8 +4407,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item 83Cheetah																										
+
+	item 83Cheetah		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4495,8 +4514,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Hammerless																										
+
+	item Hammerless		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4602,8 +4621,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item PPK																										
+
+	item PPK		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4709,8 +4728,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Bobcat																										
+
+	item Bobcat		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4825,6 +4844,7 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4832,8 +4852,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Buckmark																										
+
+	item Buckmark		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4948,6 +4968,7 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4955,8 +4976,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item Rugmark																										
+
+	item Rugmark		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5071,6 +5092,7 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5078,8 +5100,8 @@ module Base
 	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	}
-																											
-	item TEC9																										
+
+	item TEC9		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5190,8 +5212,8 @@ module Base
 	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
 	ModelWeaponPart = TEC9Mag TEC9Mag clip clip,
 	}
-																											
-	item Uzi																										
+
+	item Uzi		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5360,8 +5382,8 @@ module Base
 	ModelWeaponPart = LS45 LS45Laser scope2 scope,
 	ModelWeaponPart = LS45_On LS45Laser_On scope2 scope,
 	}
-																											
-	item MiniUzi																										
+
+	item MiniUzi		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5488,8 +5510,8 @@ module Base
 	ModelWeaponPart = 25UziColtSMGMag 25UziMag clip clip,
 	ModelWeaponPart = 40UziColtSMGMag 40UziMag clip clip,
 	}
-																											
-	item MicroUzi																										
+
+	item MicroUzi		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5615,8 +5637,8 @@ module Base
 	ModelWeaponPart = 25UziColtSMGMag 25UziMag clip clip,
 	ModelWeaponPart = 40UziColtSMGMag 40UziMag clip clip,
 	}
-																											
-	item Uzi45																										
+
+	item Uzi45		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5771,8 +5793,8 @@ module Base
 	ModelWeaponPart = LS45 LS45Laser scope2 scope,
 	ModelWeaponPart = LS45_On LS45Laser_On scope2 scope,
 	}
-																											
-	item MiniUzi45																										
+
+	item MiniUzi45		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5885,8 +5907,8 @@ module Base
 	ModelWeaponPart = 16Uzi45Mag UziMag clip clip,
 	ModelWeaponPart = 22Uzi45Mag 40UziMag clip clip,
 	}
-																											
-	item MicroUzi45																										
+
+	item MicroUzi45		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5998,8 +6020,8 @@ module Base
 	ModelWeaponPart = 16Uzi45Mag UziMag clip clip,
 	ModelWeaponPart = 22Uzi45Mag 40UziMag clip clip,
 	}
-																											
-	item MAC10																										
+
+	item MAC10		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -6088,7 +6110,13 @@ module Base
 	FireModePossibilities = Auto/Burst/Single,
 	CyclicRateMultiplier =	1.81,
 	hasAutoPart =	Base.MAC10AutoTrigger,
-	Tags =	base:HasMetal; base:Firearm; guns93:45cal; guns93:ReqTrigger; guns93:Guns93,
+	hasSpcPart =	Base.MAC10StockIn,
+	hasSpcPart2 =	Base.45TwoStageSilencer,
+	Tags =	base:HasMetal; base:Firearm; guns93:45cal; guns93:ThreadBarrel; guns93:ReqTrigger; guns93:Guns93,
+	ModelWeaponPart = MACStrap MACStrap grip grip,
+	ModelWeaponPart = MAC10StockIn MAC10StockIn stock stock,
+	ModelWeaponPart = MAC10StockOut MAC10StockOut stock stock,
+	ModelWeaponPart = MACBarrelExt MACBarrelExt canon barrel,
 	ModelWeaponPart = 45Silencer LargePistolCan canon canon,
 	ModelWeaponPart = 45BoostedSilencer LargePistolCan canon canon,
 	ModelWeaponPart = 45TwoStageSilencer 45TwoStageSilencer canon canon,
@@ -6103,8 +6131,249 @@ module Base
 	ModelWeaponPart = MAC10Mag M3GreaseMag clip clip,
 	ModelWeaponPart = MACGreaseMag M3GreaseMag clip clip,
 	}
-																											
-	item CalicoPistol																										
+
+	item MAC11		
+	{
+	MinAngle =	0.95,
+	MaxHitcount =	1,
+	AimingPerkCritModifier =	4,
+	HitChance =	43,
+	AimingPerkHitChanceModifier  =	3.0,
+	AimingPerkMinAngleModifier   =	0.01,
+	RecoilDelay =	35,
+	Aimingtime =	42,
+	Weight =	1.5,
+	DoorDamage =	5,
+	MinDamage =	0.8,
+	MaxDamage =	1.1,
+	CriticalChance =	15,
+	CritDmgMultiplier =	4,
+	StopPower =	5,
+	PushBackMod =	0.2,
+	ProjectileCount =	1,
+	MinRange =	0.61,
+	MaxRange =	17,
+	AimingPerkRangeModifier =	0.0,
+	SoundRadius =	79,
+	ConditionMax =	20,
+	ConditionLowerChanceOneIn =	300,
+	JamGunChance =	2,
+	mod_Jam =	2,
+	mod_fouling =	0,
+	MaxAmmo =	32,
+	AmmoType =	base:bullets_9mm,
+	AmmoBox =	Base.Bullets9mmBox,
+	MagazineType =	Base.MAC11Mag,
+	MinSightRange =	2,
+	MaxSightRange =	6.0,
+	KnockdownMod =	2,
+	DropSound =	M9Drop,
+	DisplayCategory                 =   Weapon,
+	OnCreate = Guns93GunConfig.Guns93MAC10,
+	ImpactSound	=	null,
+	WeaponSprite	=	MAC11,
+	SoundVolume	=	30,
+	ItemType	=	base:weapon,
+	MinimumSwingtime	=	0.5,
+	NPCSoundBoost	=	1.5,
+	KnockBackOnNoDeath	=	true,
+	Ranged	=	true,
+	SwingAmountBeforeImpact	=	0,
+	SplatNumber	=	3,
+	SubCategory	=	Firearm,
+	MuzzleFlashModelKey	=	muzzle_flash_handgun03,
+	IsAimedFirearm	=	true,
+	UseEndurance	=	false,
+	SwingAnim	=	Handgun,
+	DisplayName	=	Cobra MAC-11,
+	Swingtime	=	0.5,
+	MultipleHitConditionAffected	=	false,
+	BringToBearSound                =   M9BringToBear,
+	SwingSound	=	M9Shoot,
+	HitSound                        =   BulletImpact,
+	ClickSound                      =   M9Jam,
+	SplatSize	=	3,
+	SplatBloodOnNoDeath	=	true,
+	Icon	=	MAC11,
+	RunAnim	=	Run_Weapon2,
+	SoundGain                       =   1.5,
+	ClipSize                        =   15,
+	Reloadtime                      =   30,
+	BreakSound                      =   M9Break,
+	MetalValue                      =   30.0,
+	modParts_Type = Base.DirectBlowbackCarbineParts,
+	modParts_Group = ContextMenu_Guns93Parts_MAC,
+	modParts_Level = 2,
+	EquipSound                      =   M9Equip,
+	UnequipSound                    =   M9UnEquip,
+	InsertAmmoSound                 =   M9InsertAmmo,
+	EjectAmmoSound                  =   M9EjectAmmo,
+	InsertAmmoStartSound            =   M9InsertAmmoStart,
+	InsertAmmoStopSound             =   M9InsertAmmoStop,
+	EjectAmmoStartSound             =   M9EjectAmmoStart,
+	EjectAmmoStopSound              =   M9EjectAmmoStop,
+	ShellFallSound                  =   M9CartridgeFall,
+	RackSound                       =   M9Rack,
+	WeaponReloadType                =   handgun,
+	AttachmentType                  =   Rifle,
+	FireMode = Single,
+	modBurst_Num = 0,
+	FireModePossibilities = Auto/Burst/Single,
+	CyclicRateMultiplier =	1.89,
+	hasAutoPart =	Base.MAC11AutoTrigger,
+	hasSpcPart =	Base.MAC11StockIn,
+	hasSpcPart2 =	Base.9mmTwoStageSilencer,
+	Tags =	base:HasMetal; base:Firearm; guns93:9mm; guns93:ThreadBarrel; guns93:ReqTrigger; guns93:Guns93,
+	ModelWeaponPart = MACStrap MACStrap grip grip,
+	ModelWeaponPart = MAC11StockIn MAC11StockIn stock stock,
+	ModelWeaponPart = MAC11StockOut MAC11StockOut stock stock,
+	ModelWeaponPart = MACBarrelExt MACBarrelExt canon barrel,
+	ModelWeaponPart = 9mmFlashHider A1FlashHider canon canon,
+	ModelWeaponPart = 9mmSilencer LargePistolCan canon canon,
+	ModelWeaponPart = 9mmBoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = DIY9mmBoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY9mmSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = 9mmTwoStageSilencer 45TwoStageSilencer canon canon,
+	ModelWeaponPart = 40Silencer LargePistolCan canon canon,
+	ModelWeaponPart = 40BoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = DIY40BoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY40Silencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = 45Silencer LargePistolCan canon canon,
+	ModelWeaponPart = 45BoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = 45TwoStageSilencer 45TwoStageSilencer canon canon,
+	ModelWeaponPart = OilFilterSilencer OilFilterSilencer canon canon,
+	ModelWeaponPart = LargeOilFilterSilencer LargeOilFilterSilencer canon canon,
+	ModelWeaponPart = OilFilter2Silencer OilFilter2Silencer canon canon,
+	ModelWeaponPart = LargeOilFilter2Silencer LargeOilFilter2Silencer canon canon,
+	ModelWeaponPart = DIY45Silencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY45BoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
+	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
+	ModelWeaponPart = MAC11Mag M3GreaseMag clip clip,
+	ModelWeaponPart = MACGreaseMag M3GreaseMag clip clip,
+	}
+
+	item MAC11A1		
+	{
+	MinAngle =	0.95,
+	MaxHitcount =	1,
+	AimingPerkCritModifier =	4,
+	HitChance =	42,
+	AimingPerkHitChanceModifier  =	3.0,
+	AimingPerkMinAngleModifier   =	0.01,
+	RecoilDelay =	29,
+	Aimingtime =	42,
+	Weight =	1.6,
+	DoorDamage =	4,
+	MinDamage =	0.6,
+	MaxDamage =	0.8,
+	CriticalChance =	15,
+	CritDmgMultiplier =	3,
+	StopPower =	5,
+	PushBackMod =	0.2,
+	ProjectileCount =	1,
+	MinRange =	0.61,
+	MaxRange =	8,
+	AimingPerkRangeModifier =	0.0,
+	SoundRadius =	76,
+	ConditionMax =	20,
+	ConditionLowerChanceOneIn =	300,
+	JamGunChance =	2,
+	mod_Jam =	2,
+	mod_fouling =	0,
+	MaxAmmo =	32,
+	AmmoType =	guns93:bullets_380,
+	AmmoBox =	Base.380Box,
+	MagazineType =	Base.MAC11A1Mag,
+	MinSightRange =	2,
+	MaxSightRange =	5.0,
+	KnockdownMod =	2,
+	DropSound =	M9Drop,
+	DisplayCategory                 =   Weapon,
+	OnCreate = Guns93GunConfig.Guns93MAC10,
+	ImpactSound	=	null,
+	WeaponSprite	=	MAC11A1,
+	SoundVolume	=	30,
+	ItemType	=	base:weapon,
+	MinimumSwingtime	=	0.5,
+	NPCSoundBoost	=	1.5,
+	KnockBackOnNoDeath	=	true,
+	Ranged	=	true,
+	SwingAmountBeforeImpact	=	0,
+	SplatNumber	=	3,
+	SubCategory	=	Firearm,
+	MuzzleFlashModelKey	=	muzzle_flash_handgun03,
+	IsAimedFirearm	=	true,
+	UseEndurance	=	false,
+	SwingAnim	=	Handgun,
+	DisplayName	=	Cobra MAC-11A1,
+	Swingtime	=	0.5,
+	MultipleHitConditionAffected	=	false,
+	BringToBearSound                =   M9BringToBear,
+	SwingSound	=	M9Shoot,
+	HitSound                        =   BulletImpact,
+	ClickSound                      =   M9Jam,
+	SplatSize	=	3,
+	SplatBloodOnNoDeath	=	true,
+	Icon	=	MAC11A1,
+	RunAnim	=	Run_Weapon2,
+	SoundGain                       =   1.5,
+	ClipSize                        =   15,
+	Reloadtime                      =   30,
+	BreakSound                      =   M9Break,
+	MetalValue                      =   30.0,
+	modParts_Type = Base.DirectBlowbackCarbineParts,
+	modParts_Group = ContextMenu_Guns93Parts_MAC,
+	modParts_Level = 2,
+	EquipSound                      =   M9Equip,
+	UnequipSound                    =   M9UnEquip,
+	InsertAmmoSound                 =   M9InsertAmmo,
+	EjectAmmoSound                  =   M9EjectAmmo,
+	InsertAmmoStartSound            =   M9InsertAmmoStart,
+	InsertAmmoStopSound             =   M9InsertAmmoStop,
+	EjectAmmoStartSound             =   M9EjectAmmoStart,
+	EjectAmmoStopSound              =   M9EjectAmmoStop,
+	ShellFallSound                  =   M9CartridgeFall,
+	RackSound                       =   M9Rack,
+	WeaponReloadType                =   handgun,
+	AttachmentType                  =   Rifle,
+	FireMode = Single,
+	modBurst_Num = 0,
+	FireModePossibilities = Auto/Burst/Single,
+	CyclicRateMultiplier =	1.89,
+	hasAutoPart =	Base.MAC11A1AutoTrigger,
+	Tags =	base:HasMetal; base:Firearm; guns93:9mm; guns93:ThreadBarrel; guns93:ReqTrigger; guns93:Guns93,
+	ModelWeaponPart = MACStrap MACStrap grip grip,
+	ModelWeaponPart = MAC11A1StockIn MAC11A1StockIn stock stock,
+	ModelWeaponPart = MAC11A1StockOut MAC11A1StockOut stock stock,
+	ModelWeaponPart = MACBarrelExt MACBarrelExt canon barrel,
+	ModelWeaponPart = 9mmFlashHider A1FlashHider canon canon,
+	ModelWeaponPart = 9mmSilencer LargePistolCan canon canon,
+	ModelWeaponPart = 9mmBoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = DIY9mmBoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY9mmSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = 9mmTwoStageSilencer 45TwoStageSilencer canon canon,
+	ModelWeaponPart = 40Silencer LargePistolCan canon canon,
+	ModelWeaponPart = 40BoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = DIY40BoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY40Silencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = 45Silencer LargePistolCan canon canon,
+	ModelWeaponPart = 45BoostedSilencer LargePistolCan canon canon,
+	ModelWeaponPart = 45TwoStageSilencer 45TwoStageSilencer canon canon,
+	ModelWeaponPart = OilFilterSilencer OilFilterSilencer canon canon,
+	ModelWeaponPart = LargeOilFilterSilencer LargeOilFilterSilencer canon canon,
+	ModelWeaponPart = OilFilter2Silencer OilFilter2Silencer canon canon,
+	ModelWeaponPart = LargeOilFilter2Silencer LargeOilFilter2Silencer canon canon,
+	ModelWeaponPart = DIY45Silencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = DIY45BoostedSilencer DIYLargePistolCan canon canon,
+	ModelWeaponPart = CarbineBrake CarbineBrake canon canon,
+	ModelWeaponPart = CuttsCompThread CuttsComp canon canon,
+	ModelWeaponPart = MAC11A1Mag M3GreaseMag clip clip,
+	ModelWeaponPart = 16MAC11A1Mag 16MAC11A1Mag clip clip,
+	ModelWeaponPart = MACGreaseMag M3GreaseMag clip clip,
+	}
+
+	item CalicoPistol		
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,

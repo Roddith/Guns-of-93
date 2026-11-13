@@ -515,73 +515,149 @@ function CLoadBulletsInMagazine:hasBulletsForMagazine(magazine)
 end
 
 function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
-	local weapon = self:getWeapon()
-	if not weapon then return end
-	local magazine = self:getMagazine(weapon)
-    if weapon:getMagazineType() or (weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart(MoonClip)) or weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip) and weapon:getCurrentAmmoCount() < 1 then
-		local highest = 200
-        local weaponType = weapon:getFullType()
-        local magList = MagazineGunSet[weaponType]
-        if magList then
-            for _, magType in ipairs(magList) do
-                local items = self.character:getInventory():getAllTypeRecurse(magType)
-                for k = 0, items:size() - 1 do
-                    local mag = items:get(k)
-                    if mag then
-                        local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
-                        if mag:getCurrentAmmoCount() ~= mag:getMaxAmmo() then
-                            if ammoDelta <= highest then
-                                highest = ammoDelta
-                                magazine = mag
-                            end
-                        end
-                    end
-                end
-            end
-		end
-		if not magazine then return end
-		if not self:hasBulletsForMagazine(magazine) then return end
-		local text = getText("IGUI_FirearmRadial_LoadBulletsIntoMagazine")
-		local xln = "IGUI_FirearmRadial_AmmoCount"
-		local textCount = getText(xln, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
-		text = text .. "\\n" .. textCount
-		text = text:gsub('\\n', '\n')
-		menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsIntoMagazine.png"), self.invoke, self)
-	end
-end
-
-function CLoadBulletsInMagazine:invoke()
-	local weapon = self:getWeapon()
-	if not weapon then return end
-	local magazine = self:getMagazine(weapon)
-    if weapon:getMagazineType() or (weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart(MoonClip)) or weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip) and weapon:getCurrentAmmoCount() < 1 then
-		local highest = 200
-        local weaponType = weapon:getFullType()
-        local magList = MagazineGunSet[weaponType]
-        if magList then
-            for _, magType in ipairs(magList) do
-                local items = self.character:getInventory():getAllTypeRecurse(magType)
-                for k = 0, items:size() - 1 do
-                    local mag = items:get(k)
-                    if mag then
-                        local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
-                        if mag:getCurrentAmmoCount() ~= mag:getMaxAmmo() then
-                            if ammoDelta <= highest then
-                                highest = ammoDelta
-                                magazine = mag
-                            end
-                        end
+    local weapon = self:getWeapon()
+    if not weapon then return end
+    local allow = false
+    if weapon:getMagazineType() then
+        allow = true
+    elseif weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart("Moonclip") then
+        allow = true
+    elseif (weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip))
+        and weapon:getCurrentAmmoCount() < 1 then
+        allow = true
+    end
+    if not allow then return end
+    local magazine = nil
+    local highest = 200
+    local magList = MagazineGunSet and MagazineGunSet[weapon:getFullType()]
+    if magList then
+        for _, magType in ipairs(magList) do
+            local items = self.character:getInventory():getAllTypeRecurse(magType)
+            for k = 0, items:size() - 1 do
+                local mag = items:get(k)
+                if mag and mag:getCurrentAmmoCount() < mag:getMaxAmmo() then
+                    local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
+                    if ammoDelta <= highest then
+                        highest = ammoDelta
+                        magazine = mag
                     end
                 end
             end
         end
-		if not magazine then return end
-		if not self:hasBulletsForMagazine(magazine) then return end
-		ISInventoryPaneContextMenu.transferIfNeeded(self.character, magazine)
-		local ammoCount = ISInventoryPaneContextMenu.transferBullets(self.character, magazine:getAmmoType():getItemKey(), magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
-		if ammoCount == 0 then return end
-		ISTimedActionQueue.add(ISLoadBulletsInMagazine:new(self.character, magazine, ammoCount))
-	end
+    end
+    if not magazine then return end
+    local prim = magazine:getAmmoType() and tostring(magazine:getAmmoType():getItemKey()) or nil
+    local sec = nil
+    local magData = magazine:getModData()
+    if magData and magData.modAlt_Ammo then
+        sec = tostring(magData.modAlt_Ammo)
+    end
+    local bullets = ArrayList.new()
+    self.character:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
+    local hasAmmo = false
+    for i = 0, bullets:size() - 1 do
+        local round = bullets:get(i)
+        local roundData = round:getModData()
+        local caliber = roundData and roundData.isCaliber and tostring(roundData.isCaliber) or nil
+        local fullType = tostring(round:getFullType())
+        if caliber and ((prim and (caliber == prim or fullType == prim)) or (sec and (caliber == sec or fullType == sec))) then
+            hasAmmo = true
+            break
+        end
+    end
+    if not hasAmmo then return end
+    local text = getText("IGUI_FirearmRadial_LoadBulletsIntoMagazine")
+    local textCount = getText("IGUI_FirearmRadial_AmmoCount", magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
+    text = text .. " " .. textCount
+    menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsIntoMagazine.png"), self.invoke, self)
+end
+
+function CLoadBulletsInMagazine:invoke()
+    local weapon = self:getWeapon()
+    if not weapon then return end
+    local allow = false
+    if weapon:getMagazineType() then
+        allow = true
+    elseif weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart("Moonclip") then
+        allow = true
+    elseif (weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip))
+        and weapon:getCurrentAmmoCount() < 1 then
+        allow = true
+    end
+    if not allow then return end
+    local magazine = nil
+    local highest = 200
+    local magList = MagazineGunSet and MagazineGunSet[weapon:getFullType()]
+    if magList then
+        for _, magType in ipairs(magList) do
+            local items = self.character:getInventory():getAllTypeRecurse(magType)
+            for k = 0, items:size() - 1 do
+                local mag = items:get(k)
+                if mag and mag:getCurrentAmmoCount() < mag:getMaxAmmo() then
+                    local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
+                    if ammoDelta <= highest then
+                        highest = ammoDelta
+                        magazine = mag
+                    end
+                end
+            end
+        end
+    end
+    if not magazine then return end
+    local bulletNeeded = magazine:getMaxAmmo() - magazine:getCurrentAmmoCount()
+    if bulletNeeded < 1 then return end
+    local prim = magazine:getAmmoType() and tostring(magazine:getAmmoType():getItemKey()) or nil
+    local sec = nil
+    local magData = magazine:getModData()
+    if magData and magData.modAlt_Ammo then
+        sec = tostring(magData.modAlt_Ammo)
+    end
+    local bullets = ArrayList.new()
+    self.character:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
+    local byType = {}
+    local anyAvail = 0
+    for i = 0, bullets:size() - 1 do
+        local round = bullets:get(i)
+        local roundData = round:getModData()
+        local caliber = roundData and roundData.isCaliber and tostring(roundData.isCaliber) or nil
+        local getType = tostring(round:getFullType())
+        if caliber and ((prim and (caliber == prim or getType == prim)) or (sec and (caliber == sec or getType == sec))) then
+            anyAvail = anyAvail + 1
+            local entry = byType[getType]
+            if not entry then
+                entry = { count = 0 }
+                byType[getType] = entry
+            end
+            entry.count = entry.count + 1
+        end
+    end
+    if anyAvail < 1 then return end
+    ISInventoryPaneContextMenu.transferIfNeeded(self.character, magazine)
+    local transferred = 0
+    local done = {}
+    for fullType, info in pairs(byType) do
+        if info.count > 0 and not done[fullType] then
+            done[fullType] = true
+            local n = ISInventoryPaneContextMenu.transferBullets( self.character, fullType, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo() )
+            transferred = transferred + (n or 0)
+            if transferred >= bulletNeeded then
+                break
+            end
+        end
+    end
+    if transferred < 1 then return end
+    local loadCount = transferred
+    if loadCount > bulletNeeded then
+        loadCount = bulletNeeded
+    end
+    local action = ISLoadBulletsInMagazine:new(self.character, magazine, loadCount)
+    action.round = prim
+    action.round2 = sec
+    action.bycaliber = true
+    if guns93SendLoadIntent then
+        guns93SendLoadIntent(self.character, magazine, prim, sec, true, loadCount)
+    end
+    ISTimedActionQueue.add(action)
 end
 
 local CLoadRounds = BaseCommand:derive("CLoadRounds")

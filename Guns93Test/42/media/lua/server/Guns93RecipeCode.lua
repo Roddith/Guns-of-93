@@ -116,14 +116,37 @@ function RecipeCodeOnCreate.shotgunSawnoff(craftRecipeData, character)
             result:setActivated(item:isActivated())
             result:setAttachedSlot(item:getAttachedSlot())
             if item:getCurrentAmmoCount() > 0 then
-                ammoCount = item:getCurrentAmmoCount()
-                if result:haveChamber() and item:isRoundChambered() then
-                    ammoCount = ammoCount + 1
-                    item:setRoundChambered(false)
+                if item:haveChamber() and item:isRoundChambered() then
+                    local chambered = Guns93RemoveChambered(item)
+                    if chambered == nil then
+                        chambered = item:getAmmoType():getItemKey()
+                    end
+                    local bullet = instanceItem(chambered)
+                    character:getInventory():AddItem(bullet)
+                    sendAddItemToContainer(character:getInventory(), bullet)
                 end
-                character:getInventory():AddItems(item:getAmmoType():getItemKey(), ammoCount)
-                item:setCurrentAmmoCount(0)
-                result:setCurrentAmmoCount(0)
+                if item:isContainsClip() then
+                    local remMag = instanceItem(item:getMagazineType())
+                    remMag:setCurrentAmmoCount(item:getCurrentAmmoCount())
+                    Guns93TransferAmmoList(item, remMag, item:getCurrentAmmoCount())
+                    character:getInventory():AddItem(remMag)
+                    sendAddItemToContainer(character:getInventory(), remMag)
+                    result:setContainsClip(false)
+                    result:setCurrentAmmoCount(0)
+                elseif item:getCurrentAmmoCount() > 0 then
+                    local itemKey = Guns93RemoveAmmoType(item)
+                    if itemKey == nil then
+                        itemKey = item:getAmmoType():getItemKey();
+                    end
+                    local ammoCount = item:getCurrentAmmoCount()
+                    while ammoCount > 0 do
+                        local newBullet = instanceItem(itemKey);
+                        character:getInventory():AddItem(newBullet)
+                        sendAddItemToContainer(character:getInventory(), newBullet)
+                        ammoCount = ammoCount - 1
+                    end
+                    result:setCurrentAmmoCount(0)
+                end
             end
 			local modData = result:getModData()
 			for k,v in pairs(item:getModData()) do
@@ -374,16 +397,6 @@ function Guns93OnCreateRemoveBayo(craftRecipeData, character)
 	syncHandWeaponFields(character, weapon)
 end
 
-function Guns93OnCreateBeltLink556(craftRecipeData, character)
-    local amount = craftRecipeData:getAllConsumedItems():size();
-    character:getInventory():AddItems("Base.556BeltLink", amount);
-end
-
-function Guns93OnCreateBeltLink308(craftRecipeData, character)
-    local amount = craftRecipeData:getAllConsumedItems():size();
-    character:getInventory():AddItems("Base.308BeltLink", amount);
-end
-
 function Guns93OnTestAmmoCountZero(item)
     if item:getMaxAmmo() then
         if item:getCurrentAmmoCount() > 0 then
@@ -391,6 +404,43 @@ function Guns93OnTestAmmoCountZero(item)
         elseif item:getCurrentAmmoCount() == 0 then
             return true
         end
+    end
+end
+
+function Guns93556AmmoTest(ammo)
+    if ammo:hasTag(Gun93Registries.guns93.Ammo) then
+        local bulletData = ammo:getModData()
+        if bulletData then
+            if bulletData.isCaliber == "Base.556Bullets" then
+                return true
+            end
+        end
+        return false
+    else
+        return true
+    end
+end
+
+function Guns93308AmmoTest(ammo)
+    if ammo:hasTag(Gun93Registries.guns93.Ammo) then
+        local bulletData = ammo:getModData()
+        if bulletData then
+            if bulletData.isCaliber == "Base.308Bullets" then
+                return true
+            end
+        end
+        return false
+    else
+        return true
+    end
+end
+
+function Guns93OnCreateAmmoBelt(craftRecipeData, character)
+    local bullet = craftRecipeData:getFirstInputItemWithTag(Gun93Registries.guns93.Ammo)
+    local belt = craftRecipeData:getAllCreatedItems():get(0);
+    if belt then
+        belt:setCurrentAmmoCount(1)
+        Guns93AddAmmoTypes(belt, bullet)
     end
 end
 
@@ -546,7 +596,10 @@ function Guns93WeaponPartsReflexCollar(character, weapon, weaponPart)
         return true
     elseif toolCheck then
         if weapon:getWeaponPart("Canon") then
-            return false
+            if weapon:getWeaponPart("Canon"):getFullType() == "Base.556ReflexCan" then
+                return false
+            end
+            return true
         else
             return true
         end
