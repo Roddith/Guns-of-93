@@ -1,0 +1,414 @@
+module Base
+{
+	craftRecipe CraftThreadAdapter
+	{
+		timedAction = Welding,
+		Time = 200,
+		SkillRequired = MetalWelding:3,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		inputs
+		{
+			item 1 [Base.ScrapMetal],
+			item 1 tags[base:MetalSaw] mode:keep flags[MayDegrade],
+			item 1 tags[base:File] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 4 Base.ThreadAdapter,
+		}
+	}
+
+	craftRecipe CraftOilFilterSilencer
+	{
+        timedAction = Making,
+		Time = 50,
+		category = Assembly,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.OilFilter;Base.OilFilterUse;Base.LargeOilFilter;Base.LargeOilFilterUse;Base.OilFilter2;Base.OilFilter2Use;Base.LargeOilFilter2;Base.LargeOilFilter2Use] mode:destroy flags[InheritCondition] mappers[filterType],
+			item 1 [Base.ThreadAdapter],
+		}
+		outputs
+		{
+			item 1 mapper:filterType,
+		}
+        	itemMapper filterType
+        	{
+			Base.OilFilterSilencer = Base.OilFilter,
+			Base.OilFilterSilencer = Base.OilFilterUse,
+			Base.LargeOilFilterSilencer = Base.LargeOilFilter,
+			Base.LargeOilFilterSilencer = Base.LargeOilFilterUse,
+			Base.OilFilter2Silencer = Base.OilFilter2,
+			Base.OilFilter2Silencer = Base.OilFilter2Use,
+			Base.LargeOilFilter2Silencer = Base.LargeOilFilter2,
+			Base.LargeOilFilter2Silencer = Base.LargeOilFilter2Use,
+		}
+	}
+
+	craftRecipe DisassembleOilFilterSilencer
+	{
+        timedAction = Making,
+		Time = 50,
+		category = Assembly,
+		OnCreate = Guns93OnCreateDisassembleOilFilterSilencer,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.OilFilterSilencer;Base.LargeOilFilterSilencer;Base.OilFilter2Silencer;Base.LargeOilFilter2Silencer] flags[InheritCondition] mode:destroy mappers[filterType],
+		}
+		outputs
+		{
+			item 1 mapper:filterType,
+		}
+        	itemMapper filterType
+        	{
+			Base.OilFilterUse = Base.OilFilterSilencer,
+			Base.LargeOilFilterUse = Base.LargeOilFilterSilencer,
+			Base.OilFilter2Use = Base.OilFilter2Silencer,
+			Base.LargeOilFilter2Use = Base.LargeOilFilter2Silencer,
+		}
+	}
+
+	craftRecipe Craft22LRSilencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:3,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:5,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 1 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY22Silencer,
+		}
+	}
+
+	craftRecipe Craft9mmSilencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY9mmSilencer,
+		}
+	}
+
+	craftRecipe Craft40Silencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY40Silencer,
+		}
+	}
+
+	craftRecipe Craft45Silencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:3,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:5,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY45Silencer,
+		}
+	}
+
+	craftRecipe Craft556Silencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY556Silencer,
+		}
+	}
+
+	craftRecipe Craft30Silencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY30Silencer,
+		}
+	}
+
+	craftRecipe Craft8mmSilencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:6,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY8mmSilencer,
+		}
+	}
+
+	craftRecipe Craft12gaSilencer
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:5,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = Aiming:7,
+		OnTest = Guns93OnTestGuns93DIYSilencerDistro,
+		inputs
+		{
+			item 1 [Base.MetalPipe],
+			item 2 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.DIY12gaSilencer,
+		}
+	}
+
+	craftRecipe InstallBooster
+	{
+        timedAction = Making,
+		Time = 10,
+		category = Assembly,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.9mmSilencer;Base.DIY9mmSilencer;Base.40Silencer;Base.DIY40Silencer;Base.45Silencer;Base.DIY45Silencer] mode:destroy mappers[silencerType] flags[ItemCount;InheritCondition],
+			item 1 [Base.CanBooster],
+		}
+		outputs
+		{
+			item 1 mapper:silencerType,
+		}
+        	itemMapper silencerType
+        	{
+			Base.9mmBoostedSilencer = Base.9mmSilencer,
+			Base.40BoostedSilencer = Base.40Silencer,
+			Base.DIY9mmBoostedSilencer = Base.DIY9mmSilencer,
+			Base.DIY40BoostedSilencer = Base.DIY40Silencer,
+			Base.45BoostedSilencer = Base.45Silencer,
+			Base.DIY45BoostedSilencer = Base.DIY45Silencer,
+		}
+	}
+
+	craftRecipe RemoveBooster
+	{
+        timedAction = Making,
+		Time = 10,
+		category = Assembly,
+		OnCreate = Guns93OnCreateDisassembleBoostedSilencer,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.9mmBoostedSilencer;Base.DIY9mmBoostedSilencer;Base.40BoostedSilencer;Base.DIY40BoostedSilencer;Base.45BoostedSilencer;Base.DIY45BoostedSilencer] mode:destroy mappers[boosterType] flags[ItemCount;InheritCondition],
+		}
+		outputs
+		{
+			item 1 mapper:boosterType,
+		}
+        	itemMapper boosterType
+        	{
+			Base.9mmSilencer = Base.9mmBoostedSilencer,
+			Base.40Silencer = Base.40BoostedSilencer,
+			Base.DIY9mmSilencer = Base.DIY9mmBoostedSilencer,
+			Base.DIY40Silencer = Base.DIY40BoostedSilencer,
+			Base.45Silencer = Base.45BoostedSilencer,
+			Base.DIY45Silencer = Base.DIY45BoostedSilencer,
+		}
+	}
+
+	craftRecipe InstallTriLug
+	{
+        timedAction = Making,
+		Time = 10,
+		category = Assembly,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.9mmSilencer;Base.DIY9mmSilencer;Base.40Silencer;Base.DIY40Silencer;Base.45Silencer;Base.DIY45Silencer] mode:destroy mappers[silencerType] flags[ItemCount;InheritCondition],
+			item 1 [Base.SilencerTriLug],
+		}
+		outputs
+		{
+			item 1 mapper:silencerType,
+		}
+        	itemMapper silencerType
+        	{
+			Base.9mmTriLugSilencer = Base.9mmSilencer,
+			Base.40TriLugSilencer = Base.40Silencer,
+			Base.DIY9mmTriLugSilencer = Base.DIY9mmSilencer,
+			Base.DIY40TriLugSilencer = Base.DIY40Silencer,
+			Base.45TriLugSilencer = Base.45Silencer,
+			Base.DIY45TriLugSilencer = Base.DIY45Silencer,
+		}
+	}
+
+	craftRecipe RemoveTriLug
+	{
+        timedAction = Making,
+		Time = 10,
+		category = Assembly,
+		OnCreate = Guns93OnCreateDisassembleTriLugSilencer,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.9mmTriLugSilencer;Base.DIY9mmTriLugSilencer;Base.40TriLugSilencer;Base.DIY40TriLugSilencer;Base.45TriLugSilencer;Base.DIY45TriLugSilencer] mode:destroy mappers[trilugtype] flags[ItemCount;InheritCondition],
+		}
+		outputs
+		{
+			item 1 mapper:trilugtype,
+		}
+        	itemMapper trilugtype
+        	{
+			Base.9mmSilencer = Base.9mmTriLugSilencer,
+			Base.40Silencer = Base.40TriLugSilencer,
+			Base.DIY9mmSilencer = Base.DIY9mmTriLugSilencer,
+			Base.DIY40Silencer = Base.DIY40TriLugSilencer,
+			Base.45Silencer = Base.45TriLugSilencer,
+			Base.DIY45Silencer = Base.DIY40TriLugSilencer,
+		}
+	}
+
+	craftRecipe CraftCanBooster
+	{
+		timedAction = Welding,
+		Time = 200,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:5,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:10,
+		AutoLearnAny = Aiming:6,
+		inputs
+		{
+			item 1 [Base.SteelBarHalf],
+			item 1 [Base.SteelPiece],
+			item 1 [Base.Wire],
+			item 1 [Base.BlowTorch],
+			item 1 tags[base:weldingmask] mode:keep,
+			item 1 tags[base:File] mode:keep,
+			item 1 [Base.TapDie] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.CanBooster,
+		}
+	}
+}

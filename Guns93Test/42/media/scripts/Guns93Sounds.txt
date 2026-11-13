@@ -1,0 +1,217 @@
+module Base
+{
+	sound 22shoot
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/22shoot.ogg,
+		volume = 1.2,
+		}
+	}
+
+	sound 22Silenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/22Silenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound 22SilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/22SilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound PistolSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/PistolSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound PistolSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/PistolSilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound SubPistolSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/SubPistolSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound SubPistolSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/SubPistolSilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound MagnumSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/MagnumSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound MagnumSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/MagnumSilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound CarbineSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/CarbineSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound CarbineSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/CarbineSilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound RifleSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/RifleSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound RifleSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/RifleSilencedAction.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound ShotgunSilenced
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/ShotgunSilenced.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound ShotgunSilencedAction
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/ShotgunSilencedAction.ogg,
+		volume = 0.6,
+		}
+	}
+
+	sound ColtHammerCock
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/ColtHammerCock.ogg,
+		volume = 0.4,
+		}
+	}
+
+	sound ColtShoot
+	{
+		category = Item,
+        	is3D = true,
+        	maxInstancesPerEmitter = 2,
+		clip
+		{
+		file = media/sound/ColtShoot.ogg,
+		volume = 1.2,
+		}
+	}
+
+	sound GarandPing
+	{
+		category = Item,
+        	is3D = true,
+		clip
+		{
+		file = media/sound/GarandPing.ogg,
+		volume = 0.8,
+		}
+	}
+}

@@ -1,0 +1,8173 @@
+module Base
+{
+	model T56BayoOut
+	{
+	    mesh = weapons/parts/T56BayoOut,
+	    texture = weapons/parts/AKT56Bayo,
+	}
+	model T56BayoIn
+	{
+	    mesh = weapons/parts/T56BayoIn,
+	    texture = weapons/parts/AKT56Bayo,
+	}
+	model SKSBayoOut
+	{
+		mesh = weapons/parts/SKSBayoOut,
+		texture = weapons/firearm/SKS,
+		scale = 1,
+	}
+	model SKSBayoIn
+	{
+		mesh = weapons/parts/SKSBayoIn,
+		texture = weapons/firearm/SKS,
+		scale = 1,
+	}
+	model A2Stock
+	{
+		mesh = weapons/parts/A2Stock,
+		texture = weapons/parts/A2Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A2StockGray
+    {
+		mesh = weapons/parts/A2Stock,
+		texture = weapons/parts/A2FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2StockGreen
+    {
+		mesh = weapons/parts/A2Stock,
+		texture = weapons/parts/A2FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockOut
+	{
+		mesh = weapons/parts/CAR15StockOut,
+		texture = weapons/parts/CAR15Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model CAR15StockIn
+    {
+		mesh = weapons/parts/CAR15StockIn,
+		texture = weapons/parts/CAR15Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockOutGray
+    {
+		mesh = weapons/parts/CAR15StockOut,
+		texture = weapons/parts/CAR15StockColors,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockInGray
+    {
+		mesh = weapons/parts/CAR15StockIn,
+		texture = weapons/parts/CAR15StockColors,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockOutGreen
+    {
+		mesh = weapons/parts/CAR15StockOut2,
+		texture = weapons/parts/CAR15StockColors,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockInGreen
+    {
+		mesh = weapons/parts/CAR15StockIn2,
+		texture = weapons/parts/CAR15StockColors,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2Handguard
+	{
+		mesh = weapons/parts/A2Handguard,
+		texture = weapons/parts/A2Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A2HandguardGray
+    {
+		mesh = weapons/parts/A2Handguard,
+		texture = weapons/parts/A2FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2HandguardGreen
+    {
+		mesh = weapons/parts/A2Handguard,
+		texture = weapons/parts/A2FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ARTube
+    {
+		mesh = weapons/parts/ARTube,
+		texture = weapons/parts/ARTube,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15Handguard
+	{
+		mesh = weapons/parts/CARHandguard,
+		texture = weapons/parts/A2Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model CAR15HandguardGray
+    {
+		mesh = weapons/parts/CARHandguard,
+		texture = weapons/parts/A2FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15HandguardGreen
+    {
+		mesh = weapons/parts/CARHandguard,
+		texture = weapons/parts/A2FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ARCARTube
+    {
+		mesh = weapons/parts/ARCARTube,
+		texture = weapons/parts/ARTube,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2PistolGrip
+	{
+		mesh = weapons/parts/A2PistolGrip,
+		texture = weapons/parts/A2Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A2PistolGripGray
+    {
+		mesh = weapons/parts/A2PistolGrip,
+		texture = weapons/parts/A2FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2PistolGripGreen
+    {
+		mesh = weapons/parts/A2PistolGrip,
+		texture = weapons/parts/A2FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A2FlashHider
+    {
+		mesh = weapons/parts/A2FlashHider,
+		texture = weapons/firearm/AR15A2Gray,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model A1Handguard
+	{
+		mesh = weapons/parts/A1Handguard,
+		texture = weapons/parts/A1Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A1HandguardGray
+	{
+		mesh = weapons/parts/A1Handguard,
+		texture = weapons/parts/A1FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A1HandguardGreen
+    {
+		mesh = weapons/parts/A1Handguard,
+		texture = weapons/parts/A1FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A1CARHandguard
+	{
+		mesh = weapons/parts/A1CARHandguard,
+		texture = weapons/parts/A1Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A1CARHandguardGray
+	{
+		mesh = weapons/parts/A1CARHandguard,
+		texture = weapons/parts/A1FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A1CARHandguardGreen
+    {
+		mesh = weapons/parts/A1CARHandguard,
+		texture = weapons/parts/A1FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A1PistolGrip
+    {
+		mesh = weapons/parts/A1PistolGrip,
+		texture = weapons/parts/A1Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A1PistolGripGray
+    {
+		mesh = weapons/parts/A1PistolGrip,
+		texture = weapons/parts/A1FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model A1PistolGripGreen
+    {
+		mesh = weapons/parts/A1PistolGrip,
+		texture = weapons/parts/A1FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15StockOutCamo
+	{
+		mesh = weapons/parts/CAR15StockOut,
+		texture = weapons/parts/CAR15StockCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model CAR15StockInCamo
+    {
+		mesh = weapons/parts/CAR15StockIn,
+		texture = weapons/parts/CAR15StockCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CAR15HandguardCamo
+	{
+		mesh = weapons/parts/CARHandguard,
+		texture = weapons/parts/A2FurnitureCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A2PistolGripCamo
+	{
+		mesh = weapons/parts/A2PistolGrip,
+		texture = weapons/parts/A2FurnitureCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model ARForeGrip
+    {
+		mesh = weapons/parts/ARForeGrip,
+		texture = weapons/parts/A1Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ARForeGripGray
+    {
+		mesh = weapons/parts/ARForeGrip,
+		texture = weapons/parts/A1FurnitureGray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ARForeGripGreen
+    {
+		mesh = weapons/parts/ARForeGrip,
+		texture = weapons/parts/A1FurnitureGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ARForeGripCamo
+	{
+		mesh = weapons/parts/ARForeGrip,
+		texture = weapons/parts/A2FurnitureCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model A1FlashHider
+    {
+		mesh = weapons/parts/A1FlashHider,
+		texture = weapons/firearm/AR15A2Gray,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model ARRiser
+	{
+		mesh = weapons/parts/ARRiser,
+		texture = weapons/parts/ARTube,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0522 0.0780 0.0089,
+			rotate = -0.0000 0.0000 90.1908,
+			scale = 0.9000,
+		}
+	}
+	model BlackARPad
+    {
+		mesh = weapons/parts/ARPad,
+		texture = weapons/parts/BlackRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model RedARPad
+    {
+		mesh = weapons/parts/ARPad,
+		texture = weapons/parts/RedRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model BrownARPad
+    {
+		mesh = weapons/parts/ARPad,
+		texture = weapons/parts/BrownRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model LeatherARPad
+    {
+		mesh = weapons/parts/ARPad,
+		texture = weapons/parts/LeatherRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model AKMStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model MaadiSportStock
+	{
+		mesh = weapons/parts/MaadiSportStock,
+		texture = weapons/parts/AKLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKSStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model MAK90Stock
+	{
+		mesh = weapons/parts/MAK90Stock,
+		texture = weapons/parts/AKChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKLegendStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKDarkChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKPolyStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKClayco,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKPolySportStock
+	{
+		mesh = weapons/parts/AKPolyStock,
+		texture = weapons/parts/AKClayco,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKEGStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKGerman,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKBeechStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model FEGSportStock
+	{
+		mesh = weapons/parts/FEGSportStock,
+		texture = weapons/parts/AKBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKBakeStock
+	{
+		mesh = weapons/parts/AKStock,
+		texture = weapons/parts/AKBakelite,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKWireStockOut
+	{
+		mesh = weapons/parts/AKWireStockOut,
+		texture = weapons/parts/AKWireStocks,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKWireStockIn
+	{
+		mesh = weapons/parts/AKWireStockIn,
+		texture = weapons/parts/AKWireStocks,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKCrutchStockOut
+	{
+		mesh = weapons/parts/AKCrutchStockOut,
+		texture = weapons/parts/AKWireStocks,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKCrutchStockIn
+	{
+		mesh = weapons/parts/AKCrutchStockIn,
+		texture = weapons/parts/AKWireStocks,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKSideFolderOut
+	{
+		mesh = weapons/parts/AKSideFolderOut,
+		texture = weapons/parts/PolyTechFolders,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKSideFolderIn
+	{
+		mesh = weapons/parts/AKSideFolderIn,
+		texture = weapons/parts/PolyTechFolders,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKGalilFolderOut
+	{
+		mesh = weapons/parts/AKGalilFolderOut,
+		texture = weapons/parts/PolyTechFolders,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKGalilFolderIn
+	{
+		mesh = weapons/parts/AKGalilFolderIn,
+		texture = weapons/parts/PolyTechFolders,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKMGrip
+	{
+		mesh = weapons/parts/AKMGrip,
+		texture = weapons/parts/AKLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKSGrip
+	{
+		mesh = weapons/parts/AKMGrip,
+		texture = weapons/parts/AKChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKLegendGrip
+	{
+		mesh = weapons/parts/AKMGrip,
+		texture = weapons/parts/AKDarkChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKPolyGrip
+	{
+		mesh = weapons/parts/AKMGrip,
+		texture = weapons/parts/AKClayco,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKFEGGrip
+	{
+		mesh = weapons/parts/AKFEGGrip,
+		texture = weapons/parts/AKBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKEGGrip
+	{
+		mesh = weapons/parts/AKMGrip,
+		texture = weapons/parts/AKGerman,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKBakeGrip
+	{
+		mesh = weapons/parts/AKPalmGrip,
+		texture = weapons/parts/AKBakelite,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0100 0.0010 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model AKMHandguard
+    {
+		mesh = weapons/parts/AKMHandguard,
+		texture = weapons/parts/AKLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKDong
+    {
+		mesh = weapons/parts/AKDong,
+		texture = weapons/parts/AKLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKSHandguard
+    {
+		mesh = weapons/parts/AKSHandguard,
+		texture = weapons/parts/AKChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKLegendHandguard
+    {
+		mesh = weapons/parts/AKSHandguard,
+		texture = weapons/parts/AKDarkChu,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKPolyHandguard
+    {
+		mesh = weapons/parts/AKSHandguard,
+		texture = weapons/parts/AKClayco,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKBeechHandguard
+    {
+		mesh = weapons/parts/AKSHandguard,
+		texture = weapons/parts/AKBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKEGHandguard
+    {
+		mesh = weapons/parts/AKEGHandguard,
+		texture = weapons/parts/AKGerman,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKBakeHandguard
+    {
+		mesh = weapons/parts/AKSHandguard,
+		texture = weapons/parts/AKBakelite,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKGrate
+    {
+		mesh = weapons/parts/AKGrate,
+		texture = weapons/parts/AKGrateBayo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKScopeMount
+    {
+		mesh = weapons/parts/AKScopeMount,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ClampWML
+	{
+		mesh = weapons/parts/ClampWML,
+		texture = weapons/parts/ClampWML,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampWML_On
+	{
+		mesh = weapons/parts/ClampWML,
+		texture = weapons/parts/ClampWMLOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampWML2
+	{
+		mesh = weapons/parts/ClampWML2,
+		texture = weapons/parts/ClampWML,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampWML2_On
+	{
+		mesh = weapons/parts/ClampWML2,
+		texture = weapons/parts/ClampWMLOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model GlockWML
+    {
+		mesh = weapons/parts/GlockWML,
+		texture = weapons/parts/1911WML,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GlockWML_On
+    {
+		mesh = weapons/parts/GlockWML,
+		texture = weapons/parts/1911WMLOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ClampLaser
+	{
+		mesh = weapons/parts/ClampLaser,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaser_On
+	{
+		mesh = weapons/parts/ClampLaser_On,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaser2
+	{
+		mesh = weapons/parts/ClampLaser2,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaser2_On
+	{
+		mesh = weapons/parts/ClampLaser2_On,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaserSS
+	{
+		mesh = weapons/parts/ClampLaser,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaserSS_On
+	{
+		mesh = weapons/parts/ClampLaser_On,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaserSS2
+	{
+		mesh = weapons/parts/ClampLaser2,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model ClampLaserSS2_On
+	{
+		mesh = weapons/parts/ClampLaser2_On,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RailLaser
+	{
+		mesh = weapons/parts/RailLaser,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RailLaser_On
+	{
+		mesh = weapons/parts/RailLaser_On,
+		texture = weapons/parts/ClampLaser,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RailLaserSS
+	{
+		mesh = weapons/parts/RailLaser,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RailLaserSS_On
+	{
+		mesh = weapons/parts/RailLaser_On,
+		texture = weapons/parts/ClampLaserSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model GlockLaser
+	{
+		mesh = weapons/parts/GlockLaser,
+		texture = weapons/parts/GlockAcc,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model GlockLaser_On
+	{
+		mesh = weapons/parts/GlockLaser_On,
+		texture = weapons/parts/GlockAcc,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RifleBipod
+	{
+		mesh = weapons/parts/Bipod,
+		texture = weapons/parts/Bipod,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model RifleBipod_On
+	{
+		mesh = weapons/parts/Bipod_On,
+		texture = weapons/parts/Bipod,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model HK91BlackStock
+    {
+		mesh = weapons/parts/HK91Stock,
+		texture = weapons/parts/HK91Black,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91GreenStock
+    {
+		mesh = weapons/parts/HK91Stock,
+		texture = weapons/parts/HK91Green,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91WoodStock
+    {
+		mesh = weapons/parts/HK91Stock,
+		texture = weapons/parts/HK91Wood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91FlashHider
+    {
+		mesh = weapons/parts/HK91FlashHider,
+		texture = weapons/parts/HK91Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91BlackHandguard
+    {
+		mesh = weapons/parts/HK91Handguard,
+		texture = weapons/parts/HK91Black,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91GreenHandguard
+    {
+		mesh = weapons/parts/HK91Handguard,
+		texture = weapons/parts/HK91Green,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91BlackRound
+    {
+		mesh = weapons/parts/HK91RoundHandguard,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91GreenRound
+    {
+		mesh = weapons/parts/HK91RoundHandguard,
+		texture = weapons/parts/HK91GreenRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91Wood
+    {
+		mesh = weapons/parts/HK91Wood,
+		texture = weapons/parts/HK91Wood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91Lower
+    {
+		mesh = weapons/parts/HK91Lower,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91GreenLower
+    {
+		mesh = weapons/parts/HK91Lower,
+		texture = weapons/parts/HK91GreenRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91StockOut
+    {
+		mesh = weapons/parts/HK91StockOut,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK91StockIn
+    {
+		mesh = weapons/parts/HK91StockIn,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SAR8Stock
+    {
+		mesh = weapons/parts/SAR8Stock,
+		texture = weapons/parts/SR9Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SR9Stock
+    {
+		mesh = weapons/parts/SR9Stock,
+		texture = weapons/parts/SR9Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SR9Handguard
+    {
+		mesh = weapons/parts/SR9Handguard,
+		texture = weapons/parts/SR9Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SR9BakStock
+    {
+		mesh = weapons/parts/SR9Stock,
+		texture = weapons/parts/SR9BakFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SR9BakHandguard
+    {
+		mesh = weapons/parts/SR9Handguard,
+		texture = weapons/parts/SR9BakFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93Stock
+    {
+		mesh = weapons/parts/MP5Stock,
+		texture = weapons/parts/HK91Black,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93StockOut
+    {
+		mesh = weapons/parts/HK93StockOut,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93StockIn
+    {
+		mesh = weapons/parts/HK93StockIn,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93MP5StockIn
+    {
+		mesh = weapons/parts/HK93MP5StockIn,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93Handguard
+    {
+		mesh = weapons/parts/HK93Handguard,
+		texture = weapons/parts/HK91Black,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK93Round
+    {
+		mesh = weapons/parts/HK93Round,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HKBipod
+    {
+		mesh = weapons/parts/HKBipod,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HKBipod_On
+    {
+		mesh = weapons/parts/HKBipodOut,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HKCarryHandle
+	{
+	    mesh = weapons/parts/HKCarryHandle,
+		texture = weapons/firearm/HK91,
+	}
+	model HKCheekRest
+	{
+	    mesh = weapons/parts/HKCheekRest,
+		texture = weapons/firearm/HK91,
+	}
+	model HKMagRelease
+	{
+	    mesh = weapons/parts/HKMagRelease,
+		texture = weapons/firearm/HK91,
+	}
+	model HK94BarrelShroud
+    {
+		mesh = weapons/parts/HK94BarrelShroud,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HKScopeLight
+    {
+        mesh = weapons/parts/HKScopeLight,
+        texture = weapons/parts/MP5Lower2,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0000 -0.0000 0.0000,
+            rotate = -0.0000 -0.0000 -90.0000,
+            scale = 0.9000,
+        }
+    }
+	model LampOnWML
+	{
+	    mesh = weapons/parts/LampOnWML,
+		texture = weapons/parts/MP5Lower2,
+	}
+	model MP5FlashHider
+	{
+	    mesh = weapons/parts/MP5FlashHider,
+		texture = weapons/parts/HK91Parts,
+	}
+	model MP5Handguard
+    {
+		mesh = weapons/parts/MP5Handguard,
+		texture = weapons/parts/MP5Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5Round
+    {
+		mesh = weapons/parts/MP5Round,
+		texture = weapons/parts/MP5Round,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5ForendLight
+    {
+		mesh = weapons/parts/MP5ForendLight,
+		texture = weapons/parts/MP5HandguardLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5ForendLight_On
+    {
+		mesh = weapons/parts/MP5ForendLight,
+		texture = weapons/parts/MP5HandguardLightOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HK94Lower
+    {
+		mesh = weapons/parts/HK91Lower,
+		texture = weapons/parts/HK91BlackRound,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5Lower
+    {
+		mesh = weapons/parts/MP5Lower,
+		texture = weapons/parts/MP5Round,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5NavyLower
+    {
+		mesh = weapons/parts/MP5NavyLower,
+		texture = weapons/parts/MP5Lower,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5SEFLower
+    {
+		mesh = weapons/parts/MP5NavyLower,
+		texture = weapons/parts/MP5Lower2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5Stock
+    {
+		mesh = weapons/parts/MP5Stock,
+		texture = weapons/parts/MP5Furniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5StockOut
+    {
+		mesh = weapons/parts/MP5StockOut,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MP5StockIn
+    {
+		mesh = weapons/parts/MP5StockIn,
+		texture = weapons/parts/HK93Parts,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3GreaseGunStockOut
+    {
+		mesh = weapons/parts/M3GreaseGunStockOut,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3GreaseGunStockIn
+    {
+		mesh = weapons/parts/M3GreaseGunStockIn,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyStock
+    {
+		mesh = weapons/parts/ThompsonPartStock,
+		texture = weapons/firearm/ThompsonM1928,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyM1A1Sight
+    {
+		mesh = weapons/parts/ThompsonPartSightM1A1,
+		texture = weapons/firearm/ThompsonM1A1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyLymanSight
+    {
+		mesh = weapons/parts/ThompsonPartSightLyman,
+		texture = weapons/firearm/ThompsonM1A1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyLSight
+    {
+		mesh = weapons/parts/ThompsonPartSightL,
+		texture = weapons/firearm/ThompsonM1928,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyVertGrip
+    {
+		mesh = weapons/parts/ThompsonPartGripVert,
+		texture = weapons/firearm/ThompsonM1928,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TommyHandguard
+    {
+		mesh = weapons/parts/ThompsonPartGrip,
+		texture = weapons/firearm/ThompsonM1A1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CuttsComp
+    {
+		mesh = weapons/parts/ThompsonPartCutts,
+		texture = weapons/firearm/ThompsonM1928,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AR180StockOut
+    {
+		mesh = weapons/parts/AR180StockOut,
+		texture = weapons/firearm/AR180,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AR180StockIn
+    {
+		mesh = weapons/parts/AR180StockIn,
+		texture = weapons/firearm/AR180,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ValmetStockOut
+    {
+		mesh = weapons/parts/ValmetStockOut,
+		texture = weapons/firearm/Valmet,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ValmetStockIn
+    {
+		mesh = weapons/parts/ValmetStockIn,
+		texture = weapons/firearm/Valmet,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ValmetFlashHider
+    {
+		mesh = weapons/parts/ValmetFlashHider,
+		texture = weapons/firearm/Valmet,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model AKMSStockOut
+    {
+		mesh = weapons/parts/AKMSStockOut,
+		texture = weapons/firearm/AKM,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKMSStockIn
+    {
+		mesh = weapons/parts/AKMSStockIn,
+		texture = weapons/firearm/AKM,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model AKSlantBrake
+    {
+		mesh = weapons/parts/AKSlantBrake,
+		texture = weapons/parts/AKBrakeBayo,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model AKBrake
+    {
+		mesh = weapons/parts/AKBrake,
+		texture = weapons/parts/AKBrakeBayo,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model CalicoStockOut
+    {
+		mesh = weapons/parts/CalicoStockOut,
+		texture = weapons/firearm/CalicoRifle,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model CalicoStockIn
+    {
+		mesh = weapons/parts/CalicoStockIn,
+		texture = weapons/firearm/CalicoRifle,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SPAS12StockOut
+    {
+		mesh = weapons/parts/SPAS12StockOut,
+		texture = weapons/firearm/SPAS12,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SPAS12StockIn
+    {
+		mesh = weapons/parts/SPAS12StockIn,
+		texture = weapons/firearm/SPAS12,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GlockThread
+    {
+		mesh = weapons/parts/GlockThread,
+		texture = weapons/firearm/Glock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M1911Thread
+    {
+		mesh = weapons/parts/1911Thread,
+		texture = weapons/firearm/M1911,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911BluedThread
+    {
+		mesh = weapons/parts/1911Thread,
+		texture = weapons/firearm/1911Blued,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911SSThread
+    {
+		mesh = weapons/parts/1911Thread,
+		texture = weapons/firearm/1911SS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsGI
+    {
+		mesh = weapons/parts/1911Grips1,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsGIWorld
+    {
+		mesh = WorldItems/1911Grips1World,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsGI
+    {
+		mesh = weapons/parts/OfficerGrips1,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911WrapGrip
+    {
+		mesh = weapons/parts/1911WrapGrip,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsRubber
+    {
+		mesh = weapons/parts/1911Grips2,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsRubberWorld
+    {
+		mesh = WorldItems/1911Grips2World,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsRubber
+    {
+		mesh = weapons/parts/OfficerGrips2,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsWood
+    {
+		mesh = weapons/parts/1911Grips3,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsWoodWorld
+    {
+		mesh = WorldItems/1911Grips3World,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsWood
+    {
+		mesh = weapons/parts/OfficerGrips3,
+		texture = weapons/parts/1911Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsPearl
+    {
+		mesh = weapons/parts/1911Grips3,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsPearlWorld
+    {
+		mesh = WorldItems/1911Grips3World,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsPearl
+    {
+		mesh = weapons/parts/OfficerGrips3,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsElk
+    {
+		mesh = weapons/parts/1911Grips1,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsElkWorld
+    {
+		mesh = WorldItems/1911Grips1World,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsElk
+    {
+		mesh = weapons/parts/OfficerGrips1,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsDelta
+    {
+		mesh = weapons/parts/1911Grips2,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsDeltaWorld
+    {
+		mesh = WorldItems/1911Grips2World,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsWrapDelta
+    {
+		mesh = weapons/parts/1911WrapGrip,
+		texture = weapons/parts/1911Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsMedal
+    {
+		mesh = weapons/parts/1911Grips1,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsMedalWorld
+    {
+		mesh = WorldItems/1911Grips1World,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsMedal
+    {
+		mesh = weapons/parts/OfficerGrips1,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsMedal2
+    {
+		mesh = weapons/parts/1911Grips2,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsMedal2World
+    {
+		mesh = WorldItems/1911Grips2World,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsMedal2
+    {
+		mesh = weapons/parts/OfficerGrips2,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsWood2
+    {
+		mesh = weapons/parts/1911Grips3,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911GripsWood2World
+    {
+		mesh = WorldItems/1911Grips3World,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model OfficerGripsWood2
+    {
+		mesh = weapons/parts/OfficerGrips3,
+		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911WML
+    {
+		mesh = weapons/parts/1911WML,
+		texture = weapons/parts/1911WML,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 1911WML_On
+    {
+		mesh = weapons/parts/1911WML,
+		texture = weapons/parts/1911WMLOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightRearPark
+    {
+		mesh = weapons/parts/PistolFixSightRear,
+		texture = weapons/firearm/1911Park,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightFrontPark
+    {
+		mesh = weapons/parts/PistolFixSightFront,
+		texture = weapons/firearm/1911Park,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightRearBlue
+    {
+		mesh = weapons/parts/PistolFixSightRear,
+		texture = weapons/firearm/1911Blue,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightFrontBlue
+    {
+		mesh = weapons/parts/PistolFixSightFront,
+		texture = weapons/firearm/1911Blue,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightRearSS
+    {
+		mesh = weapons/parts/PistolFixSightRear,
+		texture = weapons/firearm/1911SS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolFixSightFrontSS
+    {
+		mesh = weapons/parts/PistolFixSightFront,
+		texture = weapons/firearm/1911SS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolSightRear
+    {
+		mesh = weapons/parts/PistolSightRear,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolSightFront
+    {
+		mesh = weapons/parts/PistolSightFront,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolDotSightRear
+    {
+		mesh = weapons/parts/PistolDotSightRear,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolDotSightFront
+    {
+		mesh = weapons/parts/PistolDotSightFront,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolNightSightRear
+    {
+		mesh = weapons/parts/PistolNightSightRear,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolNightSightFront
+    {
+		mesh = weapons/parts/PistolNightSightFront,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolTargetSightRear
+    {
+		mesh = weapons/parts/PistolTargetSightRear,
+		texture = weapons/parts/PistolTargetSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolTargetSightRear
+    {
+		mesh = weapons/parts/PistolTargetSightRear,
+		texture = weapons/parts/PistolTargetSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model PistolTargetSightFront
+    {
+		mesh = weapons/parts/PistolTargetSightFront,
+		texture = weapons/parts/PistolTargetSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPFixSightsPark
+    {
+		mesh = weapons/parts/BHPGISights,
+		texture = weapons/parts/BHPPark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPFixSightsInglis
+    {
+		mesh = weapons/parts/BHPInglisSights,
+		texture = weapons/parts/BHPPark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPFixSightsBlue
+    {
+		mesh = weapons/parts/BHPGISights,
+		texture = weapons/parts/BHPBlue,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPFixSightsMaria
+    {
+		mesh = weapons/parts/BHPGISights,
+		texture = weapons/parts/BHPMaria,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPFixSightsMk2
+    {
+		mesh = weapons/parts/BHPMk2Sights,
+		texture = weapons/parts/BHPTangetSight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPTagentSights
+    {
+		mesh = weapons/parts/BHPTangentSights,
+		texture = weapons/parts/BHPTangetSight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPTagentCapt
+    {
+		mesh = weapons/parts/BHPTangentSights,
+		texture = weapons/parts/BHPTangetCapt,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPTargetSights
+    {
+		mesh = weapons/parts/BHPTargetSights,
+		texture = weapons/parts/BHPTangetSight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWood
+    {
+		mesh = weapons/parts/BHPPanelGrips1,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWoodWorld
+    {
+		mesh = WorldItems/BHPPanelGrips1World,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsLight
+    {
+		mesh = weapons/parts/BHPPanelGrips2,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsLightWorld
+    {
+		mesh = WorldItems/BHPPanelGrips2World,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsPlastic
+    {
+		mesh = weapons/parts/BHPPanelGrips3,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsPlasticWorld
+    {
+		mesh = WorldItems/BHPPanelGrips3World,
+		texture = weapons/parts/BHPGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsThumb
+    {
+		mesh = weapons/parts/BHPSlimGrip1,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsThumbWorld
+    {
+		mesh = WorldItems/BHPSlimGrip1World,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsCoco
+    {
+		mesh = weapons/parts/BHPSlimGrip2,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsCocoWorld
+    {
+		mesh = WorldItems/BHPSlimGrip2World,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsRubber
+    {
+		mesh = weapons/parts/BHPSlimGrip3,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsRubberWorld
+    {
+		mesh = WorldItems/BHPSlimGrip3World,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWrap
+    {
+		mesh = weapons/parts/BHPGripsWrap,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWrapWorld
+    {
+		mesh = WorldItems/BHPGripsWrapWorld,
+		texture = weapons/parts/BHPGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsMaria
+    {
+		mesh = weapons/parts/BHPPanelGrips1,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsMariaWorld
+    {
+		mesh = WorldItems/BHPPanelGrips1World,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWalnut
+    {
+		mesh = weapons/parts/BHPSlimGrip2,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsWalnutWorld
+    {
+		mesh = WorldItems/BHPSlimGrip2World,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsElk
+    {
+		mesh = weapons/parts/BHPSlimGrip3,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model BHPGripsElkWorld
+    {
+		mesh = WorldItems/BHPSlimGrip3World,
+		texture = weapons/parts/BHPGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverFrontSight
+    {
+		mesh = weapons/parts/RevolverFrontSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverRearSight
+    {
+		mesh = weapons/parts/RevolverRearSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtRearSight
+    {
+		mesh = weapons/parts/ColtRearSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverFrontCombatSight
+    {
+		mesh = weapons/parts/RevolverFrontSight,
+		texture = weapons/parts/RevolverCombatSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverFrontCombatSightOrange
+    {
+		mesh = weapons/parts/RevolverFrontSight,
+		texture = weapons/parts/RevolverCombatSightsOrange,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverRearCombatSight
+    {
+		mesh = weapons/parts/RevolverRearSight,
+		texture = weapons/parts/RevolverCombatSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtRearCombatSight
+    {
+		mesh = weapons/parts/ColtRearSight,
+		texture = weapons/parts/RevolverCombatSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverFrontTargetSight
+    {
+		mesh = weapons/parts/RevolverFrontTargetSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverFrontNightSight
+    {
+		mesh = weapons/parts/RevolverFrontNightSight,
+		texture = weapons/parts/RevolverNightSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverRearNightSight
+    {
+		mesh = weapons/parts/RevolverRearNightSight,
+		texture = weapons/parts/RevolverNightSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameTargetGrip
+    {
+		mesh = weapons/parts/KFrameTargetGrip,
+		texture = weapons/parts/RevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameDarkTargetGrip
+    {
+		mesh = weapons/parts/KFrameTargetGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameRedTargetGrip
+    {
+		mesh = weapons/parts/KFrameTargetGrip,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameStagTargetGrip
+    {
+		mesh = weapons/parts/KFrameTargetGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameTargetGrip
+    {
+		mesh = weapons/parts/NFrameTargetGrip,
+		texture = weapons/parts/RevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameRedTargetGrip
+    {
+		mesh = weapons/parts/NFrameTargetGrip,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameDarkTargetGrip
+    {
+		mesh = weapons/parts/NFrameTargetGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameStagTargetGrip
+    {
+		mesh = weapons/parts/NFrameTargetGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameServiceGrip
+    {
+		mesh = weapons/parts/JFrameServiceGrip,
+		texture = weapons/parts/RevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameDarkServiceGrip
+    {
+		mesh = weapons/parts/JFrameServiceGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameIvoryServiceGrip
+    {
+		mesh = weapons/parts/JFrameServiceGrip,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameStagServiceGrip
+    {
+		mesh = weapons/parts/JFrameServiceGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameServiceGrip
+    {
+		mesh = weapons/parts/KFrameServiceGrip,
+		texture = weapons/parts/RevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverServiceGripWorld
+	{
+		mesh = WorldItems/RevolverServiceGripWorld,
+		texture = weapons/parts/RevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model KFrameDarkServiceGrip
+    {
+		mesh = weapons/parts/KFrameServiceGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverDarkServiceGripWorld
+    {
+		mesh = WorldItems/RevolverServiceGripWorld,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameIvoryServiceGrip
+    {
+		mesh = weapons/parts/KFrameServiceGrip,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverIvoryServiceGripWorld
+    {
+		mesh = WorldItems/RevolverServiceGripWorld,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameStagServiceGrip
+    {
+		mesh = weapons/parts/KFrameServiceGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RevolverStagServiceGripWorld
+    {
+		mesh = WorldItems/RevolverServiceGripWorld,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TGripGold
+    {
+		mesh = weapons/parts/TGripGold,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TGripBlue
+    {
+		mesh = weapons/parts/TGripBlue,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model TGripSS
+    {
+		mesh = weapons/parts/TGripSS,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameFingerGrip
+    {
+		mesh = weapons/parts/JFrameFingerGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameDarkFingerGrip
+    {
+		mesh = weapons/parts/JFrameFingerGrip,
+		texture = weapons/parts/RevolverWood4,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameRubberGrip
+    {
+		mesh = weapons/parts/JFrameFingerGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameFingerGrip
+    {
+		mesh = weapons/parts/KFrameFingerGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameDarkFingerGrip
+    {
+		mesh = weapons/parts/KFrameFingerGrip,
+		texture = weapons/parts/RevolverWood4,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameRubberGrip
+    {
+		mesh = weapons/parts/KFrameFingerGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameFingerGrip
+    {
+		mesh = weapons/parts/NFrameFingerGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameDarkFingerGrip
+    {
+		mesh = weapons/parts/NFrameFingerGrip,
+		texture = weapons/parts/RevolverWood4,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model NFrameRubberGrip
+    {
+		mesh = weapons/parts/NFrameFingerGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameBootGrip
+    {
+		mesh = weapons/parts/JFrameBootGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameDarkBootGrip
+    {
+		mesh = weapons/parts/JFrameBootGrip,
+		texture = weapons/parts/RevolverWood4,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameRubberBootGrip
+    {
+		mesh = weapons/parts/JFrameBootGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model JFrameIvoryBootGrip
+    {
+		mesh = weapons/parts/JFrameBootGrip,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameBootGrip
+    {
+		mesh = weapons/parts/KFrameBootGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameDarkBootGrip
+    {
+		mesh = weapons/parts/KFrameBootGrip,
+		texture = weapons/parts/RevolverWood4,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameRubberBootGrip
+    {
+		mesh = weapons/parts/KFrameBootGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model KFrameIvoryBootGrip
+    {
+		mesh = weapons/parts/KFrameBootGrip,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFramePresGrip
+    {
+		mesh = weapons/parts/IFramePresGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameDarkPresGrip
+    {
+		mesh = weapons/parts/IFramePresGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameStarGrip
+    {
+		mesh = weapons/parts/IFrameStarGrip,
+		texture = weapons/parts/ColtRevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameRubberGrip
+    {
+		mesh = weapons/parts/IFrameRubberGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameRubberFingerGrip
+    {
+		mesh = weapons/parts/IFrameFingerGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameFingerGrip
+    {
+		mesh = weapons/parts/IFrameFingerGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameServiceGrip
+    {
+		mesh = weapons/parts/IFrameServiceGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameStagServiceGrip
+    {
+		mesh = weapons/parts/IFrameServiceGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IFrameIvoryServiceGrip
+    {
+		mesh = weapons/parts/IFrameServiceGrip,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model VFrameTargetGrip
+    {
+		mesh = weapons/parts/IFrameRubberGrip,
+		texture = weapons/parts/ColtRevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model VFrameServiceGrip
+    {
+		mesh = weapons/parts/VFrameServiceGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model VFrameStagServiceGrip
+    {
+		mesh = weapons/parts/VFrameServiceGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model VFrameIvoryServiceGrip
+    {
+		mesh = weapons/parts/VFrameServiceGrip,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtJFramePresGrip
+    {
+		mesh = weapons/parts/ColtJFramePresGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameTargetGrip
+    {
+		mesh = weapons/parts/IFrameRubberGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameDarkPresGrip
+    {
+		mesh = weapons/parts/ColtJFramePresGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtJFramePresGrip
+    {
+		mesh = weapons/parts/ColtJFramePresGrip,
+		texture = weapons/parts/RevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameStarGrip
+    {
+		mesh = weapons/parts/DFrameStarGrip,
+		texture = weapons/parts/ColtRevolverWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameRubberGrip
+    {
+		mesh = weapons/parts/DFrameRubberGrip,
+		texture = weapons/parts/RevolverRubberSilver,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameRubberFingerGrip
+    {
+		mesh = weapons/parts/DFrameFingerGrip,
+		texture = weapons/parts/RevolverRubberSilver,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameCompactGrip
+    {
+		mesh = weapons/parts/DFrameCompactGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameFingerGrip
+    {
+		mesh = weapons/parts/DFrameFingerGrip,
+		texture = weapons/parts/RevolverWood3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameServiceGrip
+    {
+		mesh = weapons/parts/DFrameServiceGrip,
+		texture = weapons/parts/ColtRevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameStagServiceGrip
+    {
+		mesh = weapons/parts/DFrameServiceGrip,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DFrameIvoryServiceGrip
+    {
+		mesh = weapons/parts/DFrameServiceGrip,
+		texture = weapons/parts/RevolverGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtHardRubberGrip
+    {
+		mesh = weapons/parts/ColtGrip,
+		texture = weapons/parts/ColtGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtStagGrip
+    {
+		mesh = weapons/parts/ColtGrip,
+		texture = weapons/parts/ColtGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtPearlGrip
+    {
+		mesh = weapons/parts/ColtGrip,
+		texture = weapons/parts/ColtGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtWalnutGrip
+    {
+		mesh = weapons/parts/ColtGrip2,
+		texture = weapons/parts/ColtGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtIvoryGrip
+    {
+		mesh = weapons/parts/ColtGrip2,
+		texture = weapons/parts/ColtGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ColtDarkWalnutGrip
+    {
+		mesh = weapons/parts/ColtGrip2,
+		texture = weapons/parts/ColtGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100GripWood
+    {
+		mesh = weapons/parts/GP100Grip,
+		texture = weapons/parts/RugerGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100GripBlack
+    {
+		mesh = weapons/parts/GP100Grip,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100CompGripWood
+    {
+		mesh = weapons/parts/GP100CompGrip,
+		texture = weapons/parts/RugerGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100CompGripBlack
+    {
+		mesh = weapons/parts/GP100CompGrip,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100WoodGrip
+    {
+		mesh = weapons/parts/GP100CompGrip,
+		texture = weapons/parts/RugerGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100HogueCheck
+    {
+		mesh = weapons/parts/GP100Hogue,
+		texture = weapons/parts/RugerGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100HogueSmooth
+    {
+		mesh = weapons/parts/GP100Hogue,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100FingerCheck
+    {
+		mesh = weapons/parts/GP100HogueFinger,
+		texture = weapons/parts/RugerGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100FingerSmooth
+    {
+		mesh = weapons/parts/GP100HogueFinger,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100HogueRubber
+    {
+		mesh = weapons/parts/GP100Hogue,
+		texture = weapons/parts/RugerGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100FingerRubber
+    {
+		mesh = weapons/parts/GP100HogueFinger,
+		texture = weapons/parts/RugerGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model GP100RubberGrip
+    {
+		mesh = weapons/parts/GP100RubberGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RugerFrontCombat
+	{
+		mesh = weapons/parts/RugerFrontRamp,
+		texture = weapons/parts/RevolverCombatSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerFrontTarget
+	{
+		mesh = weapons/parts/RugerFrontRamp,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerFrontSight
+	{
+		mesh = weapons/parts/RugerFrontSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerFrontNight
+	{
+		mesh = weapons/parts/RugerFrontSight,
+		texture = weapons/parts/RevolverNightSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerRearCombat
+	{
+		mesh = weapons/parts/RugerRearSight,
+		texture = weapons/parts/RevolverCombatSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerRearSight
+	{
+		mesh = weapons/parts/RugerRearSight,
+		texture = weapons/parts/RevolverBasicSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model RugerRearNight
+	{
+		mesh = weapons/parts/RugerRearNight,
+		texture = weapons/parts/RevolverNightSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model SP101GripWood
+    {
+		mesh = weapons/parts/SP101Grip,
+		texture = weapons/parts/RugerGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SP101GripBlack
+    {
+		mesh = weapons/parts/SP101Grip,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SP101MonogripWood
+    {
+		mesh = weapons/parts/SP101Monogrip,
+		texture = weapons/parts/RugerGrips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SP101MonogripRubber
+    {
+		mesh = weapons/parts/SP101Grip,
+		texture = weapons/parts/RugerGrips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SP101RubberGrip
+    {
+		mesh = weapons/parts/SP101RubberGrip,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model S6TargetGrips
+    {
+		mesh = weapons/parts/S6TargetGrips,
+		texture = weapons/parts/SecuritySixGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model S6RubberGrips
+    {
+		mesh = weapons/parts/S6RubberGrips,
+		texture = weapons/parts/RevolverRubber,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model S6ServiceGrips
+    {
+		mesh = weapons/parts/S6ServiceGrips,
+		texture = weapons/parts/SecuritySixGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model S6ServiceGripsWorld
+	{
+		mesh = WorldItems/RevolverServiceGripWorld,
+		texture = weapons/parts/SecuritySixGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model S6IvoryGrips
+    {
+		mesh = weapons/parts/S6ServiceGrips,
+		texture = weapons/parts/RevolverGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model S6StagGrips
+    {
+		mesh = weapons/parts/S6ServiceGrips,
+		texture = weapons/parts/RevolverStagGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ShotgunBeadSight
+	{
+		mesh = weapons/parts/BeadSight,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model ShotgunGhostRing
+    {
+		mesh = weapons/parts/ShotgunGhostRing,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MossGhostRing
+    {
+		mesh = weapons/parts/MossGhostRing,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ShotgunFrontSight
+    {
+		mesh = weapons/parts/ShotgunFrontSight,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model ShotgunNotchSight
+    {
+		mesh = weapons/parts/ShotgunNotchSight,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870StockWoodDark
+    {
+		mesh = weapons/parts/870Stock,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870CutStockDark
+    {
+		mesh = weapons/parts/870CutStock,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ForendWoodDark
+    {
+		mesh = weapons/parts/870Forend,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870CorncobWoodDark
+    {
+		mesh = weapons/parts/870Corncob,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500RoundWoodDark
+    {
+		mesh = weapons/parts/500RoundForend,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870StockWoodLight
+    {
+		mesh = weapons/parts/870Stock,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870CutStockLight
+    {
+		mesh = weapons/parts/870CutStock,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ForendWoodLight
+    {
+		mesh = weapons/parts/870Forend,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870CorncobWoodLight
+    {
+		mesh = weapons/parts/870Corncob,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500RoundWoodLight
+    {
+		mesh = weapons/parts/500RoundForend,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870StockSynthetic
+    {
+		mesh = weapons/parts/870Stock,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500CamoStock
+    {
+		mesh = weapons/parts/870Stock,
+		texture = weapons/parts/CamoFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870PistolStock
+    {
+		mesh = weapons/parts/870PistolStock,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500PistolStock
+    {
+		mesh = weapons/parts/500PistolStock,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870PistolGrip
+    {
+		mesh = weapons/parts/870PistolGrip,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500PistolGrip
+    {
+		mesh = weapons/parts/500PistolGrip,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ForendSynthetic
+    {
+		mesh = weapons/parts/870Forend,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500CamoForend
+    {
+		mesh = weapons/parts/870Forend,
+		texture = weapons/parts/CamoFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870CorncobSynthetic
+    {
+		mesh = weapons/parts/870Corncob,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500RoundSynthetic
+    {
+		mesh = weapons/parts/500RoundForend,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870StrapSynthetic
+    {
+		mesh = weapons/parts/870Strap,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870PistolPump
+    {
+		mesh = weapons/parts/870PistolPump,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500PistolPump
+    {
+		mesh = weapons/parts/500PistolPump,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ForendLight
+    {
+		mesh = weapons/parts/870ForendLight,
+		texture = weapons/parts/ForendLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ForendLight_On
+    {
+		mesh = weapons/parts/870ForendLight,
+		texture = weapons/parts/ForendLightOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870SideFoldIn
+    {
+		mesh = weapons/parts/870SideFoldIn,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870SideFoldOut
+    {
+		mesh = weapons/parts/870SideFoldOut,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500SideFoldIn
+    {
+		mesh = weapons/parts/500SideFolderIn,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500SideFoldOut
+    {
+		mesh = weapons/parts/500SideFolderOut,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870TopFoldIn
+    {
+		mesh = weapons/parts/870TopFoldIn,
+		texture = weapons/parts/870TopFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870TopFoldOut
+    {
+		mesh = weapons/parts/870TopFoldOut,
+		texture = weapons/parts/870TopFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500TopFoldIn
+    {
+		mesh = weapons/parts/500TopFolderIn,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 500TopFoldOut
+    {
+		mesh = weapons/parts/500TopFolderOut,
+		texture = weapons/parts/ShotgunFolder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870HeatShield
+    {
+		mesh = weapons/parts/870HeatShield,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870HeatShieldSS
+    {
+		mesh = weapons/parts/870HeatShield,
+		texture = weapons/parts/MountShieldSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870ScopeRail
+    {
+		mesh = weapons/parts/870ScopeRail,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 870MagExtenBlue
+	{
+		mesh = weapons/parts/870MagExten,
+		texture = weapons/firearm/Rem870Blue,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0685 0.3580 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9000,
+		}
+	}
+	model 870MagExtenPark
+	{
+		mesh = weapons/parts/870MagExten,
+		texture = weapons/firearm/Rem870Park,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0685 0.3580 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9000,
+		}
+	}
+	model 870MagExtenPark2
+	{
+		mesh = weapons/parts/870MagExten,
+		texture = weapons/firearm/Rem1187Park,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0685 0.3580 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9000,
+		}
+	}
+	model 870MagExtenMarine
+	{
+		mesh = weapons/parts/870MagExten,
+		texture = weapons/firearm/Rem870Marine,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0685 0.3580 -0.0000,
+			rotate = 180.0000 -0.0000 -90.0000,
+			scale = 0.9000,
+		}
+	}
+	model 500ScopeRail
+    {
+		mesh = weapons/parts/500ScopeMount,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37StockWoodDark
+    {
+		mesh = weapons/parts/Ithaca37Stock,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37CutStockDark
+    {
+		mesh = weapons/parts/Ithaca37CutStock,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37ForendWoodDark
+    {
+		mesh = weapons/parts/Ithaca37Forend,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37CheckForendWoodDark
+    {
+		mesh = weapons/parts/Ithaca37ForendCheck,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37WideWoodDark
+    {
+		mesh = weapons/parts/Ithaca37WideForend,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37StockWoodLight
+    {
+		mesh = weapons/parts/Ithaca37Stock,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37CutStockLight
+    {
+		mesh = weapons/parts/Ithaca37CutStock,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37ForendWoodLight
+    {
+		mesh = weapons/parts/Ithaca37Forend,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37CheckForendWoodLight
+    {
+		mesh = weapons/parts/Ithaca37ForendCheck,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37WideWoodLight
+    {
+		mesh = weapons/parts/Ithaca37WideForend,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37StockSynthetic
+    {
+		mesh = weapons/parts/Ithaca37Stock,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37PistolStock
+    {
+		mesh = weapons/parts/Ithaca37PistolStock,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37PistolGrip
+    {
+		mesh = weapons/parts/Ithaca37PistolGrip,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model HicksGrip
+    {
+		mesh = weapons/parts/HicksGrip,
+		texture = weapons/parts/HicksGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37ForendSynthetic
+    {
+		mesh = weapons/parts/Ithaca37Forend,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37WideSynthetic
+    {
+		mesh = weapons/parts/Ithaca37WideForend,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37StrapSynthetic
+    {
+		mesh = weapons/parts/Ithaca37Strap,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37PistolPump
+    {
+		mesh = weapons/parts/Ithaca37PistolPump,
+		texture = weapons/parts/870PistolGrip,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37SideFoldIn
+    {
+		mesh = weapons/parts/Ithaca37SideFoldIn,
+		texture = weapons/parts/M14FoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37SideFoldOut
+    {
+		mesh = weapons/parts/Ithaca37SideFoldOut,
+		texture = weapons/parts/M14FoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37ScopeRail
+    {
+		mesh = weapons/parts/Ithaca37ScopeRail,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Ithaca37BayoLug
+    {
+		mesh = weapons/parts/Ithaca37BayoLug,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Black870Pad
+    {
+		mesh = weapons/parts/870Pad,
+		texture = weapons/parts/BlackRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model Red870Pad
+    {
+		mesh = weapons/parts/870Pad,
+		texture = weapons/parts/RedRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model Brown870Pad
+    {
+		mesh = weapons/parts/870Pad,
+		texture = weapons/parts/BrownRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model Leather870Pad
+    {
+		mesh = weapons/parts/870Pad,
+		texture = weapons/parts/LeatherRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model BlackHKPad
+    {
+		mesh = weapons/parts/HKPad,
+		texture = weapons/parts/BlackRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model RedHKPad
+    {
+		mesh = weapons/parts/HKPad,
+		texture = weapons/parts/RedRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model BrownHKPad
+    {
+		mesh = weapons/parts/HKPad,
+		texture = weapons/parts/BrownRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model LeatherHKPad
+    {
+		mesh = weapons/parts/HKPad,
+		texture = weapons/parts/LeatherRecoilPad,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model Rem1100ForendWoodDark
+    {
+		mesh = weapons/parts/Rem1100Forend,
+		texture = weapons/parts/WoodFurnitureDark,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Rem1100ForendWoodLight
+    {
+		mesh = weapons/parts/Rem1100Forend,
+		texture = weapons/parts/WoodFurnitureLight,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Rem1100ForendSynthetic
+    {
+		mesh = weapons/parts/Rem1100Forend,
+		texture = weapons/parts/SyntheticFurniture,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStock
+    {
+		mesh = weapons/parts/UplanderStock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStock
+    {
+		mesh = weapons/parts/UplanderCutStock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStraightStock
+    {
+		mesh = weapons/parts/UplanderStraightStock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStraightStock
+    {
+		mesh = weapons/parts/UplanderCutStraightStock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderHandguard
+    {
+		mesh = weapons/parts/UplanderHandguard,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStockDark
+    {
+		mesh = weapons/parts/UplanderStock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStockDark
+    {
+		mesh = weapons/parts/UplanderCutStock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStraightStockDark
+    {
+		mesh = weapons/parts/UplanderStraightStock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStraightStockDark
+    {
+		mesh = weapons/parts/UplanderCutStraightStock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderHandguardDark
+    {
+		mesh = weapons/parts/UplanderHandguard,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStockCheck
+    {
+		mesh = weapons/parts/UplanderStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStockCheck
+    {
+		mesh = weapons/parts/UplanderCutStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderHandguardCheck
+    {
+		mesh = weapons/parts/UplanderHandguard,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderStockDarkCheck
+    {
+		mesh = weapons/parts/UplanderStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderCutStockDarkCheck
+    {
+		mesh = weapons/parts/UplanderCutStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UplanderHandguardDarkCheck
+    {
+		mesh = weapons/parts/UplanderHandguard,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxStock
+    {
+		mesh = weapons/parts/SavageFoxStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCutStock
+    {
+		mesh = weapons/parts/SavageFoxCutStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCapStock
+    {
+		mesh = weapons/parts/SavageFoxCapStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCutCapStock
+    {
+		mesh = weapons/parts/SavageFoxCutCapStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxHandguard
+    {
+		mesh = weapons/parts/SavageFoxHandguard,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxSlimHandguard
+    {
+		mesh = weapons/parts/SavageFoxSlimHandguard,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxStockDark
+    {
+		mesh = weapons/parts/SavageFoxStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCutStockDark
+    {
+		mesh = weapons/parts/SavageFoxCutStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCapStockDark
+    {
+		mesh = weapons/parts/SavageFoxCapStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCutCapStockDark
+    {
+		mesh = weapons/parts/SavageFoxCutCapStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxHandguardDark
+    {
+		mesh = weapons/parts/SavageFoxHandguard,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxSlimHandguardDark
+    {
+		mesh = weapons/parts/SavageFoxSlimHandguard,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxStockBeech
+    {
+		mesh = weapons/parts/SavageFoxStock,
+		texture = weapons/parts/StockBeechCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxCutStockBeech
+    {
+		mesh = weapons/parts/SavageFoxCutStock,
+		texture = weapons/parts/StockBeechCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxHandguardBeech
+    {
+		mesh = weapons/parts/SavageFoxHandguard,
+		texture = weapons/parts/StockBeechCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SavageFoxSlimHandguardBeech
+    {
+		mesh = weapons/parts/SavageFoxSlimHandguard,
+		texture = weapons/parts/StockBeechCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700WalnutStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700WalnutStock
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700WalnutStockCheck
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700WalnutStockCheck
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700WalnutStockCap
+    {
+		mesh = weapons/parts/700StockCap,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700WalnutStockCap
+    {
+		mesh = weapons/parts/SO700StockCap,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700DarkWalnutStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700DarkWalnutStock
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700DarkWalnutStockCheck
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700DarkWalnutStockCheck
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700DarkWalnutStockCap
+    {
+		mesh = weapons/parts/700StockCap,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700DarkWalnutStockCap
+    {
+		mesh = weapons/parts/SO700StockCap,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700LaminateStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700LaminateStock
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockLaminate,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700LaminateStockCheck
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockLaminateCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700LaminateStockCheck
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockLaminateCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700LaminateStockCap
+    {
+		mesh = weapons/parts/700StockCap,
+		texture = weapons/parts/StockLaminateCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700LaminateStockCap
+    {
+		mesh = weapons/parts/SO700StockCap,
+		texture = weapons/parts/StockLaminateCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700MapleStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockMaple,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700MapleStock
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockMaple,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700MapleStockCheck
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700MapleStockCheck
+    {
+		mesh = weapons/parts/SO700Stock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700MapleStockCap
+    {
+		mesh = weapons/parts/700StockCap,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO700MapleStockCap
+    {
+		mesh = weapons/parts/SO700StockCap,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700PolymerStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700PolymerStockCheck
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockPolymerCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 700SmearStock
+    {
+		mesh = weapons/parts/700Stock,
+		texture = weapons/parts/StockSmear,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M24Stock
+    {
+		mesh = weapons/parts/M24Stock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M24CamoStock
+    {
+		mesh = weapons/parts/M24Stock,
+		texture = weapons/parts/StockCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70WalnutStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70WalnutStock
+    {
+		mesh = weapons/parts/SOWinM70Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70DarkWalnutStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70DarkWalnutStock
+    {
+		mesh = weapons/parts/SOWinM70Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70MapleStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70MapleStock
+    {
+		mesh = weapons/parts/SOWinM70Stock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70WalnutCapStock
+    {
+		mesh = weapons/parts/WinM70CapStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70WalnutCapStock
+    {
+		mesh = weapons/parts/SOWinM70CapStock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70DarkWalnutCapStock
+    {
+		mesh = weapons/parts/WinM70CapStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70DarkWalnutCapStock
+    {
+		mesh = weapons/parts/SOWinM70CapStock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70MapleCapStock
+    {
+		mesh = weapons/parts/WinM70CapStock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70MapleCapStock
+    {
+		mesh = weapons/parts/SOWinM70CapStock,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70WalnutSchnabel
+    {
+		mesh = weapons/parts/WinM70Schnabel,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70WalnutSchnabel
+    {
+		mesh = weapons/parts/SOWinM70Schnabel,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70DarkWalnutSchnabel
+    {
+		mesh = weapons/parts/WinM70Schnabel,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70DarkWalnutSchnabel
+    {
+		mesh = weapons/parts/SOWinM70Schnabel,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70MapleSchnabel
+    {
+		mesh = weapons/parts/WinM70Schnabel,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SOM70MapleSchnabel
+    {
+		mesh = weapons/parts/SOWinM70Schnabel,
+		texture = weapons/parts/StockMapleCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70PolymerStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockPolymerCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70TreeStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockTreeCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70PolymerStockTex
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockPolymerTex,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M70GreenStock
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model WinM70TanStockTex
+    {
+		mesh = weapons/parts/WinM70Stock,
+		texture = weapons/parts/StockPolymerTexTan,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model IronSightRifle
+    {
+		mesh = weapons/parts/IronSightRifle,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model RifleFrontSight
+    {
+		mesh = weapons/parts/RifleFrontSight,
+		texture = weapons/parts/ShotgunSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788WalnutStock
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO788WalnutStock
+    {
+		mesh = weapons/parts/SO788Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788WalnutStockCheck
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO788WalnutStockCheck
+    {
+		mesh = weapons/parts/SO788Stock,
+		texture = weapons/parts/StockWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788DarkWalnutStock
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO788DarkWalnutStock
+    {
+		mesh = weapons/parts/SO788Stock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788DarkWalnutStockCheck
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO788DarkWalnutStockCheck
+    {
+		mesh = weapons/parts/SO788Stock,
+		texture = weapons/parts/StockDarkWalnutCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788BeechStock
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model SO788BeechStock
+    {
+		mesh = weapons/parts/SO788Stock,
+		texture = weapons/parts/StockBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788PolymerStock
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788PolymerStockCheck
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockPolymerCheck,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model 788SmearStock
+    {
+		mesh = weapons/parts/788Stock,
+		texture = weapons/parts/StockSmear,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14WalnutStock
+    {
+		mesh = weapons/parts/M14Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14WalnutUpHandguard
+    {
+		mesh = weapons/parts/M14UpHandguard,
+		texture = weapons/parts/M14WalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14DarkWalnutStock
+    {
+		mesh = weapons/parts/M14Stock,
+		texture = weapons/parts/StockDarkWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14DarkWalnutUpHandguard
+    {
+		mesh = weapons/parts/M14UpHandguard,
+		texture = weapons/parts/M14DarkWalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14PolymerStock
+    {
+		mesh = weapons/parts/M14Stock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14BlackUpHandguard
+    {
+		mesh = weapons/parts/M14UpHandguard,
+		texture = weapons/parts/M14BlackPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14SmearStock
+    {
+		mesh = weapons/parts/M14Stock,
+		texture = weapons/parts/StockSmear,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14BrownUpHandguard
+    {
+		mesh = weapons/parts/M14UpHandguard,
+		texture = weapons/parts/M14BrownPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14CamoStock
+    {
+		mesh = weapons/parts/M14Stock,
+		texture = weapons/parts/StockCamo,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14CamoUpHandguard
+    {
+		mesh = weapons/parts/M14UpHandguard,
+		texture = weapons/parts/M14CamoPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14FoldStockOut
+    {
+		mesh = weapons/parts/M14FoldStockOut,
+		texture = weapons/parts/M14FoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14FoldStockIn
+    {
+		mesh = weapons/parts/M14FoldStockIn,
+		texture = weapons/parts/M14FoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14Trigger
+    {
+		mesh = weapons/parts/M14Trigger,
+		texture = weapons/parts/M14WalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14AutoPart
+    {
+		mesh = weapons/parts/M14AutoPart,
+		texture = weapons/firearm/M14,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14FlashHider
+    {
+		mesh = weapons/parts/M14FlashHider,
+		texture = weapons/parts/M14DarkWalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14CamoFlashHider
+    {
+		mesh = weapons/parts/M14FlashHider,
+		texture = weapons/parts/M14CamoPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M14Brake
+    {
+		mesh = weapons/parts/M14FlashHider,
+		texture = weapons/parts/M14BrownPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14WalnutStock
+    {
+		mesh = weapons/parts/Mini14Stock,
+		texture = weapons/parts/StockWalnut,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14WalnutUpHandguard
+    {
+		mesh = weapons/parts/Mini14UpHandguard,
+		texture = weapons/parts/M14WalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14PolymerStock
+    {
+		mesh = weapons/parts/Mini14Stock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14GreenStock
+    {
+		mesh = weapons/parts/Mini14Stock,
+		texture = weapons/parts/StockGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MuzzeliteMz14
+    {
+		mesh = weapons/parts/MuzzeliteMz14,
+		texture = weapons/parts/MZ14,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14HeatShield
+    {
+		mesh = weapons/parts/Mini14HeatShield,
+		texture = weapons/parts/Mini14HeatPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14Grate
+    {
+		mesh = weapons/parts/Mini14UpHandguard,
+		texture = weapons/parts/Mini14FlashPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14GrateSS
+    {
+		mesh = weapons/parts/Mini14UpHandguard,
+		texture = weapons/parts/Mini14FlashPartSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FoldStockOut
+    {
+		mesh = weapons/parts/Mini14FoldStockOut,
+		texture = weapons/parts/Mini14Folder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FoldStockIn
+    {
+		mesh = weapons/parts/Mini14FoldStockIn,
+		texture = weapons/parts/Mini14Folder,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FoldStockOutSS
+    {
+		mesh = weapons/parts/Mini14FoldStockOut,
+		texture = weapons/parts/Mini14FolderSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FoldStockInSS
+    {
+		mesh = weapons/parts/Mini14FoldStockIn,
+		texture = weapons/parts/Mini14FolderSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14Trigger
+    {
+		mesh = weapons/parts/Mini14Trigger,
+		texture = weapons/parts/M14WalnutPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14TriggerSS
+    {
+		mesh = weapons/parts/Mini14Trigger,
+		texture = weapons/parts/Mini14HeatPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14AutoPart
+    {
+		mesh = weapons/parts/Mini14AutoPart,
+		texture = weapons/firearm/Mini14,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14AutoPartSS
+    {
+		mesh = weapons/parts/Mini14AutoPart,
+		texture = weapons/firearm/Mini14SS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FlashHider
+    {
+		mesh = weapons/parts/Mini14FlashHider,
+		texture = weapons/parts/Mini14FlashPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FlashHiderSS
+    {
+		mesh = weapons/parts/Mini14FlashHider,
+		texture = weapons/parts/Mini14FlashPartSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FlashHiderPin
+    {
+		mesh = weapons/parts/Mini14FlashHiderPin,
+		texture = weapons/parts/Mini14FlashPart,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model Mini14FlashHiderPinSS
+    {
+		mesh = weapons/parts/Mini14FlashHiderPin,
+		texture = weapons/parts/Mini14FlashPartSS,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0210 0.2070 0.0270,
+			rotate = 90.0000 0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9FrontSight
+    {
+		mesh = weapons/parts/M9FrontSight,
+		texture = weapons/firearm/M9,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9FrontSightSS
+    {
+		mesh = weapons/parts/M9FrontSight,
+		texture = weapons/firearm/Beretta92Inox,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9StockGrips
+    {
+		mesh = weapons/parts/92Grips1,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9StockGripsWorld
+    {
+		mesh = WorldItems/92Grips1World,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9RubberGrips
+    {
+		mesh = weapons/parts/92Grips1,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9RubberGripsWorld
+    {
+		mesh = WorldItems/92Grips1World,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9WoodGrips
+    {
+		mesh = weapons/parts/92Grips2,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9WoodGripsWorld
+    {
+		mesh = WorldItems/92Grips2World,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9PearlGrips
+    {
+		mesh = weapons/parts/92Grips2,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9PearlGripsWorld
+    {
+		mesh = WorldItems/92Grips2World,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9SamEdgeGrips
+    {
+		mesh = weapons/parts/92Grips3,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9SamEdgeGripsWorld
+    {
+		mesh = WorldItems/92Grips3World,
+		texture = weapons/parts/Beretta92Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9Wood2Grips
+    {
+		mesh = weapons/parts/92Grips3,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9Wood2GripsWorld
+    {
+		mesh = WorldItems/92Grips3World,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9WrapGrips
+    {
+		mesh = weapons/parts/92GripsWrap,
+		texture = weapons/parts/Beretta92Grips2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9WML
+    {
+		mesh = weapons/parts/M9WML,
+		texture = weapons/parts/1911WML,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M9WML_On
+    {
+		mesh = weapons/parts/M9WML,
+		texture = weapons/parts/1911WMLOn,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44RubberGrips
+    {
+		mesh = weapons/parts/DE44Grips,
+		texture = weapons/parts/DE44Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44WrapGrips
+    {
+		mesh = weapons/parts/DE44WrapGrips,
+		texture = weapons/parts/DE44Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44WoodGrips
+    {
+		mesh = weapons/parts/DE44Grips2,
+		texture = weapons/parts/DE44Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44PearlGrips
+    {
+		mesh = weapons/parts/DE44Grips3,
+		texture = weapons/parts/DE44Grips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44RearSight
+    {
+		mesh = weapons/parts/DE44RearSight,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44RearDotSight
+    {
+		mesh = weapons/parts/DE44RearDotSight,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44RearNightSight
+    {
+		mesh = weapons/parts/DE44RearNightSight,
+		texture = weapons/parts/PistolSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DE44RearTargetSight
+    {
+		mesh = weapons/parts/DE44RearTargetSight,
+		texture = weapons/parts/PistolTargetSights,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model FNCFlashHider
+    {
+		mesh = weapons/parts/fncPartFlashHider,
+		texture = weapons/firearm/fncBlack,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model FNCParaFolderIn
+    {
+		mesh = weapons/parts/fncPartStockParaIn,
+		texture = weapons/firearm/fncBlack,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model FNCParaFolderOut
+    {
+		mesh = weapons/parts/fncPartStockParaOut,
+		texture = weapons/firearm/fncBlack,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model FNCStock
+    {
+		mesh = weapons/parts/fncPartStock,
+		texture = weapons/firearm/fncGrey,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model FNCPartRail
+    {
+		mesh = weapons/parts/fncPartRail,
+		texture = weapons/firearm/fncBlack,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K1AFolderIn
+    {
+		mesh = weapons/parts/k1a1PartStockIn,
+		texture = weapons/firearm/k1a1,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K1AFolderOut
+    {
+		mesh = weapons/parts/k1a1PartStockOut,
+		texture = weapons/firearm/k1a1,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K1A1FlashHider
+    {
+		mesh = weapons/parts/k1a1PartFlashHider,
+		texture = weapons/firearm/k1a1,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K2PistolGrip 
+    {
+		mesh = weapons/parts/k2PartGrip,
+		texture = weapons/firearm/k2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K2FolderIn
+    {
+		mesh = weapons/parts/k2PartStockIn,
+		texture = weapons/firearm/k2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K2FolderOut
+    {
+		mesh = weapons/parts/k2PartStockOut,
+		texture = weapons/firearm/k2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model DR200Stock
+    {
+		mesh = weapons/parts/k2PartStockThumb,
+		texture = weapons/firearm/dr200,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model K2FlashHider
+    {
+		mesh = weapons/parts/k2partFlashHider,
+		texture = weapons/firearm/k2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziGrips
+    {
+		mesh = weapons/parts/UziGrips,
+		texture = weapons/parts/UziGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziGreenGrips
+    {
+		mesh = weapons/parts/UziGrips,
+		texture = weapons/parts/UziGripsGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziWoodGrips
+    {
+		mesh = weapons/parts/UziGrips,
+		texture = weapons/parts/UziGripsWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziHandguard
+    {
+		mesh = weapons/parts/UziHandguard,
+		texture = weapons/parts/UziGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziGreenHandguard
+    {
+		mesh = weapons/parts/UziHandguard,
+		texture = weapons/parts/UziGripsGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziWoodHandguard
+    {
+		mesh = weapons/parts/UziHandguard,
+		texture = weapons/parts/UziGripsWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MiniUziHandguard
+    {
+		mesh = weapons/parts/MiniUziHandguard,
+		texture = weapons/parts/UziGrips,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MiniUziGreenHandguard
+    {
+		mesh = weapons/parts/MiniUziHandguard,
+		texture = weapons/parts/UziGripsGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MiniUziWoodHandguard
+    {
+		mesh = weapons/parts/MiniUziHandguard,
+		texture = weapons/parts/UziGripsWood,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziStock
+    {
+		mesh = weapons/parts/UziStock,
+		texture = weapons/parts/StockBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziPolymerStock
+    {
+		mesh = weapons/parts/UziStock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziGreenStock
+    {
+		mesh = weapons/parts/UziStock,
+		texture = weapons/parts/StockGreen,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziThumbStock
+    {
+		mesh = weapons/parts/UziThumbStock,
+		texture = weapons/parts/StockBeech,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziThumbPolyStock
+    {
+		mesh = weapons/parts/UziThumbStock,
+		texture = weapons/parts/StockPolymer,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziStockIn
+    {
+		mesh = weapons/parts/UziStockIn,
+		texture = weapons/parts/UziFoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziStockOut
+    {
+		mesh = weapons/parts/UziStockOut,
+		texture = weapons/parts/UziFoldStock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MiniUziStockIn
+    {
+		mesh = weapons/parts/MiniUziStockIn,
+		texture = weapons/firearm/MicroUzi,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MiniUziStockOut
+    {
+		mesh = weapons/parts/MiniUziStockOut,
+		texture = weapons/firearm/MicroUzi,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MicroUziStockIn
+    {
+		mesh = weapons/parts/MicroUziStockIn,
+		texture = weapons/firearm/MicroUzi,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MicroUziStockOut
+    {
+		mesh = weapons/parts/MicroUziStockOut,
+		texture = weapons/firearm/MicroUzi,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UziShroud
+    {
+        mesh = weapons/parts/UziShroud,
+        texture = weapons/parts/870MountShield,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0718 -0.1175 -0.0000,
+            rotate = -180.0000 -0.0000 -90.0000,
+            scale = 0.9000,
+        }
+    }
+	model UziMount
+    {
+		mesh = weapons/parts/UziMount,
+		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+}

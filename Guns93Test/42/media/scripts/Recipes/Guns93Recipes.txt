@@ -1,0 +1,1301 @@
+module Base
+{
+	craftRecipe SawOffShotgun2
+	{
+		timedAction = SawOffShotgun,
+		Time = 200,
+		OnCreate = RecipeCodeOnCreate.shotgunSawnoff,
+        Tooltip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:metalsaw;base:smallsaw] mode:keep flags[MayDegrade],
+			item 1 [Base.Rem870;Base.Rem870P;Base.M870;Base.Moss500;Base.Win1200;Base.Rem1100;Base.Rem1187P;Base.Ithaca37;Base.Ithaca37MP;Base.M37;Base.SavageFox;Base.StoegerUplander;Base.BrownCitori;Base.Beretta682;Base.Auto5;Base.L395K;Base.Win37;Base.Win1912;Base.Rem870_Alt;Base.Rem870P_Alt;Base.M870_Alt;Base.Moss500_Alt;Base.Win1200_Alt;Base.Rem1100_Alt;Base.Rem1187P_Alt;Base.Ithaca37_Alt;Base.Ithaca37MP_Alt;Base.M37_Alt;Base.SavageFox_Alt;Base.StoegerUplander_Alt;Base.BrownCitori_Alt;Base.Beretta682_Alt;Base.Auto5_Alt;Base.L395K_Alt;Base.Win37_Alt;Base.Win1912_Alt] flags[InheritCondition] mappers[shotgunType],
+		}
+		outputs
+		{
+			item 1 mapper:shotgunType,
+		}
+			itemMapper shotgunType
+		{
+			Base.SORem870 = Base.Rem870,
+			Base.SORem870 = Base.Rem870P,
+			Base.SORem870 = Base.M870,
+			Base.SOMoss500 = Base.Moss500,
+			Base.SOWin1200 = Base.Win1200,
+			Base.SORem1100 = Base.Rem1100,
+			Base.SORem1100 = Base.Rem1187P,
+			Base.SOIthaca37 = Base.Ithaca37,
+			Base.SOIthaca37 = Base.Ithaca37MP,
+			Base.SOIthaca37 = Base.M37,
+			Base.SOSavageFox = Base.SavageFox,
+			Base.SOStoegerUplander = Base.StoegerUplander,
+			Base.SOBrownCitori = Base.BrownCitori,
+			Base.SOBeretta682 = Base.Beretta682,
+			Base.SOAuto5 = Base.Auto5,
+			Base.SOL395K = Base.L395K,
+			Base.SOWin37 = Base.Win37,
+			Base.SOWin1912 = Base.Win1912,
+			Base.SORem870_Alt = Base.Rem870_Alt,
+			Base.SORem870_Alt = Base.Rem870P_Alt,
+			Base.SORem870_Alt = Base.M870_Alt,
+			Base.SOMoss500_Alt = Base.Moss500_Alt,
+			Base.SOWin1200_Alt = Base.Win1200_Alt,
+			Base.SORem1100_Alt = Base.Rem1100_Alt,
+			Base.SORem1100_Alt = Base.Rem1187P_Alt,
+			Base.SOIthaca37_Alt = Base.Ithaca37_Alt,
+			Base.SOIthaca37_Alt = Base.Ithaca37MP_Alt,
+			Base.SOIthaca37_Alt = Base.M37_Alt,
+			Base.SOSavageFox_Alt = Base.SavageFox_Alt,
+			Base.SOStoegerUplander_Alt = Base.StoegerUplander_Alt,
+			Base.SOBrownCitori_Alt = Base.BrownCitori_Alt,
+			Base.SOBeretta682_Alt = Base.Beretta682_Alt,
+			Base.SOAuto5_Alt = Base.Auto5_Alt,
+			Base.SOL395K_Alt = Base.L395K_Alt,
+			Base.SOWin37_Alt = Base.Win37_Alt,
+			Base.SOWin1912_Alt = Base.Win1912_Alt,
+		}
+	}
+	
+	craftRecipe SawOffRifle
+	{
+		timedAction = SawOffShotgun,
+		Time = 200,
+		OnCreate = RecipeCodeOnCreate.shotgunSawnoff,
+        Tooltip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:MetalSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.HuntingRifle;Base.R223Rem788;Base.R3030Rem788;Base.R44Rem788;Base.VarmintRifle;Base.R3006Rem700;Base.R308Rem700;Base.W223WinM70;Base.W3006WinM70;Base.W308WinM70;Base.M24;Base.Colt9mm;Base.HK94;Base.UziCarbine;Base.MiniUziCar;Base.DWK1A1] flags[Prop2;InheritCondition] mappers[rifleType],
+		}
+		outputs
+		{
+			item 1 mapper:rifleType,
+		}
+			itemMapper rifleType
+		{
+			Base.SOR308Rem788 = Base.HuntingRifle,
+			Base.SOR223Rem788 = Base.R223Rem788,
+			Base.SOR3030Rem788 = Base.R3030Rem788,
+			Base.SOR44Rem788 = Base.R44Rem788,
+			Base.SOR223Rem700 = Base.VarmintRifle,
+			Base.SOR3006Rem700 = Base.R3006Rem700,
+			Base.SOR308Rem700 = Base.R308Rem700,
+			Base.SOM24 = Base.M24,
+			Base.SOW223WinM70 = Base.W223WinM70,
+			Base.SOW3006WinM70 = Base.W3006WinM70,
+			Base.SOW308WinM70 = Base.W308WinM70,
+			Base.M635 = Base.Colt9mm,
+			Base.MP5 = Base.HK94,
+			Base.Uzi = Base.UziCarbine,
+			Base.MiniUzi = Base.MiniUziCar,
+			Base.DWK1A = Base.DWK1A1,
+		}
+	}
+
+	craftRecipe DovetailHandgun
+	{
+		timedAction = SawOffShotgun,
+		Time = 200,
+		AllowBatchCraft = False,
+		SkillRequired = MetalWelding:3,
+		OnTest = Guns93OnTestDovetailHandgun,
+		OnCreate = Guns93OnCreateDovetailHandgun,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 tags[guns93:PistolSights;guns93:RevolverSights] mode:keep flags[Prop2],
+			item 1 tags[base:file;base:smallfiles] mode:keep flags[Prop1;MayDegrade],
+		}
+	}
+
+	craftRecipe RemoveHKPaddle
+	{
+		timedAction = SawOffShotgun,
+		Time = 200,
+		AllowBatchCraft = False,
+		SkillRequired = MetalWelding:2;Aiming:3,
+		OnTest = Guns93OnTestIsHKPaddle,
+		OnCreate = Guns93OnCreateRemoveHKPaddle,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 tags[guns93:HKRifle] mode:keep flags[Prop2],
+			item 1 tags[base:file;base:smallfiles;base:drillmetal] mode:keep flags[Prop1;MayDegrade],
+		}
+        outputs
+        {
+            item 1 Base.HKMagRelease,
+        }
+	}
+
+	craftRecipe InstallHKPaddle
+	{
+		timedAction = SawOffShotgun,
+		Time = 200,
+		AllowBatchCraft = False,
+		SkillRequired = MetalWelding:2;Aiming:3,
+		OnTest = Guns93OnTestNoHKPaddle,
+		OnCreate = Guns93OnCreateInstallHKPaddle,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 tags[guns93:HKRifle] mode:keep flags[Prop2],
+            item 1 [Base.BlowTorch],
+			item 1 tags[base:drillmetal] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe RemovePinWeldCanon
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		AllowBatchCraft = False,
+		SkillRequired = MetalWelding:2;Aiming:3,
+		OnTest = Guns93OnTestPinWeldCanon,
+		OnCreate = Guns93OnCreatePinWeldCanon,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 [Base.HKSR9] mode:keep,
+			item 1 tags[base:file;base:smallfiles;base:drillmetal] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+			item 1 Base.SAR8FlashHider,
+		}
+	}
+
+	craftRecipe ChopOffStock
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		ToolTip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:MetalSaw;base:SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.870StockWoodDark;Base.870StockWoodLight;Base.500StockWoodDark;Base.500StockWoodLight;Base.Ithaca37StockWoodDark;Base.Ithaca37StockWoodLight;Base.UplanderStock;Base.UplanderStraightStock;Base.UplanderStockDark;Base.UplanderStraightStockDark;Base.UplanderStockCheck;Base.UplanderStockDarkCheck;Base.SavageFoxStock;Base.SavageFoxCapStock;Base.SavageFoxStockDark;Base.SavageFoxCapStockDark;Base.SavageFoxStockBeech] flags[Prop2] mappers[stocktype] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:stocktype,
+		}
+			itemMapper stocktype
+		{
+			Base.870CutStockDark = Base.870StockWoodDark,
+			Base.870CutStockLight = Base.870StockWoodLight,
+			Base.500CutStockDark = Base.500StockWoodDark,
+			Base.500CutStockLight = Base.500StockWoodLight,
+			Base.Ithaca37CutStockDark = Base.Ithaca37StockWoodDark,
+			Base.Ithaca37CutStockLight = Base.Ithaca37StockWoodLight,
+			Base.UplanderCutStock = Base.UplanderStock,
+			Base.UplanderCutStraightStock = Base.UplanderStraightStock,
+			Base.UplanderCutStockDark = Base.UplanderStockDark,
+			Base.UplanderCutStraightStockDark = Base.UplanderStraightStockDark,
+			Base.UplanderCutStockCheck = Base.UplanderStockCheck,
+			Base.UplanderCutStockDarkCheck = Base.UplanderStockDarkCheck,
+			Base.SavageFoxCutStock = Base.SavageFoxStock,
+    		Base.SavageFoxCutCapStock = Base.SavageFoxCapStock,
+   	 		Base.SavageFoxCutStockDark = Base.SavageFoxStockDark,
+    		Base.SavageFoxCutCapStockDark = Base.SavageFoxCapStockDark,
+    		Base.SavageFoxCutStockBeech = Base.SavageFoxStockBeech,
+		}
+	}
+
+	craftRecipe ChopOffRifleStock
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		ToolTip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:MetalSaw;base:SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.700WalnutStock;Base.700WalnutStockCheck;Base.700WalnutStockCap;Base.700DarkWalnutStock;Base.700DarkWalnutStockCheck;Base.700DarkWalnutStockCap;Base.700LaminateStock;Base.700LaminateStockCheck;Base.700LaminateStockCap;Base.700MapleStock;Base.700MapleStockCheck;Base.700MapleStockCap;Base.788WalnutStock;Base.788WalnutStockCheck;Base.788DarkWalnutStock;Base.788DarkWalnutStockCheck;Base.788BeechStock] flags[Prop2] mappers[stocktype] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:stocktype,
+		}
+			itemMapper stocktype
+		{
+			Base.SO700WalnutStock = Base.700WalnutStock,
+			Base.SO700WalnutStockCheck = Base.700WalnutStockCheck,
+			Base.SO700WalnutStockCap = Base.700WalnutStockCap,
+			Base.SO700DarkWalnutStock = Base.700DarkWalnutStock,
+			Base.SO700DarkWalnutStockCheck = Base.700DarkWalnutStockCheck,
+			Base.SO700DarkWalnutStockCap = Base.700DarkWalnutStockCap,
+			Base.SO700LaminateStock = Base.700LaminateStock,
+			Base.SO700LaminateStockCheck = Base.700LaminateStockCheck,
+			Base.SO700LaminateStockCap = Base.700LaminateStockCap,
+			Base.SO700MapleStock = Base.700MapleStock,
+			Base.SO700MapleStockCheck = Base.700MapleStockCheck,
+			Base.SO700MapleStockCap = Base.700MapleStockCap,
+			Base.SO788WalnutStock = Base.788WalnutStock,
+			Base.SO788WalnutStockCheck = Base.788WalnutStockCheck,
+			Base.SO788DarkWalnutStock = Base.788DarkWalnutStock,
+			Base.SO788DarkWalnutStockCheck = Base.788DarkWalnutStockCheck,
+			Base.SO788BeechStock = Base.788BeechStock,
+		}
+	}
+
+	craftRecipe ChopOffRifleStock2
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		ToolTip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:MetalSaw;base:SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.WinM70WalnutStock;Base.WinM70WalnutStockCap;Base.WinM70WalnutSchnabel;Base.WinM70DarkWalnutStock;Base.WinM70DarkWalnutStockCap;Base.WinM70DarkWalnutSchnabel;Base.WinM70MapleStock;Base.WinM70MapleStockCap;Base.WinM70MapleSchnabel] flags[Prop2] mappers[stocktype] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:stocktype,
+		}
+			itemMapper stocktype
+		{
+			Base.SOWinM70WalnutStock = Base.WinM70WalnutStock,
+			Base.SOWinM70WalnutStockCap = Base.WinM70WalnutStockCap,
+			Base.SOWinM70WalnutSchnabel = Base.WinM70WalnutSchnabel,
+			Base.SOWinM70DarkWalnutStock = Base.WinM70DarkWalnutStock,
+			Base.SOWinM70DarkWalnutStockCap = Base.WinM70DarkWalnutStockCap,
+			Base.SOWinM70DarkWalnutSchnabel = Base.WinM70DarkWalnutSchnabel,
+			Base.SOWinM70MapleStock = Base.WinM70MapleStock,
+			Base.SOWinM70MapleStockCap = Base.WinM70MapleStockCap,
+			Base.SOWinM70MapleSchnabel = Base.WinM70MapleSchnabel,
+		}
+	}
+
+    craftRecipe MakeDuctTapeHolster2
+    {
+        timedAction = Making,
+        time = 100,
+        Tags = InHandCraft,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:9,
+        category = Tailoring,
+        inputs
+        {
+            item 3 [Base.DuctTape] flags[Prop1],
+            item 1 tags[guns93:PistolSights;guns93:RevolverSights] mode:keep flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.Holster_DuctTape,
+        }
+    }
+
+	craftRecipe MakeARForegrip
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		ToolTip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 tags[base:MetalSaw;base:SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.Screws],
+			item 1 [Base.A2PistolGrip;Base.A2PistolGripGray;Base.A2PistolGripGreen;Base.A1PistolGrip;Base.A1PistolGripGray;Base.A1PistolGripGreen;Base.A2PistolGripCamo] mode:destroy flags[Prop2] mappers[griptype],
+		}
+		outputs
+		{
+			item 1 mapper:griptype,
+		}
+			itemMapper griptype
+		{
+			Base.ARForeGrip = Base.A2PistolGrip,
+			Base.ARForeGripGray = Base.A2PistolGripGray,
+			Base.ARForeGripGreen = Base.A2PistolGripGreen,
+			Base.ARForeGrip = Base.A1PistolGrip,
+			Base.ARForeGripGray = Base.A1PistolGripGray,
+			Base.ARForeGripGreen = Base.A1PistolGripGreen,
+			Base.ARForeGripCamo = Base.A2PistolGripCamo,
+		}
+	}
+
+	craftRecipe InstallT56Bayo
+	{
+		timedAction = CraftKnifeSpear,
+		Time = 80,
+		Tags = InHandCraft,
+		OnTest = Guns93OnTestInstallBayo,
+		OnCreate = Guns93OnCreateInstallBayo,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.T56] mode:keep flags[Prop2],
+			item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.T56Bayonet],
+		}
+	}
+
+	craftRecipe RemoveT56Bayo
+	{
+		timedAction = CraftKnifeSpear,
+		Time = 80,
+		Tags = InHandCraft,
+		OnTest = Guns93OnTestRemoveBayo,
+		OnCreate = Guns93OnCreateRemoveBayo,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.T56] mode:keep flags[Prop2],
+			item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+		}
+	}
+
+	craftRecipe InstallSKSBayo
+	{
+		timedAction = CraftKnifeSpear,
+		Time = 80,
+		Tags = InHandCraft,
+		OnTest = Guns93OnTestInstallBayo,
+		OnCreate = Guns93OnCreateInstallBayo,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.SKS] mode:keep flags[Prop2],
+			item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.SKSBayonet],
+		}
+	}
+
+	craftRecipe RemoveSKSBayo
+	{
+		timedAction = CraftKnifeSpear,
+		Time = 80,
+		Tags = InHandCraft,
+		OnTest = Guns93OnTestRemoveBayo,
+		OnCreate = Guns93OnCreateRemoveBayo,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.SKS] mode:keep flags[Prop2],
+			item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+		}
+	}
+
+	craftRecipe OpenBoxOfBullets100
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.22Box;Base.25Box] mappers[ammoTypes] flags[Prop2],
+		}
+		outputs
+		{
+			item 100 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.22Bullets = Base.22Box,
+			Base.25Bullets = Base.25Box,
+		}
+	}
+
+	craftRecipe OpenBoxOf50Bullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.40Box;Base.45LCBox;Base.380Box;Base.10mmBox] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 50 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.40Bullets = Base.40Box,
+			Base.45LCBullets = Base.45LCBox,
+			Base.380Bullets = Base.380Box,
+			Base.10mmBullets = Base.10mmBox,
+		}
+	}
+
+	craftRecipe OpenBoxOf20Bullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.3006Box;Base.792Box;Base.30CarBox;Base.76239Box] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 20 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.3006Bullets = Base.3006Box,
+			Base.792Bullets = Base.792Box,
+			Base.30CarBullets = Base.30CarBox,
+			Base.76239Bullets = Base.76239Box,
+		}
+	}
+    
+	craftRecipe OpenBoxOfSlugBullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.SlugBulletBox] mappers[ammoTypes] flags[Prop2],
+		}
+		outputs
+		{
+			item 25 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        	{
+			Base.SlugBullets = Base.SlugBulletBox,
+		}
+	}
+
+	craftRecipe OpenBeltLinkBox
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.556LinkBox;Base.308LinkBox] mappers[ammoTypes] flags[Prop2],
+		}
+		outputs
+		{
+			item 200 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.556BeltLink = Base.556LinkBox,
+			Base.308BeltLink = Base.308LinkBox,
+		}
+	}
+
+	craftRecipe Place556BeltLinkInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 200 [Base.556BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.556LinkBox,
+		}
+	}
+
+	craftRecipe Place308BeltLinkInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 200 [Base.308BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.308LinkBox,
+		}
+	}
+
+	craftRecipe OpenAmmoCarton
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.22Carton;Base.25Carton;Base.40Carton;Base.45LCCarton;Base.380Carton;Base.10mmCarton;Base.3006Carton;Base.792Carton;Base.30CarCarton;Base.76239Carton;Base.SlugCarton] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 12 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.22Box = Base.22Carton,
+			Base.25Box = Base.25Carton,
+			Base.40Box = Base.40Carton,
+			Base.45LCBox = Base.45LCCarton,
+			Base.380Box = Base.380Carton,
+			Base.10mmBox = Base.10mmCarton,
+			Base.3006Box = Base.3006Carton,
+			Base.792Box = Base.792Carton,
+			Base.30CarBox = Base.30CarCarton,
+			Base.76239Box = Base.76239Carton,
+			Base.SlugBulletBox = Base.SlugCarton,
+		}
+	}
+
+	craftRecipe Place22BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 100 [Base.22Bullets],
+		}
+		outputs
+		{
+			item 1 Base.22Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf22BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.22Box],
+		}
+		outputs
+		{
+			item 1 Base.22Carton,
+		}
+	}
+
+	craftRecipe Place25BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 100 [Base.25Bullets],
+		}
+		outputs
+		{
+			item 1 Base.25Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf25BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.25Box],
+		}
+		outputs
+		{
+			item 1 Base.25Carton,
+		}
+	}
+
+	craftRecipe Place40BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 50 [Base.40Bullets],
+		}
+		outputs
+		{
+			item 1 Base.40Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf40BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.40Box],
+		}
+		outputs
+		{
+			item 1 Base.40Carton,
+		}
+	}
+
+	craftRecipe Place45LCBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 50 [Base.45LCBullets],
+		}
+		outputs
+		{
+			item 1 Base.45LCBox,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf45LCBoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.45LCBox],
+		}
+		outputs
+		{
+			item 1 Base.45LCCarton,
+		}
+	}
+
+	craftRecipe Place380BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 50 [Base.380Bullets],
+		}
+		outputs
+		{
+			item 1 Base.380Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf380BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.380Box],
+		}
+		outputs
+		{
+			item 1 Base.380Carton,
+		}
+	}
+
+	craftRecipe Place10mmBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 50 [Base.10mmBullets],
+		}
+		outputs
+		{
+			item 1 Base.10mmBox,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf10mmBoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.10mmBox],
+		}
+		outputs
+		{
+			item 1 Base.10mmCarton,
+		}
+	}
+
+	craftRecipe Place3006BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 20 [Base.3006Bullets],
+		}
+		outputs
+		{
+			item 1 Base.3006Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf3006BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.3006Box],
+		}
+		outputs
+		{
+			item 1 Base.3006Carton,
+		}
+	}
+
+	craftRecipe Place792BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 20 [Base.792Bullets],
+		}
+		outputs
+		{
+			item 1 Base.792Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf792BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.792Box],
+		}
+		outputs
+		{
+			item 1 Base.792Carton,
+		}
+	}
+
+	craftRecipe Place30CarBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 20 [Base.30CarBullets],
+		}
+		outputs
+		{
+			item 1 Base.30CarBox,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf30CarBoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.30CarBox],
+		}
+		outputs
+		{
+			item 1 Base.30CarCarton,
+		}
+	}
+
+	craftRecipe Place76239BulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 20 [Base.76239Bullets],
+		}
+		outputs
+		{
+			item 1 Base.76239Box,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf76239BoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.76239Box],
+		}
+		outputs
+		{
+			item 1 Base.76239Carton,
+		}
+	}
+	
+	craftRecipe PlaceSlugsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 25 [Base.SlugBullets],
+		}
+		outputs
+		{
+			item 1 Base.SlugBulletBox,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfSlugBoxInCarton
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 12 [Base.SlugBulletBox],
+		}
+		outputs
+		{
+			item 1 Base.SlugCarton,
+		}
+	}
+	
+	craftRecipe GunCleaningKit
+	{
+        timedAction = Making,
+		Time = 80,
+		Tags = InHandCraft,
+		OnCreate = Guns93OnCreateCleanKitCreate,
+        category = Aiming,
+		inputs
+		{
+			item 1 tags[guns93:GunOil] mode:keep,
+			item 1 [Base.RippedSheets;Base.RippedSheetsDirty;Base.AlcoholRippedSheets;Base.Toothbrush;Base.BathTowel;Base.DishCloth] mappers[cleanKits] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:cleanKits,
+		}
+        	itemMapper cleanKits
+        {
+			Base.RippedSheetsCleanKit = Base.RippedSheets,
+			Base.RippedSheetsCleanKit = Base.RippedSheetsDirty,
+			Base.RippedSheetsCleanKit = Base.AlcoholRippedSheets,
+			Base.ToothbrushCleanKit = Base.Toothbrush,
+			Base.BathTowelCleanKit = Base.BathTowel,
+			Base.DishClothCleanKit = Base.DishCloth,
+		}
+	}
+
+	craftRecipe FillGunCleaningKit
+	{
+        timedAction = Making,
+		Time = 80,
+		Tags = InHandCraft,
+		OnTest = Guns93OnTestCleanKitTest,
+		OnCreate = Guns93OnCreateCleanKitFill,
+        category = Aiming,
+		inputs
+		{
+			item 1 tags[guns93:GunOil] mode:keep,
+			item 1 tags[guns93:GunCleaningKit] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Install556BeltLinks1
+	{
+        timedAction = Making,
+		Time = 5,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.556Bullets],
+			item 1 [Base.556BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.556Belt,
+		}
+	}
+
+	craftRecipe Install556BeltLinks5
+	{
+        timedAction = Making,
+		Time = 25,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 5 [Base.556Bullets],
+			item 5 [Base.556BeltLink],
+		}
+		outputs
+		{
+			item 5 Base.556Belt,
+		}
+	}
+
+	craftRecipe Install556BeltLinks10
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 10 [Base.556Bullets],
+			item 10 [Base.556BeltLink],
+		}
+		outputs
+		{
+			item 10 Base.556Belt,
+		}
+	}
+
+	craftRecipe Install308BeltLinks1
+	{
+        timedAction = Making,
+		Time = 5,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.308Bullets],
+			item 1 [Base.308BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.308Belt,
+		}
+	}
+
+	craftRecipe Install308BeltLinks5
+	{
+        timedAction = Making,
+		Time = 25,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 5 [Base.308Bullets],
+			item 5 [Base.308BeltLink],
+		}
+		outputs
+		{
+			item 5 Base.308Belt,
+		}
+	}
+
+	craftRecipe Install308BeltLinks10
+	{
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+			item 10 [Base.308Bullets],
+			item 10 [Base.308BeltLink],
+		}
+		outputs
+		{
+			item 10 Base.308Belt,
+		}
+	}
+
+	craftRecipe Remove556BeltLinks1
+	{
+        timedAction = Making,
+		Time = 5,
+		OnCreate = Guns93OnCreateBeltLink556,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.556Belt],
+		}
+		outputs
+		{
+			item 1 Base.556Bullets,
+		}
+	}
+
+	craftRecipe Remove556BeltLinks5
+	{
+        timedAction = Making,
+		Time = 25,
+		OnCreate = Guns93OnCreateBeltLink556,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 5 [Base.556Belt],
+		}
+		outputs
+		{
+			item 5 Base.556Bullets,
+		}
+	}
+
+	craftRecipe Remove556BeltLinks10
+	{
+        timedAction = Making,
+		Time = 50,
+		OnCreate = Guns93OnCreateBeltLink556,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 10 [Base.556Belt],
+		}
+		outputs
+		{
+			item 10 Base.556Bullets,
+		}
+	}
+
+	craftRecipe Remove308BeltLinks1
+	{
+        timedAction = Making,
+		Time = 5,
+		OnCreate = Guns93OnCreateBeltLink308,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Base.308Belt],
+		}
+		outputs
+		{
+			item 1 Base.308Bullets,
+		}
+	}
+
+	craftRecipe Remove308BeltLinks5
+	{
+        timedAction = Making,
+		Time = 25,
+		OnCreate = Guns93OnCreateBeltLink308,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 5 [Base.308Belt],
+		}
+		outputs
+		{
+			item 5 Base.308Bullets,
+		}
+	}
+
+	craftRecipe Remove308BeltLinks10
+	{
+        timedAction = Making,
+		Time = 50,
+		OnCreate = Guns93OnCreateBeltLink308,
+		category = Ammunition,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 10 [Base.308Belt],
+		}
+		outputs
+		{
+			item 10 Base.308Bullets,
+		}
+	}
+
+    craftRecipe Make556BeltLink
+    {
+        time = 100,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = true,
+        timedAction = HammerMetalStanding,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:2;Aiming:4,
+        Tags = PrimitiveForge,
+        category = Blade,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.DamagedBeltLink;Base.308BeltLink],
+            item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:metalworkingpliers;base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.556BeltLink,
+        }
+    }
+
+    craftRecipe Make556BeltLinks50
+    {
+        time = 300,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = true,
+        timedAction = HammerMetalStanding,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:2;Aiming:4,
+        Tags = PrimitiveForge,
+        category = Blade,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.SmallSheetMetal;Base.SteelScrap;Base.ScrapMetal],
+            item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:metalworkingpliers;base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 50 Base.556BeltLink,
+        }
+    }
+
+    craftRecipe Make308BeltLink
+    {
+        time = 100,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = true,
+        timedAction = HammerMetalStanding,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:2;Aiming:4,
+        Tags = PrimitiveForge,
+        category = Blade,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.DamagedBeltLink;Base.556BeltLink],
+            item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:metalworkingpliers;base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.308BeltLink,
+        }
+    }
+
+    craftRecipe Mak308BeltLinks50
+    {
+        time = 300,
+        SkillRequired = Blacksmith:1,
+        NeedToBeLearn = true,
+        timedAction = HammerMetalStanding,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:2;Aiming:4,
+        Tags = PrimitiveForge,
+        category = Blade,
+        inputs
+        {
+            item 2 tags[base:charcoal],
+            item 1 [Base.SmallSheetMetal;Base.SteelScrap;Base.ScrapMetal],
+            item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:metalworkingpliers;base:tongs;base:crudetongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 50 Base.308BeltLink,
+        }
+    }
+
+	craftRecipe InstallHKFlashlight
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.HandTorch] mode:destroy flags[InheritUses;ItemCount],
+			item 1 [Base.HKScopeLight] mode:destroy,
+		}
+		outputs
+		{
+            item 1 Base.MountedHandTorch,
+		}
+	}
+
+	craftRecipe RemoveHKFlashlight
+	{
+		timedAction = SawOffShotgun,
+		Time = 100,
+		Tags = InHandCraft,
+		category = Weaponry,
+		inputs
+		{
+			item 1 [Base.HKScopeLight] mode:destroy flags[InheritUses;ItemCount],
+		}
+		outputs
+		{
+            item 1 Base.MountedHandTorch,
+			item 1 Base.HKScopeLight,
+		}
+	}
+}

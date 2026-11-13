@@ -1,0 +1,123 @@
+module Base
+{
+	craftRecipe UziToColt
+	{
+		timedAction = CraftWeapon1H,
+		Time = 100,
+		AllowBatchCraft = False,
+		OnTest = Guns93OnTestAmmoCountZero,
+		SkillRequired = MetalWelding:3,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 [Base.10UziMag;Base.UziMag;Base.25UziMag;Base.40UziMag] mode:destroy mappers[magType],
+			item 1 tags[base:File] mode:keep flags[MayDegrade],
+		}
+		outputs
+		{
+			item 1 mapper:magType,
+		}
+			itemMapper magType
+		{
+			Base.10UziColtSMGMag = Base.10UziMag,
+			Base.UziColtSMGMag = Base.UziMag,
+			Base.25UziColtSMGMag = Base.25UziMag,
+			Base.40UziColtSMGMag = Base.40UziMag,
+		}
+	}
+	craftRecipe MACtoGrease
+	{
+		timedAction = CraftWeapon1H,
+		Time = 100,
+		AllowBatchCraft = False,
+		OnTest = Guns93OnTestAmmoCountZero,
+		SkillRequired = MetalWelding:3,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 [Base.MAC10Mag] mode:destroy mappers[magType],
+			item 1 tags[base:File] mode:keep flags[MayDegrade],
+		}
+		outputs
+		{
+			item 1 mapper:magType,
+		}
+			itemMapper magType
+		{
+			Base.MACGreaseMag = Base.MAC10Mag,
+		}
+	}
+	craftRecipe GreasetoMac
+	{
+		timedAction = CraftWeapon1H,
+		Time = 100,
+		AllowBatchCraft = False,
+		OnTest = Guns93OnTestAmmoCountZero,
+		SkillRequired = MetalWelding:3,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		xpAward = MetalWelding:15,
+		inputs
+		{
+			item 1 [Base.M3GreaseMag] mode:destroy mappers[magType],
+			item 1 tags[base:File] mode:keep flags[MayDegrade],
+		}
+		outputs
+		{
+			item 1 mapper:magType,
+		}
+			itemMapper magType
+		{
+			Base.MACGreaseMag = Base.M3GreaseMag,
+		}
+	}
+	craftRecipe AR15toAR180
+	{
+		timedAction = CraftWeapon1H,
+		Time = 1,
+		OnTest = Guns93OnTestAmmoCountZero,
+		Tags = InHandCraft,
+		AllowBatchCraft = True,
+		inputs
+		{
+			item 1 [Base.556Clip;Base.M16Mag;Base.20M16Mag] mode:destroy mappers[magType],
+			item 1 tags[base:File] mode:keep flags[MayDegrade],
+		}
+		outputs
+		{
+			item 1 mapper:magType,
+		}
+			itemMapper magType
+		{
+			Base.30M16AR180Mag = Base.556Clip,
+			Base.30M16AR180Mag = Base.M16Mag,
+			Base.20M16AR180Mag = Base.20M16Mag,
+		}
+	}
+	craftRecipe AR180toAR15
+	{
+		timedAction = CraftWeapon1H,
+		Time = 1,
+		OnTest = Guns93OnTestAmmoCountZero,
+		Tags = InHandCraft,
+		AllowBatchCraft = True,
+		inputs
+		{
+			item 1 [Base.AR180Mag;Base.40AR180Mag] mode:destroy mappers[magType],
+			item 1 tags[base:File] mode:keep flags[MayDegrade],
+		}
+		outputs
+		{
+			item 1 mapper:magType,
+		}
+			itemMapper magType
+		{
+			Base.30M16AR180Mag = Base.AR180Mag,
+			Base.40M16AR180Mag = Base.40AR180Mag,
+		}
+	}
+}

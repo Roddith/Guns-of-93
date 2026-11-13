@@ -1,0 +1,2355 @@
+module Base
+{
+    /****************************** J Frame Parts ******************************/
+    item JFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Walnut Service Grip,
+        Icon = RevolverServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item JFrameDarkServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Dark Walnut Service Grip,
+        Icon = RevolverDarkServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverDarkServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Ivory Service Grip,
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverIvoryServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Antler Service Grip,
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverStagServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Walnut Boot Grip,
+        Icon = RevolverBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameDarkBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Dark Walnut Boot Grip,
+        Icon = RevolverDarkBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameDarkBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameIvoryBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Ivory Boot Grip,
+        Icon = RevolverIvoryBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameIvoryBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameRubberBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Rubber Boot Grip,
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 2,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameRubberBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Rubber Finger Groove Grip,
+        Icon = RevolverRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Redwood Finger Groove Grip,
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameDarkFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = J-Frame Walnut Finger Groove Grip,
+        Icon = RevolverDarkBootGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW36,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = JFrameDarkFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W J-Frame Trigger Parts,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = SW36,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item JFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W J-Frame Proformance Trigger Part,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = SW36,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** K/L Frame Parts ******************************/
+    item KFrameTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Walnut Target Grip,
+        Icon = RevolverTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameDarkTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Dark Walnut Target Grip,
+        Icon = RevolverDarkTargeguns93:TGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameDarkTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameRedTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Redwood Target Grip,
+        Icon = RevolverRedTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameRedTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameStagTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Antler Target Grip,
+        Icon = RevolverStagTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameRedTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Walnut Service Grip,
+        Icon = RevolverServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameDarkServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Dark Walnut Service Grip,
+        Icon = RevolverDarkServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverDarkServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Ivory Service Grip,
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverIvoryServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Antler Service Grip,
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverStagServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item TGripGold
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Gold T-Grip Adapter,
+        Icon = TGripGold,
+        Weight = 0.1,
+        AimingTimeModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt; SW36,
+        PartType = GripOption,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = TGripGold,
+        CanAttach = Guns93WeaponPartsTGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item TGripBlue
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Black T-Grip Adapter,
+        Icon = TGripBlue,
+        Weight = 0.1,
+        AimingTimeModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt; SW36,
+        PartType = GripOption,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = TGripBlue,
+        CanAttach = Guns93WeaponPartsTGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item TGripSS
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Polished T-Grip Adapter,
+        Icon = TGripSS,
+        Weight = 0.1,
+        AimingTimeModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt; SW36,
+        PartType = GripOption,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = TGripSS,
+        CanAttach = Guns93WeaponPartsTGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Walnut Boot Grip,
+        Icon = RevolverBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameDarkBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Dark Walnut Boot Grip,
+        Icon = RevolverDarkBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameDarkBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameIvoryBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Ivory Boot Grip,
+        Icon = RevolverIvoryBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameIvoryBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameRubberBootGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Rubber Boot Grip,
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 2,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameRubberBootGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Rubber Finger Groove Grip,
+        Icon = RevolverRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Redwood Finger Groove Grip,
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameDarkFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = K/L-Frame Walnut Finger Groove Grip,
+        Icon = RevolverDarkBootGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = KFrameDarkFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W K/L-Frame Trigger Parts,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item KFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W K/L-Frame Proformance Trigger Part,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = SW586; SW586_Alt; SW10; SW17; SW65; SW65_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** N Frame Parts ******************************/
+    item NFrameTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Walnut Target Grip,
+        Icon = RevolverTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameDarkTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Dark Walnut Target Grip,
+        Icon = RevolverDarkTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameDarkTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameRedTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Redwood Target Grip,
+        Icon = RevolverRedTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameRedTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameStagTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Antler Target Grip,
+        Icon = RevolverStagTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameStagTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Rubber Finger Groove Grip,
+        Icon = RevolverRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Redwood Finger Groove Grip,
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameDarkFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = N-Frame Walnut Finger Groove Grip,
+        Icon = RevolverDarkBootGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SW29; SW625,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = NFrameDarkFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W N-Frame Trigger Parts,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = SW29; SW625,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item NFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = S&W N-Frame Proformance Trigger Part,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = SW29; SW625,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Colt Revolver Parts ******************************/
+    item IFramePresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Presentation Grip (Python),
+        Icon = IFramePresGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFramePresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameDarkPresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Dark Walnut Grip (Python),
+        Icon = RevolverDarkTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameDarkPresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameStarGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Shooting Star Grip (Python),
+        Icon = IFrameStarGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameStarGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Service Grip (Python),
+        Icon = IFrameServiceGrip,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Antler Service Grip (Python),
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameStagServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Ivory Service Grip (Python),
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameIvoryServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameRubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Rubber Grip (Python),
+        Icon = IFrameRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Rubber Finger Groove Grip (Python),
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Finger Groove Grip (Python),
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Python,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Trigger Parts (Python),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Python,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item IFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt I-Frame Match Trigger Part (Python),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = Python,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item VFrameTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Target Grip (Anaconda/King Cobra),
+        Icon = VFrameTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = VFrameTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameDarkPresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Dark Walnut Grip (Anaconda/King Cobra),
+        Icon = RevolverDarkTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameDarkPresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameStarGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Shooting Star Grip (Anaconda/King Cobra),
+        Icon = IFrameStarGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameStarGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Service Grip (Anaconda/King Cobra),
+        Icon = RevolverServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = VFrameServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Antler Service Grip (Anaconda/King Cobra),
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameStagServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Ivory Service Grip (Anaconda/King Cobra),
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameIvoryServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Rubber Finger Groove Grip (Anaconda/King Cobra),
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V & MM-Frame Finger Groove Grip (Anaconda/King Cobra),
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Anaconda;KingCobra;KingCobra_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MMFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt MM-Frame Trigger Parts (Anaconda),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Anaconda,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MMFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt MM-Frame Match Trigger Part (Anaconda),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = Anaconda,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V-Frame Trigger Parts (Anaconda),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = KingCobra,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item VFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt V-Frame Match Trigger Part (Anaconda),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = KingCobra,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameTargetGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Target Grip (Detective Special/Diamondback),
+        Icon = IFramePresGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DFrameTargetGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameDarkPresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Dark Walnut Grip (Detective Special/Diamondback),
+        Icon = RevolverDarkTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameDarkPresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameStarGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Shooting Star Grip (Detective Special/Diamondback),
+        Icon = IFrameStarGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameStarGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Service Grip (Detective Special/Diamondback),
+        Icon = IFrameServiceGrip,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Antler Service Grip (Detective Special/Diamondback),
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameStagServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Ivory Service Grip (Detective Special/Diamondback),
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameIvoryServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameRubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Rubber Grip (Detective Special/Diamondback),
+        Icon = IFrameRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Rubber Finger Groove Grip (Detective Special/Diamondback),
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Finger Groove Grip (Detective Special/Diamondback),
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameCompactGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Rubber Compact Grip (Detective Special/Diamondback),
+        Icon = DFrameCompactGrip,
+        Weight = 0.2,
+        WeightModifier = 0.05,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DFrameCompactGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Trigger Parts (Detective Special/Diamondback),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt D-Frame Match Trigger Part (Detective Special/Diamondback),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = ColtDet;Diamondback;Diamondback22,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    item ColtJFramePresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Presentation Grip (Colt Trooper/Lawman),
+        Icon = IFramePresGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFramePresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameDarkPresGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Dark Walnut Grip (Colt Trooper/Lawman),
+        Icon = RevolverDarkTargetGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameDarkPresGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameStarGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Shooting Star Grip (Colt Trooper/Lawman),
+        Icon = IFrameStarGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameStarGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Service Grip (Colt Trooper/Lawman),
+        Icon = IFrameServiceGrip,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameStagServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Antler Service Grip (Colt Trooper/Lawman),
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameStagServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameIvoryServiceGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Ivory Service Grip (Colt Trooper/Lawman),
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = IFrameIvoryServiceGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameRubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Rubber Grip (Colt Trooper/Lawman),
+        Icon = IFrameRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameRubberFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Rubber Finger Groove Grip (Colt Trooper/Lawman),
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameRubberFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameFingerGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Finger Groove Grip (Colt Trooper/Lawman),
+        Icon = RevolverFingerGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = IFrameFingerGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Trigger Parts (Colt Trooper/Lawman),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtJFrameTriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Colt J-Frame Match Trigger Part (Colt Trooper/Lawman),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = ColtTrooper;ColtLawman;ColtTrooper_Alt;ColtLawman_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Colt Army Parts ******************************/
+    item ColtWalnutGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Walnut Grips (Colt Single Action Army),
+        Icon = ColtWalnutGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtWalnutGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtHardRubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hard Rubber Grips (Colt Single Action Army),
+        Icon = ColtHardRubberGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtHardRubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtStagGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Anlter Grips (Colt Single Action Army),
+        Icon = ColtStagGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtStagGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtPearlGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Mother of Pearl Grips (Colt Single Action Army),
+        Icon = ColtPearlGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtPearlGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtIvoryGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Ivory Grips (Colt Single Action Army),
+        Icon = ColtIvoryGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtIvoryGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtDarkWalnutGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Dark Walnut Grips (Colt Single Action Army),
+        Icon = ColtDarkWalnutGrip,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = ColtDarkWalnutGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item ColtArmyTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger Parts For Colt Single Action Army,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = ColtArmy;ColtArmy357;ColtArmy357_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Ruger GP100 Parts ******************************/
+	
+    item GP100GripWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Panel Rubber Grip (GP100),
+        Icon = GP100GripWood,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100GripWood,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+	
+    item GP100GripBlack
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Black Panel Rubber Grip (GP100),
+        Icon = GP100GripBlack,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100GripBlack,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+	
+    item GP100WoodGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Walnut Grip (GP100),
+        Icon = GP100WoodGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 4,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100WoodGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100CompGripWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Compact Wood Panel Rubber Grip (GP100),
+        Icon = GP100GripWood,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100CompGripWood,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100CompGripBlack
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Compact Black Panel Rubber Grip (GP100),
+        Icon = GP100GripBlack,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100CompGripBlack,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100HogueCheck
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hardwood Checkerd Grips (GP100),
+        Icon = GP100HogueCheck,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100HogueCheck,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100HogueSmooth
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hardwood Grips (GP100),
+        Icon = GP100HogueSmooth,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100HogueSmooth,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100FingerCheck
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Finger Grooved Checkerd Grips (GP100),
+        Icon = GP100FingerCheck,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100FingerCheck,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100FingerSmooth
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Finger Grooved Grips (GP100),
+        Icon = GP100FingerSmooth,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100FingerSmooth,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+	item GP100HogueRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Rubber Overmold Grips (GP100),
+        Icon = GP100HogueRubber,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100HogueRubber,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+	item GP100FingerRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName =  Rubber Finger Grooved Overmold Grips (GP100),
+        Icon = GP100FingerRubber,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100FingerRubber,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100RubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Rubber Gripper Grip,
+        Icon = RevolverRubberBootGrip,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 2,
+        MountOn = GP100;GP100_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = GP100RubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GP100Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger Parts For Ruger GP100,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = GP100;GP100_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Ruger SP101 Parts ******************************/
+	
+    item SP101GripWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Panel Rubber Grip (SP101),
+        Icon = GP100GripWood,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SP101;SP101_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = SP101GripWood,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+	
+    item SP101GripBlack
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Black Panel Rubber Grip (SP101),
+        Icon = GP100GripBlack,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = SP101;SP101_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = SP101GripBlack,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item SP101MonogripWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Monogrip (SP101),
+        Icon = SP101MonogripWood,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SP101;SP101_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = SP101MonogripWood,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item SP101MonogripRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Rubber Monogrip (SP101),
+        Icon = SP101MonogripRubber,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -6,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 2,
+        MountOn = SP101;SP101_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = SP101MonogripRubber,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item SP101RubberGrip
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Compac Rubber Grip (SP101),
+        Icon = SP101RubberGrip,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SP101;SP101_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = SP101RubberGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item SP101Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger Parts For Ruger SP101,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = SP101;SP101_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Ruger Security-Six Parts ******************************/
+
+    item S6TargetGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Target Grip (Security-Six),
+        Icon = S6TargetGrips,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 8,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = S6TargetGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item S6RubberGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Target Grip (Security-Six),
+        Icon = RevolverRubberGrip,
+        Weight = 0.3,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = S6RubberGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item S6ServiceGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Wood Service Grip (Security-Six),
+        Icon = S6ServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = S6ServiceGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item S6IvoryGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Ivory Serivce Grip (Security-Six),
+        Icon = RevolverIvoryServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverIvoryServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item S6StagGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Antler Serivce Grip (Security-Six),
+        Icon = RevolverStagServiceGrips,
+        Weight = 0.1,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -2,
+        HitChanceModifier = 2,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:TGrip,
+        WorldStaticModel = RevolverStagServiceGripWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item S6Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger Parts For Ruger Security-Six,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = SecuritySix;SecuritySix_Alt,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:UseDriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+}

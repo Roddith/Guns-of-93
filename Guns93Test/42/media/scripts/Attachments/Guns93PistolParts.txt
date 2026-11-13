@@ -1,0 +1,2082 @@
+module Base
+{
+    /****************************** 1911 ******************************/
+
+    item 1911FixSightsPark
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item 1911FixSightsBlue
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item 1911FixSightsSS
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item 1911GripsGI
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 GI Grips,
+        Icon = 1911GripsGI,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsGIWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsGI
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer GI Grips,
+        Icon = 1911GripsGI,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsGIWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911GripsRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Rubber Grips,
+        Icon = 1911GripsRubber,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsRubberWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911GripsWrap
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Wrap Around Rubber Grips,
+        Icon = 1911GripsRubber,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911WrapGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Rubber Grips,
+        Icon = 1911GripsRubber,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsRubberWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Rosewood Grips,
+        Icon = 1911GripsWood,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsWoodWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Rosewood Grips,
+        Icon = 1911GripsWood,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsWoodWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsElk
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Elk Antler Grips,
+        Icon = 1911GripsStag,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsElkWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsElk
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Elk Antler Grips,
+        Icon = 1911GripsStag,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsElkWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsDelta
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Delta Elite Grips,
+        Icon = 1911GripsDelta,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsDeltaWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911GripsWrapDelta
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Wrap Around Delta Elite Grips,
+        Icon = 1911GripsDelta,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911WrapGrip,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsPearl
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Pearl Grips,
+        Icon = 1911GripsPearl,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsPearlWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsPearl
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Pearl Grips,
+        Icon = 1911GripsPearl,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsPearlWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsMedal
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Gold Medallion Grips,
+        Icon = 1911GripsGoldMedal,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsMedalWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsMedal
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Gold Medallion Grips,
+        Icon = 1911GripsGoldMedal,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsMedalWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item 1911GripsMedal2
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Silver Medallion Grips,
+        Icon = 1911GripsSilverMedal,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsMedal2World,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsMedal2
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Silver Medallion Grips,
+        Icon = 1911GripsSilverMedal,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsMedal2World,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911GripsWood2
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Hardwood Grips,
+        Icon = 1911GripsWood2,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsMedal2World,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item OfficerGripsWood2
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Officer Hardwood Grips,
+        Icon = 1911GripsWood2,
+        Weight = 0.02,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Officer1911,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = 1911GripsWood2World,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911WML
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Weapon Light,
+        Icon = 1911WML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911; Officer1911,
+        PartType = Light,
+        StaticModel = 1911WML,
+        MetalValue = 15,
+        WorldStaticModel = 1911WML,
+		ActivatedItem = true,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:NoScrewdriver;base:Flashlight;base:UsesBattery;guns93:Light;guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911WML_On
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Weapon Light,
+        Icon = 1911WML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911; Officer1911,
+        PartType = Light,
+        StaticModel = 1911WML,
+        MetalValue = 15,
+        WorldStaticModel = 1911WML,
+		ActivatedItem = true,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:NoScrewdriver;base:Flashlight;base:UsesBattery;guns93:Light;guns93:ToggleItemOff,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911; Officer1911,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item 1911TriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = 1911 Match Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = M1911; Gov1911; DeltaElite; Longslide; Javelina; Command1911; Officer1911,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    /****************************** FN/Browning Hi Power ******************************/
+
+    item BHPFixSightsPark
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPFixSightsInglis
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPFixSightsBlue
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPFixSightsMaria
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPFixSightsMk2
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable 3 Dot Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -5,
+        mod_RangMod = -3,
+        HitChanceModifier = 5,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPTagentSights
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Non-Removable Adjustable Tangent Sights,
+        Icon = PistolTargetSights,
+        Weight = 0.01,
+        WeightModifier = 0.01,
+        AimingTimeModifier = 5,
+        mod_RangMod = 3,
+        mod_CritChanceMod = 5,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_TargetIrons,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        StaticModel = SightBoxTarget,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPTagentCapt
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Non-Removable Adjustable Tangent Sights,
+        Icon = PistolTargetSights,
+        Weight = 0.01,
+        WeightModifier = 0.01,
+        AimingTimeModifier = 5,
+        mod_RangMod = 3,
+        mod_CritChanceMod = 5,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_TargetIrons,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        StaticModel = SightBoxTarget,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item BHPGripsWood
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Rosewood Grips,
+        Icon = BHPGripsWood,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsWoodWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsLight
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Light Rosewood Grips,
+        Icon = BHPGripsLight,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsLightWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsPlastic
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Plastic Grips,
+        Icon = BHPGripsPlastic,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsPlasticWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsThumb
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Plastic Thumb Rest Grips,
+        Icon = BHPGripsThumb,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsThumbWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsCoco
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Cocobolo Grips,
+        Icon = BHPGripsCoco,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsCocoWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsWalnut
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Walnut Grips,
+        Icon = BHPGripsWalnut,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsWalnutWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsMaria
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Our Lady Of Guadalupe Grips,
+        Icon = BHPGripsMaria,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsMariaWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsElk
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Antler Grips,
+        Icon = BHPGripsStag,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsElkWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsRubber
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Rubber Grips,
+        Icon = BHPGripsRubber,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsRubberWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPGripsWrap
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Hi Power Wrap Around Rubber Grips,
+        Icon = BHPWrapGrip,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = BHP,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = BHPGripsWrapWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item BHPTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = FN/Browning Hi Power Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = BHP,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    /****************************** Beretta 92FS ******************************/
+
+    item M9FixSights
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item M9FixSightsSS
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Fixed Non-Removable Sights,
+        Icon = PistolSights,
+        Weight = 0.0,
+        WeightModifier = 0.0,
+        AimingTimeModifier = -10,
+        MountOn = ,
+        PartType = Irons,
+        Tooltip = Tooltip_SightPeep,
+        MetalValue = 15,
+        Tags = guns93:NoMount; guns93:PistolSights,
+        WorldStaticModel = SightBoxTarget,
+        CanAttach = Guns93WeaponPartsNoRemove,
+        CanDetach = Guns93WeaponPartsNoRemove,
+    }
+
+    item M9StockGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Black Plastic Grips,
+        Icon = M9StockGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9StockGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9RubberGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Rubber Grips,
+        Icon = M9RubberGrips,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9RubberGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9WrapGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Wrap Around Rubber Grips,
+        Icon = M9WrapGrips,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9WrapGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9WoodGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Wood Grips,
+        Icon = M9WoodGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9WoodGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9Wood2Grips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Checkered Wood Grips,
+        Icon = M9Wood2Grips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9Wood2GripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9PearlGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Pearl Grips,
+        Icon = M9PearlGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9PearlGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9SamEdgeGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Samurai Edge Grips,
+        Icon = M9SamEdgeGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = M9; Beretta92FS,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = M9SamEdgeGripsWorld,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9WML
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Weapon Light,
+        Icon = 1911WML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = M9; Beretta92FS,
+        PartType = Light,
+        StaticModel = M9WML,
+        MetalValue = 15,
+        WorldStaticModel = M9WML,
+		ActivatedItem = true,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:NoScrewdriver;base:Flashlight;base:UsesBattery;guns93:Light;guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9WML_On
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Weapon Light,
+        Icon = 1911WML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = M9; Beretta92FS,
+        PartType = Light,
+        StaticModel = M9WML,
+        MetalValue = 15,
+        WorldStaticModel = M9WML,
+		ActivatedItem = true,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:NoScrewdriver;base:Flashlight;base:UsesBattery;guns93:Light;guns93:ToggleItemOff,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = M9; Beretta92FS,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M9TriggerMatch
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Beretta 92 Match Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = 3,
+        mod_CritChanceMod = 3,
+        MountOn = M9; Beretta92FS,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerMatch,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Desert Eagle ******************************/
+
+    item DE44RubberGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Desert Eagle Rubber Grips,
+        Icon = M9RubberGrips,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = DE44; DE357,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DE44RubberGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DE44WrapGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Desert Eagle Wrap Around Rubber Grips,
+        Icon = DE44WrapGrips,
+        Weight = 0.03,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -6,
+        HitChanceModifier = 4,
+        MountOn = DE44; DE357,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DE44WrapGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DE44WoodGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Desert Eagle Wood Grips,
+        Icon = DE44WoodGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = DE44; DE357,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DE44WoodGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DE44PearlGrips
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Desert Eagle Pearl Grips,
+        Icon = DE44PearlGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = DE44; DE357,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = DE44PearlGrips,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item DE44Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Desert Eagle Trigger,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = DE44; DE357,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Glocks ******************************/
+    item GlockWML
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:WeaponPart,
+        DisplayName = Glock Weapon Light,
+        Icon = GlockWML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = Glock17; Glock17L; Glock19; Glock20; Glock21; Glock22; Glock23; Glock24,
+        PartType = Light,
+        StaticModel = GlockWML,
+        MetalValue = 15,
+        WorldStaticModel = GlockWML,
+		ActivatedItem = TRUE,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:UseDriver; base:Flashlight; base:UsesBattery; guns93:BarrelItem; guns93:Light; guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GlockWML_On
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:WeaponPart,
+        DisplayName = Glock Weapon Light,
+        Icon = GlockWML,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = Glock17; Glock17L; Glock19; Glock20; Glock21; Glock22; Glock23; Glock24,
+        PartType = Light,
+        StaticModel = 1911WML,
+        MetalValue = 15,
+        WorldStaticModel = GlockWML,
+		ActivatedItem = TRUE,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		DisappearOnUse = False,
+		UseDelta = 0.001,
+        Tags = guns93:UseDriver; base:Flashlight; base:UsesBattery; guns93:BarrelItem; guns93:Light; guns93:ToggleItemOff,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GlockLaser
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Glock Handgun Laser (Off),
+        Icon = GlockLaser,
+        Weight = 0.6,
+        WeightModifier = 0.6,
+        AimingTimeModifier = 5,
+        MountOn = Glock17; Glock17L; Glock19; Glock20; Glock21; Glock22; Glock23; Glock24,
+        PartType = Light,
+        Tooltip = Tooltip_Laser,
+        MetalValue = 15.0,
+        WorldStaticModel = GlockLaser,
+		ActivatedItem = true,
+		DisappearOnUse = False,
+		UseDelta = 0.01,
+        Tags = guns93:UseDriver; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsLaser,
+        CanDetach = Guns93WeaponPartshasScrewdriver,
+    }
+
+    item GlockLaser_On
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Glock Handgun Laser,
+        Icon = GlockLaser,
+        ActivatedItem = true,
+        Weight = 0.6,
+        WeightModifier = 0.6,
+        HitChanceModifier = 5,
+        AimingTimeModifier = -15,
+        LowLightBonus = 12,
+        MountOn = Glock17; Glock17L; Glock19; Glock20; Glock21; Glock22; Glock23; Glock24,
+        PartType = Light,
+        Tooltip = Tooltip_Laser,
+        MetalValue = 15.0,
+        WorldStaticModel = GlockLaser,
+		DisappearOnUse = False,
+		UseDelta = 0.01,
+        Tags = guns93:UseDriver; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
+        CanAttach = Guns93WeaponPartsLaser,
+        CanDetach = Guns93WeaponPartshasScrewdriver,
+    }
+
+    item GlockTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Standard Frame Glock Trigger Parts,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Glock17; Glock17L; Glock19; Glock22; Glock23; Glock24,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item GlockTriggerLarge
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Large Frame Glock Trigger Parts,
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Glock20; Glock21,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** MAC-10 ******************************/
+
+    item MAC10Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = MAC-10 Trigger and Bolt Parts (Semi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MAC10,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item CrudeMAC10AutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Crude Auto Trigger (Full-Auto Only) (MAC-10),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = -5,
+        mod_JamMod = 1,
+        MountOn = MAC10,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MAC10AutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = MAC-10 Trigger and Bolt Parts (Semi/Full-Auto),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MAC10,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** Uzi ******************************/
+
+    item UziBlackHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Polymer Handguard (Uzi),
+        Icon = UziHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziBlackHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Polymer Handguard (Mini Uzi),
+        Icon = UziHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = MiniUziHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    item UziBlackGrips
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Polymer Grip (Uzi),
+        Icon = UziGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45; MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45; MicroUzi; MicroUzi45,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureReq,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziGrips,
+        CanAttach = Guns93WeaponPartsRifleGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziGreenHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Green Polymer Handguard (Uzi),
+        Icon = UziGreenHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziGreenHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziGreenHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Green Polymer Handguard (Mini Uzi),
+        Icon = UziGreenHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziGreenHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziGreenGrips
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Polymer Green Grip (Uzi),
+        Icon = UziGreenGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45; MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45; MicroUzi; MicroUzi45,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureReq,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziGreenGrips,
+        CanAttach = Guns93WeaponPartsRifleGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziWoodHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Wood Handguard (Uzi),
+        Icon = UziWoodHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziWoodHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziWoodHandguard
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Wood Handguard (Mini Uzi),
+        Icon = UziWoodHandguard,
+        Weight = 0.2,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -2,
+        RecoilDelayModifier = -3,
+        HitChanceModifier = 6,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Handguard,
+        Tooltip = Tooltip_Furniture,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = MiniUziWoodHandguard,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziWoodGrips
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Wood Grip (Uzi),
+        Icon = UziWoodGrips,
+        Weight = 0.01,
+        AimingTimeModifier = -4,
+        RecoilDelayModifier = -4,
+        HitChanceModifier = 4,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45; MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45; MicroUzi; MicroUzi45,
+        PartType = Grip,
+        Tooltip = Tooltip_FurnitureReq,
+        Tags = guns93:UseDriver,
+        WorldStaticModel = UziWoodGrips,
+        CanAttach = Guns93WeaponPartsRifleGrip,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Fixed Stock (Uzi),
+        Icon = UziStock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 30,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:RearSwivel; guns93:RearSwivel,
+        WorldStaticModel = UziStock,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziPolymerStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Fixed Polymer Stock (Uzi),
+        Icon = UziPolymerStock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 30,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:RearSwivel; guns93:RearSwivel,
+        WorldStaticModel = UziPolymerStock,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziGreenStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Fixed Green Polymer Stock (Uzi),
+        Icon = UziGreenStock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 30,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:RearSwivel; guns93:RearSwivel,
+        WorldStaticModel = UziGreenStock,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziThumbStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Thumb Hole Stock,
+        Icon = UziThumbStock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 30,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:RecoilPad; guns93:RearSwivel; guns93:Sport,
+        WorldStaticModel = UziThumbStock,
+        CanAttach = Guns93WeaponPartsSportStock,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziThumbPolyStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Thumb Hole Polymer Stock,
+        Icon = UziThumbPolyStock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 30,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureScrew,
+        Tags = guns93:UseDriver; guns93:RecoilPad; guns93:RearSwivel; guns93:Sport,
+        WorldStaticModel = UziThumbPolyStock,
+        CanAttach = Guns93WeaponPartsSportStock,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item UziStockOut
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Folding Stock,
+        Icon = UziFoldStock,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -10,
+        HitChanceModifier = 28,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = UziStockOut,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item UziStockIn
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Folding Stock,
+        Icon = UziFoldStock,
+        Weight = 0.4,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -11,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 22,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = UziStockIn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziStockIn
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Mini Uzi Folding Stock,
+        Icon = MiniUziStock,
+        Weight = 0.4,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -11,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 22,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = MiniUziStockIn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item MiniUziStockOut
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Mini Uzi Folding Stock,
+        Icon = MiniUziStock,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -10,
+        HitChanceModifier = 28,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = MiniUziStockOut,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MicroUziStockIn
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Micro Uzi Folding Stock,
+        Icon = MiniUziStock,
+        Weight = 0.4,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -11,
+        AimingTimeModifier = -8,
+        HitChanceModifier = 22,
+        MountOn = MicroUzi; MicroUzi45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = MicroUziStockIn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    item MicroUziStockOut
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Micro Uzi Folding Stock,
+        Icon = MiniUziStock,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -10,
+        HitChanceModifier = 28,
+        MountOn = MicroUzi; MicroUzi45,
+        PartType = Stock,
+        Tooltip = Tooltip_FoldWrench,
+        Tags = guns93:UseDriver; guns93:FoldingStock; guns93:RearSwivel,
+        WorldStaticModel = MicroUziStockOut,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziShroud
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Barrel Shroud Heatshield (Uzi Carbine and Mini Uzi Carbine),
+        Icon = UziShroud,
+        Weight = 0.1,
+        MountOn = UziCarbine; MiniUziCar,
+        PartType = shield,
+        Tooltip = Tooltip_ScrewReq,
+        Tags = guns93:NoScrewdriver,
+        WorldStaticModel = UziShroud,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziMount
+    {
+        DisplayCategory = WeaponPart,
+        Weight	=	0.05,
+        ItemType = base:weaponpart,
+        DisplayName	=	Uzi Scope Mount,
+        Icon	=	UziMount,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Receiver,
+        MetalValue = 10,
+        Tooltip = Tooltip_ScopeMountScrew,
+        WorldStaticModel = UziMount,
+        Tags = guns93:UseDriver; guns93:ScopeRail,
+        CanAttach = Guns93WeaponPartsRailInstall,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Uzi Trigger and Bolt Parts (Semi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item CrudeUziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Crude Auto Trigger (Full-Auto Only) (Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = -5,
+        mod_JamMod = 1,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item UziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Uzi Trigger and Bolt Parts (Semi/Full-Auto),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = Uzi; UziCarbine; Uzi45; UziCarbine45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger and Bolt Parts (Semi) (Mini Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item CrudeMiniUziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Crude Auto Trigger (Full-Auto Only) (Mini Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = -5,
+        mod_JamMod = 1,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MiniUziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Trigger and Bolt Parts (Semi/Full-Auto) (Mini Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MiniUzi; MiniUziCar; MiniUzi45; MiniUziCar45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MicroUziTrigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger and Bolt Parts (Semi) (Micro Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MicroUzi; MicroUzi45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item CrudeMicroUziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Crude Auto Trigger (Full-Auto Only) (Micro Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = -5,
+        mod_JamMod = 1,
+        MountOn = MicroUzi; MicroUzi45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item MicroUziAutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Trigger and Bolt Parts (Semi/Full-Auto) (Micro Uzi),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = MicroUzi; MicroUzi45,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    /****************************** TEC-9 ******************************/
+
+    item TEC9Trigger
+    {
+        DisplayCategory = WeaponPart,
+    	ItemType = base:weaponpart,
+        DisplayName = Trigger and Bolt Parts (Semi) (TEC-9),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        MountOn = TEC9,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item CrudeTEC9AutoTrigger
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Crude Auto Trigger (Full-Auto Only) (TEC-9),
+        Icon = TriggerBox,
+        Weight = 0.01,
+        WeightModifier = 0,
+        HitChanceModifier = -5,
+        mod_JamMod = 1,
+        MountOn = TEC9,
+        PartType = Trigger,
+        Tooltip = Tooltip_TriggerPart,
+        MetalValue = 15,
+        Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
+        WorldStaticModel = TriggerBox,
+        CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+}
