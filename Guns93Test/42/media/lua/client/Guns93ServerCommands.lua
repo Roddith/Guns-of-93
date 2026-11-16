@@ -8,7 +8,7 @@ Guns93Commands.bayonet.toggle = function(args)
     local player = getPlayerByOnlineID(args.playerOnlineID)
     if not player then return end
     local weapon = player:getInventory():getItemWithID(args.itemID)
-    if weapon:getSubCategory() == "Stab" and weapon:hasTag(Gun93Registries.guns93.BayoUsed) then
+    if weapon and weapon:getSubCategory() == "Stab" and weapon:hasTag(Gun93Registries.guns93.BayoUsed) then
         local oldGun = args.storeGun
 		local refWeapon = instanceItem(oldGun)
         if refWeapon then

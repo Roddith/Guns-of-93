@@ -1,4 +1,4 @@
-function GunStatAdjust(player, weapon)
+function GunStatAdjust(player, weapon, bang)
     if not instanceof(player, "IsoPlayer") or instanceof(player, "IsoZombie") then return end
     if not weapon or not instanceof(weapon, "HandWeapon") or not weapon:isRanged() then return end
     if not weapon:hasTag(Gun93Registries.guns93.Guns93) then return end
@@ -285,15 +285,25 @@ function GunStatAdjust(player, weapon)
         weapon:setHitChance(hitChance - ((recoilDelay / 2) - sightMod) + sightHit)
     elseif weapon:getFireMode() == "Burst" then
         local partMod = autoPart:getModData()
-        local burstCount = weaponMod["modBurst_Num"] or 0
+        local burstNum = tonumber(partMod.modBurst_Num) or 3
+        local currentBurst = tonumber(weaponMod.modBurst_Num)
         weapon:setHitChance(hitChance - ((recoilDelay / 3) - sightMod) + sightHit)
-        if burstCount == (partMod["modBurst_Num"] - 1) then
+        if currentBurst >= burstNum then
             recoilDelay = recoilDelay + 5
-            weaponMod["modBurst_Num"] = 0
+            currentBurst = 0
+            if isClient() and not isServer() then
+                sendClientCommand("Guns93", "BurstBang", {itemID = weapon:getID(), stop = true})
+            end
         else
             recoilDelay = 0
-            weaponMod["modBurst_Num"] = burstCount + 1
+            if bang == "Bang" or (getDebug() and player:isUnlimitedAmmo() and player:isUnlimitedAmmo()) then
+                currentBurst = currentBurst + 1
+                if isClient() and not isServer() then
+                    sendClientCommand("Guns93", "BurstBang", {itemID = weapon:getID(), stop = false})
+                end
+            end
         end
+        weaponMod.modBurst_Num = currentBurst
     end
     weapon:setJamGunChance(baseJamChance)
     weapon:setConditionLowerChance(baseConChance)
@@ -312,7 +322,7 @@ function GunStatAdjust(player, weapon)
     weapon:setProjectileCount(baseProjectileCount)
     weaponMod.ProjectileSpread = baseProjectileSpread
     weaponMod.ProjectileWeightCenter = baseProjectileWeightCenter
-    if not isClient() and not instanceof(player, "IsoZombie") then
+    if (isServer() or not isClient()) and not instanceof(player, "IsoZombie") then
         syncItemModData(player, weapon)
         syncHandWeaponFields(player, weapon)
     end

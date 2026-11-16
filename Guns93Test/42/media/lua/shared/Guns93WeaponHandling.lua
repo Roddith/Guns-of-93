@@ -603,11 +603,11 @@ function ISInsertMagazine:loadAmmo()
                 self.gun:setCurrentAmmoCount(self.gun:getCurrentAmmoCount() + loaded)
                 self.magazine:setCurrentAmmoCount(self.magazine:getCurrentAmmoCount() - loaded)
             end
+            DynamicMagClip(self.magazine)
             syncItemFields(self.character, self.magazine)
             syncItemModData(self.character, self.magazine)
             syncItemModData(self.character, self.gun)
             syncHandWeaponFields(self.character, self.gun)
-            DynamicMagClip(self.magazine)
         else
             self.character:getInventory():Remove(self.magazine)
             self.character:removeFromHands(self.magazine)
@@ -1434,12 +1434,15 @@ local function Guns93CycleChamber(player, weapon)
     if not player or not weapon or not weapon:isRanged() then return end
     if not weapon:hasTag(Gun93Registries.guns93.Guns93) then return end
     if getDebug() and player:isUnlimitedAmmo() and player:isUnlimitedAmmo() then return end
-    if isClient() then return end
     local brass = nil
     if weapon:haveChamber() then
+        weapon:setSpentRoundChambered(true)
         brass = Guns93RemoveChambered(weapon)
         Guns93AddSpentAmmo(weapon, brass)
         if not weapon:isRackAfterShoot() then
+            if isClient() then
+                sendClientCommand("Guns93", "EjectBrass", {itemID = weapon:getID(), isSpent = weapon:isSpentRoundChambered()})
+            end
             Guns93BrassEject(player, weapon)
             local bullet = Guns93RemoveAmmoType(weapon)
             if bullet then
@@ -1450,7 +1453,7 @@ local function Guns93CycleChamber(player, weapon)
         brass = Guns93RemoveAmmoType(weapon)
         Guns93AddSpentAmmo(weapon, brass)
     end
-    GunStatAdjust(player, weapon)
+    GunStatAdjust(player, weapon, "Bang")
     syncItemModData(player, weapon)
     syncHandWeaponFields(player, weapon)
 end
@@ -1471,6 +1474,8 @@ ISReloadWeaponAction.canShoot = function(player, weapon)
             return false
         end
         GunStatAdjust(player, weapon)
+        syncItemModData(player, weapon)
+        syncHandWeaponFields(player, weapon)
     end
     return ISReloadWeaponAction_canShoot(player, weapon)
 end
@@ -1855,6 +1860,8 @@ function FireModeHotKey.FireModeToggle()
         if available[nextMode] then
             weapon:setFireMode(nextMode)
             player:setHaloNote(nextMode)
+            syncItemModData(player, weapon)
+            syncHandWeaponFields(player, weapon)
             GunStatAdjust(player, weapon)
             return
         end

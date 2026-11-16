@@ -170,6 +170,7 @@ function RecipeCodeOnCreate.shotgunSawnoff(craftRecipeData, character)
                     newIcon = SawedOffIconSet[index + 1]
                     if newIcon then
                         result:setTexture(getTexture("media/textures/item_".. newIcon .. ".png"))
+                        modData.Guns93Icon = newIcon
                     end
                 end
             end
