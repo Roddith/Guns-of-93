@@ -84,7 +84,7 @@
 "Sandbox_Guns93CleanBrass" : "Disable spent casings cleanup",
 "Sandbox_Guns93CleanBrass_tooltip" : "Spent caseings will delete if left on the ground for 24hr for performance reasons. Disabling this will prevent this.",
 "Sandbox_Guns93AltAmmo" : "Enable More Alternative Ammo Types.",
-"Sandbox_Guns93AltAmmo_tooltip" : "Will add various alternative types to ammo spawn. Hollow-Point, Soft-Point, military specific ammo, etc.",
+"Sandbox_Guns93AltAmmo_tooltip" : "Will add various alternative types of ammo. Hollow-Point, Soft-Point, military specific ammo, etc.",
 "Sandbox_Guns93AmmoName" : "Enable ammo type behind displayed as part of firearm's name.",
 "Sandbox_Guns93AmmoName_tooltip" : "Firearm's ammo type will be displayed as part of the firearm's name. Does not affect firearms that have already spawned.",
 "Sandbox_Guns93VanillaGuns" : "Enable Vanilla Firearm Spawns",

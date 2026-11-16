@@ -43,7 +43,7 @@ function Guns93BrassEject(player, weapon)
     if isClient() then return end
     local ejected = false
     if weapon:getSpentRoundCount() > 0 or weapon:isSpentRoundChambered() then
-        if not weapon:isSpentRoundChambered() then
+        if not weapon:haveChamber() then
             if weapon:hasTag(Gun93Registries.guns93.SingleEject) then
                 Guns93BrassPicker(player, weapon)
                 weapon:setSpentRoundCount(weapon:getSpentRoundCount() - 1)
@@ -64,36 +64,6 @@ function Guns93BrassEject(player, weapon)
         syncHandWeaponFields(player, weapon)
     end
 end
-
-local function AutoEjectCase(player, weapon)
-    if not SandboxVars.Guns93.Guns93SpentBrass or not weapon:hasTag(Gun93Registries.guns93.Guns93) or not weapon:isRanged() then return end
-    if weapon:haveChamber() and not weapon:isRackAfterShoot() then       
-        local canon = weapon:getWeaponPart("Canon")
-        if canon and canon:hasTag(Gun93Registries.guns93.Guns93Can) and weapon:hasTag(Gun93Registries.guns93.ReqBooster) then
-            if not canon:hasTag(Gun93Registries.guns93.Booster) then
-                return
-            end
-        end
-        Guns93BrassPicker(player, weapon)
-    end
-    if weapon:isContainsClip() then
-        local clip = weapon:getWeaponPart("Clip")
-        if clip then
-            local clipAmmoKey = clip:getAmmoType():getItemKey()
-            if clipAmmoKey == "Base.556Belt" or clipAmmoKey == "Base.308Belt" then
-                if isClient() then return end
-                local linkType = (ZombRand(4) < 3) and (clipAmmoKey .. "Link") or "Base.DamagedBeltLink"
-                local link = instanceItem(linkType)
-                local square = player:getCurrentSquare()
-                if square then
-                    local worldLink = square:AddWorldInventoryItem(link, 0.0, 0.0, 0.0)
-                end
-            end
-        end
-    end
-end
-
-Events.OnPlayerAttackFinished.Add(AutoEjectCase)
 
 local ISReloadWeaponAction_ejectSpentRounds_Old = ISReloadWeaponAction.ejectSpentRounds
 function ISReloadWeaponAction:ejectSpentRounds()

@@ -789,9 +789,6 @@ function ISRackFirearm:rackBullet()
                 self:removeBullet()
             end
         end
-        if self.gun:isSpentRoundChambered() then
-            Guns93BrassEject(self.character, self.gun)
-        end
         self.gun:setRoundChambered(false)
         if Guns93HasMultipleCalibers(self.gun) and self.gun:hasTag(Gun93Registries.guns93.MixJam) and ZombRand(0,50) > 30 then
             self.gun:setJammed(true)
@@ -1440,7 +1437,13 @@ local function Guns93CycleChamber(player, weapon)
         brass = Guns93RemoveChambered(weapon)
         Guns93AddSpentAmmo(weapon, brass)
         if not weapon:isRackAfterShoot() then
-            if isClient() then
+            local canon = weapon:getWeaponPart("Canon")
+            if canon and canon:hasTag(Gun93Registries.guns93.Guns93Can) and weapon:hasTag(Gun93Registries.guns93.ReqBooster) then
+                if not canon:hasTag(Gun93Registries.guns93.Booster) then
+                    return
+                end
+            end
+            if isClient() and not isServer() then
                 sendClientCommand("Guns93", "EjectBrass", {itemID = weapon:getID(), isSpent = weapon:isSpentRoundChambered()})
             end
             Guns93BrassEject(player, weapon)
@@ -1452,6 +1455,21 @@ local function Guns93CycleChamber(player, weapon)
     else
         brass = Guns93RemoveAmmoType(weapon)
         Guns93AddSpentAmmo(weapon, brass)
+    end
+    if weapon:isContainsClip() then
+        local clip = weapon:getWeaponPart("Clip")
+        if clip then
+            local clipAmmoKey = clip:getAmmoType():getItemKey()
+            if clipAmmoKey == "Base.556Belt" or clipAmmoKey == "Base.308Belt" then
+                if isClient() then return end
+                local linkType = (ZombRand(4) < 3) and (clipAmmoKey .. "Link") or "Base.DamagedBeltLink"
+                local link = instanceItem(linkType)
+                local square = player:getCurrentSquare()
+                if square then
+                    local worldLink = square:AddWorldInventoryItem(link, 0.0, 0.0, 0.0)
+                end
+            end
+        end
     end
     GunStatAdjust(player, weapon, "Bang")
     syncItemModData(player, weapon)
@@ -1648,9 +1666,6 @@ function ISUnloadRackFirearm:rackBullet()
                 self:removeBullet()
             end
         end
-        if self.gun:isSpentRoundChambered() then
-            Guns93BrassEject(self.character, self.gun)
-        end
         self.gun:setRoundChambered(false)
         self.gun:setJammed(false)
     end
@@ -1671,6 +1686,9 @@ end
 
 function ISUnloadRackFirearm:ejectSpentRounds()
 	if self.gun:getSpentRoundCount() > 0 then
+        if self.gun:isSpentRoundChambered() then
+            Guns93BrassEject(self.character, self.gun)
+        end
 		self.gun:setSpentRoundCount(0)
         syncItemModData(self.character, self.gun)
 		syncHandWeaponFields(self.character, self.gun)

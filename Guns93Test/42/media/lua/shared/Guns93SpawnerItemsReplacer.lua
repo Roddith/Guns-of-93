@@ -273,7 +273,7 @@ local function ammoPickerSpawner(gun, spawner, ammoType)
     if type(ammoType) ~= "string" then
         ammoType = tostring(ammoType)
     end
-    if SandboxVars.Guns93AltAmmo then
+    if SandboxVars.Guns93.Guns93AltAmmo then
         local list
         local fullType = spawner:getFullType()
         if fullType == "Base.Guns93MilitaryHandgunSpawner" or fullType == "Base.Guns93MilitaryLongGunSpawner" or fullType == "Base.Guns93MilitarySniperSpawner" then
@@ -297,7 +297,7 @@ local function ammoZedPickerSpawner(gun, ammoType)
     if ammoType == nil then
         ammoType = gun:getAmmoType():getItemKey()
     end
-    if SandboxVars.Guns93AltAmmo then
+    if SandboxVars.Guns93.Guns93AltAmmo then
         local list
         local gunType = gun:getFullType()
         if gunType == "Base.M16A2" or gunType == "Base.M24" or gunType == "Base.M14308" or gunType == "Base.M249" or gunType == "Base.M60" or gunType == "Base.M3GreaseGun" or gunType == "Base.M9" or gunType == "Base.M1911" or gunType == "Base.M727" or gunType == "Base.M723" or gunType == "Base.M733" or gunType == "Base.M870" or gunType == "Base.M590" or gunType == "Base.Moss590" or gunType == "Base.Rem870P" or gunType == "Base.Rem1187P" or gunType == "Base.SPAS12" or gunType == "Base.Ithaca37MP" or gunType == "Base.Ithaca37Riot" then
@@ -1154,7 +1154,7 @@ Events.OnTick.Add(Guns93SpawnerOnTickDelay)
 local function Guns93AmmoSwap(roomType, containerType, container)
     if isClient() then return end
     if not instanceof(container, "ItemContainer") then return end
-    if not SandboxVars.Guns93AltAmmo then return end
+    if not SandboxVars.Guns93.Guns93AltAmmo then return end
     local items = container:getItems()
     local toRemove = {}
     for i = 0, items:size() - 1 do
