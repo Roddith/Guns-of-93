@@ -1,0 +1,97 @@
+module Base
+{
+    item 30CarBullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.30CarBullets,
+        Weight	=	0.022,
+        ItemType = base:normal,
+        DisplayName	=	.30 Carbine,
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 30CarBulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.30CarBullets,
+        Weight	=	0.022,
+        ItemType = base:normal,
+        DisplayName	=	.30 Carbine (Soft-Point),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 30CarBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.36,
+        ItemType = base:normal,
+        DisplayName	=	Box .30 Carbine,
+        Icon	=	RifleSurplus2Box,
+        MetalValue = 30,
+        WorldStaticModel = RifleSurplus2Box,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 30CarSPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.36,
+        ItemType = base:normal,
+        DisplayName	=	Box .30 Carbine (Soft-Point),
+        Icon	=	RifleSurplus2BoxDef,
+        MetalValue = 30,
+        WorldStaticModel = RifleSurplus2BoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    
+	item 30CarCarton
+	{
+		DisplayName = Carton of .30 Carbine,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}    
+	item 30CarSPCarton
+	{
+		DisplayName = Carton of .30 Carbine (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

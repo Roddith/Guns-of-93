@@ -15,7 +15,7 @@ module Base
 		{
 			item 1 tags[base:file] mode:keep flags[MayDegrade],
 			item 1 tags[base:metalsaw;base:smallsaw] mode:keep flags[MayDegrade],
-			item 1 [Base.MAC10Trigger;Base.UziTrigger;Base.TEC9Trigger;Base.R1022Trigger;Base.Marlin60Trigger;Base.MarlinPPCTrigger] mode:destroy mappers[simplecrudetriggertype],
+			item 1 [Base.MAC10Trigger;Base.MAC11Trigger;Base.UziTrigger;Base.TEC9Trigger;Base.R1022Trigger;Base.Marlin60Trigger;Base.MarlinPPCTrigger] mode:destroy mappers[simplecrudetriggertype],
 		}
 		outputs
 		{
@@ -24,6 +24,7 @@ module Base
 			itemMapper simplecrudetriggertype
 		{
 			Base.CrudeMAC10AutoTrigger = Base.MAC10Trigger,
+			Base.CrudeMAC11AutoTrigger = Base.MAC11Trigger,
 			Base.CrudeUziAutoTrigger = Base.UziTrigger,
 			Base.CrudeTEC9AutoTrigger = Base.TEC9Trigger,
 			Base.CrudeR1022AutoTrigger = Base.R1022Trigger,
@@ -88,7 +89,7 @@ module Base
 			item 1 [Base.ScrapMetal],
 			item 1 tags[base:file] mode:keep flags[MayDegrade],
 			item 1 tags[base:metalsaw;base:smallsaw] mode:keep flags[MayDegrade],
-			item 1 [Base.MAC10Trigger;Base.UziTrigger] mode:destroy mappers[simpleautotriggertype],
+			item 1 [Base.MAC10Trigger;Base.MAC11Trigger;Base.UziTrigger] mode:destroy mappers[simpleautotriggertype],
 		}
 		outputs
 		{
@@ -97,6 +98,7 @@ module Base
 			itemMapper simpleautotriggertype
 		{
 			Base.MAC10AutoTrigger = Base.MAC10Trigger,
+			Base.MAC11AutoTrigger = Base.MAC11Trigger,
 			Base.UziAutoTrigger = Base.UziTrigger,
 		}
 	}

@@ -104,20 +104,6 @@ local Guns93ContextMenu = function(playerid, context, items)
 					end
 					local listEntry = subMenuUp:addOption(actionString, item, Guns93FixBayonet.callAction, index, player, item:getWeaponPart("Bayonet"))
 				end
-				if item:hasTag(Gun93Registries.guns93.AmmoSwitch) then
-					local newAmmo = nil
-					if item:hasTag(Gun93Registries.guns93.AltAmmo) then
-						newAmmo = string.gsub(item:getFullType(), "_Alt", "")
-					else
-						newAmmo = item:getFullType() .. "_Alt"
-					end
-					if newAmmo ~= nil then
-						local refAmmo = instanceItem(newAmmo):getScriptItem()
-						hasAmmoSwitch = true
-						local actionString = getText("IGUI_ContextMenu_SwitchTo") .. getItemNameFromFullType(refAmmo:getAmmoType():getItemKey())
-						local listEntry = subMenuUp:addOption(actionString, item, Guns93AmmoSwitch.callAction, index, player)
-					end
-				end
 				local toggleParts = item:getAllWeaponParts()
 				for i=0, toggleParts:size()-1 do
 					local togglePart = toggleParts:get(i)
@@ -558,3 +544,41 @@ local Guns93ContextMenu = function(playerid, context, items)
 end
 
 Events.OnPreFillInventoryObjectContextMenu.Add(Guns93ContextMenu)
+
+local function guns93ApplyStoredIcon(item)
+    if not item then return end
+    local icon = item:getModData() and item:getModData().Guns93Icon
+    if not icon or icon == "" then return end
+    item:setTexture(getTexture("media/textures/item_" .. icon .. ".png"))
+end
+
+local function guns93ApplyIconsInContainer(container)
+    if not container or not container.getItems then return end
+    local items = container:getItems()
+    if not items then return end
+    for i = 0, items:size() - 1 do
+        local item = items:get(i)
+        guns93ApplyStoredIcon(item)
+        if item and instanceof(item, "InventoryContainer") then
+            guns93ApplyIconsInContainer(item:getInventory())
+        end
+    end
+end
+
+local function guns93PlayerIconRefresh(player, type)
+    if not isClient() and isServer() then return end
+    if not player then return end
+	if instanceof(player, "isoPlayer") then
+    	guns93ApplyIconsInContainer(player:getInventory())
+	end
+end
+
+Events.OnRefreshInventoryWindowContainers.Add(guns93PlayerIconRefresh)
+
+local old_refreshContainer = ISInventoryPane.refreshContainer
+function ISInventoryPane:refreshContainer()
+    if self.inventory then
+        guns93ApplyIconsInContainer(self.inventory)
+    end
+    return old_refreshContainer(self)
+end

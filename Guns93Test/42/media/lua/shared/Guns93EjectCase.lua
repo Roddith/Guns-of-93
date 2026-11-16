@@ -1,30 +1,10 @@
-AmmoBrassSet = AmmoBrassSet or {}
-
-    AmmoBrassSet["Base.22Bullets"]      = {damageChance = 89, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.25Bullets"]      = {damageChance = 88, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.380Bullets"]     = {damageChance = 91, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.Bullets38"]      = {damageChance = 94, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.Bullets9mm"]     = {damageChance = 82, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.40Bullets"]      = {damageChance = 82, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.Bullets45"]      = {damageChance = 91, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.45LCBullets"]    = {damageChance = 95, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.10mmBullets"]    = {damageChance = 80, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.Bullets357"]     = {damageChance = 82, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.Bullets44"]      = {damageChance = 81, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.30CarBullets"]   = {damageChance = 78, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.556Bullets"]     = {damageChance = 68, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.76239Bullets"]   = {damageChance = 75, damaged = "Base.DamagedRifleCase"}
-    AmmoBrassSet["Base.3030Bullets"]    = {damageChance = 77, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.308Bullets"]     = {damageChance = 64, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.3006Bullets"]    = {damageChance = 65, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.792Bullets"]     = {damageChance = 57, damaged = "Base.DamagedEmptyBrass"}
-    AmmoBrassSet["Base.SlugBullets"]    = {damageChance = 95, damaged = "Base.DamagedSlugHull"}
-    AmmoBrassSet["Base.ShotgunShells"]  = {damageChance = 95, damaged = "Base.DamagedShotHull"}
-
 local function Guns93BrassPicker(player, weapon)
     if isClient() then return end
-    local ammoKey = weapon:getAmmoType():getItemKey()
-    local brassData = AmmoBrassSet[ammoKey]
+    local ammoKey = Guns93RemoveSpentAmmo(weapon)
+    if ammoKey == nil then
+        ammoKey = weapon:getAmmoType():getItemKey()
+    end
+    local brassData = AmmoStatList[ammoKey]
     if not brassData then return end
     local willDmg = brassData.damageChance
     if weapon:haveChamber() then
@@ -45,7 +25,7 @@ local function Guns93BrassPicker(player, weapon)
     end
     if willDmg > 95 then willDmg = 95 end
     if willDmg < 0 then willDmg = 0 end
-    local brassType = (ZombRand(100) > willDmg) and brassData.damaged or (ammoKey .. "Brass")
+    local brassType = (ZombRand(100) > willDmg) and brassData.damaged or brassData.brass
     local brassDrop = instanceItem(brassType)
     if weapon:getWeaponPart("Moonclip") or weapon:hasTag(Gun93Registries.guns93.SingleEject) then
         player:getInventory():AddItem(brassDrop)
@@ -62,21 +42,23 @@ function Guns93BrassEject(player, weapon)
     if not SandboxVars.Guns93.Guns93SpentBrass then return end
     if isClient() then return end
     local ejected = false
-    if weapon:getSpentRoundCount() > 0 then
-        if weapon:hasTag(Gun93Registries.guns93.SingleEject) then
-            Guns93BrassPicker(player, weapon)
-            weapon:setSpentRoundCount(weapon:getSpentRoundCount() - 1)
-        else
-            for i = 1, weapon:getSpentRoundCount() do
+    if weapon:getSpentRoundCount() > 0 or weapon:isSpentRoundChambered() then
+        if not weapon:isSpentRoundChambered() then
+            if weapon:hasTag(Gun93Registries.guns93.SingleEject) then
                 Guns93BrassPicker(player, weapon)
+                weapon:setSpentRoundCount(weapon:getSpentRoundCount() - 1)
+            else
+                for i = 1, weapon:getSpentRoundCount() do
+                    Guns93BrassPicker(player, weapon)
+                end
+                weapon:setSpentRoundCount(0)
             end
-            weapon:setSpentRoundCount(0)
+            ejected = true
+        else
+            Guns93BrassPicker(player, weapon)
+            weapon:setSpentRoundChambered(false)
+            ejected = true
         end
-        ejected = true
-    elseif weapon:isSpentRoundChambered() then
-        Guns93BrassPicker(player, weapon)
-        weapon:setSpentRoundChambered(false)
-        ejected = true
     end
     if ejected then
         syncHandWeaponFields(player, weapon)
@@ -138,14 +120,14 @@ end
 -- Add brass/casings to world removal list
 local Guns93RemovalListItems = {
     "Base.3006BulletsBrass", "Base.792BulletsBrass", "Base.30CarBulletsBrass",
-    "Base.76239BulletsBrass", "Base.3030BulletsBrass", "Base.22BulletsBrass",
-    "Base.25BulletsBrass", "Base.380BulletsBrass", "Base.45LCBulletsBrass",
-    "Base.357BulletsBrass", "Base.10mmBulletsBrass", "Base.ShotgunShellsBrass",
-    "Base.SlugBulletsBrass", "Base.Bullets9mmBrass", "Base.40BulletsBrass",
-    "Base.Bullets45Brass", "Base.Bullets44Brass", "Base.Bullets38Brass",
-    "Base.223BulletsBrass", "Base.308BulletsBrass", "Base.556BulletsBrass",
-    "Base.DamagedEmptyBrass", "Base.DamagedRifleCase", "Base.DamagedShotHull",
-    "Base.DamagedSlugHull", "Base.DamagedBeltLink"
+    "Base.76239BulletsBrass", "Base.76239BulletsCase", "Base.3030BulletsBrass", 
+    "Base.22BulletsBrass", "Base.25BulletsBrass", "Base.380BulletsBrass", 
+    "Base.45LCBulletsBrass", "Base.357BulletsBrass", "Base.10mmBulletsBrass", 
+    "Base.ShotgunShellsBrass", "Base.SlugBulletsBrass", "Base.Bullets9mmBrass", 
+    "Base.40BulletsBrass", "Base.Bullets45Brass", "Base.Bullets44Brass", 
+    "Base.Bullets38Brass", "Base.223BulletsBrass", "Base.308BulletsBrass", 
+    "Base.556BulletsBrass", "Base.DamagedEmptyBrass", "Base.DamagedRifleCase", 
+    "Base.DamagedShotHull", "Base.DamagedSlugHull", "Base.DamagedBeltLink"
 }
 
 local function Guns93AddToRemovalList()

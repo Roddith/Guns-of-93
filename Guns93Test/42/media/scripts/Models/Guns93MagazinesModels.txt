@@ -432,6 +432,18 @@ module Base
 			scale = 0.9,
 		}
 	}
+	model 16MAC11A1Mag
+	{
+	    mesh = weapons/parts/MACShortMag,
+	    texture = weapons/parts/SMGMagTex,
+
+		attachment world
+		{
+			offset = -0.0165 0.0935 -0.0210,
+			rotate = 0.0000 0.0000 -89.6878,
+			scale = 0.9,
+		}
+	}
 	model 20TommyMag
 	{
 	    mesh = weapons/parts/ThompsonMag20,
@@ -850,6 +862,19 @@ module Base
 		{
 			offset = -0.0165 0.0935 -0.0210,
 			rotate = 0.0000 0.0000 -89.6878,
+			scale = 0.9,
+		}
+	}
+	model USPMag
+	{
+		mesh = weapons/parts/USPMag,
+		texture = weapons/parts/UTL,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0162 0.0281 0.0211,
+			rotate = -179.7727 -0.0012 -90.3122,
 			scale = 0.9,
 		}
 	}

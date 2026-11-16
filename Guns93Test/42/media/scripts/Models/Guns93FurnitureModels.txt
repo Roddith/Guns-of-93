@@ -1904,6 +1904,69 @@ module Base
 			scale = 0.9,
 		}
     }
+	model M3A1GreaseGunStockOut
+    {
+		mesh = weapons/parts/M3A1GreaseGunStockOut,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3A1GreaseGunStockIn
+    {
+		mesh = weapons/parts/M3A1GreaseGunStockIn,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3FlashCone
+    {
+		mesh = weapons/parts/M3FlashCone,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3Lever
+    {
+		mesh = weapons/parts/M3Lever,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model M3Silencer
+	{
+	    mesh = weapons/parts/M3Silencer,
+		texture = weapons/firearm/M3GreaseGun,
+
+		attachment world
+		{
+			offset = -0.0309 0.0810 -0.0004,
+			rotate = -89.5630 -0.0029 0.0000,
+		}
+	}
 	model TommyStock
     {
 		mesh = weapons/parts/ThompsonPartStock,
@@ -2148,6 +2211,19 @@ module Base
 		{
 			offset = -0.0103 -0.0700 0.0000,
 			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model USPThread
+    {
+		mesh = weapons/parts/USPThread,
+		texture = weapons/firearm/USP,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
 			scale = 0.9,
 		}
     }
@@ -2558,6 +2634,32 @@ module Base
     {
 		mesh = weapons/parts/OfficerGrips3,
 		texture = weapons/parts/1911Grips3,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UTL
+    {
+		mesh = weapons/parts/UTL,
+		texture = weapons/parts/UTL,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model UTL_On
+    {
+		mesh = weapons/parts/UTL,
+		texture = weapons/parts/UTL_On,
 		scale = 1,
 
 		attachment world
@@ -3986,7 +4088,7 @@ module Base
     }
 	model DFrameTargetGrip
     {
-		mesh = weapons/parts/IFrameRubberGrip,
+		mesh = weapons/parts/DFrameRubberGrip,
 		texture = weapons/parts/ColtRevolverGrips,
 		scale = 1,
 
@@ -4049,10 +4151,23 @@ module Base
 			scale = 0.9,
 		}
     }
+	model DFrameCombatGrip
+    {
+		mesh = weapons/parts/DFrameTargetGrip,
+		texture = weapons/parts/ColtRevolverWood2,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
 	model DFrameRubberFingerGrip
     {
 		mesh = weapons/parts/DFrameFingerGrip,
-		texture = weapons/parts/RevolverRubberSilver,
+		texture = weapons/parts/RevolverRubber,
 		scale = 1,
 
 		attachment world
@@ -8161,6 +8276,110 @@ module Base
     {
 		mesh = weapons/parts/UziMount,
 		texture = weapons/parts/870MountShield,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MACBarrelExt
+    {
+        mesh = weapons/parts/MACBarrelExt,
+        texture = weapons/parts/870MountShield,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0718 -0.1175 -0.0000,
+            rotate = -180.0000 -0.0000 -90.0000,
+            scale = 0.9000,
+        }
+    }
+	model MACStrap
+    {
+        mesh = weapons/parts/MACStrap,
+        texture = weapons/parts/MAC10Stock,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0718 -0.1175 -0.0000,
+            rotate = -180.0000 -0.0000 -90.0000,
+            scale = 0.9000,
+        }
+    }
+	model MAC10StockIn
+    {
+		mesh = weapons/parts/MAC10StockIn,
+		texture = weapons/parts/MAC10Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MAC10StockOut
+    {
+		mesh = weapons/parts/MAC10StockOut,
+		texture = weapons/parts/MAC10Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MAC11StockIn
+    {
+		mesh = weapons/parts/MAC11StockIn,
+		texture = weapons/parts/MAC10Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MAC11StockOut
+    {
+		mesh = weapons/parts/MAC11StockOut,
+		texture = weapons/parts/MAC10Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MAC11A1StockIn
+    {
+		mesh = weapons/parts/MAC11A1StockIn,
+		texture = weapons/parts/MAC10Stock,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0718 -0.1175 -0.0000,
+			rotate = -180.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+    }
+	model MAC11A1StockOut
+    {
+		mesh = weapons/parts/MAC11A1StockOut,
+		texture = weapons/parts/MAC10Stock,
 		scale = 1,
 
 		attachment world

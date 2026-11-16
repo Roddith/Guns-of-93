@@ -1,0 +1,95 @@
+module Base
+{
+    item 25Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.25Bullets,
+        Weight	=	0.004,
+        ItemType = base:normal,
+        DisplayName	=	.25 Auto,
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 22RoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 25BulletsJHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.25Bullets,
+        Weight	=	0.004,
+        ItemType = base:normal,
+        DisplayName	=	.25 Auto (Hollow-Point),
+        Icon	=	22Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 22RoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 25Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.34,
+        ItemType = base:normal,
+        DisplayName	=	Box of .25 Auto,
+        Icon	=	RifleBulkBox2,
+        MetalValue = 30,
+        WorldStaticModel = RifleBulkBox2,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfBullets100,
+    }
+    item 25JHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.34,
+        ItemType = base:normal,
+        DisplayName	=	Box of .25 Auto (Hollow-Point),
+        Icon	=	HandgunBoxDef,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOfBullets100,
+    }
+
+	item 25Carton
+	{
+		DisplayName = Carton of .25 Auto,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.2,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 25JHPCarton
+	{
+		DisplayName = Carton of .25 Auto (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 3.2,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

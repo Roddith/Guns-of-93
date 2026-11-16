@@ -43,7 +43,7 @@ module Base
 		Count = 5,
     }
 
-    item 76239BulletsBrass
+    item 76239BulletsCase
     {
         DisplayCategory = Ammo,
         Weight	=	0.011,
@@ -52,6 +52,19 @@ module Base
         Icon	=	76239EmptyCase,
         MetalValue = 1,
         WorldStaticModel = 76239CaseWorld,
+		Tags = guns93:SpentCase,
+		Count = 5,
+    }
+
+    item 76239BulletsBrass
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.011,
+        ItemType = base:normal,
+        DisplayName	=	7.62x39 Empty Brass,
+        Icon	=	556EmptyBrass,
+        MetalValue = 1,
+        WorldStaticModel = 556BrassWorld,
 		Tags = guns93:SpentCase,
 		Count = 5,
     }

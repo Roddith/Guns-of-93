@@ -1,0 +1,514 @@
+module Base
+{
+	craftRecipe Guns93_OpenBoxOfBullets100
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneWhileWalking,
+        inputs
+        {
+			item 1 [Base.22Box;Base.25Box;Base.25JHPBox] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 100 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.22Bullets = Base.22Box,
+			Base.25Bullets = Base.25Box,
+			Base.25BulletsJHP = Base.25JHPBox,
+		}
+	}
+
+	craftRecipe Guns93_PlaceAmmoInBox100
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 100 [Base.22Bullets;Base.25Bullets;Base.25BulletsJHP] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.22Box = Base.22Bullets,
+			Base.25Box = Base.25Bullets,
+			Base.25JHPBox = Base.25BulletsJHP,
+		}
+	}
+
+	craftRecipe Guns93_OpenBoxOf50Bullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneWhileWalking,
+        inputs
+        {
+			item 1 [Base.Bullets9mmJHPBox;Base.Bullets9mmPlusBox;Base.Bullets9mmM882Box;Base.Bullets38JHPBox;Base.Bullets38PlusBox;Base.Bullets38WadBox;Base.Bullets45JHPBox;Base.Bullets45PlusBox;Base.Bullets357JHPBox;Base.Bullets357HardBox;Base.40Box;Base.40JHPBox;Base.45LCBox;Base.45LCJHPBox;Base.380Box;Base.380JHPBox;Base.10mmBox;Base.10mmJHPBox;Base.10mmHardBox] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 50 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.Bullets9mmJHP = Base.Bullets9mmJHPBox,
+			Base.Bullets9mmPlus = Base.Bullets9mmPlusBox,
+			Base.Bullets9mmM882 = Base.Bullets9mmM882Box,
+			Base.Bullets38JHP = Base.Bullets38JHPBox,
+			Base.Bullets38Plus = Base.Bullets38PlusBox,
+			Base.Bullets38Wad = Base.Bullets38WadBox,
+			Base.Bullets45JHP = Base.Bullets45JHPBox,
+			Base.Bullets45Plus = Base.Bullets45PlusBox,
+			Base.Bullets357JHP = Base.Bullets357JHPBox,
+			Base.Bullets357Hard = Base.Bullets357HardBox,
+			Base.40Bullets = Base.40Box,
+			Base.40BulletsJHP = Base.40JHPBox,
+			Base.45LCBullets = Base.45LCBox,
+			Base.45LCBulletsJHP = Base.45LCJHPBox,
+			Base.380Bullets = Base.380Box,
+			Base.380BulletsJHP = Base.380JHPBox,
+			Base.10mmBullets = Base.10mmBox,
+			Base.10mmBulletsJHP = Base.10mmJHPBox,
+			Base.10mmBulletsHard = Base.10mmHardBox,
+		}
+	}
+
+	craftRecipe Guns93_PlaceAmmoInBox50
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 50 [Base.Bullets9mmJHP;Base.Bullets9mmPlus;Base.Bullets9mmM882;Base.Bullets38JHP;Base.Bullets38Plus;Base.Bullets38Wad;Base.Bullets45JHP;Base.Bullets45Plus;Base.Bullets357JHP;Base.Bullets357Hard;Base.40Bullets;Base.40BulletsJHP;Base.45LCBullets;Base.45LCBulletsJHP;Base.380Bullets;Base.380BulletsJHP;Base.10mmBullets;Base.10mmBulletsJHP;Base.10mmBulletsHard] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.Bullets9mmJHPBox = Base.Bullets9mmJHP,
+			Base.Bullets9mmPlusBox = Base.Bullets9mmPlus,
+			Base.Bullets9mmM882Box = Base.Bullets9mmM882,
+			Base.Bullets38JHPBox = Base.Bullets38JHP,
+			Base.Bullets38PlusBox = Base.Bullets38Plus,
+			Base.Bullets38WadBox = Base.Bullets38Wad,
+			Base.Bullets45JHPBox = Base.Bullets45JHP,
+			Base.Bullets45PlusBox = Base.Bullets45Plus,
+			Base.Bullets357JHPBox = Base.Bullets357JHP,
+			Base.Bullets357HardBox = Base.Bullets357Hard,
+			Base.40Box = Base.40Bullets,
+			Base.40JHPBox = Base.40BulletsJHP,
+			Base.45LCBox = Base.45LCBullets,
+			Base.45LCJHPBox = Base.45LCBulletsJHP,
+			Base.380Box = Base.380Bullets,
+			Base.380JHPBox = Base.380BulletsJHP,
+			Base.10mmBox = Base.10mmBullets,
+			Base.10mmJHPBox = Base.10mmBulletsJHP,
+			Base.10mmHardBox = Base.10mmBulletsHard,
+		}
+	}
+
+	craftRecipe Guns93_OpenBoxOf40Bullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneWhileWalking,
+        inputs
+        {
+			item 1 [Base.22VelocityBox;Base.22TargetBox] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 40 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.22BulletsVelocity = Base.22VelocityBox,
+			Base.22BulletsTarget = Base.22TargetBox,
+		}
+	}
+
+	craftRecipe Guns93_PlaceAmmoInBox40
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 40 [Base.22BulletsVelocity;Base.22BulletsTarget] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+		{
+			Base.22VelocityBox = Base.22BulletsVelocity,
+			Base.22TargetBox = Base.22BulletsTarget,
+		}
+	}
+
+	craftRecipe Guns93_OpenBoxOf20Bullets
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneWhileWalking,
+        inputs
+        {
+			item 1 [Base.Bullets44JHPBox;Base.Bullets44HardBox;Base.76251M80Box;Base.308SPBox;Base.308MatchBox;Base.223SPBox;Base.556M193Box;Base.556M855Box;Base.3030SPBox;Base.3006Box;Base.3006M2BallBox;Base.3006SPBox;Base.3006MatchBox;Base.792Box;Base.792SPBox;Base.30CarBox;Base.30CarSPBox;Base.76239Box;Base.76239BCBox;Base.76239SPBox] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 20 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.Bullets44JHP = Base.Bullets44JHPBox,
+			Base.Bullets44Hard = Base.Bullets44HardBox,
+			Base.76251M80 = Base.76251M80Box,
+			Base.308BulletsSP = Base.308SPBox,
+			Base.308BulletsMatch = Base.308MatchBox,
+			Base.223BulletsSP = Base.223SPBox,
+			Base.556BulletsM193 = Base.556M193Box,
+			Base.556BulletsM855 = Base.556M855Box,
+			Base.3030BulletsSP = Base.3030SPBox,
+			Base.3006Bullets = Base.3006Box,
+			Base.3006BulletsM2Ball = Base.3006M2BallBox,
+			Base.3006BulletsSP = Base.3006SPBox,
+			Base.3006BulletsMatch = Base.3006MatchBox,
+			Base.792Bullets = Base.792Box,
+			Base.792BulletsSP = Base.792SPBox,
+			Base.30CarBullets = Base.30CarBox,
+			Base.30CarBulletsSP = Base.30CarSPBox,
+			Base.76239Bullets = Base.76239Box,
+			Base.76239BulletsBC = Base.76239BCBox,
+			Base.76239BulletsSP = Base.76239SPBox,
+		}
+	}
+
+	craftRecipe Guns93_PlaceAmmoInBox20
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 20 [Base.Bullets44JHP;Base.Bullets44Hard;Base.76251M80;Base.308BulletsSP;Base.308BulletsMatch;Base.223BulletsSP;Base.556BulletsM193;Base.556BulletsM855;Base.3030BulletsSP;Base.3006Bullets;Base.3006BulletsM2Ball;Base.3006BulletsSP;Base.3006BulletsMatch;Base.792Bullets;Base.792BulletsSP;Base.30CarBullets;Base.30CarBulletsSP;Base.76239Bullets;Base.76239BulletsBC;Base.76239BulletsSP] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.Bullets44JHPBox = Base.Bullets44JHP,
+			Base.Bullets44HardBox = Base.Bullets44Hard,
+			Base.76251M80Box = Base.76251M80,
+			Base.308SPBox = Base.308BulletsSP,
+			Base.308MatchBox = Base.308BulletsMatch,
+			Base.223SPBox = Base.223BulletsSP,
+			Base.556M193Box = Base.556BulletsM193,
+			Base.556M855Box = Base.556BulletsM855,
+			Base.3030SPBox = Base.3030BulletsSP,
+			Base.3006Box = Base.3006Bullets,
+			Base.3006M2BallBox = Base.3006BulletsM2Ball,
+			Base.3006SPBox = Base.3006BulletsSP,
+			Base.3006MatchBox = Base.3006BulletsMatch,
+			Base.792Box = Base.792Bullets,
+			Base.792SPBox = Base.792BulletsSP,
+			Base.30CarBox = Base.30CarBullets,
+			Base.30CarSPBox = Base.30CarBulletsSP,
+			Base.76239Box = Base.76239Bullets,
+			Base.76239BCBox = Base.76239BulletsBC,
+			Base.76239SPBox = Base.76239BulletsSP,
+		}
+	}
+    
+	craftRecipe Guns93_OpenBoxOfShotgunShells
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneWhileWalking,
+        inputs
+        {
+			item 1 [Base.BirdshotShellsBox;Base.TurkeyLoadShellsBox;Base.SlugBox;Base.SlugRifleBox] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 25 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.BirdshotShells = Base.BirdshotShellsBox,
+			Base.TurkeyLoadShells = Base.TurkeyLoadShellsBox,
+			Base.SlugBullets = Base.SlugBox,
+			Base.SlugBulletsRifle = Base.SlugRifleBox,
+		}
+	}
+    
+	craftRecipe Guns93_PlaceAmmoInBox25
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 25 [Base.BirdshotShells;Base.TurkeyLoadShells;Base.SlugBullets;Base.SlugBulletsRifle] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.BirdshotShellsBox = Base.BirdshotShells,
+			Base.TurkeyLoadShellsBox = Base.TurkeyLoadShells,
+			Base.SlugBox = Base.SlugBullets,
+			Base.SlugRifleBox = Base.SlugBulletsRifle,
+		}
+	}
+
+	craftRecipe OpenBeltLinkBox
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 1 [Base.556LinkBox;Base.308LinkBox] mappers[ammoTypes]  flags[Prop2;AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 200 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.556BeltLink = Base.556LinkBox,
+			Base.308BeltLink = Base.308LinkBox,
+		}
+	}
+
+	craftRecipe Guns93_PlaceBeltLinkInBox
+	{
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+			item 200 [Base.556BeltLink;Base.308BeltLink] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.556LinkBox = Base.556BeltLink,
+			Base.308LinkBox = Base.308BeltLink,
+		}
+	}
+
+	craftRecipe Guns93_OpenCarton12
+	{
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+			item 1 [Base.22Carton;Base.22VelocityCarton;Base.22TargetCarton;Base.25Carton;Base.25JHPCarton;Base.Bullets9mmJHPCarton;Base.Bullets9mmPlusCarton;Base.Bullets9mmM882Carton;Base.Bullets38JHPCarton;Base.Bullets38PlusCarton;Base.Bullets38WadCarton;Base.Bullets45JHPCarton;Base.Bullets45PlusCarton;Base.Bullets357JHPCarton;Base.Bullets357HardCarton;Base.Bullets44JHPCarton;Base.Bullets44HardCarton;Base.76251M80Carton;Base.308SPCarton;Base.308MatchCarton;Base.223SPCarton;Base.556M193Carton;Base.556M855Carton;Base.3030SPCarton;Base.40Carton;Base.40JHPCarton;Base.45LCCarton;Base.45LCJHPCarton;Base.380Carton;Base.380JHPCarton;Base.10mmCarton;Base.10mmJHPCarton;Base.10mmHardCarton;Base.3006Carton;Base.76251M80Carton;Base.3006SPCarton;Base.3006MatchCarton;Base.792Carton;Base.30CarCarton;Base.30CarSPCarton;Base.76239Carton;Base.76239BCCarton;Base.76239SPCarton;Base.BirdshotShellsCarton;Base.TurkeyLoadShellsCarton;Base.SlugCarton;Base.SlugRifleCarton] mappers[boxType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 12 mapper:boxType,
+		}
+        	itemMapper boxType
+        {
+			Base.22Box = Base.22Carton,
+			Base.22VelocityBox = Base.22VelocityCarton,
+			Base.22TargetBox = Base.22TargetCarton,
+			Base.25Box = Base.25Carton,
+			Base.25JHPBox = Base.25JHPCarton,
+			Base.Bullets9mmJHPBox = Base.Bullets9mmJHPCarton,
+			Base.Bullets9mmPlusBox = Base.Bullets9mmPlusCarton,
+			Base.Bullets9mmM882Box = Base.Bullets9mmM882Carton,
+			Base.Bullets38JHPBox = Base.Bullets38JHPCarton,
+			Base.Bullets38PlusBox = Base.Bullets38PlusCarton,
+			Base.Bullets38WadBox = Base.Bullets38WadCarton,
+			Base.Bullets45JHPBox = Base.Bullets45JHPCarton,
+			Base.Bullets45PlusBox = Base.Bullets45PlusCarton,
+			Base.Bullets357JHPBox = Base.Bullets357JHPCarton,
+			Base.Bullets357HardBox = Base.Bullets357HardCarton,
+			Base.Bullets44JHPBox = Base.Bullets44JHPCarton,
+			Base.Bullets44HardBox = Base.Bullets44HardCarton,
+			Base.76251M80Box = Base.76251M80Carton,
+			Base.308SPBox = Base.308SPCarton,
+			Base.308MatchBox = Base.308MatchCarton,
+			Base.223SPBox = Base.223SPCarton,
+			Base.556M193Box = Base.556M193Carton,
+			Base.556M855Box = Base.556M855Carton,
+			Base.3030SPBox = Base.3030SPCarton,
+			Base.40Box = Base.40Carton,
+			Base.40JHPBox = Base.40JHPCarton,
+			Base.45LCBox = Base.45LCCarton,
+			Base.45LCJHPBox = Base.45LCJHPCarton,
+			Base.380Box = Base.380Carton,
+			Base.380JHPBox = Base.380JHPCarton,
+			Base.10mmBox = Base.10mmCarton,
+			Base.10mmJHPBox = Base.10mmJHPCarton,
+			Base.10mmHardBox = Base.10mmHardCarton,
+			Base.3006Box = Base.3006Carton,
+			Base.76251M80Box = Base.76251M80Carton,
+			Base.3006SPBox = Base.3006SPCarton,
+			Base.3006MatchBox = Base.3006MatchCarton,
+			Base.792Box = Base.792Carton,
+			Base.792SPBox = Base.792SPCarton,
+			Base.30CarBox = Base.30CarCarton,
+			Base.30CarSPBox = Base.30CarSPCarton,
+			Base.76239Box = Base.76239Carton,
+			Base.76239BCBox = Base.76239BCCarton,
+			Base.76239SPBox = Base.76239SPCarton,
+			Base.BirdshotShellsBox = Base.BirdshotShellsCarton,
+			Base.TurkeyLoadShellsBox = Base.TurkeyLoadShellsCarton,
+			Base.SlugBox = Base.SlugCarton,
+			Base.SlugRifleBox = Base.SlugRifleCarton,
+		}
+	}
+
+	craftRecipe Guns93_PlaceInCarton12
+	{
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+			item 12 [Base.22Box;Base.22VelocityBox;Base.22TargetBox;Base.25Box;Base.25JHPBox;Base.Bullets9mmJHPBox;Base.Bullets9mmPlusBox;Base.Bullets9mmM882Box;Base.Bullets38JHPBox;Base.Bullets38PlusBox;Base.Bullets38WadBox;Base.Bullets45JHPBox;Base.Bullets45PlusBox;Base.Bullets357JHPBox;Base.Bullets357HardBox;Base.Bullets44JHPBox;Base.Bullets44HardBox;Base.76251M80Box;Base.308SPBox;Base.308MatchBox;Base.223SPBox;Base.556M193Box;Base.556M855Box;Base.3030SPBox;Base.40Box;Base.40JHPBox;Base.45LCBox;Base.45LCJHPBox;Base.380Box;Base.380JHPBox;Base.10mmBox;Base.10mmJHPBox;Base.10mmHardBox;Base.3006Box;Base.76251M80Box;Base.3006SPBox;Base.3006MatchBox;Base.792Box;Base.30CarBox;Base.30CarSPBox;Base.76239Box;Base.76239BCBox;Base.76239SPBox;Base.BirdshotShellsBox;Base.TurkeyLoadShellsBox;Base.SlugBox;Base.SlugRifleBox] mappers[CartonType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:CartonType,
+		}
+        	itemMapper CartonType
+        {
+			Base.22Carton = Base.22Box,
+			Base.22VelocityCarton = Base.22VelocityBox,
+			Base.22TargetCarton = Base.22TargetBox,
+			Base.25Carton = Base.25Box,
+			Base.25JHPCarton = Base.25JHPBox,
+			Base.Bullets9mmJHPCarton = Base.Bullets9mmJHPBox,
+			Base.Bullets9mmPlusCarton = Base.Bullets9mmPlusBox,
+			Base.Bullets9mmM882Carton = Base.Bullets9mmM882Box,
+			Base.Bullets38JHPCarton = Base.Bullets38JHPBox,
+			Base.Bullets38PlusCarton = Base.Bullets38PlusBox,
+			Base.Bullets38WadCarton = Base.Bullets38WadBox,
+			Base.Bullets45JHPCarton = Base.Bullets45JHPBox,
+			Base.Bullets45PlusCarton = Base.Bullets45PlusBox,
+			Base.Bullets357JHPCarton = Base.Bullets357JHPBox,
+			Base.Bullets357HardCarton = Base.Bullets357HardBox,
+			Base.Bullets44JHPCarton = Base.Bullets44JHPBox,
+			Base.Bullets44HardCarton = Base.Bullets44HardBox,
+			Base.76251M80Carton = Base.76251M80Box,
+			Base.308SPCarton = Base.308SPBox,
+			Base.308MatchCarton = Base.308MatchBox,
+			Base.223SPCarton = Base.223SPBox,
+			Base.556M193Carton = Base.556M193Box,
+			Base.556M855Carton = Base.556M855Box,
+			Base.3030SPCarton = Base.3030SPBox,
+			Base.40Carton = Base.40Box,
+			Base.40JHPCarton = Base.40JHPBox,
+			Base.45LCCarton = Base.45LCBox,
+			Base.45LCJHPCarton = Base.45LCJHPBox,
+			Base.380Carton = Base.380Box,
+			Base.380JHPCarton = Base.380JHPBox,
+			Base.10mmCarton = Base.10mmBox,
+			Base.10mmJHPCarton = Base.10mmJHPBox,
+			Base.10mmHardCarton = Base.10mmHardBox,
+			Base.3006Carton = Base.3006Box,
+			Base.76251M80Carton = Base.76251M80Box,
+			Base.3006SPCarton = Base.3006SPBox,
+			Base.3006MatchCarton = Base.3006MatchBox,
+			Base.792Carton = Base.792Box,
+			Base.792SPCarton = Base.792SPBox,
+			Base.30CarCarton = Base.30CarBox,
+			Base.30CarSPCarton = Base.30CarSPBox,
+			Base.76239Carton = Base.76239Box,
+			Base.76239BCCarton = Base.76239BCBox,
+			Base.76239SPCarton = Base.76239SPBox,
+			Base.BirdshotShellsCarton = Base.BirdshotShellsBox,
+			Base.TurkeyLoadShellsCarton = Base.TurkeyLoadShellsBox,
+			Base.SlugCarton = Base.SlugBox,
+			Base.SlugRifleCarton = Base.SlugRifleBox,
+		}
+	}
+
+	craftRecipe Start556AmmoBelt
+	{
+        timedAction = Making,
+		Time = 5,
+		category = Ammunition,
+        Tags = InHandCraft;CanBeDoneInDark,
+		OnTest = Guns93556AmmoTest,
+		OnCreate = Guns93OnCreateAmmoBelt,
+		inputs
+		{
+			item 1 tags[guns93:Ammo],
+			item 1 [Base.556BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.556Belt,
+		}
+	}
+
+	craftRecipe Start308AmmoBelt
+	{
+        timedAction = Making,
+		Time = 5,
+		category = Ammunition,
+        Tags = InHandCraft;CanBeDoneInDark,
+		OnTest = Guns93308AmmoTest,
+		OnCreate = Guns93OnCreateAmmoBelt,
+		inputs
+		{
+			item 1 tags[guns93:Ammo],
+			item 1 [Base.308BeltLink],
+		}
+		outputs
+		{
+			item 1 Base.308Belt,
+		}
+	}
+}

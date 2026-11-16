@@ -1,0 +1,95 @@
+module Base
+{
+    item 45LCBullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.45LCBullets,
+        Weight	=	0.028,
+        ItemType = base:normal,
+        DisplayName	=	.45 Colt,
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+    item 45LCBulletsJHP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.45LCBullets,
+        Weight	=	0.028,
+        ItemType = base:normal,
+        DisplayName	=	.45 Colt (Hollow-Point),
+        Icon	=	RevolverRounds,
+        MetalValue = 1,
+        WorldStaticModel = RevolverRoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 45LCBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.15,
+        ItemType = base:normal,
+        DisplayName	=	Box of .45 Colt,
+        Icon	=	HandgunBox4,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBox4,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+    item 45LCJHPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	1.15,
+        ItemType = base:normal,
+        DisplayName	=	Box of .45 Colt (Hollow-Point),
+        Icon	=	HandgunBoxDef,
+        MetalValue = 30,
+        WorldStaticModel = HandgunBoxDef,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf50Bullets,
+    }
+
+	item 45LCCarton
+	{
+		DisplayName = Carton of .45 Colt,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+	item 45LCJHPCarton
+	{
+		DisplayName = Carton of .45 Colt (Hollow-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 11,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

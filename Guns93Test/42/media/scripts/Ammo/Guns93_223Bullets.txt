@@ -1,0 +1,200 @@
+module Base
+{
+	item 556Bullets
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.556Bullets,
+        Weight	=	0.015,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.223 Remington,
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+	item 223BulletsSP
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.556Bullets,
+        Weight	=	0.015,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	.223 Remington (Soft-Point),
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+	item 556BulletsM193
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.556Bullets,
+        Weight	=	0.015,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	5.56 M193,
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_M193,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+	item 556BulletsM855
+    {
+        DisplayCategory = Ammo,
+        isCaliber = Base.556Bullets,
+        Weight	=	0.015,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	5.56 M855,
+        Icon	=	556Rounds,
+        MetalValue = 1,
+        WorldStaticModel = 556RoundsWorld,
+        Tooltip = Tooltip_Ammo_M855,
+		Tags = base:ammo; guns93:Ammo,
+		Count = 5,
+    }
+
+    item 556Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.3,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .223 Remington,
+        Icon	=	BoxRifleAmmo4,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo4,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Count = 5,
+        DoubleClickRecipe = OpenBoxOfBullets20,
+    }
+    item 223SPBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.3,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of .223 Remington (Soft-Point),
+        Icon	=	BoxRifleAmmo3Def,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo3Def,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_JHP,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 556M193Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.3,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 5.56 M198,
+        Icon	=	BoxRifleAmmo6,
+        MetalValue = 40,
+        WorldStaticModel = BoxRifleAmmo6,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_M193,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+    item 556M855Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.3,
+        AlwaysWelcomeGift	=	TRUE,
+        ItemType = base:normal,
+        DisplayName	=	Box of 5.56 M855,
+        Icon	=	RifleSurplus2Box,
+        MetalValue = 40,
+        WorldStaticModel = RifleSurplus2Box,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        Tooltip = Tooltip_Ammo_M855,
+		Count = 5,
+        DoubleClickRecipe = Guns93_OpenBoxOf20Bullets,
+    }
+
+	item 556Carton
+	{
+		DisplayName = Carton of .223 Remington,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 2.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_FMJ,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = OpenCarton12,
+	}
+
+	item 223SPCarton
+	{
+		DisplayName = Carton of .223 Remington (Soft-Point),
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 2.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_JHP,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 556M193Carton
+	{
+		DisplayName = Carton of 5.56 M198,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 2.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_M193,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+
+	item 556M855Carton
+	{
+		DisplayName = Carton of 5.56 M855,
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 2.8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+        Tooltip = Tooltip_Ammo_M855,
+		Tags = base:HasMetal;base:IgnoreZombieDensity,
+        DoubleClickRecipe = Guns93_OpenCarton12,
+	}
+}

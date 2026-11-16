@@ -735,7 +735,7 @@ module Base
 		UnequipSound = M9UnEquip,
 		UseEndurance = FALSE,
 		WeaponReloadType = handgun,
-		WeaponSprite = JS14_Rifle,
+		WeaponSprite = JS3T_Shotgun,
 		Tags = base:HasMetal;guns93:Guns93Spawner;base:Firearm;guns93:LoadedMags;guns93:MoreMags,
 	}
 

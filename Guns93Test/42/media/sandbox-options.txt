@@ -191,6 +191,12 @@ option Guns93.Guns93CleanBrass {
 	page = Guns93,
 	translation = Guns93CleanBrass,
 }
+option Guns93.Guns93AltAmmo {
+	type = boolean,
+	default = false,
+	page = Guns93,
+	translation = Guns93AltAmmo,
+}
 option Guns93.Guns93AmmoName {
 	type = boolean,
 	default = false,

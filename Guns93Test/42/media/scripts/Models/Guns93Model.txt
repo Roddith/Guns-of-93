@@ -2169,23 +2169,35 @@ module Base
 		}
 	}
 	model USP
-	{
-		mesh = weapons/firearm/USP,
-		texture = weapons/firearm/USP,
-		scale = 1,
+    {
+        mesh = weapons/firearm/USP,
+        texture = weapons/firearm/USP,
+        scale = 1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.1290 -0.0200,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.1290 -0.0200,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.1270 -0.0200,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-	}
+        attachment canon
+        {
+            offset = 0.0000 0.1270 -0.0200,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment irons
+        {
+            offset = 0.0000 0.0125 -0.0272,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment irons2
+        {
+            offset = 0.0000 0.1213 -0.0269,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
 	model CZ75B
 	{
 		mesh = weapons/firearm/CZ75B,
@@ -2225,6 +2237,54 @@ module Base
 	model MAC10
 	{
 		mesh = weapons/firearm/MAC10,
+		texture = weapons/firearm/MAC10,
+		scale = 1.1,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1400 -0.0190,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment canon
+		{
+			offset = 0.0000 0.1000 -0.0160,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment clip
+		{
+			offset = 0.0000 -0.1200 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model MAC11
+	{
+		mesh = weapons/firearm/MAC11,
+		texture = weapons/firearm/MAC10,
+		scale = 1.1,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1400 -0.0190,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment canon
+		{
+			offset = 0.0000 0.1000 -0.0160,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment clip
+		{
+			offset = 0.0000 -0.1200 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model MAC11A1
+	{
+		mesh = weapons/firearm/MAC11A1,
 		texture = weapons/firearm/MAC10,
 		scale = 1.1,
 
@@ -5022,7 +5082,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.5050 0.0220,
+			offset = 0.0000 0.4700 0.0220,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -5192,7 +5252,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3183 0.0220,
+			offset = 0.0000 0.4700 0.0220,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -5228,7 +5288,7 @@ module Base
 
 		attachment canon
 		{
-			offset = 0.0000 0.3183 0.0220,
+			offset = 0.0000 0.4700 0.0220,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -5362,7 +5422,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3183 0.0220,
+			offset = 0.0000 0.4700 0.0220,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -16465,6 +16525,48 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
+	model M3A1GreaseGun
+	{
+		mesh = weapons/firearm/M3A1GreaseGun,
+		texture = weapons/firearm/M3GreaseGun,
+		scale = 1.1,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2820 0.0160,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0870 0.0770,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0870 0.0770,
+			rotate = 0.0000 6.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0870 0.0770,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment canon
+		{
+			offset = 0.0000 0.2820 0.0160,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
 	model TommyM1A1
 	{
 		mesh = weapons/firearm/ThompsonM1A1,
@@ -17943,45 +18045,95 @@ module Base
 	    mesh = WorldItems/RifleBulkBox,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model SmallRifleBox
+	{
+	    mesh = WorldItems/SmallRifleBox,
+	    texture = WorldItems/AmmoBoxes2,
+	}
+	model SmallRifleBox2
+	{
+	    mesh = WorldItems/SmallRifleBox,
+	    texture = WorldItems/AmmoBoxes3,
+	}
 	model BoxRifleAmmo
 	{
 	    mesh = WorldItems/BoxRifleAmmo,
 	    texture = WorldItems/AmmoBoxes,
+	}
+	model BoxRifleAmmoDef
+	{
+	    mesh = WorldItems/BoxRifleAmmo,
+	    texture = WorldItems/AmmoBoxes3,
 	}
 	model BoxRifleAmmo2
 	{
 	    mesh = WorldItems/BoxRifleAmmo2,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model BoxRifleAmmo2Def
+	{
+	    mesh = WorldItems/BoxRifleAmmo2,
+	    texture = WorldItems/AmmoBoxes4,
+	}
 	model BoxRifleAmmo3
 	{
 	    mesh = WorldItems/BoxRifleAmmo3,
 	    texture = WorldItems/AmmoBoxes2,
+	}
+	model BoxRifleAmmo3Def
+	{
+	    mesh = WorldItems/BoxRifleAmmo3,
+	    texture = WorldItems/AmmoBoxes4,
 	}
 	model BoxRifleAmmo4
 	{
 	    mesh = WorldItems/BoxRifleAmmo,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model BoxRifleAmmo4Def
+	{
+	    mesh = WorldItems/BoxRifleAmmo,
+	    texture = WorldItems/AmmoBoxes4,
+	}
 	model BoxRifleAmmo5
 	{
 	    mesh = WorldItems/RifleSurplusBox,
 	    texture = WorldItems/AmmoBoxes2,
+	}
+	model BoxRifleAmmo5Def
+	{
+	    mesh = WorldItems/RifleSurplusBox,
+	    texture = WorldItems/AmmoBoxes4,
 	}
 	model BoxRifleAmmo6
 	{
 	    mesh = WorldItems/RifleSurplus2Box,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model BoxRifleAmmo6Def
+	{
+	    mesh = WorldItems/RifleSurplus2Box,
+	    texture = WorldItems/AmmoBoxes4,
+	}
 	model RifleSurplusBox
 	{
 	    mesh = WorldItems/RifleSurplusBox,
 	    texture = WorldItems/AmmoBoxes,
 	}
+	model RifleSurplusBoxDef
+	{
+	    mesh = WorldItems/RifleSurplusBox,
+	    texture = WorldItems/AmmoBoxes3,
+	}
 	model RifleSurplus2Box
 	{
 	    mesh = WorldItems/RifleSurplus2Box,
 	    texture = WorldItems/AmmoBoxes,
+	}
+	model RifleSurplus2BoxDef
+	{
+	    mesh = WorldItems/RifleSurplus2Box,
+	    texture = WorldItems/AmmoBoxes3,
 	}
 	model LinkBox
 	{
@@ -17993,44 +18145,89 @@ module Base
 	    mesh = WorldItems/RifleHandgunBox,
 	    texture = WorldItems/AmmoBoxes,
 	}
+	model HandgunBoxDef
+	{
+	    mesh = WorldItems/RifleHandgunBox,
+	    texture = WorldItems/AmmoBoxes3,
+	}
 	model HandgunBox2
 	{
 	    mesh = WorldItems/RifleHandgunBox,
 	    texture = WorldItems/AmmoBoxes2,
+	}
+	model HandgunBox2Def
+	{
+	    mesh = WorldItems/RifleHandgunBox,
+	    texture = WorldItems/AmmoBoxes4,
 	}
 	model HandgunBox3
 	{
 	    mesh = WorldItems/RifleHandgunBox2,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model HandgunBox3Def
+	{
+	    mesh = WorldItems/RifleHandgunBox2,
+	    texture = WorldItems/AmmoBoxes4,
+	}
 	model HandgunBox4
 	{
 	    mesh = WorldItems/RifleHandgunBox3,
 	    texture = WorldItems/AmmoBoxes2,
+	}
+	model HandgunBox4Def
+	{
+	    mesh = WorldItems/RifleHandgunBox3,
+	    texture = WorldItems/AmmoBoxes4,
 	}
 	model HandgunBox5
 	{
 	    mesh = WorldItems/RifleHandgunBox4,
 	    texture = WorldItems/AmmoBoxes2,
 	}
+	model HandgunBox5Def
+	{
+	    mesh = WorldItems/RifleHandgunBox4,
+	    texture = WorldItems/AmmoBoxes4,
+	}
 	model MagnumBox
 	{
 	    mesh = WorldItems/RifleMagnumBox,
 	    texture = WorldItems/AmmoBoxes,
+	}
+	model MagnumBoxDef
+	{
+	    mesh = WorldItems/RifleMagnumBox,
+	    texture = WorldItems/AmmoBoxes3,
 	}
 	model MagnumBox2
 	{
 	    mesh = WorldItems/RifleMagnumBox,
 	    texture = WorldItems/AmmoBoxes2,
 	}
-	model BuckshotBox
+	model MagnumBox2Def
+	{
+	    mesh = WorldItems/RifleMagnumBox,
+	    texture = WorldItems/AmmoBoxes4,
+	}
+	model BirdshotBox
 	{
 	    mesh = WorldItems/BuckshotBox,
-	    texture = WorldItems/AmmoBoxes,
+	    texture = WorldItems/AmmoBoxes3,
+	}
+	model BuckshotBox
+	{
+	    mesh = WorldItems/SlugBox,
+	    texture = WorldItems/AmmoBoxes3,
 	}
 	model SlugBox
 	{
 	    mesh = WorldItems/SlugBox,
+	    texture = WorldItems/AmmoBoxes,
+	}
+	model SlugBox2
+	{
+	    mesh = WorldItems/BuckshotBox,
 	    texture = WorldItems/AmmoBoxes,
 	}
 	model 22RoundsWorld
@@ -18141,10 +18338,23 @@ module Base
 	    texture = weapons/parts/AmmoCarrierSlugs,
 		scale = 1,
 	}
-	model Belt556World
+	model AmmoBelt
 	{
-	    mesh = WorldItems/Belt556World,
+	    mesh = WorldItems/AmmoBelt,
 	    texture = weapons/firearm/M249,
+		scale = 1,
+	}
+	model AmmoBelt_Half
+	{
+	    mesh = WorldItems/AmmoBelt_Half,
+	    texture = weapons/firearm/M249,
+		scale = 1,
+	}
+	model AmmoBelt_Full
+	{
+	    mesh = WorldItems/AmmoBelt_Full,
+	    texture = weapons/firearm/M249,
+		scale = 1,
 	}
 	model BeltLink
 	{
@@ -18269,13 +18479,18 @@ module Base
 	model DIY12gaSilencer
 	{
 	    mesh = weapons/parts/12gaSilencer,
-	    texture = weapons/parts/ARTube,
+	    texture = weapons/parts/Silencers,
 
 		attachment world
 		{
 			offset = -0.0004 0.0935 -0.0294,
 			rotate = -90.2651 -89.6423 179.9986,
 		}
+	}
+	model DIY12gaSilencerWorld
+	{
+	    mesh = WorldItems/12gaSilencerWorld,
+	    texture = weapons/parts/Silencers,
 	}
 	model MP5SDSilencer
 	{
