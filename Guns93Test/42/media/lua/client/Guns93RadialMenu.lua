@@ -520,10 +520,9 @@ function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
     local allow = false
     if weapon:getMagazineType() then
         allow = true
-    elseif weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart("Moonclip") then
+    elseif weapon:hasTag(Gun93Registries.guns93.MoonClip) then
         allow = true
-    elseif (weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip))
-        and weapon:getCurrentAmmoCount() < 1 then
+    elseif (weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip)) then
         allow = true
     end
     if not allow then return end
@@ -544,7 +543,20 @@ function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
                 end
             end
         end
-    end
+    else
+		local magType = weapon:getMagazineType()
+		local items = self.character:getInventory():getAllTypeRecurse(magType)
+        for k = 0, items:size() - 1 do
+            local mag = items:get(k)
+            if mag and mag:getCurrentAmmoCount() < mag:getMaxAmmo() then
+                local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
+                if ammoDelta <= highest then
+                    highest = ammoDelta
+                    magazine = mag
+                end
+            end
+        end
+	end
     if not magazine then return end
     local prim = magazine:getAmmoType() and tostring(magazine:getAmmoType():getItemKey()) or nil
     local sec = nil
@@ -557,18 +569,21 @@ function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
     local hasAmmo = false
     for i = 0, bullets:size() - 1 do
         local round = bullets:get(i)
-        local roundData = round:getModData()
-        local caliber = roundData and roundData.isCaliber and tostring(roundData.isCaliber) or nil
         local fullType = tostring(round:getFullType())
+        local caliber = AmmoStatList[fullType].caliber
         if caliber and ((prim and (caliber == prim or fullType == prim)) or (sec and (caliber == sec or fullType == sec))) then
             hasAmmo = true
             break
         end
     end
     if not hasAmmo then return end
-    local text = getText("IGUI_FirearmRadial_LoadBulletsIntoMagazine")
-    local textCount = getText("IGUI_FirearmRadial_AmmoCount", magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
-    text = text .. " " .. textCount
+    local text = getText("Load Bullets Into")
+	local magText = "Spare Magazine"
+	if not weapon:getMagazineType() then
+		magText = "Spare Loader"
+	end
+    local textCount = "(" .. magazine:getCurrentAmmoCount() .. "/" .. magazine:getMaxAmmo() .. ")"
+    text = text .. " " .. magText .. " " .. textCount
     menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsIntoMagazine.png"), self.invoke, self)
 end
 

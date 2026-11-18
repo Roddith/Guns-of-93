@@ -3,7 +3,6 @@ module Base
     item Bullets9mm
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets9mm,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	9mm Parabellum,
@@ -17,7 +16,6 @@ module Base
     item Bullets9mmJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets9mm,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	9mm Parabellum (Hollow-Point),
@@ -31,7 +29,6 @@ module Base
     item Bullets9mmPlus
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets9mm,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	9mm Parabellum +P (Hollow-Point),
@@ -45,7 +42,6 @@ module Base
     item Bullets9mmM882
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets9mm,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	9x19 M882,

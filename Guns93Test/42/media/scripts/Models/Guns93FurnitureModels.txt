@@ -8389,4 +8389,41 @@ module Base
 			scale = 0.9,
 		}
     }
+	model M60Bipod
+    {
+        mesh = weapons/parts/M60BipodUp,
+        texture = weapons/firearm/M60,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0001 0.3340 -0.0034,
+            rotate = -7.0420 89.8644 97.0582,
+            scale = 0.9000,
+        }
+    }
+	model M60Bipod_On
+	{
+	    mesh = weapons/parts/M60BipodDown,
+	    texture = weapons/firearm/M60,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model M60FlashHider
+    {
+		mesh = weapons/parts/M60FlashHider,
+	    texture = weapons/firearm/M60,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
 }

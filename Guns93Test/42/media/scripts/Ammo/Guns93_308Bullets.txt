@@ -3,7 +3,6 @@ module Base
     item 308Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.308Bullets,
         Weight	=	0.029,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -18,7 +17,6 @@ module Base
     item 76251M80
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.308Bullets,
         Weight	=	0.029,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -33,7 +31,6 @@ module Base
     item 308BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.308Bullets,
         Weight	=	0.029,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -48,7 +45,6 @@ module Base
     item 308BulletsMatch
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.308Bullets,
         Weight	=	0.029,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,

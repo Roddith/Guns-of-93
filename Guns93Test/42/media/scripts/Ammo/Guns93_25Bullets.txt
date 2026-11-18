@@ -3,7 +3,6 @@ module Base
     item 25Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.25Bullets,
         Weight	=	0.004,
         ItemType = base:normal,
         DisplayName	=	.25 Auto,
@@ -17,7 +16,6 @@ module Base
     item 25BulletsJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.25Bullets,
         Weight	=	0.004,
         ItemType = base:normal,
         DisplayName	=	.25 Auto (Hollow-Point),

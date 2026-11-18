@@ -1297,7 +1297,7 @@ function Guns93WeaponPartsThreadedCanonPart(character, weapon, weaponPart)
     if weapon:getWeaponPart("Handguard") and weapon:getWeaponPart("Handguard"):hasTag(Gun93Registries.guns93.CanonBlock) then
         isCompatible = false
     end
-    if weapon:getWeaponPart("BarrelItem") and weapon:getWeaponPart("Handguard"):hasTag(Gun93Registries.guns93.CanonBlock) then
+    if weapon:getWeaponPart("BarrelItem") and weapon:getWeaponPart("BarrelItem"):hasTag(Gun93Registries.guns93.CanonBlock) then
         isCompatible = false
     end
     if weapon:getWeaponPart("Bayonet") and not weaponPart:hasTag(Gun93Registries.guns93.Choke) then

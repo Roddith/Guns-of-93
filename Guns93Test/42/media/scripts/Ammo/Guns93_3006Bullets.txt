@@ -5,7 +5,6 @@ module Base
     item 3006Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3006Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -20,7 +19,6 @@ module Base
     item 3006BulletsM2Ball
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3006Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -35,7 +33,6 @@ module Base
     item 3006BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3006Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -50,7 +47,6 @@ module Base
     item 3006BulletsMatch
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3006Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,

@@ -3,7 +3,6 @@ module Base
     item 22Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.22Bullets,
         Weight	=	0.004,
         ItemType = base:normal,
         DisplayName	=	.22 LR,
@@ -17,7 +16,6 @@ module Base
     item 22BulletsVelocity
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.22Bullets,
         Weight	=	0.004,
         ItemType = base:normal,
         DisplayName	=	.22 LR (High-Velocity),
@@ -31,7 +29,6 @@ module Base
     item 22BulletsTarget
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.22Bullets,
         Weight	=	0.004,
         ItemType = base:normal,
         DisplayName	=	.22 LR (Target-Grade),

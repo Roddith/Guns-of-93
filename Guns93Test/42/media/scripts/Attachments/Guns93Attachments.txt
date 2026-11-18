@@ -1767,7 +1767,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:BarrelItem; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaser,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item Laser_On
@@ -1791,7 +1791,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:BarrelItem; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaser,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LaserSS
@@ -1812,7 +1812,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:BarrelItem; base:UsesBattery; guns93:Laser;  guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaser,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LaserSS_On
@@ -1836,7 +1836,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:BarrelItem; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaser,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RailLaser
@@ -1857,7 +1857,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RailLaser_On
@@ -1881,7 +1881,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RailLaserSS
@@ -1902,7 +1902,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RailLaserSS_On
@@ -1926,7 +1926,7 @@ module Base
 		UseDelta = 0.01,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LaserProd
@@ -1947,7 +1947,7 @@ module Base
 		UseDelta = 0.02,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LaserProd_On
@@ -1971,7 +1971,7 @@ module Base
 		UseDelta = 0.02,
         Tags = guns93:UseDriver; guns93:PistolRail; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LS45
@@ -1994,7 +1994,7 @@ module Base
 		UseDelta = 0.025,
         Tags = guns93:UseDriver; guns93:BarrelItem; guns93:ScopeRail; base:UsesBattery; guns93:Laser; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item LS45_On
@@ -2018,7 +2018,7 @@ module Base
  		UseDelta = 0.025,
         Tags = guns93:UseDriver; guns93:BarrelItem; base:UsesBattery; guns93:Laser; guns93:ToggleItemOff; guns93:UsePrimSight,
         CanAttach = Guns93WeaponPartsLaserScope,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RifleBipod
@@ -2035,7 +2035,7 @@ module Base
         WorldStaticModel = RifleBipod,
         Tags = guns93:UseDriver; guns93:HandguardItem; guns93:Bipod; guns93:ToggleItemOn,
         CanAttach = Guns93WeaponPartsRifleBipod,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     item RifleBipod_On
@@ -2052,7 +2052,7 @@ module Base
         WorldStaticModel = RifleBipod,
         Tags = guns93:UseDriver; guns93:HandguardItem; guns93:Bipod; guns93:ToggleItemOff,
         CanAttach = Guns93WeaponPartsRifleBipod,
-        CanDetach = Guns93WeaponPartshasScrewdriver,
+        CanDetach = Guns93WeaponPartsToolCheck,
     }
 
     /****************************** Threading ******************************/

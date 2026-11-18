@@ -3,7 +3,6 @@ module Base
     item Bullets38
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets38,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.38 Special,
@@ -18,7 +17,6 @@ module Base
     item Bullets38JHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets38,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.38 Special (Hollow-Point),
@@ -33,7 +31,6 @@ module Base
     item Bullets38Plus
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets38,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.38 Special +P (Hollow-Point),
@@ -48,7 +45,6 @@ module Base
     item Bullets38Wad
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets38,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.38 Special (Semi-Wadcutter),

@@ -3,7 +3,6 @@ module Base
 	item BirdshotShells
 	{
 	    DisplayCategory = Ammo,
-        isCaliber = Base.ShotgunShells,
 		Count	=	5,
 		Weight	=	0.056,
 		AlwaysWelcomeGift	=	TRUE,
@@ -18,7 +17,6 @@ module Base
 	item TurkeyLoadShells
 	{
 	    DisplayCategory = Ammo,
-        isCaliber = Base.ShotgunShells,
 		Count	=	5,
 		Weight	=	0.056,
 		AlwaysWelcomeGift	=	TRUE,
@@ -34,7 +32,6 @@ module Base
 	item ShotgunShells
 	{
 	    DisplayCategory = Ammo,
-        isCaliber = Base.ShotgunShells,
 		Count	=	5,
 		Weight	=	0.056,
 		AlwaysWelcomeGift	=	TRUE,
@@ -50,7 +47,6 @@ module Base
 	item SlugBullets
 	{
 	    DisplayCategory = Ammo,
-        isCaliber = Base.ShotgunShells,
 		Count	=	5,
 		Weight	=	0.056,
 		AlwaysWelcomeGift	=	TRUE,
@@ -66,7 +62,6 @@ module Base
 	item SlugBulletsRifle
 	{
 	    DisplayCategory = Ammo,
-        isCaliber = Base.ShotgunShells,
 		Count	=	5,
 		Weight	=	0.056,
 		AlwaysWelcomeGift	=	TRUE,
@@ -91,7 +86,6 @@ module Base
         PlaceOneSound = BoxOfShellsPlaceOne,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         Tooltip = Tooltip_Ammo_Buck,
-		Tags = base:ammo; guns93:Ammo,
 		Count = 5,
         DoubleClickRecipe = OpenBoxOfShotgunShells,
     }
@@ -108,7 +102,6 @@ module Base
         PlaceOneSound = BoxOfShellsPlaceOne,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         Tooltip = Tooltip_Ammo_Bird,
-		Tags = base:ammo; guns93:Ammo,
 		Count = 5,
         DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
     }
@@ -125,7 +118,6 @@ module Base
         PlaceOneSound = BoxOfShellsPlaceOne,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         Tooltip = Tooltip_Ammo_Turk
-		Tags = base:ammo; guns93:Ammo,
 		Count = 5,
         DoubleClickRecipe = Guns93_OpenBoxOfShotgunShells,
     }

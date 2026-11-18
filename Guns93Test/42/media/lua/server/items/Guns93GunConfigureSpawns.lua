@@ -7650,3 +7650,33 @@ Guns93GunConfig.Guns93DWK2 = function(weapon)
         end
     end
 end
+
+Guns93GunConfig.Guns93M60 = function(weapon)
+    if not weapon then return end
+    local ammoNam = GetAmmoName(weapon)
+    weapon:setName(weapon:getName() .. ammoNam)
+    AddMagAttachment(weapon, nil)
+    if not weapon:getWeaponPart("Irons") then
+        local irons = instanceItem("Base.NonremoveIrons")
+        if irons then
+            weapon:attachWeaponPart(irons)
+        end
+    end
+    if not weapon:getWeaponPart("BarrelItem") then
+        local bipod = instanceItem("Base.M60Bipod")
+        if bipod then
+            weapon:attachWeaponPart(bipod)
+        end
+    end
+    weapon:attachWeaponPart(instanceItem("Base.BarrelThread"))
+    if not weapon:getWeaponPart("Canon") then
+        local canon = instanceItem("Base.M60FlashHider")
+        if canon then
+            weapon:attachWeaponPart(canon)
+        end
+    end
+	weapon:setCustomName(true);
+    if weapon:getModData().Guns93Icon == nil or weapon:getModData().Guns93Icon == "" then
+        weapon:getModData().Guns93Icon = "M60"
+    end
+end

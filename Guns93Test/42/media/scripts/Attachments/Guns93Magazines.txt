@@ -576,8 +576,6 @@ module Base
     item 556Belt
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.556Belt,
-		needLink = Base.556BeltLink,
         Count	=	20,
         Weight	=	0.016,
         AlwaysWelcomeGift	=	TRUE,
@@ -592,6 +590,8 @@ module Base
         MetalValue = 1,
         WorldStaticModel = AmmoBelt,
 		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag1,
+		CanAttach = Guns93WeaponPartsNoRemove,
+		CanDetach = Guns93WeaponPartsNoRemove,
     }
 	item AK5Mag
 	{
@@ -1758,23 +1758,40 @@ module Base
 	Weight	=	0.15,
 	ItemType = base:WeaponPart,
 	DisplayName	=	M60 Ammo Box,
-	Icon	=	M60Box,
+	Icon	=	M60BeltBox,
 	MaxAmmo = 100,
 	AmmoType = guns93:belt_308,
 	GunType = Base.M60,
     MountOn = Base.M60,
     PartType = Clip,
-	StaticModel = M60Box,
-	WorldStaticModel = M60Box,
-    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:AmmoBox; guns93:SlowMag3,
+	StaticModel = M60BeltBox,
+	WorldStaticModel = M60BeltBox,
+    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:VisibleLoaded; guns93:AmmoBox; guns93:SlowMag3,
+    CanAttach = Guns93WeaponPartsNoRemove,
+    CanDetach = Guns93WeaponPartsNoRemove,
+	}
+	item M60Box_Full
+	{
+	DisplayCategory = Ammo,
+	CanStack	=	FALSE,
+	Weight	=	0.15,
+	ItemType = base:WeaponPart,
+	DisplayName	=	M60 Ammo Box,
+	Icon	=	M60BeltBox,
+	MaxAmmo = 100,
+	AmmoType = guns93:belt_308,
+	GunType = Base.M60,
+    MountOn = Base.M60,
+    PartType = Clip,
+	StaticModel = M60BeltBox,
+	WorldStaticModel = M60BeltBox,
+    Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:VisibleLoaded; guns93:AmmoBox; guns93:SlowMag3,
     CanAttach = Guns93WeaponPartsNoRemove,
     CanDetach = Guns93WeaponPartsNoRemove,
 	}
     item 308Belt
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.308Belt,
-		needLink = Base.308BeltLink,
         Count	=	20,
         Weight	=	0,
         AlwaysWelcomeGift	=	TRUE,
@@ -1788,7 +1805,51 @@ module Base
 		PartType = Clip,
         MetalValue = 1,
         WorldStaticModel = AmmoBelt,
-		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag1,
+		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:VisibleAmmo; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag2,
+		CanAttach = Guns93WeaponPartsNoRemove,
+		CanDetach = Guns93WeaponPartsNoRemove,
+    }
+    item 308Belt_Full
+    {
+        DisplayCategory = Ammo,
+        Count	=	20,
+        Weight	=	0,
+        AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:WeaponPart,
+        DisplayName	=	Belted 7.62x51mm Rounds,
+        Icon	=	AmmoBelt,
+		MaxAmmo = 30,
+		AmmoType = base:bullets_308,
+		GunType = Base.M60,
+		MountOn = Base.M60,
+		PartType = Clip,
+        MetalValue = 1,
+        AimingTimeModifier = 8,
+        WorldStaticModel = AmmoBelt,
+		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:VisibleAmmo; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag2,
+		CanAttach = Guns93WeaponPartsNoRemove,
+		CanDetach = Guns93WeaponPartsNoRemove,
+    }
+    item 308Belt_Half
+    {
+        DisplayCategory = Ammo,
+        Count	=	20,
+        Weight	=	0,
+        AlwaysWelcomeGift	=	TRUE,
+		ItemType = base:WeaponPart,
+        DisplayName	=	Belted 7.62x51mm Rounds,
+        Icon	=	AmmoBelt,
+		MaxAmmo = 30,
+		AmmoType = base:bullets_308,
+		GunType = Base.M60,
+		MountOn = Base.M60,
+		PartType = Clip,
+        MetalValue = 1,
+        WorldStaticModel = AmmoBelt,
+        AimingTimeModifier = 4,
+		Tags = guns93:Guns93Mag; guns93:RareMag; guns93:NoMount; base:RifleMagazine; guns93:DynamicMagclip; guns93:VisibleAmmo; guns93:Ammo; guns93:AmmoBelt; guns93:SlowMag2,
+		CanAttach = Guns93WeaponPartsNoRemove,
+		CanDetach = Guns93WeaponPartsNoRemove,
     }
 	item 1911Mag
 	{

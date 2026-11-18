@@ -3,7 +3,6 @@ module Base
     item 40Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.40Bullets,
         Weight	=	0.019,
         ItemType = base:normal,
         DisplayName	=	.40 S&W,
@@ -17,7 +16,6 @@ module Base
     item 40BulletsJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.40Bullets,
         Weight	=	0.019,
         ItemType = base:normal,
         DisplayName	=	.40 S&W (Hollow-Point),

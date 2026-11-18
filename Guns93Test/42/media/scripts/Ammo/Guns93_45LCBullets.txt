@@ -3,7 +3,6 @@ module Base
     item 45LCBullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.45LCBullets,
         Weight	=	0.028,
         ItemType = base:normal,
         DisplayName	=	.45 Colt,
@@ -17,7 +16,6 @@ module Base
     item 45LCBulletsJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.45LCBullets,
         Weight	=	0.028,
         ItemType = base:normal,
         DisplayName	=	.45 Colt (Hollow-Point),

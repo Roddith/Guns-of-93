@@ -1,6 +1,6 @@
-module Base																											
+module Base	
 {
-	item R308Rem700																										
+	item R308Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -152,6 +152,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -197,8 +199,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR308Rem700																										
+	
+	item SOR308Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -350,6 +352,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -395,8 +399,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R3006Rem700																										
+	
+	item R3006Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -548,6 +552,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -593,8 +599,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR3006Rem700																										
+	
+	item SOR3006Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -744,6 +750,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -789,8 +797,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R223Rem788																										
+	
+	item R223Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -933,6 +941,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -978,8 +988,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR223Rem788																										
+	
+	item SOR223Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -1122,6 +1132,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -1167,8 +1179,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R3030Rem788																										
+	
+	item R3030Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -1311,6 +1323,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -1356,8 +1370,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR3030Rem788																										
+	
+	item SOR3030Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -1500,6 +1514,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -1545,8 +1561,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R44Rem788																										
+	
+	item R44Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -1718,8 +1734,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR44Rem788																										
+	
+	item SOR44Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -1891,8 +1907,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R223Rem700																										
+	
+	item R223Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -2054,6 +2070,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -2099,8 +2117,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR223Rem700																										
+	
+	item SOR223Rem700
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -2261,6 +2279,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -2306,8 +2326,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R308Rem788																										
+	
+	item R308Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -2442,6 +2462,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -2487,8 +2509,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOR308Rem788																										
+	
+	item SOR308Rem788
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -2622,6 +2644,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -2667,8 +2691,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item M24																										
+	
+	item M24
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -2820,6 +2844,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -2865,8 +2891,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOM24																										
+	
+	item SOM24
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -3018,6 +3044,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -3063,8 +3091,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item W308WinM70																										
+	
+	item W308WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -3219,6 +3247,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -3264,8 +3294,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOW308WinM70																										
+	
+	item SOW308WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -3420,6 +3450,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -3465,8 +3497,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item W3006WinM70																										
+	
+	item W3006WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -3621,6 +3653,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -3666,7 +3700,7 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-	item SOW3006WinM70																										
+	item SOW3006WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -3821,6 +3855,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -3866,8 +3902,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item W223WinM70																										
+	
+	item W223WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -4022,6 +4058,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4067,8 +4105,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item SOW223WinM70																										
+	
+	item SOW223WinM70
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4223,6 +4261,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4268,8 +4308,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Win69																										
+	
+	item Win69
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -4387,6 +4427,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4432,8 +4474,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R308RugM77																										
+	
+	item R308RugM77
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -4542,6 +4584,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4587,8 +4631,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R3006RugM77																										
+	
+	item R3006RugM77
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -4697,6 +4741,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4742,8 +4788,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item R223RugM77																										
+	
+	item R223RugM77
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -4861,6 +4907,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -4906,8 +4954,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item M1903																										
+	
+	item M1903
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -5018,6 +5066,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5065,8 +5115,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item M1917																										
+	
+	item M1917
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -5177,6 +5227,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5223,8 +5275,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Mauser98K																										
+	
+	item Mauser98K
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -5333,6 +5385,8 @@ module Base
 	ModelWeaponPart = DIY45Silencer DIYLargePistolCan canon canon,
 	ModelWeaponPart = DIY45BoostedSilencer DIYLargePistolCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5379,8 +5433,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Marlin3363030																										
+	
+	item Marlin3363030
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -5489,6 +5543,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5534,8 +5590,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Marlin33644																										
+	
+	item Marlin33644
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -5672,8 +5728,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Marlin39A																										
+	
+	item Marlin39A
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -5790,6 +5846,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5835,8 +5893,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Win943030																										
+	
+	item Win943030
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -5945,6 +6003,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -5990,8 +6050,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Win94357																										
+	
+	item Win94357
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -6159,8 +6219,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Win9445																										
+	
+	item Win9445
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -6297,8 +6357,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Win61																										
+	
+	item Win61
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	1,
@@ -6418,6 +6478,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -6463,8 +6525,8 @@ module Base
 	ModelWeaponPart = ODCheekPad ODCheekPad stockitem stockitem,
 	ModelWeaponPart = LeatherCheekPad LeatherCheekPad stockitem stockitem,
 	}
-																											
-	item Rem3006760																										
+	
+	item Rem3006760
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -6577,6 +6639,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -6616,8 +6680,8 @@ module Base
 	ModelWeaponPart = LS45 LS45Laser scope2 scope,
 	ModelWeaponPart = LS45_On LS45Laser_On scope2 scope,
 	}
-																											
-	item Rem308760																										
+	
+	item Rem308760
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	3,
@@ -6730,6 +6794,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,
@@ -6769,8 +6835,8 @@ module Base
 	ModelWeaponPart = LS45 LS45Laser scope2 scope,
 	ModelWeaponPart = LS45_On LS45Laser_On scope2 scope,
 	}
-																											
-	item Rem223760																										
+	
+	item Rem223760
 	{
 	MinAngle =	0.95,
 	MaxHitcount =	2,
@@ -6892,6 +6958,8 @@ module Base
 	ModelWeaponPart = 30Silencer 30RifleCan canon canon,
 	ModelWeaponPart = DIY30Silencer DIY30RifleCan canon canon,
 	ModelWeaponPart = DIY8mmSilencer DIY30RifleCan canon canon,
+	ModelWeaponPart = M60FlashHider M60FlashHider canon canon,
+	ModelWeaponPart = HK91FlashHider HK91FlashHider canon canon,
 	ModelWeaponPart = M14FlashHiderThread M14FlashHider canon canon,
 	ModelWeaponPart = M14CamoFlashHiderThread M14CamoFlashHider canon canon,
 	ModelWeaponPart = M14Brake M14BrakeThread canon canon,

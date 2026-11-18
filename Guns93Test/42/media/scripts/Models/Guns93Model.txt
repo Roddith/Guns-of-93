@@ -2235,77 +2235,95 @@ module Base
 		}
 	}
 	model MAC10
-	{
-		mesh = weapons/firearm/MAC10,
-		texture = weapons/firearm/MAC10,
-		scale = 1.1,
+    {
+        mesh = weapons/firearm/MAC10,
+        texture = weapons/firearm/MAC10,
+        scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.1400 -0.0190,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.1400 -0.0190,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.1000 -0.0160,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment canon
+        {
+            offset = 0.0000 0.1218 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment clip
-		{
-			offset = 0.0000 -0.1200 0.0000,
-			rotate = 180.0000 0.0000 180.0000,
-		}
-	}
+        attachment canon2
+        {
+            offset = 0.0000 0.0994 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment clip
+        {
+            offset = 0.0000 -0.1200 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+    }
 	model MAC11
-	{
-		mesh = weapons/firearm/MAC11,
-		texture = weapons/firearm/MAC10,
-		scale = 1.1,
+    {
+        mesh = weapons/firearm/MAC11,
+        texture = weapons/firearm/MAC10,
+        scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.1400 -0.0190,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.1400 -0.0190,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.1000 -0.0160,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment canon
+        {
+            offset = 0.0000 0.1183 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment clip
-		{
-			offset = 0.0000 -0.1200 0.0000,
-			rotate = 180.0000 0.0000 180.0000,
-		}
-	}
+        attachment canon2
+        {
+            offset = 0.0000 0.0994 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment clip
+        {
+            offset = 0.0000 -0.1200 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+    }
 	model MAC11A1
-	{
-		mesh = weapons/firearm/MAC11A1,
-		texture = weapons/firearm/MAC10,
-		scale = 1.1,
+    {
+        mesh = weapons/firearm/MAC11A1,
+        texture = weapons/firearm/MAC10,
+        scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.1400 -0.0190,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.1400 -0.0190,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.1000 -0.0160,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment canon
+        {
+            offset = 0.0000 0.1181 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment clip
-		{
-			offset = 0.0000 -0.1200 0.0000,
-			rotate = 180.0000 0.0000 180.0000,
-		}
-	}
+        attachment canon2
+        {
+            offset = 0.0000 0.0994 -0.0160,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment clip
+        {
+            offset = 0.0000 -0.1200 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+    }
 	model Uzi
     {
         mesh = weapons/firearm/Uzi,
@@ -13939,29 +13957,29 @@ module Base
 		}
 	}
 	model M60
-	{
-		mesh = weapons/firearm/M60,
-		texture = weapons/firearm/M60,
-		scale = 1.1,
+    {
+        mesh = weapons/firearm/M60,
+        texture = weapons/firearm/M60,
+        scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.4490 0.0310,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.4071 0.0328,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.4030 0.0310,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-	}
+        attachment canon
+        {
+            offset = 0.0000 0.4071 0.0328,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
 	model M1903
 	{
 		mesh = weapons/firearm/M1903,
@@ -18360,6 +18378,7 @@ module Base
 	{
 	    mesh = WorldItems/BeltLink,
 	    texture = weapons/firearm/M249,
+		scale = 1.5,
 	}
 	model LargePistolCan
 	{

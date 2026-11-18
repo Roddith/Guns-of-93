@@ -3,7 +3,6 @@ module Base
     item 3030Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3030Bullets,
         Weight	=	0.029,
         ItemType = base:normal,
         DisplayName	=	.30-30 Winchester,
@@ -18,7 +17,6 @@ module Base
     item 3030BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.3030Bullets,
         Weight	=	0.029,
         ItemType = base:normal,
         DisplayName	=	.30-30 Winchester (Soft-Point),

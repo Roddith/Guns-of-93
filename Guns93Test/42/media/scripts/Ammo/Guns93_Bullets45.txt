@@ -3,7 +3,6 @@ module Base
     item Bullets45
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets45,
         Weight	=	0.028,
         ItemType = base:normal,
         DisplayName	=	.45 Auto,
@@ -17,7 +16,6 @@ module Base
     item Bullets45JHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets45,
         Weight	=	0.028,
         ItemType = base:normal,
         DisplayName	=	.45 Auto (Hollow-Point),
@@ -31,7 +29,6 @@ module Base
     item Bullets45Plus
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets45,
         Weight	=	0.028,
         ItemType = base:normal,
         DisplayName	=	.45 Auto +P (Hollow-Point),

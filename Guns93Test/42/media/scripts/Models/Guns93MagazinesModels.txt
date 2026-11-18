@@ -204,30 +204,61 @@ module Base
 			scale = 0.9,
 		}
 	}
+	model M60BeltBox_Full
+    {
+        mesh = weapons/parts/M60BeltBox,
+        texture = weapons/firearm/M60,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
+        }
+    }
 	model M60BeltBox
-	{
-	    mesh = weapons/parts/M60BeltBox,
-	    texture = weapons/firearm/M60,
+    {
+        mesh = weapons/parts/M60AmmoBoxEmpty,
+        texture = weapons/firearm/M60,
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-			scale = 0.9,
-		}
-	}
-	model M60Box
-	{
-	    mesh = WorldItems/M60Box,
-	    texture = weapons/firearm/M60,
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
+        }
+    }
+	model 308Belt_Full
+    {
+        mesh = weapons/parts/308Belt_Full,
+        texture = weapons/firearm/M60,
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-			scale = 0.9,
-		}
-	}
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
+	model 308Belt_Half
+    {
+        mesh = weapons/parts/308Belt_Half,
+        texture = weapons/firearm/M60,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
+	model 308Belt_Low
+    {
+        mesh = weapons/parts/308Belt_Low,
+        texture = weapons/firearm/M60,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
 	model AK5Mag
 	{
 	    mesh = weapons/parts/AK5Mag,
@@ -236,7 +267,7 @@ module Base
 		attachment world
 		{
 			offset = -0.0165 0.0935 -0.0210,
-			rotate = 0.0000 0.0000 -89.6878,
+			rotate = 0.0000 0.0000 -90.0000,
 			scale = 0.9,
 		}
 	}

@@ -113,20 +113,21 @@ ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, contex
         end
         playerObj:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
         if magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
-            linkType = magData.needLink
+            local magType = magazine:getFullType()
+            linkType = AmmoStatList[magType].needLink
             linkNum = playerObj:getInventory():getItemCountRecurse(linkType)
         end
         for i = 0, bullets:size() - 1 do
             local round = bullets:get(i)
-            local roundData = round:getModData()
-            if roundData and roundData.isCaliber then
-                if roundData.isCaliber == primCaliber or roundData.isCaliber == secCaliber or round:getFullType() == primCaliber or round:getFullType() == secCaliber then
+            local roundType = round:getFullType()
+            local bulletType = AmmoStatList[roundType].caliber
+            if bulletType then
+                if bulletType == primCaliber or bulletType == secCaliber or round:getFullType() == primCaliber or round:getFullType() == secCaliber then
                     bulletAvail = bulletAvail + 1
-                    local fullType = round:getFullType()
-                    local entry = byType[fullType]
+                    local entry = byType[roundType]
                     if not entry then
                         entry = {count = 0, displayName = round:getDisplayName()}
-                        byType[fullType] = entry
+                        byType[roundType] = entry
                     end
                     entry.count = entry.count + 1
                 end
@@ -153,6 +154,9 @@ ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, contex
                 if bulletAvail < bulletNeeded then
                     bulletNeeded = bulletAvail
                 end
+                if magazine:hasTag(Gun93Registries.guns93.AmmoBox) then
+                    loadCount = ""
+                end
                 if bulletNeeded > 0 then
                     subMenu:addOption(addText .. bulletNeeded .. " Of Any Type", playerObj, ISInventoryPaneContextMenu.onLoadBulletsInMagazine, magazine, primCaliber, bulletNeeded, true)
                     any = true
@@ -172,6 +176,9 @@ ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, contex
                 local loadCount = info.count
                 if loadCount > bulletNeeded then
                     loadCount = bulletNeeded
+                end
+                if magazine:hasTag(Gun93Registries.guns93.AmmoBox) then
+                    loadCount = ""
                 end
                 if bulletNeeded > 0 then
                     subMenu:addOption(addText .. loadCount .. " " .. info.displayName, playerObj, ISInventoryPaneContextMenu.onLoadBulletsInMagazine, magazine, fullType, bulletNeeded, false)
@@ -196,6 +203,7 @@ ISInventoryPaneContextMenu.onLoadBulletsInMagazine = function(playerObj, magazin
     if not magazine or not magazine:hasTag(Gun93Registries.guns93.Guns93Mag) then
         return old_ISInventoryPaneContextMenu_onLoadBulletsInMagazine_old(playerObj, magazine, ammoCount)
     end
+    ISInventoryPaneContextMenu.transferIfNeeded(playerObj, magazine)
     local round2 = nil
     local magData = magazine:getModData()
     if magData and magData.modAlt_Ammo then
@@ -208,7 +216,8 @@ ISInventoryPaneContextMenu.onLoadBulletsInMagazine = function(playerObj, magazin
     local linkType = nil
     local linkNum = nil
     if magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
-        linkType = magData.needLink
+        local magType = magazine:getFullType()
+        linkType = AmmoStatList[magType].needLink
         linkNum = playerObj:getInventory():getItemCountRecurse(linkType)
     end
     if bycaliber == true then
@@ -216,15 +225,14 @@ ISInventoryPaneContextMenu.onLoadBulletsInMagazine = function(playerObj, magazin
         playerObj:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
         local doneList = {}
         for i = 0, bullets:size() - 1 do
-            local bullet = bullets:get(i)
-            local roundData = bullet:getModData()
-            if roundData and roundData.isCaliber then
-                local caliber = roundData.isCaliber
-                if caliber == round or caliber == round2 or bullet:getFullType() == round or bullet:getFullType() == round2 then
-                    local fullType = bullet:getFullType()
-                    if not doneList[fullType] then
-                        doneList[fullType] = true
-                        local ammoReturn = ISInventoryPaneContextMenu.transferBullets(playerObj, fullType, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
+            local rounditem = bullets:get(i)
+            local roundType = rounditem:getFullType()
+            local bulletType = AmmoStatList[roundType].caliber
+            if bulletType then
+                if bulletType == round or bulletType == round2 or roundType == round or roundType == round2 then
+                    if not doneList[roundType] then
+                        doneList[roundType] = true
+                        local ammoReturn = ISInventoryPaneContextMenu.transferBullets(playerObj, roundType, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
                         if linkType then
                             local links = playerObj:getInventory():getSomeTypeRecurse(linkType, ammoReturn)
                             ISInventoryPaneContextMenu.transferIfNeeded(playerObj, links)
@@ -282,15 +290,15 @@ ISInventoryPaneContextMenu.doBulletMenu = function(playerObj, weapon, context)
     playerObj:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
     for i = 0, bullets:size() - 1 do
         local round = bullets:get(i)
-        local roundData = round:getModData()
-        if roundData and roundData.isCaliber then
-            if roundData.isCaliber == primCaliber or roundData.isCaliber == secCaliber or round:getFullType() == primCaliber or round:getFullType() == secCaliber then
+        local roundType = round:getFullType()
+        local bulletType = AmmoStatList[roundType].caliber
+        if bulletType then
+            if bulletType == primCaliber or bulletType == secCaliber or round:getFullType() == primCaliber or round:getFullType() == secCaliber then
                 bulletAvail = bulletAvail + 1
-                local fullType = round:getFullType()
-                local entry = byType[fullType]
+                local entry = byType[roundType]
                 if not entry then
                     entry = {count = 0, displayName = round:getDisplayName()}
-                    byType[fullType] = entry
+                    byType[roundType] = entry
                 end
                 entry.count = entry.count + 1
             end
@@ -353,15 +361,14 @@ ISInventoryPaneContextMenu.onLoadBulletsIntoFirearm = function(playerObj, weapon
         playerObj:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
         local doneList = {}
         for i = 0, bullets:size() - 1 do
-            local bullet = bullets:get(i)
-            local roundData = bullet:getModData()
-            if roundData and roundData.isCaliber then
-                local caliber = roundData.isCaliber
-                if caliber == round or caliber == round2 or bullet:getFullType() == round or bullet:getFullType() == round2 then
-                    local fullType = bullet:getFullType()
-                    if not doneList[fullType] then
-                        doneList[fullType] = true
-                        local ammoReturn = ISInventoryPaneContextMenu.transferBullets(playerObj, fullType, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
+            local round = bullets:get(i)
+            local roundType = round:getFullType()
+            local bulletType = AmmoStatList[roundType].caliber
+            if bulletType then
+                if bulletType == round or bulletType == round2 or round:getFullType() == round or round:getFullType() == round2 then
+                    if not doneList[roundType] then
+                        doneList[roundType] = true
+                        local ammoReturn = ISInventoryPaneContextMenu.transferBullets(playerObj, roundType, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
                         ammoNeeded = ammoNeeded - ammoReturn
                         if ammoNeeded < 1 then
                             break

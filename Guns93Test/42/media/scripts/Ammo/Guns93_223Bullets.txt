@@ -3,7 +3,6 @@ module Base
 	item 556Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.556Bullets,
         Weight	=	0.015,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -18,7 +17,6 @@ module Base
 	item 223BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.556Bullets,
         Weight	=	0.015,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -33,7 +31,6 @@ module Base
 	item 556BulletsM193
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.556Bullets,
         Weight	=	0.015,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -48,7 +45,6 @@ module Base
 	item 556BulletsM855
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.556Bullets,
         Weight	=	0.015,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,

@@ -3,7 +3,6 @@ module Base
     item 792Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.792Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,
@@ -18,7 +17,6 @@ module Base
     item 792BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.792Bullets,
         Weight	=	0.030,
         AlwaysWelcomeGift	=	TRUE,
         ItemType = base:normal,

@@ -3,7 +3,6 @@ module Base
     item 30CarBullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.30CarBullets,
         Weight	=	0.022,
         ItemType = base:normal,
         DisplayName	=	.30 Carbine,
@@ -17,7 +16,6 @@ module Base
     item 30CarBulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.30CarBullets,
         Weight	=	0.022,
         ItemType = base:normal,
         DisplayName	=	.30 Carbine (Soft-Point),

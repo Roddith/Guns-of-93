@@ -134,31 +134,24 @@ local function Guns93TrimListRounds(list, total)
     end
 end
 
-
-function Guns93HasMultipleCalibers(item)
-    if not item then
-        return false
+function Guns93HasMultipleCalibers(mag, gun)
+    if not mag or not gun then return false end
+    local primRound = gun:getAmmoType():getItemKey()
+    local secRound = gun:getModData().modAlt_Ammo 
+    local list = mag:getModData().Guns93AmmoList
+    if not list or #list == 0 then
+        return true
     end
-    local list = item:getModData().Guns93AmmoList
-    if not list or #list < 1 then
-        return false
-    end
-    local calibers = {}
-    local count = 0
-    for _, entries in ipairs(list) do
-        if entries and entries.type and (entries.count or 0) > 0 then
-            local stat = AmmoStatList[entries.type]
-            local round = stat and stat.caliber
-            if round and not calibers[round] then
-                calibers[round] = true
-                count = count + 1
-                if count >= 2 then
-                    return true
-                end
+    for _, entry in ipairs(list) do
+        if entry.count and entry.count > 0 then
+            local stat = AmmoStatList[entry.type]
+            local caliber  = stat.caliber
+            if caliber ~= primRound and caliber ~= secRound then
+                return false
             end
         end
     end
-    return false
+    return true
 end
 
 local function Guns93reloadTypeisOpenBolt(weapon)
@@ -236,20 +229,63 @@ end
 
 Events.OnPlayerAttackFinished.Add(Guns93HammerCock)
 
+local function DynamicAttachedMagClip(player, gun, mag, eject)
+    if not mag then return end
+    if not mag:hasTag(Gun93Registries.guns93.DynamicMagClip) then return end
+    local magType = tostring(mag:getFullType())
+    magType = string.gsub(magType, "_Low", "")
+    magType = string.gsub(magType, "_Half", "")
+    magType = string.gsub(magType, "_Full", "")
+    local suffix = ""
+    local low = 1
+    local high = mag:getMaxAmmo()
+    if mag:hasTag(Gun93Registries.guns93.AmmoBelt) then
+        local gunMod = gun:getModData()
+        if gunMod.guns93_beltLength then
+            high = gunMod.guns93_beltLength
+        end
+    end
+    if mag:hasTag(Gun93Registries.guns93.VisibleAmmo) then
+        low = high * 0.3
+        high = high * 0.7
+    end
+    if mag:hasTag(Gun93Registries.guns93.VisibleLoaded) then
+        high = 1
+    end
+    if gun:getCurrentAmmoCount() < low or eject then
+        suffix = ""
+    elseif not mag:hasTag(Gun93Registries.guns93.VisibleLoaded) and gun:getCurrentAmmoCount() < high then
+        suffix = "_Half"
+    elseif gun:getCurrentAmmoCount() >= high then
+        suffix = "_Full"
+    end
+    local newMag = magType .. suffix
+    if mag:getFullType() ~= newMag then
+        local creatMag = instanceItem(newMag)
+        gun:detachWeaponPart(magType)
+        gun:attachWeaponPart(creatMag)
+        player:resetEquippedHandsModels()
+    end
+end
+
 function DynamicMagClip(mag)
-    if not mag or not mag:hasTag(Gun93Registries.guns93.DynamicMagClip) then return end
+    if not mag then return end
+    if not mag:hasTag(Gun93Registries.guns93.DynamicMagClip) then return end
     local baseIcon = mag:getScriptItem():getIcon()
     local baseSprite = mag:getScriptItem():getWorldStaticModel()
     local suffix = ""
     local low = 1
     local high = mag:getMaxAmmo()
-    if mag:hasTag(Gun93Registries.guns93.AmmoBelt) then
-        low = high * 0.2
-        high = high * 0.8
+    if mag:hasTag(Gun93Registries.guns93.VisibleAmmo) then
+        low = high * 0.3
+        high = high * 0.7
+    end
+    if mag:hasTag(Gun93Registries.guns93.VisibleLoaded) then
+        high = 1
     end
     if mag:getCurrentAmmoCount() < low then
         suffix = ""
-    elseif mag:getCurrentAmmoCount() < high then
+    elseif not mag:hasTag(Gun93Registries.guns93.VisibleLoaded) and mag:getCurrentAmmoCount() < high then
         suffix = "_Half"
     elseif mag:getCurrentAmmoCount() >= high then
         suffix = "_Full"
@@ -315,8 +351,9 @@ function ISLoadBulletsInMagazine:animEvent(event, parameter)
             local linkNum = nil
             local doLoad = true
             if self.magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
-                ammolink = self.character:getInventory():getItemFromType(self.magazine:getModData().needLink)
-                linkNum = self.character:getInventory():getItemCountRecurse(self.magazine:getModData().needLink)
+                local magType = self.magazine:getFullType()
+                ammolink = self.character:getInventory():getItemFromType(AmmoStatList[magType].needLink)
+                linkNum = self.character:getInventory():getItemCountRecurse(AmmoStatList[magType].needLink)
                 if linkNum < 1 then
                     doLoad = false
                 end
@@ -329,8 +366,8 @@ function ISLoadBulletsInMagazine:animEvent(event, parameter)
                     local secRound = self.round2 and tostring(self.round2) or nil
                     for i = 0, bullets:size() - 1 do
                         local bullet = bullets:get(i)
-                        local round = bullet:getModData()
-                        local caliber = tostring(round.isCaliber)
+                        local round = bullet:getFullType()
+                        local caliber = AmmoStatList[round].caliber
                         local ammoType = tostring(bullet:getFullType())
                         if (primRound and (caliber == primRound or ammoType == primRound)) or (secRound and (caliber == secRound or ammoType == secRound)) then
                             removedBullet = bullet
@@ -421,7 +458,14 @@ function ISUnloadBulletsFromMagazine:animEvent(event, parameter)
         end
         self.unloadedThisLoop = true
 		if not isClient() then
-            local ammolink = self.magazine:getModData().needLink
+            local ammolink = nil
+            local findLink = nil
+            if self.magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                findLink = tostring(self.magazine:getFullType())
+            end
+            if findLink ~= nil then
+                ammolink = AmmoStatList[findLink].needLink
+            end
             local itemKey = nil
             if not self.magazine:hasTag(Gun93Registries.guns93.AmmoBox) then
                 itemKey = Guns93RemoveAmmoType(self.magazine)
@@ -471,7 +515,14 @@ function ISUnloadBulletsFromMagazine:animEvent(event, parameter)
             Guns93TrimListRounds(modData.Guns93AmmoList, 0)
 			self.unloadFinished = true
 		    if not isClient() then
-                local ammolink = self.magazine:getModData().needLink
+                local findLink = nil
+                local ammolink = nil
+                if self.magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                    findLink = self.magazine:getFullType()
+                end
+                if findLink ~= nil then
+                    ammolink = AmmoStatList[findLink].needLink
+                end
                 if ammolink ~= nil then
                     self.character:getInventory():Remove(self.magazine)
                     sendRemoveItemFromContainer(self.character:getInventory(), self.magazine)
@@ -528,8 +579,8 @@ local function guns93AmmoLeft(character, magazine, round, round2, bycaliber)
         character:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
         for i = 0, bullets:size() - 1 do
             local bullet = bullets:get(i)
-            local round = bullet:getModData()
-            local caliber = tostring(round.isCaliber)
+            local round = bullet:getFullType()
+            local caliber = AmmoStatList[round].caliber
             local ammoType = tostring(bullet:getFullType())
             if (primRound and (caliber == primRound or ammoType == primRound)) or (secRound and (caliber == secRound or ammoType == secRound)) then
                 return true
@@ -560,7 +611,8 @@ function ISLoadBulletsInMagazine:isLoadFinished()
         guns93ApplyPendingToAction(self, self.magazine)
     end
     if self.magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
-        local linkType = self.magazine:getModData().needLink
+        local magType = self.magazine:getFullType()
+        local linkType = AmmoStatList[magType].needLink
         local linkNum = self.character:getInventory():getItemCountRecurse(linkType)
         if linkNum and linkNum < 1 then
             return true
@@ -609,25 +661,40 @@ function ISInsertMagazine:loadAmmo()
             syncItemModData(self.character, self.gun)
             syncHandWeaponFields(self.character, self.gun)
         else
-            self.character:getInventory():Remove(self.magazine)
             self.character:removeFromHands(self.magazine)
+            local maxAmmo = self.magazine:getMaxAmmo()
+            local currentAmmo = self.magazine:getCurrentAmmoCount()
+            if self.magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                local gunMod = self.gun:getModData()
+                if gunMod.guns93_beltLength then
+                    maxAmmo = gunMod.guns93_beltLength
+                    if currentAmmo > maxAmmo then
+                        currentAmmo = maxAmmo
+                    end
+                end
+            end
             if not self.magazine:hasTag(Gun93Registries.guns93.MoonClip) then
                 self.gun:setMagazineType(self.magazine:getFullType())
-                self.gun:setMaxAmmo(self.magazine:getMaxAmmo())
+                self.gun:setMaxAmmo(maxAmmo)
                 self.gun:setContainsClip(true)
             end
-            Guns93TransferAmmoList(self.magazine, self.gun, self.magazine:getCurrentAmmoCount())
-            self.gun:setCurrentAmmoCount(self.magazine:getCurrentAmmoCount())
+            Guns93TransferAmmoList(self.magazine, self.gun, currentAmmo)
+            self.gun:setCurrentAmmoCount(currentAmmo)
+            local ammoLeft = self.magazine:getCurrentAmmoCount() - currentAmmo
+            self.magazine:setCurrentAmmoCount(ammoLeft)
+            DynamicMagClip(self.magazine)
             if self.magazine:getCategory() == "WeaponPart" then
                 self.gun:attachWeaponPart(self.magazine)
             end
-            sendRemoveItemFromContainer(self.character:getInventory(), self.magazine)
+            if ammoLeft <= 0 then
+                self.character:getInventory():Remove(self.magazine)
+                sendRemoveItemFromContainer(self.character:getInventory(), self.magazine)
+            end
+            DynamicAttachedMagClip(self.character, self.gun, self.gun:getWeaponPart("Clip"))
             syncItemModData(self.character, self.gun)
             syncHandWeaponFields(self.character, self.gun)
         end
     end
-    DynamicMagClip(self.magazine)
-    self.character:getInventory():setDirty(true)
 	if not isServer() and not isClient() then
         if self.magazine:hasTag(Gun93Registries.guns93.SpeedStrip) and self.gun:getCurrentAmmoCount() < self.gun:getMaxAmmo() and self.magazine:getCurrentAmmoCount() > 0 then
             ISTimedActionQueue.addAfter(self, ISInsertMagazine:new(self.character, self.gun, self.magazine))
@@ -701,9 +768,9 @@ function ISEjectMagazine:unloadAmmo()
         newMag = instanceItem(moonClip:getFullType())
         newMag:setCurrentAmmoCount(self.gun:getCurrentAmmoCount())
         Guns93BrassEject(self.character, self.gun)
-        DynamicMagClip(newMag)
         self.gun:detachWeaponPart(moonClip)
     elseif self.gun:isContainsClip() then
+        DynamicAttachedMagClip(self.character, self.gun, self.gun:getWeaponPart("Clip"), true)
         if self.gun:getWeaponPart("Clip") then
             newMag = self.gun:getWeaponPart("Clip")
         else
@@ -714,7 +781,7 @@ function ISEjectMagazine:unloadAmmo()
                 self.gun:setRoundChambered(false)
                 local ammotype = Guns93RemoveChambered(self.gun)
                 if ammotype == nil or ammotype == "Empty" then
-                    ammotype = self.gun:getAmmoType():getItemKey():getFullType()
+                    ammotype = self.gun:getAmmoType():getItemKey()
                 end
                 newMag:setCurrentAmmoCount(self.gun:getCurrentAmmoCount() + 1)
                 Guns93AddAmmoTypes(self.gun, ammotype)
@@ -723,7 +790,6 @@ function ISEjectMagazine:unloadAmmo()
             end
         end
         newMag:setCurrentAmmoCount(self.gun:getCurrentAmmoCount())
-        DynamicMagClip(newMag)
     end
     if newMag then
         if self.gun:getWeaponPart("Clip") then
@@ -732,6 +798,7 @@ function ISEjectMagazine:unloadAmmo()
         Guns93TransferAmmoList(self.gun, newMag, self.gun:getCurrentAmmoCount())
         self.character:getInventory():AddItem(newMag)
         sendAddItemToContainer(self.character:getInventory(), newMag)
+        DynamicMagClip(newMag)
     end
     self.gun:setContainsClip(false)
     self.gun:setCurrentAmmoCount(0)
@@ -761,13 +828,32 @@ function ISRackFirearm:removeBullet()
     if not self.gun:hasTag(Gun93Registries.guns93.Guns93) then
         return ISRackFirearm_removeBullet_Old(self)
     end
-    local itemKey = Guns93RemoveChambered(self.gun)
-    if itemKey == nil or itemKey == "Empty" then
-        itemKey = self.gun:getAmmoType():getItemKey();
+    if self.gun:isRoundChambered() then
+        local itemKey = Guns93RemoveChambered(self.gun)
+        if itemKey == nil or itemKey == "Empty" then
+            itemKey = self.gun:getAmmoType():getItemKey();
+        end
+        local newBullet = instanceItem(itemKey)
+        self.character:getInventory():AddItem(newBullet)
+        sendAddItemToContainer(self.character:getInventory(), newBullet)
+        if self.gun:isContainsClip() then
+            local magazine = self.gun:getWeaponPart("Clip")
+            if magazine then
+                local findLink = nil
+                if magazine:hasTag(Gun93Registries.guns93.AmmoBox) then
+                    findLink = magazine:getAmmoType():getItemKey()
+                elseif magazine:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                    findLink = magazine:getFullType()
+                end
+                if findLink ~= nil then
+                    local ammolink = AmmoStatList[findLink].needLink
+                    local newLink = instanceItem(ammolink)
+                    self.character:getInventory():AddItem(newLink)
+                    sendAddItemToContainer(self.character:getInventory(), newLink)
+                end
+            end
+        end
     end
-	local newBullet = instanceItem(itemKey)
-	self.character:getInventory():AddItem(newBullet)
-	sendAddItemToContainer(self.character:getInventory(), newBullet)
 end
 
 local ISRackFirearm_rackBullet_Old = ISRackFirearm.rackBullet
@@ -790,7 +876,7 @@ function ISRackFirearm:rackBullet()
             end
         end
         self.gun:setRoundChambered(false)
-        if Guns93HasMultipleCalibers(self.gun) and self.gun:hasTag(Gun93Registries.guns93.MixJam) and ZombRand(0,50) > 30 then
+        if Guns93HasMultipleCalibers(self.gun, self.gun) and self.gun:hasTag(Gun93Registries.guns93.MixJam) and ZombRand(0,50) > 30 then
             self.gun:setJammed(true)
         else
             self.gun:setJammed(false)
@@ -921,10 +1007,9 @@ local Guns93reloadMagazine = function(playerObj, magazine)
     local doneList = {}
     for i = 0, bullets:size() - 1 do
         local bullet = bullets:get(i)
-        local roundData = bullet:getModData()
-        if roundData and roundData.isCaliber then
-            local caliber = roundData.isCaliber
-            local fullType = bullet:getFullType()
+        local fullType = bullet:getFullType()
+        local caliber = AmmoStatList[fullType].caliber
+        if caliber then
             if caliber == round or caliber == round2 or fullType == round or fullType == round2 then
                 if not doneList[fullType] then
                     doneList[fullType] = true
@@ -982,12 +1067,7 @@ function ISReloadWeaponAction.BeginAutomaticReload(playerObj, gun)
                 local mag = items:get(k)
                 if mag and mag:getCurrentAmmoCount() >= highest then
                     if not (mag:hasTag(Gun93Registries.guns93.SpeedLoader) and gun:getCurrentAmmoCount() > mag:getCurrentAmmoCount()) then
-                        local doLoad = true
-                        if Guns93HasMultipleCalibers(mag) then
-                            if not round2 then
-                                doLoad = false
-                            end
-                        end
+                        local doLoad = Guns93HasMultipleCalibers(mag, gun)
                         if doLoad then
                             local magData = mag:getModData()
                             local topRound = nil
@@ -1020,7 +1100,7 @@ function ISReloadWeaponAction.BeginAutomaticReload(playerObj, gun)
             if mag and mag:getCurrentAmmoCount() >= highest then
                 if not (mag:hasTag(Gun93Registries.guns93.SpeedLoader) and gun:getCurrentAmmoCount() > mag:getCurrentAmmoCount()) then
                     local doLoad = true
-                    if Guns93HasMultipleCalibers(mag) then
+                    if Guns93HasMultipleCalibers(mag, gun) then
                         if not round2 then
                             doLoad = false
                         end
@@ -1099,10 +1179,9 @@ function ISReloadWeaponAction.BeginAutomaticReload(playerObj, gun)
         local doneList = {}
         for i = 0, bullets:size() - 1 do
             local bullet = bullets:get(i)
-            local roundData = bullet:getModData()
-            if roundData and roundData.isCaliber then
-                local caliber = roundData.isCaliber
-                local fullType = bullet:getFullType()
+            local fullType = bullet:getFullType()
+            local caliber = AmmoStatList[fullType].caliber
+            if caliber then
                 if caliber == round or caliber == round2 or fullType == round or fullType == round2 then
                     if not doneList[fullType] then
                         doneList[fullType] = true
@@ -1128,20 +1207,20 @@ end
 local function SetSpentCases(player, weapon)
     if not weapon or not weapon:hasTag(Gun93Registries.guns93.Guns93) then return end
     local modData = weapon:getModData()
-    local list = modData.Guns93SpentList or {}
-    if weapon:haveChamber() then
-        Guns93TrimListRounds(list, 1)
-    else
-        Guns93TrimListRounds(list, weapon:getMaxAmmo())
-    end
-    local total = 0
-    for _, brass in ipairs(list) do
-        total = total + (brass.count or 0)
-    end
-    if weapon:haveChamber() then
-        weapon:setSpentRoundChambered(true)
-    else
-        weapon:setSpentRoundCount(total)
+    local list = modData.Guns93SpentList
+    if list and #list ~= 0 then
+        if weapon:haveChamber() then
+            Guns93TrimListRounds(list, 1)
+            weapon:setSpentRoundChambered(true)
+            weapon:setSpentRoundCount(0)
+        else
+            Guns93TrimListRounds(list, weapon:getMaxAmmo())
+            local total = 0
+            for _, brass in ipairs(list) do
+                total = total + (brass.count or 0)
+            end
+            weapon:setSpentRoundCount(total)
+        end
     end
 end
 
@@ -1364,9 +1443,8 @@ function ISReloadWeaponAction:initVars()
     local getbullets = ArrayList.new()
     for i = 0, allBullets:size() - 1 do
         local bullet = allBullets:get(i)
-        local bulletData = bullet:getModData()
-        local caliber = bulletData and bulletData.isCaliber and tostring(bulletData.isCaliber) or nil
         local ammoType = tostring(bullet:getFullType())
+        local caliber = AmmoStatList[ammoType].caliber
         local match = (primCaliber and (caliber == primCaliber or ammoType == primCaliber)) or (secCaliber and (caliber == secCaliber or ammoType == secCaliber))
         if match then
             getbullets:add(bullet)
@@ -1433,10 +1511,10 @@ local function Guns93CycleChamber(player, weapon)
     if getDebug() and player:isUnlimitedAmmo() and player:isUnlimitedAmmo() then return end
     local brass = nil
     if weapon:haveChamber() then
-        weapon:setSpentRoundChambered(true)
         brass = Guns93RemoveChambered(weapon)
         Guns93AddSpentAmmo(weapon, brass)
         if not weapon:isRackAfterShoot() then
+            weapon:setSpentRoundChambered(true)
             local canon = weapon:getWeaponPart("Canon")
             if canon and canon:hasTag(Gun93Registries.guns93.Guns93Can) and weapon:hasTag(Gun93Registries.guns93.ReqBooster) then
                 if not canon:hasTag(Gun93Registries.guns93.Booster) then
@@ -1457,19 +1535,12 @@ local function Guns93CycleChamber(player, weapon)
         Guns93AddSpentAmmo(weapon, brass)
     end
     if weapon:isContainsClip() then
-        local clip = weapon:getWeaponPart("Clip")
-        if clip then
-            local clipAmmoKey = clip:getAmmoType():getItemKey()
-            if clipAmmoKey == "Base.556Belt" or clipAmmoKey == "Base.308Belt" then
-                if isClient() then return end
-                local linkType = (ZombRand(4) < 3) and (clipAmmoKey .. "Link") or "Base.DamagedBeltLink"
-                local link = instanceItem(linkType)
-                local square = player:getCurrentSquare()
-                if square then
-                    local worldLink = square:AddWorldInventoryItem(link, 0.0, 0.0, 0.0)
-                end
-            end
+        if weapon:getWeaponPart("Clip") and weapon:getWeaponPart("Clip"):hasTag(Gun93Registries.guns93.AmmoBelt) and weapon:getCurrentAmmoCount() <= 0 then
+            weapon:detachWeaponPart("Clip")
+            weapon:setContainsClip(false)
         end
+        DynamicAttachedMagClip(player, weapon, weapon:getWeaponPart("Clip"))
+        player:resetEquippedHandsModels()
     end
     GunStatAdjust(player, weapon, "Bang")
     syncItemModData(player, weapon)
@@ -1694,6 +1765,7 @@ function ISUnloadRackFirearm:ejectSpentRounds()
 		syncHandWeaponFields(self.character, self.gun)
 	elseif self.gun:isSpentRoundChambered() then
 		self.gun:setSpentRoundChambered(false)
+        self.gun:setSpentRoundCount(0)
         syncItemModData(self.character, self.gun)
 		syncHandWeaponFields(self.character, self.gun)
 	else

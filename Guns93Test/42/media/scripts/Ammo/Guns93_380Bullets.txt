@@ -3,7 +3,6 @@ module Base
     item 380Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.380Bullets,
         Weight	=	0.013,
         ItemType = base:normal,
         DisplayName	=	.380 Auto,
@@ -17,7 +16,6 @@ module Base
     item 380BulletsJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.380Bullets,
         Weight	=	0.013,
         ItemType = base:normal,
         DisplayName	=	.380 Auto (Hollow-Point),

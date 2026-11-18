@@ -3,7 +3,6 @@ module Base
     item 10mmBullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.10mmBullets,
         Weight	=	0.023,
         ItemType = base:normal,
         DisplayName	=	10mm Auto,
@@ -17,7 +16,6 @@ module Base
     item 10mmBulletsJHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.10mmBullets,
         Weight	=	0.023,
         ItemType = base:normal,
         DisplayName	=	10mm Auto (Hollow-Point),
@@ -31,7 +29,6 @@ module Base
     item 10mmBulletsHard
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.10mmBullets,
         Weight	=	0.023,
         ItemType = base:normal,
         DisplayName	=	10mm Auto (Hard-Cast),

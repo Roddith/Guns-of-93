@@ -2567,7 +2567,7 @@ module Base
         MountOn = ,
         PartType = Canon,
         Tooltip = Tooltip_FlashHider,
-        Tags = guns93:NoMount; guns93:BayoLug; guns93:30cal,
+        Tags = guns93:NoMount; guns93:BayoLug; guns93:22cal; guns93:30cal,
         WorldStaticModel = HK91FlashHider,
         CanAttach = Guns93WeaponPartsToolCheck,
         CanDetach = Guns93WeaponPartsToolCheck,
@@ -3189,7 +3189,7 @@ module Base
         MountOn = ,
         PartType = Canon,
         Tooltip = Tooltip_FlashHider,
-        Tags = guns93:NoScrewdriver; guns93:45cal; guns93:QDMount,
+        Tags = guns93:NoScrewdriver; guns93:9mm; guns93:40cal; guns93:45cal; guns93:QDMount,
         WorldStaticModel = MP5FlashHider,
         CanAttach = Guns93WeaponPartsTriLugAdapter,
         CanDetach = Guns93WeaponPartsToolCheck,
@@ -4752,6 +4752,58 @@ module Base
         Tags = guns93:NoScrewdriver; guns93:Required; guns93:AutoOnly; guns93:Fullauto,
         WorldStaticModel = TriggerBox,
         CanAttach = Guns93WeaponPartsAutoTriggers,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    
+    /****************************** M60 ******************************/
+    item M60FlashHider
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M60 Flash Hider,
+        Icon = M60FlashHider,
+        Weight = 0.05,
+        SoundRadiusModifier = -10,
+        MountOn = ,
+        PartType = Canon,
+        Tooltip = Tooltip_FlashComp,
+        Tags = guns93:UseWrench; guns93:22cal; guns93:30cal,
+        WorldStaticModel = M60FlashHider,
+        CanAttach = Guns93WeaponPartsThreadedCanonPart,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M60Bipod
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M60 Rifle Bipod,
+        Icon = M60Bipod,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        MountOn = M60,
+        PartType = BarrelItem,
+        MetalValue = 15.0,
+        WorldStaticModel = M60Bipod,
+        Tags = guns93:NoScrewdriver; guns93:Bipod; guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M60Bipod_On
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M60 Rifle Bipod,
+        Icon = M60Bipod,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MountOn = M60,
+        PartType = BarrelItem,
+        MetalValue = 15.0,
+        WorldStaticModel = M60Bipod,
+        Tags = guns93:NoScrewdriver; guns93:Bipod; guns93:ToggleItemOff,
+        CanAttach = Guns93WeaponPartsToolCheck,
         CanDetach = Guns93WeaponPartsToolCheck,
     }
 }

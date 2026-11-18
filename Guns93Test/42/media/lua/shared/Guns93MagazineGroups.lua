@@ -138,3 +138,5 @@ MagazineGunSet = MagazineGunSet or {}
 	MagazineGunSet["Base.M1917"] = MagazineGunSet["Base.M1903"]
 
 	MagazineGunSet["Base.Mauser98K"] = {"Base.Mauserclip"}
+
+	MagazineGunSet["Base.M60"] = {"Base.M60Box","Base.M60Box_Full","Base.308Belt","Base.308Belt_Half","Base.308Belt_Full"}

@@ -3,7 +3,6 @@ module Base
     item 76239Bullets
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.76239Bullets,
         Weight	=	0.022,
         ItemType = base:normal,
         DisplayName	=	7.62x39 Soviet,
@@ -17,7 +16,6 @@ module Base
     item 76239BulletsBC
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.76239Bullets,
         Weight	=	0.022,
         ItemType = base:normal,
         DisplayName	=	7.62x39 Soviet (Brass-Cased),
@@ -31,7 +29,6 @@ module Base
     item 76239BulletsSP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.76239Bullets,
         Weight	=	0.022,
         ItemType = base:normal,
         DisplayName	=	7.62x39 Soviet (Soft-Point),

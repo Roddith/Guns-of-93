@@ -3,7 +3,6 @@ module Base
     item Bullets357
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets357,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.357 Magnum,
@@ -18,7 +17,6 @@ module Base
     item Bullets357JHP
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets357,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.357 Magnum (Hollow-Point),
@@ -33,7 +31,6 @@ module Base
     item Bullets357Hard
     {
         DisplayCategory = Ammo,
-        isCaliber = Base.Bullets357,
         Weight	=	0.014,
         ItemType = base:normal,
         DisplayName	=	.357 Magnum (Hard-Cast),

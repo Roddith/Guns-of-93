@@ -35,6 +35,24 @@ local function Guns93BrassPicker(player, weapon)
         if square then
             local brass = square:AddWorldInventoryItem(brassDrop, 0.0, 0.0, 0.0)
         end
+        if weapon:isContainsClip() then
+            local clip = weapon:getWeaponPart("Clip")
+            if clip then
+                local findLink = nil
+                if clip:hasTag(Gun93Registries.guns93.AmmoBox) then
+                    findLink = clip:getAmmoType():getItemKey()
+                elseif clip:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                    findLink = clip:getFullType()
+                end
+                if findLink ~= nil then
+                    local linkType = (ZombRand(4) < 3) and AmmoStatList[findLink].needLink or "Base.DamagedBeltLink"
+                    local link = instanceItem(linkType)
+                    if square then
+                        local worldLink = square:AddWorldInventoryItem(link, 0.0, 0.0, 0.0)
+                    end
+                end
+            end
+        end
     end
 end
 
@@ -57,6 +75,7 @@ function Guns93BrassEject(player, weapon)
         else
             Guns93BrassPicker(player, weapon)
             weapon:setSpentRoundChambered(false)
+            weapon:setSpentRoundCount(0)
             ejected = true
         end
     end
@@ -81,7 +100,9 @@ function ISRackFirearm:ejectSpentRounds()
     if not SandboxVars.Guns93.Guns93SpentBrass or not self.gun:hasTag(Gun93Registries.guns93.Guns93) or self.gun:getWeaponPart("Moonclip") then
         return ISRackFirearm_ejectSpentRounds_Old(self)
     end
-    Guns93BrassEject(self.character, self.gun)
+    if self.gun:getSpentRoundCount() > 0 or self.gun:isSpentRoundChambered() then
+        Guns93BrassEject(self.character, self.gun)
+    end
     if self.gun:getShellFallSound() then
         self.character:getEmitter():playSound(self.gun:getShellFallSound())
     end
