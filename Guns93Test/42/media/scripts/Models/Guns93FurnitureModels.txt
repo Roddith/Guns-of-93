@@ -1687,17 +1687,17 @@ module Base
 	model HKCarryHandle
 	{
 	    mesh = weapons/parts/HKCarryHandle,
-		texture = weapons/firearm/HK91,
+		texture = weapons/firearm/HK91.1,
 	}
 	model HKCheekRest
 	{
 	    mesh = weapons/parts/HKCheekRest,
-		texture = weapons/firearm/HK91,
+		texture = weapons/firearm/HK91.1,
 	}
 	model HKMagRelease
 	{
 	    mesh = weapons/parts/HKMagRelease,
-		texture = weapons/firearm/HK91,
+		texture = weapons/firearm/HK91.1,
 	}
 	model HK94BarrelShroud
     {
@@ -1981,8 +1981,8 @@ module Base
     }
 	model TommyM1A1Sight
     {
-		mesh = weapons/parts/ThompsonPartSightM1A1,
-		texture = weapons/firearm/ThompsonM1A1,
+		mesh = weapons/parts/ThompsonPartSightM1A1.1,
+		texture = weapons/firearm/ThompsonM1A1.1,
 
 		attachment world
 		{
@@ -1994,7 +1994,7 @@ module Base
 	model TommyLymanSight
     {
 		mesh = weapons/parts/ThompsonPartSightLyman,
-		texture = weapons/firearm/ThompsonM1A1,
+		texture = weapons/firearm/ThompsonM1A1.1,
 
 		attachment world
 		{
@@ -2030,7 +2030,7 @@ module Base
 	model TommyHandguard
     {
 		mesh = weapons/parts/ThompsonPartGrip,
-		texture = weapons/firearm/ThompsonM1A1,
+		texture = weapons/firearm/ThompsonM1A1.1,
 
 		attachment world
 		{
@@ -2243,7 +2243,7 @@ module Base
 	model M1911Thread
     {
 		mesh = weapons/parts/1911Thread,
-		texture = weapons/firearm/M1911,
+		texture = weapons/firearm/M1911.1,
 		scale = 1,
 
 		attachment world
@@ -2281,7 +2281,7 @@ module Base
     }
 	model 1911GripsGI
     {
-		mesh = weapons/parts/1911Grips1,
+		mesh = weapons/parts/1911Grips1.1,
 		texture = weapons/parts/1911Grips,
 		scale = 1,
 
@@ -2307,7 +2307,7 @@ module Base
     }
 	model OfficerGripsGI
     {
-		mesh = weapons/parts/OfficerGrips1,
+		mesh = weapons/parts/OfficerGrips1.1,
 		texture = weapons/parts/1911Grips,
 		scale = 1,
 
@@ -2450,7 +2450,7 @@ module Base
     }
 	model 1911GripsElk
     {
-		mesh = weapons/parts/1911Grips1,
+		mesh = weapons/parts/1911Grips1.1,
 		texture = weapons/parts/1911Grips2,
 		scale = 1,
 
@@ -2476,7 +2476,7 @@ module Base
     }
 	model OfficerGripsElk
     {
-		mesh = weapons/parts/OfficerGrips1,
+		mesh = weapons/parts/OfficerGrips1.1,
 		texture = weapons/parts/1911Grips2,
 		scale = 1,
 
@@ -2528,7 +2528,7 @@ module Base
     }
 	model 1911GripsMedal
     {
-		mesh = weapons/parts/1911Grips1,
+		mesh = weapons/parts/1911Grips1.1,
 		texture = weapons/parts/1911Grips3,
 		scale = 1,
 
@@ -2554,7 +2554,7 @@ module Base
     }
 	model OfficerGripsMedal
     {
-		mesh = weapons/parts/OfficerGrips1,
+		mesh = weapons/parts/OfficerGrips1.1,
 		texture = weapons/parts/1911Grips3,
 		scale = 1,
 
@@ -2996,7 +2996,7 @@ module Base
     }
 	model BHPGripsWood
     {
-		mesh = weapons/parts/BHPPanelGrips1,
+		mesh = weapons/parts/BHPPanelGrips1.1,
 		texture = weapons/parts/BHPGrips,
 		scale = 1,
 
@@ -3074,7 +3074,7 @@ module Base
     }
 	model BHPGripsThumb
     {
-		mesh = weapons/parts/BHPSlimGrip1,
+		mesh = weapons/parts/BHPSlimGrip1.1,
 		texture = weapons/parts/BHPGrips2,
 		scale = 1,
 
@@ -3178,7 +3178,7 @@ module Base
     }
 	model BHPGripsMaria
     {
-		mesh = weapons/parts/BHPPanelGrips1,
+		mesh = weapons/parts/BHPPanelGrips1.1,
 		texture = weapons/parts/BHPGrips3,
 		scale = 1,
 
@@ -7533,7 +7533,7 @@ module Base
     }
 	model M9StockGrips
     {
-		mesh = weapons/parts/92Grips1,
+		mesh = weapons/parts/92Grips1.1,
 		texture = weapons/parts/Beretta92Grips,
 		scale = 1,
 
@@ -7559,7 +7559,7 @@ module Base
     }
 	model M9RubberGrips
     {
-		mesh = weapons/parts/92Grips1,
+		mesh = weapons/parts/92Grips1.1,
 		texture = weapons/parts/Beretta92Grips2,
 		scale = 1,
 
@@ -7898,7 +7898,7 @@ module Base
 	model K1AFolderIn
     {
 		mesh = weapons/parts/k1a1PartStockIn,
-		texture = weapons/firearm/k1a1,
+		texture = weapons/firearm/k1a1.1,
 		scale = 1,
 
 		attachment world
@@ -7911,7 +7911,7 @@ module Base
 	model K1AFolderOut
     {
 		mesh = weapons/parts/k1a1PartStockOut,
-		texture = weapons/firearm/k1a1,
+		texture = weapons/firearm/k1a1.1,
 		scale = 1,
 
 		attachment world
@@ -7924,7 +7924,7 @@ module Base
 	model K1A1FlashHider
     {
 		mesh = weapons/parts/k1a1PartFlashHider,
-		texture = weapons/firearm/k1a1,
+		texture = weapons/firearm/k1a1.1,
 		scale = 1,
 
 		attachment world
@@ -8426,4 +8426,80 @@ module Base
 			scale = 0.9,
 		}
     }
+	model M249HeatShield
+    {
+        mesh = weapons/parts/M249HeatShield,
+        texture = weapons/firearm/M249,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0001 0.3340 -0.0034,
+            rotate = -7.0420 89.8644 97.0582,
+            scale = 0.9000,
+        }
+    }
+	model M249Bipod
+    {
+        mesh = weapons/parts/M249BipodUp,
+        texture = weapons/firearm/M249,
+        scale = 1,
+
+        attachment world
+        {
+            offset = -0.0001 0.3340 -0.0034,
+            rotate = -7.0420 89.8644 97.0582,
+            scale = 0.9000,
+        }
+    }
+	model M249Bipod_On
+	{
+	    mesh = weapons/parts/M249BipodDown,
+	    texture = weapons/firearm/M249,
+		scale = 1,
+
+		attachment world
+		{
+			offset = 0.0169 -0.0000 0.0000,
+			rotate = 0.0168 -0.0750 89.9998,
+			scale = 0.9000,
+		}
+	}
+	model M249FlashHider
+    {
+		mesh = weapons/parts/M249FlashHider,
+	    texture = weapons/firearm/M249Old,
+		scale = 1,
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -0.0000 -0.0000 -0.0000,
+			scale = 0.9,
+		}
+    }
+	model M249Stock
+	{
+		mesh = weapons/parts/M249Stock,
+		texture = weapons/firearm/M249,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
+	model M249TubeStock
+	{
+		mesh = weapons/parts/M249TubeStock,
+		texture = weapons/firearm/M249Old,
+		scale = 1,
+
+		attachment world
+		{
+			offset = -0.0103 -0.0700 0.0000,
+			rotate = -0.0000 -0.0000 -90.0000,
+			scale = 0.9,
+		}
+	}
 }

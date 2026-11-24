@@ -140,18 +140,18 @@ function Guns93HasMultipleCalibers(mag, gun)
     local secRound = gun:getModData().modAlt_Ammo 
     local list = mag:getModData().Guns93AmmoList
     if not list or #list == 0 then
-        return true
+        return false
     end
     for _, entry in ipairs(list) do
         if entry.count and entry.count > 0 then
             local stat = AmmoStatList[entry.type]
             local caliber  = stat.caliber
             if caliber ~= primRound and caliber ~= secRound then
-                return false
+                return true
             end
         end
     end
-    return true
+    return false
 end
 
 local function Guns93reloadTypeisOpenBolt(weapon)
@@ -229,7 +229,7 @@ end
 
 Events.OnPlayerAttackFinished.Add(Guns93HammerCock)
 
-local function DynamicAttachedMagClip(player, gun, mag, eject)
+function DynamicAttachedMagClip(player, gun, mag, eject)
     if not mag then return end
     if not mag:hasTag(Gun93Registries.guns93.DynamicMagClip) then return end
     local magType = tostring(mag:getFullType())
@@ -264,7 +264,9 @@ local function DynamicAttachedMagClip(player, gun, mag, eject)
         local creatMag = instanceItem(newMag)
         gun:detachWeaponPart(magType)
         gun:attachWeaponPart(creatMag)
-        player:resetEquippedHandsModels()
+        if player then
+            player:resetEquippedHandsModels()
+        end
     end
 end
 
@@ -319,7 +321,7 @@ end
 local ISLoadBulletsInMagazine_animEvent_Old = ISLoadBulletsInMagazine.animEvent
 function ISLoadBulletsInMagazine:animEvent(event, parameter)
     if not self.magazine:hasTag(Gun93Registries.guns93.Guns93Mag) then
-        ISLoadBulletsInMagazine_animEvent_Old(event, parameter)
+        return ISLoadBulletsInMagazine_animEvent_Old(self, event, parameter)
     end
     if event == 'InsertBullet' then
         if self:isLoadFinished() then
@@ -368,15 +370,16 @@ function ISLoadBulletsInMagazine:animEvent(event, parameter)
                         local bullet = bullets:get(i)
                         local round = bullet:getFullType()
                         local caliber = AmmoStatList[round].caliber
-                        local ammoType = tostring(bullet:getFullType())
-                        if (primRound and (caliber == primRound or ammoType == primRound)) or (secRound and (caliber == secRound or ammoType == secRound)) then
+                        if (primRound and (caliber == primRound or round == primRound)) or (secRound and (caliber == secRound or round == secRound)) then
                             removedBullet = bullet
                             break
                         end
                     end
-                    if removedBullet then
-                        if not removedBullet:hasTag(Gun93Registries.guns93.AmmoBelt) then
-                            self.character:getInventory():Remove(removedBullet)
+                    if removedBullet and removedBullet:hasTag(Gun93Registries.guns93.Ammo) then
+                        if not instanceof(removedBullet, "InventoryContainer") and not instanceof(removedBullet, "Clothing") then
+                            if not removedBullet:hasTag(Gun93Registries.guns93.AmmoBelt) then
+                                self.character:getInventory():Remove(removedBullet)
+                            end
                         end
                     end
                 else
@@ -443,7 +446,7 @@ end
 local ISUnloadBulletsFromMagazine_animEvent_Old = ISUnloadBulletsFromMagazine.animEvent
 function ISUnloadBulletsFromMagazine:animEvent(event, parameter)
     if not self.magazine:hasTag(Gun93Registries.guns93.Guns93Mag) then
-        ISUnloadBulletsFromMagazine_animEvent_Old(event, parameter)
+        return ISUnloadBulletsFromMagazine_animEvent_Old(self, event, parameter)
     end
     DynamicMagClip(self.magazine)
     self.character:getInventory():setDirty(true)
@@ -539,7 +542,7 @@ end
 local ISLoadBulletsInMagazine_start_Old = ISLoadBulletsInMagazine.start
 function ISLoadBulletsInMagazine:start()
     if not self.magazine:hasTag(Gun93Registries.guns93.Guns93Mag) then
-        ISLoadBulletsInMagazine_start_Old(event, parameter)
+        return ISLoadBulletsInMagazine_start_Old(self)
     end
     if isServer() then
         guns93ApplyPendingToAction(self, self.magazine)
@@ -699,7 +702,7 @@ function ISInsertMagazine:loadAmmo()
         if self.magazine:hasTag(Gun93Registries.guns93.SpeedStrip) and self.gun:getCurrentAmmoCount() < self.gun:getMaxAmmo() and self.magazine:getCurrentAmmoCount() > 0 then
             ISTimedActionQueue.addAfter(self, ISInsertMagazine:new(self.character, self.gun, self.magazine))
         end
-       if self.gun:haveChamber() and not self.gun:isRoundChambered() and not self.gun:hasTag(Gun93Registries.guns93.MoonClip) and self.gun:getCurrentAmmoCount() >= self.gun:getAmmoPerShoot() then
+        if self.gun:haveChamber() and not self.gun:isRoundChambered() and not self.gun:hasTag(Gun93Registries.guns93.MoonClip) and self.gun:getCurrentAmmoCount() >= self.gun:getAmmoPerShoot() then
            ISTimedActionQueue.addAfter(self, ISRackFirearm:new(self.character, self.gun))
         end
     end
@@ -903,6 +906,7 @@ end
 local ISReloadWeaponAction_setReloadSpeed_old = ISReloadWeaponAction.setReloadSpeed
 function ISReloadWeaponAction.setReloadSpeed(character, rack, mag)
     local gun = character:getPrimaryHandItem()
+    if not gun then return end
     if gun and instanceof(gun, "HandWeapon") and not gun:hasTag(Gun93Registries.guns93.Guns93) then
         return ISReloadWeaponAction_setReloadSpeed_old(character, rack)
     end
@@ -941,7 +945,14 @@ function ISReloadWeaponAction.setReloadSpeed(character, rack, mag)
         local bulletStrap = strap and strap:getClothingItemName() == "AmmoStrap_Bullets"
         local strapFound = false
         if gun then
-            local isShell = gun:getAmmoType():getItemKey() == "Base.ShotgunShells" or gun:getAmmoType():getItemKey() == "Base.SlugBullets"
+            local isShell = false
+            if gun:getAmmoType() then
+                local shellCheck = gun:getAmmoType():getItemKey()
+                local caliber = AmmoStatList[shellCheck].caliber
+                if caliber == "Base.ShotgunShells" or caliber == "Base.SlugBullets" then
+                    isShell = true
+                end
+            end
             local isMagazine = gun:getMagazineType() or mag
             if gun:hasTag(Gun93Registries.guns93.FastReload) then 
                 baseReloadSpeed = baseReloadSpeed * 1.1
@@ -1039,6 +1050,11 @@ ISReloadWeaponAction.ReloadBestMagazine = function(playerObj, gun)
         return old_ReloadBestMagazine(playerObj, gun)
     end
 	local magazine = gun:getBestMagazine(playerObj)
+    if Guns93HasMultipleCalibers(magazine, gun) then
+        if not gun:getModData().modAlt_Ammo then
+            return
+        end
+    end
 	local ammoCount = Guns93reloadMagazine(playerObj, magazine)
 	if not magazine or ammoCount == 0 then
 		return
@@ -1067,7 +1083,12 @@ function ISReloadWeaponAction.BeginAutomaticReload(playerObj, gun)
                 local mag = items:get(k)
                 if mag and mag:getCurrentAmmoCount() >= highest then
                     if not (mag:hasTag(Gun93Registries.guns93.SpeedLoader) and gun:getCurrentAmmoCount() > mag:getCurrentAmmoCount()) then
-                        local doLoad = Guns93HasMultipleCalibers(mag, gun)
+                        local doLoad = true
+                        if Guns93HasMultipleCalibers(mag, gun) then
+                            if not round2 then
+                                doLoad = false
+                            end
+                        end
                         if doLoad then
                             local magData = mag:getModData()
                             local topRound = nil
@@ -1436,8 +1457,19 @@ function ISReloadWeaponAction:initVars()
     if isServer() then
         guns93ApplyPendingToAction(self, self.gun)
     end
-    local primCaliber = self.round
-    local secCaliber = self.round2
+    local primCaliber = self.round or nil
+    if not primCaliber and self.gun:getAmmoType() then
+        primCaliber = tostring(self.gun:getAmmoType():getItemKey())
+        self.round = primCaliber
+    end
+    local secCaliber = self.round2 or nil
+    if not secCaliber then
+        local gunData = self.gun:getModData()
+        if gunData and gunData.modAlt_Ammo then
+            secCaliber = tostring(gunData.modAlt_Ammo)
+            self.round2 = secCaliber
+        end
+    end    
     local allBullets = ArrayList.new()
     self.character:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, allBullets)
     local getbullets = ArrayList.new()
@@ -1605,7 +1637,7 @@ end
 
 local ISUnloadBulletsFromFirearm_animEvent_Old = ISUnloadBulletsFromFirearm.animEvent
 function ISUnloadBulletsFromFirearm.animEvent(self, event, parameter)
-	if event == 'playReloadSound' then
+	if event == 'playReloadSound' and self.gun:hasTag(Gun93Registries.guns93.Guns93) then
 		if parameter == 'ejectAmmoStart' then
 			if not self.playedEjectAmmoStartSound and self.gun:getEjectAmmoStartSound() then
 				self.playedEjectAmmoStartSound = true;
@@ -1777,7 +1809,7 @@ function ISUnloadRackFirearm:ejectSpentRounds()
 end
 
 function ISUnloadRackFirearm:initVars()
-    ISReloadWeaponAction.setReloadSpeed(self.character, rack, self.magazine)
+    ISReloadWeaponAction.setReloadSpeed(self.character, true, self.magazine)
 end
 
 function ISUnloadRackFirearm:stop()

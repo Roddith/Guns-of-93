@@ -2238,7 +2238,7 @@ module Base
     {
         mesh = weapons/firearm/MAC10,
         texture = weapons/firearm/MAC10,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2268,7 +2268,7 @@ module Base
     {
         mesh = weapons/firearm/MAC11,
         texture = weapons/firearm/MAC10,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2298,7 +2298,7 @@ module Base
     {
         mesh = weapons/firearm/MAC11A1,
         texture = weapons/firearm/MAC10,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2328,7 +2328,7 @@ module Base
     {
         mesh = weapons/firearm/Uzi,
         texture = weapons/firearm/Uzi,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2377,7 +2377,7 @@ module Base
     {
         mesh = weapons/firearm/UziCarbine,
         texture = weapons/firearm/Uzi,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2420,7 +2420,7 @@ module Base
     {
         mesh = weapons/firearm/MiniUzi,
         texture = weapons/firearm/Uzi,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2456,7 +2456,7 @@ module Base
     {
         mesh = weapons/firearm/MiniUziCarbine,
         texture = weapons/firearm/Uzi,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -2492,7 +2492,7 @@ module Base
     {
         mesh = weapons/firearm/MicroUzi,
         texture = weapons/firearm/MicroUzi,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -3111,7 +3111,7 @@ module Base
 		{
 			offset = 0.0000 0.0000 0.0000,
 			rotate = 0.0000 0.0000 0.0000,
-			scale = 1.1,
+			scale = 0.9,
 		}
 	}
 	model SW60
@@ -3183,7 +3183,7 @@ module Base
 		{
 			offset = 0.0000 0.0000 0.0000,
 			rotate = 0.0000 0.0000 0.0000,
-			scale = 1.1,
+			scale = 0.9,
 		}
 	}
 	model SW10
@@ -6201,7 +6201,7 @@ module Base
     {
         mesh = weapons/firearm/SOWinM70,
         texture = weapons/firearm/BoltActionBluedBolt,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -6456,7 +6456,7 @@ module Base
     {
         mesh = weapons/firearm/WinM70Lever,
         texture = weapons/firearm/BoltActionBlued,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -6626,7 +6626,7 @@ module Base
     {
         mesh = weapons/firearm/WinM70,
         texture = weapons/firearm/BoltActionSS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -6711,7 +6711,7 @@ module Base
     {
         mesh = weapons/firearm/SOWinM70,
         texture = weapons/firearm/BoltActionSS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -8178,7 +8178,7 @@ module Base
     {
         mesh = weapons/firearm/SOMav88,
         texture = weapons/firearm/Moss500Gray,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -8755,7 +8755,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37,
         texture = weapons/firearm/Ithaca37Blued,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -9163,7 +9163,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37,
         texture = weapons/firearm/Ithaca37Park,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -9265,7 +9265,7 @@ module Base
     {
         mesh = weapons/firearm/SOIthaca37,
         texture = weapons/firearm/Ithaca37Blued,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -9457,7 +9457,7 @@ module Base
     {
         mesh = weapons/firearm/SOIthaca37,
         texture = weapons/firearm/Ithaca37Park,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -9745,7 +9745,7 @@ module Base
     {
         mesh = weapons/firearm/HicksIthaca37,
         texture = weapons/firearm/HicksIthaca37,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -9943,7 +9943,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37Riot,
         texture = weapons/firearm/Ithaca37Park,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -10045,7 +10045,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37Riot,
         texture = weapons/firearm/Ithaca37SS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -10147,7 +10147,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37MP,
         texture = weapons/firearm/Ithaca37Blued,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -10255,7 +10255,7 @@ module Base
     {
         mesh = weapons/firearm/Ithaca37MP,
         texture = weapons/firearm/Ithaca37Park,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -12045,7 +12045,7 @@ module Base
     {
         mesh = weapons/firearm/SORem1100,
         texture = weapons/firearm/Rem1100Blue,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -13903,64 +13903,82 @@ module Base
 		}
 	}
 	model M249
-	{
-		mesh = weapons/firearm/M249,
-		texture = weapons/firearm/M249,
+    {
+        mesh = weapons/firearm/M249,
+        texture = weapons/firearm/M249,
 		scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.4060 0.0360,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.3744 0.0389,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 180.0000 0.0000 180.0000,
-		}
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.3610 0.0360,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment canon
+        {
+            offset = 0.0000 0.3744 0.0389,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment clip
-		{
-			offset = 0.0240 0.0080 0.0180,
-			rotate = 0.0000 -53.0000 0.0000,
-		}
-	}
-	model M249Mag
-	{
-		mesh = weapons/firearm/M249Mag,
-		texture = weapons/firearm/M249,
+        attachment clip
+        {
+            offset = 0.0240 0.0080 0.0180,
+            rotate = 0.0000 -53.0000 0.0000,
+        }
+
+        attachment light
+        {
+            offset = 0.0000 0.3319 0.0214,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model M249Old
+    {
+        mesh = weapons/firearm/M249Old,
+        texture = weapons/firearm/M249Old,
 		scale = 1.1,
 
-		attachment muzzle
-		{
-			offset = 0.0000 0.4060 0.0360,
-			rotate = -90.0000 0.0000 0.0000,
-		}
+        attachment muzzle
+        {
+            offset = 0.0000 0.3744 0.0389,
+            rotate = -90.0000 0.0000 0.0000,
+        }
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
 
-		attachment canon
-		{
-			offset = 0.0000 0.3610 0.0360,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-	}
+        attachment canon
+        {
+            offset = 0.0000 0.3744 0.0389,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment clip
+        {
+            offset = 0.0240 0.0080 0.0180,
+            rotate = 0.0000 -53.0000 0.0000,
+        }
+
+        attachment light
+        {
+            offset = 0.0000 0.3319 0.0214,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
 	model M60
     {
         mesh = weapons/firearm/M60,
         texture = weapons/firearm/M60,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14259,7 +14277,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14,
         texture = weapons/firearm/Mini14,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14338,7 +14356,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14,
         texture = weapons/firearm/Mini14SS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14417,7 +14435,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14,
         texture = weapons/firearm/Mini14,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14477,7 +14495,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14,
         texture = weapons/firearm/Mini14SS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14556,7 +14574,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14GB,
         texture = weapons/firearm/Mini14,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14636,7 +14654,7 @@ module Base
     {
         mesh = weapons/firearm/Mini14GB,
         texture = weapons/firearm/Mini14SS,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -14716,7 +14734,7 @@ module Base
     {
         mesh = weapons/firearm/AC556K,
         texture = weapons/firearm/Mini14,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15478,7 +15496,7 @@ module Base
     {
         mesh = weapons/firearm/HK91,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15558,7 +15576,7 @@ module Base
     {
         mesh = weapons/firearm/HKSR9,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15662,7 +15680,7 @@ module Base
     {
         mesh = weapons/firearm/HK93,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15748,7 +15766,7 @@ module Base
     {
         mesh = weapons/firearm/fnc,
         texture = weapons/firearm/fncBlack,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15809,7 +15827,7 @@ module Base
     {
         mesh = weapons/firearm/fnc,
         texture = weapons/firearm/fncGrey,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15870,7 +15888,7 @@ module Base
     {
         mesh = weapons/firearm/k1a,
         texture = weapons/firearm/k1a1,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15931,7 +15949,7 @@ module Base
     {
         mesh = weapons/firearm/k1a1,
         texture = weapons/firearm/k1a1,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -15992,7 +16010,7 @@ module Base
     {
         mesh = weapons/firearm/k2,
         texture = weapons/firearm/k2,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16059,7 +16077,7 @@ module Base
     {
         mesh = weapons/firearm/dr200,
         texture = weapons/firearm/dr200,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16161,7 +16179,7 @@ module Base
     {
         mesh = weapons/firearm/MP5,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16247,7 +16265,7 @@ module Base
     {
         mesh = weapons/firearm/HK94,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16339,7 +16357,7 @@ module Base
     {
         mesh = weapons/firearm/SOHK94,
         texture = weapons/firearm/HK91,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16637,7 +16655,7 @@ module Base
     {
         mesh = weapons/firearm/ThompsonM1928_Fin,
         texture = weapons/firearm/ThompsonM1928,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -16685,7 +16703,7 @@ module Base
     {
         mesh = weapons/firearm/ThompsonM1928_nofin,
         texture = weapons/firearm/ThompsonM1928,
-        scale = 1.1,
+		scale = 1.1,
 
         attachment muzzle
         {
@@ -17604,7 +17622,7 @@ module Base
 		{
 			offset = -0.0718 -0.1175 -0.0000,
 			rotate = -180.0000 -0.0000 -90.0000,
-			scale = 1.1,
+			scale = 0.9,
 		}
 	}
 	model 1911RailPartSS
@@ -17616,7 +17634,7 @@ module Base
 		{
 			offset = -0.0718 -0.1175 -0.0000,
 			rotate = -180.0000 -0.0000 -90.0000,
-			scale = 1.1,
+			scale = 0.9,
 		}
 	}
 	model 1911Comp
@@ -17628,7 +17646,7 @@ module Base
 		{
 			offset = -0.0718 -0.1175 -0.0000,
 			rotate = -180.0000 -0.0000 -90.0000,
-			scale = 1.1,
+			scale = 0.9,
 		}
 	}
 	model ShotgunBrake
@@ -18360,19 +18378,37 @@ module Base
 	{
 	    mesh = WorldItems/AmmoBelt,
 	    texture = weapons/firearm/M249,
-		scale = 1,
+		scale = 1.2,
 	}
 	model AmmoBelt_Half
 	{
 	    mesh = WorldItems/AmmoBelt_Half,
 	    texture = weapons/firearm/M249,
-		scale = 1,
+		scale = 1.2,
 	}
 	model AmmoBelt_Full
 	{
 	    mesh = WorldItems/AmmoBelt_Full,
 	    texture = weapons/firearm/M249,
-		scale = 1,
+		scale = 1.2,
+	}
+	model AmmoBelt2
+	{
+	    mesh = WorldItems/AmmoBelt,
+	    texture = weapons/firearm/M249,
+		scale = 1.1,
+	}
+	model AmmoBelt2_Half
+	{
+	    mesh = WorldItems/AmmoBelt_Half,
+	    texture = weapons/firearm/M249,
+		scale = 1.1,
+	}
+	model AmmoBelt2_Full
+	{
+	    mesh = WorldItems/AmmoBelt_Full,
+	    texture = weapons/firearm/M249,
+		scale = 1.1,
 	}
 	model BeltLink
 	{
@@ -18700,13 +18736,13 @@ module Base
 	{
 	    mesh = weapons/parts/LaserProd,
 	    texture = weapons/parts/LaserProd,
-        scale = 0.9,
+		scale = 1.1,
 	}
 	model LaserProd_On
 	{
 	    mesh = weapons/parts/LaserProd_On,
 	    texture = weapons/parts/LaserProd,
-        scale = 0.9,
+		scale = 1.1,
 	}
 	model LS45Laser
 	{

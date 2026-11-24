@@ -181,29 +181,135 @@ module Base
 		}
 	}
 	model M249BeltBox
-	{
-	    mesh = weapons/parts/M249BeltBox,
-	    texture = weapons/firearm/M249,
+    {
+        mesh = weapons/parts/M249AmmoBox,
+        texture = weapons/firearm/M249,
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
+        attachment world
+        {
+            offset = 0.0002 0.0934 -0.0730,
+            rotate = -90.0000 -90.0000 -180.0000,
 			scale = 0.9,
-		}
-	}
+        }
+    }
+	model M249BeltBox_Full
+    {
+        mesh = weapons/parts/M249AmmoBox_Full,
+        texture = weapons/firearm/M249,
+
+        attachment world
+        {
+            offset = 0.0002 0.0934 -0.0730,
+            rotate = -90.0000 -90.0000 -180.0000,
+			scale = 0.9,
+        }
+    }
 	model M249Box
 	{
-	    mesh = WorldItems/M249Box,
+	    mesh = weapons/parts/M249AmmoBox,
 	    texture = weapons/firearm/M249,
 
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
+        attachment world
+        {
+            offset = 0.0002 0.0934 -0.0730,
+            rotate = -90.0000 -90.0000 -180.0000,
+			scale = 0.9,
+        }
+	}
+	model M249Box_Full
+    {
+        mesh = weapons/parts/M249AmmoBox_World,
+        texture = weapons/firearm/M249,
+
+        attachment world
+        {
+            offset = 0.0002 0.0934 -0.0730,
+            rotate = -90.0000 -90.0000 -180.0000,
+			scale = 0.9,
+        }
+    }
+	model M249BeltPouch
+	{
+	    mesh = weapons/parts/M249AmmoPouch,
+	    texture = weapons/firearm/M249Old,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
+			scale = 0.9,
+        }
+	}
+	model M249BeltPouch_Full
+	{
+	    mesh = weapons/parts/M249AmmoPouch_Full,
+	    texture = weapons/firearm/M249Old,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
+			scale = 0.9,
+        }
+	}
+	model M249Pouch
+	{
+	    mesh = weapons/parts/M249AmmoPouch,
+	    texture = weapons/firearm/M249Old,
+		scale = 0.9,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
+			scale = 0.9,
+        }
+	}
+	model M249Pouch_Full
+	{
+	    mesh = weapons/parts/M249AmmoPouch_World,
+	    texture = weapons/firearm/M249Old,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = -90.0000 -90.0000 180.0000,
 			scale = 0.9,
 		}
 	}
+	model 556Belt_Full
+    {
+        mesh = weapons/parts/556Belt_Full,
+        texture = weapons/firearm/M249,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
+	model 556Belt_Half
+    {
+        mesh = weapons/parts/556Belt_Half,
+        texture = weapons/firearm/M249,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
+	model 556Belt_Low
+    {
+        mesh = weapons/parts/556Belt_Low,
+        texture = weapons/firearm/M249,
+
+        attachment world
+        {
+            offset = 0.0505 0.0507 -0.0310,
+            rotate = 00.0000 00.0000 -90.0000,
+        }
+    }
 	model M60BeltBox_Full
     {
         mesh = weapons/parts/M60BeltBox,
@@ -213,6 +319,7 @@ module Base
         {
             offset = 0.0505 0.0507 -0.0310,
             rotate = -90.0000 -90.0000 180.0000,
+			scale = 1.1,
         }
     }
 	model M60BeltBox
@@ -224,6 +331,7 @@ module Base
         {
             offset = 0.0505 0.0507 -0.0310,
             rotate = -90.0000 -90.0000 180.0000,
+			scale = 1.1,
         }
     }
 	model 308Belt_Full

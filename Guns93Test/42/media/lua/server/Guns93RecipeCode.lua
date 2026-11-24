@@ -410,30 +410,28 @@ end
 
 function Guns93556AmmoTest(ammo)
     if ammo:hasTag(Gun93Registries.guns93.Ammo) then
-        local bulletData = ammo:getModData()
-        if bulletData then
-            if bulletData.isCaliber == "Base.556Bullets" then
+        local bulletType = ammo:getFullType()
+        local caliber = AmmoStatList[bulletType].caliber
+        if caliber then
+            if caliber == "Base.556Bullets" then
                 return true
             end
         end
-        return false
-    else
-        return true
     end
+    return true
 end
 
 function Guns93308AmmoTest(ammo)
     if ammo:hasTag(Gun93Registries.guns93.Ammo) then
-        local bulletData = ammo:getModData()
-        if bulletData then
-            if bulletData.isCaliber == "Base.308Bullets" then
+        local bulletType = ammo:getFullType()
+        local caliber = AmmoStatList[bulletType].caliber
+        if caliber then
+            if caliber == "Base.308Bullets" then
                 return true
             end
         end
-        return false
-    else
-        return true
     end
+    return true
 end
 
 function Guns93OnCreateAmmoBelt(craftRecipeData, character)

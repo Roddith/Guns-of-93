@@ -4806,4 +4806,110 @@ module Base
         CanAttach = Guns93WeaponPartsToolCheck,
         CanDetach = Guns93WeaponPartsToolCheck,
     }
+    
+    /****************************** M249 ******************************/
+    item M249FlashHider
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Flash Hider,
+        Icon = M249FlashHider,
+        Weight = 0.05,
+        SoundRadiusModifier = -10,
+        MountOn = ,
+        PartType = Canon,
+        Tooltip = Tooltip_FlashComp,
+        Tags = guns93:UseWrench; guns93:22cal,
+        WorldStaticModel = M249FlashHider,
+        CanAttach = Guns93WeaponPartsThreadedCanonPart,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M249Bipod
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Bipod,
+        Icon = M249Bipod,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        MountOn = M249,
+        PartType = HandguardItem,
+        MetalValue = 15.0,
+        WorldStaticModel = M249Bipod,
+        Tags = guns93:NoScrewdriver; guns93:Bipod; guns93:ToggleItemOn,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M249Bipod_On
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Bipod,
+        Icon = M249Bipod,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MountOn = M249,
+        PartType = HandguardItem,
+        MetalValue = 15.0,
+        WorldStaticModel = M249Bipod,
+        Tags = guns93:NoScrewdriver; guns93:Bipod; guns93:ToggleItemOff,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+
+    item M249HeatShield
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Heat Shield,
+        Icon = AKGrate,
+        Weight = 0.1,
+        MountOn = M249,
+        PartType = UpHandguard,
+        Tooltip = Tooltip_ScrewReq,
+        Tags = guns93:NoScrewdriver,
+        WorldStaticModel = M249HeatShield,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    item M249Stock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Stock,
+        Icon = M249Stock,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -15,
+        AimingTimeModifier = -10,
+        HitChanceModifier = 28,
+        MountOn = M249,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureReq,
+        Tags = guns93:NoScrewdriver; guns93:RearSwivel,
+        WorldStaticModel = M249Stock,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
+    item M249TubeStock
+    {
+        DisplayCategory = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = M249 Tube Stock,
+        Icon = M249TubeStock,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        RecoilDelayModifier = -12,
+        AimingTimeModifier = -10,
+        HitChanceModifier = 28,
+        MountOn = M249,
+        PartType = Stock,
+        Tooltip = Tooltip_FurnitureReq,
+        Tags = guns93:NoScrewdriver; guns93:RearSwivel,
+        WorldStaticModel = M249TubeStock,
+        CanAttach = Guns93WeaponPartsToolCheck,
+        CanDetach = Guns93WeaponPartsToolCheck,
+    }
 }

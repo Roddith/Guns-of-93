@@ -140,52 +140,6 @@ function CGuns93FixBayonet:invoke(bayo)
 	end
 end
 
----Switch Ammo Type---
-
-local CGuns93AmmoSwitch = BaseCommand:derive("CGuns93AmmoSwitch")
-
-function CGuns93AmmoSwitch:new(frm)
-	local o = BaseCommand.new(self, frm)
-	return o
-end
-
-function CGuns93AmmoSwitch:fillMenu(menu, weapon, index)
-	if weapon:hasTag(Gun93Registries.guns93.AmmoSwitch) then
-		local newAmmo = nil
-		if weapon:hasTag(Gun93Registries.guns93.AltAmmo) then
-			newAmmo = string.gsub(weapon:getFullType(), "_Alt", "")
-		else
-			newAmmo = weapon:getFullType() .. "_Alt"
-		end
-		if newAmmo ~= nil then
-			local refAmmo = instanceItem(newAmmo):getScriptItem()
-			if weapon:hasTag(Gun93Registries.guns93.AltAmmo) then
-				self.index = index
-				local text = getText("IGUI_FirearmRadial_SwitchTo") .. getItemNameFromFullType(refAmmo:getAmmoType():getItemKey())
-				menu:addSlice(text, getTexture("media/ui/Radial_SwitchAmmo1.png"), self.invoke, self)
-			else
-				self.index = index
-				local text = getText("IGUI_FirearmRadial_SwitchTo") .. getItemNameFromFullType(refAmmo:getAmmoType():getItemKey())
-				menu:addSlice(text, getTexture("media/ui/Radial_SwitchAmmo2.png"), self.invoke, self)
-			end
-		end
-	end
-end
-
-function CGuns93AmmoSwitch:invoke()
-	local weapon = self.character:getPrimaryHandItem()
-	if not weapon then return end
-    if weapon:isContainsClip() then
-        ISTimedActionQueue.add(ISEjectMagazine:new(self.character, weapon))
-    elseif weapon:getCurrentAmmoCount() > 0 then
-        ISTimedActionQueue.add(ISUnloadBulletsFromFirearm:new(self.character, weapon, false))
-    end
-    if weapon:isRoundChambered() then
-        ISTimedActionQueue.add(ISRackFirearm:new(self.character, weapon))
-    end
-	ISTimedActionQueue.add(Guns93AmmoSwitchAction:new(weapon, self.index, self.character, CharacterActionAnims.Craft, 0))
-end
-
 ---Switch Fire Mode---
 
 local CGuns93ModeSingle = BaseCommand:derive("CGuns93ModeSingle")
@@ -387,8 +341,12 @@ function CInsertMagazine:new(frm)
 	return o
 end
 
+local CInsertMagazine_fillMenu_old = CInsertMagazine.fillMenu
 function CInsertMagazine:fillMenu(menu, weapon, index)
-    if (weapon:getMagazineType() and not weapon:isContainsClip()) or (weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart(MoonClip)) or weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip) and weapon:getCurrentAmmoCount() < 1 then
+	if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+		return CInsertMagazine_fillMenu_old(menu, weapon, index)
+	end
+    if (weapon:getMagazineType() and not weapon:isContainsClip()) or (weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart(Clip)) or weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip) and weapon:getCurrentAmmoCount() < 1 then
 		local magazine = weapon:getBestMagazine(self.character)
 		local highest = -1
         local weaponType = weapon:getFullType()
@@ -398,7 +356,14 @@ function CInsertMagazine:fillMenu(menu, weapon, index)
                 local items = self.character:getInventory():getAllTypeRecurse(magType)
                 for k = 0, items:size() - 1 do
                     local mag = items:get(k)
-                    if mag and mag:getCurrentAmmoCount() > highest then
+					local mixCaliber = Guns93HasMultipleCalibers(mag, weapon) and not weapon:getModData().modAlt_Ammo
+					local emptyLoader = false
+					if mag:getCurrentAmmoCount() < 1 then
+						if mag:hasTag(Gun93Registries.guns93.SpeedLoader) or mag:hasTag(Gun93Registries.guns93.MoonClip) or mag:hasTag(Gun93Registries.guns93.StripperClip) or mag:hasTag(Gun93Registries.guns93.SpeedStrip) then
+							emptyLoader = true
+						end
+					end
+                    if not mixCaliber and not emptyLoader and mag and mag:getCurrentAmmoCount() > highest then
                         if not (mag:hasTag(Gun93Registries.guns93.SpeedLoader) and weapon:getCurrentAmmoCount() > 0) or not (mag:hasTag(Gun93Registries.guns93.MoonClip) and weapon:getCurrentAmmoCount() > 0 or weapon:getSpentRoundCount() > 0) or not (weapon:getMaxAmmo() <= weapon:getCurrentAmmoCount()) then
                             highest = mag:getCurrentAmmoCount()
                             magazine = mag
@@ -423,9 +388,13 @@ function CInsertMagazine:fillMenu(menu, weapon, index)
 	end
 end
 
+local CInsertMagazine_invoke_old = CInsertMagazine.invoke
 function CInsertMagazine:invoke()
 	local weapon = self:getWeapon()
 	if not weapon then return end
+	if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+		return CInsertMagazine_invoke_old(self)
+	end
 	if weapon:isContainsClip() or weapon:getWeaponPart("Moonclip") then return end
 	local magazine = weapon:getBestMagazine(self.character)
 	local highest = -1
@@ -460,7 +429,11 @@ function CEjectMagazine:new(frm)
 	return o
 end
 
+local CEjectMagazine_fillMenu_old = CEjectMagazine.fillMenu
 function CEjectMagazine:fillMenu(menu, weapon, index)
+	if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+		return CEjectMagazine_fillMenu_old(menu, weapon, index)
+	end
 	if weapon:isContainsClip() or weapon:getWeaponPart("Moonclip") then
 		local text = nil
 		if weapon:getWeaponPart("Moonclip") then
@@ -470,7 +443,7 @@ function CEjectMagazine:fillMenu(menu, weapon, index)
 		end
 		local xln = weapon:isRoundChambered() and "IGUI_FirearmRadial_AmmoCountChambered" or "IGUI_FirearmRadial_AmmoCount"
 		local textCount = getText(xln, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
-		text = text, '\n', textCount
+		text = text .. "\n" .. textCount
 		text = text:gsub("\\n", "\n")
 		menu:addSlice(text, getTexture("media/ui/FirearmRadial_EjectMagazine.png"), self.invoke, self)
 	else
@@ -504,6 +477,8 @@ local function predicateFullestMagazine(item1, item2)
 end
 
 function CLoadBulletsInMagazine:getMagazine(weapon)
+	local weapon = self:getWeapon()
+	if not weapon then return end
 	if not weapon:getMagazineType() then return nil end
 	local inventory = self.character:getInventory()
 	return inventory:getBestEvalArgRecurse(predicateNotFullMagazine, predicateFullestMagazine, weapon:getMagazineType())
@@ -514,9 +489,13 @@ function CLoadBulletsInMagazine:hasBulletsForMagazine(magazine)
 	return inventory:getCountTypeRecurse(magazine:getAmmoType():getItemKey()) > 0
 end
 
+local CLoadBulletsInMagazine_fillMenu_old = CLoadBulletsInMagazine.fillMenu
 function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
     local weapon = self:getWeapon()
     if not weapon then return end
+	if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+		return CLoadBulletsInMagazine_fillMenu_old(menu, weapon, index)
+	end
     local allow = false
     if weapon:getMagazineType() then
         allow = true
@@ -587,91 +566,58 @@ function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
     menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsIntoMagazine.png"), self.invoke, self)
 end
 
+local CLoadBulletsInMagazine_invoke_old = CLoadBulletsInMagazine.invoke
 function CLoadBulletsInMagazine:invoke()
     local weapon = self:getWeapon()
     if not weapon then return end
-    local allow = false
-    if weapon:getMagazineType() then
-        allow = true
-    elseif weapon:hasTag(Gun93Registries.guns93.MoonClip) and not weapon:getWeaponPart("Moonclip") then
-        allow = true
-    elseif (weapon:hasTag(Gun93Registries.guns93.SpeedLoader) or weapon:hasTag(Gun93Registries.guns93.StripperClip))
-        and weapon:getCurrentAmmoCount() < 1 then
-        allow = true
+    if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+        return CLoadBulletsInMagazine_invoke_old(self)
     end
-    if not allow then return end
     local magazine = nil
     local highest = 200
+    local function consider(mag)
+        if mag and mag:hasTag(Gun93Registries.guns93.Guns93Mag)
+            and mag:getCurrentAmmoCount() < mag:getMaxAmmo() then
+            local delta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
+            if delta <= highest then
+                highest = delta
+                magazine = mag
+            end
+        end
+    end
     local magList = MagazineGunSet and MagazineGunSet[weapon:getFullType()]
     if magList then
         for _, magType in ipairs(magList) do
             local items = self.character:getInventory():getAllTypeRecurse(magType)
             for k = 0, items:size() - 1 do
-                local mag = items:get(k)
-                if mag and mag:getCurrentAmmoCount() < mag:getMaxAmmo() then
-                    local ammoDelta = mag:getMaxAmmo() - mag:getCurrentAmmoCount()
-                    if ammoDelta <= highest then
-                        highest = ammoDelta
-                        magazine = mag
-                    end
-                end
+                consider(items:get(k))
             end
         end
     end
+    if not magazine and weapon:getMagazineType() then
+        local items = self.character:getInventory():getAllTypeRecurse(weapon:getMagazineType())
+        for k = 0, items:size() - 1 do
+            consider(items:get(k))
+        end
+    end
     if not magazine then return end
-    local bulletNeeded = magazine:getMaxAmmo() - magazine:getCurrentAmmoCount()
-    if bulletNeeded < 1 then return end
+    local loadCount = magazine:getMaxAmmo() - magazine:getCurrentAmmoCount()
+    if loadCount < 1 then return end
     local prim = magazine:getAmmoType() and tostring(magazine:getAmmoType():getItemKey()) or nil
-    local sec = nil
+    local sec  = nil
     local magData = magazine:getModData()
     if magData and magData.modAlt_Ammo then
         sec = tostring(magData.modAlt_Ammo)
     end
-    local bullets = ArrayList.new()
-    self.character:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
-    local byType = {}
-    local anyAvail = 0
-    for i = 0, bullets:size() - 1 do
-        local round = bullets:get(i)
-        local roundData = round:getModData()
-        local caliber = roundData and roundData.isCaliber and tostring(roundData.isCaliber) or nil
-        local getType = tostring(round:getFullType())
-        if caliber and ((prim and (caliber == prim or getType == prim)) or (sec and (caliber == sec or getType == sec))) then
-            anyAvail = anyAvail + 1
-            local entry = byType[getType]
-            if not entry then
-                entry = { count = 0 }
-                byType[getType] = entry
-            end
-            entry.count = entry.count + 1
-        end
-    end
-    if anyAvail < 1 then return end
     ISInventoryPaneContextMenu.transferIfNeeded(self.character, magazine)
-    local transferred = 0
-    local done = {}
-    for fullType, info in pairs(byType) do
-        if info.count > 0 and not done[fullType] then
-            done[fullType] = true
-            local n = ISInventoryPaneContextMenu.transferBullets( self.character, fullType, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo() )
-            transferred = transferred + (n or 0)
-            if transferred >= bulletNeeded then
-                break
-            end
-        end
+    if prim then
+        ISInventoryPaneContextMenu.transferBullets( self.character, prim, magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
     end
-    if transferred < 1 then return end
-    local loadCount = transferred
-    if loadCount > bulletNeeded then
-        loadCount = bulletNeeded
-    end
+    guns93SendLoadIntent(self.character, magazine, prim, sec, true, loadCount)
     local action = ISLoadBulletsInMagazine:new(self.character, magazine, loadCount)
     action.round = prim
     action.round2 = sec
     action.bycaliber = true
-    if guns93SendLoadIntent then
-        guns93SendLoadIntent(self.character, magazine, prim, sec, true, loadCount)
-    end
     ISTimedActionQueue.add(action)
 end
 
@@ -695,7 +641,7 @@ function CLoadRounds:fillMenu(menu, weapon)
 	local text = getText("IGUI_FirearmRadial_LoadRounds")
 	local xln = weapon:isRoundChambered() and "IGUI_FirearmRadial_AmmoCountChambered" or "IGUI_FirearmRadial_AmmoCount"
 	local textCount = getText(xln, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
-	text = text, '\\n', textCount
+	text = text .. "\n" .. textCount
 	text = text:gsub('\\n', '\n')
 	menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsIntoFirearm.png"), self.invoke, self)
 end
@@ -725,7 +671,7 @@ function CUnloadRounds:fillMenu(menu, weapon)
 	local text = getText("IGUI_FirearmRadial_UnloadRounds")
 	local xln = weapon:isRoundChambered() and "IGUI_FirearmRadial_AmmoCountChambered" or "IGUI_FirearmRadial_AmmoCount"
 	local textCount = getText(xln, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
-	text = text, '\\n', textCount
+	text = text .. "\n" .. textCount
 	text = text:gsub('\\n', '\n')
 	menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsFromFirearm.png"), self.invoke, self)
 end
@@ -752,16 +698,16 @@ function CRack:fillMenu(menu, weapon, index)
 	local textCount = getText(xln, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
 	if weapon:isJammed() then
 		local text = getText("IGUI_FirearmRadial_Unjam")
-		text = text, '\n', textCount
+		text = text .. "\n" .. textCount
 		menu:addSlice(text, getTexture("media/ui/FirearmRadial_Unjam.png"), self.invoke, self)
 	elseif not weapon:haveChamber() or weapon:isRoundChambered() then
 		local xln = weapon:haveChamber() and "IGUI_FirearmRadial_Rack" or "IGUI_FirearmRadial_UnloadRound"
 		local text = getText(xln)
-		text = text, '\n', textCount
+		text = text .. "\n" .. textCount
 		menu:addSlice(text, getTexture("media/ui/FirearmRadial_Rack.png"), self.invoke, self)
 	elseif weapon:haveChamber() then
 		local text = getText("IGUI_FirearmRadial_ChamberRound")
-		text = text, '\n', textCount
+		text = text .. "\n" .. textCount
 		menu:addSlice(text, getTexture("media/ui/FirearmRadial_ChamberRound.png"), self.invoke, self)
 	end
 end
@@ -778,6 +724,9 @@ end
 local ISFirearmRadialMenu_fillMenu_old = ISFirearmRadialMenu.fillMenu
 function ISFirearmRadialMenu:fillMenu(submenu, subNum)
 	local weapon = self.character:getPrimaryHandItem()
+	if not weapon:hasTag(Gun93Registries.guns93.Guns93) then
+		return ISFirearmRadialMenu_fillMenu_old(self, submenu, subNum)
+	end
 	local topBlock = false
 	local bayo = nil
 	local bayoFix = false
@@ -925,9 +874,6 @@ function ISFirearmRadialMenu:fillMenu(submenu, subNum)
 					end
 				end
 			end
-			if weapon:hasTag(Gun93Registries.guns93.AmmoSwitch) then
-				table.insert(commands, CGuns93AmmoSwitch:new(self))
-			end
 			if weapon:getFireModePossibilities() then  
 				for i=0, weapon:getFireModePossibilities():size() - 1 do
 					local firemode = weapon:getFireModePossibilities():get(i);
@@ -969,7 +915,7 @@ function ISFirearmRadialMenu:fillMenu(submenu, subNum)
 		self:display()
 		return
 	end
-	ISFirearmRadialMenu_fillMenu_old(self, submenu)
+	ISFirearmRadialMenu_fillMenu_old(self, submenu, subNum)
 end
 
 local ISFirearmRadialMenu_checkWeapon_old = ISFirearmRadialMenu.checkWeapon

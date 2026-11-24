@@ -481,6 +481,7 @@ local function loadedGun(gun, spawner)
             end
         end
     end
+    DynamicAttachedMagClip(nil, gun, gun:getWeaponPart("Clip"))
     if gun:isManuallyRemoveSpentRounds() then
         local spent = gun:getMaxAmmo() - gun:getCurrentAmmoCount()
         gun:setSpentRoundCount(spent)
@@ -536,6 +537,9 @@ local function finalizeZedGun(Gun, spawner, targetContainer)
             Guns93AddAmmoTypes(Gun, newAmmo)
             ammoCount = ammoCount - 1
         end
+    end
+    if Gun:getCurrentAmmoCount() > 0 then
+        DynamicAttachedMagClip(nil, Gun, Gun:getWeaponPart("Clip"))
     end
     if Gun:haveChamber() and Gun:getCurrentAmmoCount() > 0 then
         if ZombRand(0, 10) > 6 then
@@ -899,6 +903,7 @@ local function Guns93ZombieDrops(zombie)
                         end
                     end
                 end
+                DynamicAttachedMagClip(nil, Gun, Gun:getWeaponPart("Clip"))
             end
             if Gun:isManuallyRemoveSpentRounds() then
                 local spent = Gun:getMaxAmmo() - Gun:getCurrentAmmoCount()

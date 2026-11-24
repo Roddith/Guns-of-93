@@ -14,7 +14,7 @@ MagazineGunSet = MagazineGunSet or {}
 	MagazineGunSet["Base.DR200"] = MagazineGunSet["Base.AR15"]
 	MagazineGunSet["Base.FNC"] = MagazineGunSet["Base.AR15"]
 
-	MagazineGunSet["Base.M249"] = {"Base.M249Box"}
+	MagazineGunSet["Base.M249"] = {"Base.M249Box","Base.M249Box_Full","Base.M249Pouch","Base.M249Pouch_Full","Base.556Belt","Base.556Belt_Half","Base.556Belt_Full"}
     for _, magName in ipairs(MagazineGunSet["Base.AR15"]) do
         table.insert(MagazineGunSet["Base.M249"], magName)
     end

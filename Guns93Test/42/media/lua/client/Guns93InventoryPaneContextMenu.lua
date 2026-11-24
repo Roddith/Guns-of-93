@@ -56,7 +56,7 @@ ISInventoryPaneContextMenu.doChangeFireModeMenu = function(playerObj, weapon, co
                     local autoPart = weapon:getWeaponPart("AutoPart") or weapon:getWeaponPart("Trigger")
                     local auto = "Auto"
                     local burst = "Burst"
-                    local context = firemode
+                    local modeKey = firemode
                     if autoPart then
                         if autoPart:hasTag(Gun93Registries.guns93.Fullauto) then
                             auto = "nil"
@@ -70,15 +70,15 @@ ISInventoryPaneContextMenu.doChangeFireModeMenu = function(playerObj, weapon, co
                             local burstNum = autoPart:getModData().modBurst_Num
                             if burstNum then
                                 if burstNum == 2 then
-                                    context = "Burst2"
+                                    modeKey = "Burst2"
                                 elseif burstNum == 3 then
-                                    context = "Burst3"
+                                    modeKey = "Burst3"
                                 elseif burstNum > 3 then
-                                    context = "Burst4"
+                                    modeKey = "Burst4"
                                 end
                             end
                         end
-                        subMenuFiremode:addOption(getText("ContextMenu_FireMode_" .. context), playerObj, ISInventoryPaneContextMenu.onChangefiremode, weapon, firemode);
+                        subMenuFiremode:addOption(getText("ContextMenu_FireMode_" .. modeKey), playerObj, ISInventoryPaneContextMenu.onChangefiremode, weapon, firemode);
                     end
                 end
             end
@@ -201,7 +201,7 @@ end
 local old_ISInventoryPaneContextMenu_onLoadBulletsInMagazine_old = ISInventoryPaneContextMenu.onLoadBulletsInMagazine
 ISInventoryPaneContextMenu.onLoadBulletsInMagazine = function(playerObj, magazine, round, ammoCount, bycaliber)
     if not magazine or not magazine:hasTag(Gun93Registries.guns93.Guns93Mag) then
-        return old_ISInventoryPaneContextMenu_onLoadBulletsInMagazine_old(playerObj, magazine, ammoCount)
+        return old_ISInventoryPaneContextMenu_onLoadBulletsInMagazine_old(playerObj, magazine, ammoCount or round)
     end
     ISInventoryPaneContextMenu.transferIfNeeded(playerObj, magazine)
     local round2 = nil
@@ -361,11 +361,11 @@ ISInventoryPaneContextMenu.onLoadBulletsIntoFirearm = function(playerObj, weapon
         playerObj:getInventory():getAllTagRecurse(Gun93Registries.guns93.Ammo, bullets)
         local doneList = {}
         for i = 0, bullets:size() - 1 do
-            local round = bullets:get(i)
-            local roundType = round:getFullType()
+            local bullet = bullets:get(i)
+            local roundType = bullet:getFullType()
             local bulletType = AmmoStatList[roundType].caliber
             if bulletType then
-                if bulletType == round or bulletType == round2 or round:getFullType() == round or round:getFullType() == round2 then
+                if bulletType == round or bulletType == round2 or roundType == round or roundType == round2 then
                     if not doneList[roundType] then
                         doneList[roundType] = true
                         local ammoReturn = ISInventoryPaneContextMenu.transferBullets(playerObj, roundType, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())

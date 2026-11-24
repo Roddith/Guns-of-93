@@ -7501,10 +7501,8 @@ Guns93GunConfig.Guns93DWK1A = function(weapon)
     if not weapon:getWeaponPart("Trigger") then
         if weapon:getFullType() == "Base.DWK1A" then
             weapon:attachWeaponPart(instanceItem("Base.K1ATrigger"))
---            weapon:setTexture(getTexture("media/textures/item_FNC.png"))
         else
             weapon:attachWeaponPart(instanceItem("Base.K1A1Trigger"))
---            weapon:setTexture(getTexture("media/textures/item_FNCPara.png"))
             local NamD6 = ZombRand(0,6)
             if NamD6 < 2 then
                 gunNam = "Daewoo MAX-1"
@@ -7679,4 +7677,74 @@ Guns93GunConfig.Guns93M60 = function(weapon)
     if weapon:getModData().Guns93Icon == nil or weapon:getModData().Guns93Icon == "" then
         weapon:getModData().Guns93Icon = "M60"
     end
+end
+
+Guns93GunConfig.Guns93M249Spawns = function(weapon)
+    if not weapon then return end
+    local ammoNam = GetAmmoName(weapon)
+    weapon:setName(weapon:getName() .. ammoNam)
+    local isOld = false
+    if ZombRand(0,50) > 25 then
+        weapon:setWeaponSprite("M249")
+    else
+        weapon:setWeaponSprite("M249Old")
+        isOld = true
+    end
+    if weapon:getMagazineType() then
+        local gunMag = nil
+        if ZombRand(0,50) > 25 then
+            gunMag = "Base.M249Box"
+        else
+            gunMag = "Base.M249Pouch"
+        end
+        if gunMag then
+            weapon:setMagazineType(gunMag)
+            AddMagAttachment(weapon, gunMag)
+        end
+    end
+    if not weapon:getWeaponPart("Irons") then
+        local irons = instanceItem("Base.NonremoveIrons")
+        if irons then
+            weapon:attachWeaponPart(irons)
+        end
+    end
+    if not weapon:getWeaponPart("HandguardItem") then
+        local bipod = instanceItem("Base.M249Bipod")
+        if bipod then
+            weapon:attachWeaponPart(bipod)
+        end
+    end
+    weapon:attachWeaponPart(instanceItem("Base.BarrelThread"))
+    if not weapon:getWeaponPart("Canon") then
+        local canon = nil
+        if isOld then
+            canon = instanceItem("Base.M249FlashHider")
+        else
+            canon = instanceItem("Base.A2FlashHider")
+        end
+        if canon then
+            weapon:attachWeaponPart(canon)
+        end
+    end
+    if not weapon:getWeaponPart("Stock") then
+        local stock = nil
+        local shield = nil
+        if ZombRand(0,50) > 25 or not isOld then
+            stock = instanceItem("Base.M249Stock")
+            shield = instanceItem("Base.M249HeatShield")
+            weapon:setTexture(getTexture("media/textures/item_M249.png"))
+            weapon:getModData().Guns93Icon = "M249"
+        else
+            stock = instanceItem("Base.M249TubeStock")
+            weapon:setTexture(getTexture("media/textures/item_M249Old.png"))
+            weapon:getModData().Guns93Icon = "M249Old"
+        end
+        if stock then
+            weapon:attachWeaponPart(stock)
+        end
+        if shield then
+            weapon:attachWeaponPart(shield)
+        end
+    end
+	weapon:setCustomName(true);
 end
